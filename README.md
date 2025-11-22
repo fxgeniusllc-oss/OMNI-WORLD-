@@ -1,4 +1,110 @@
-You said:
+
+
+🌐 OmniWorld / OmniVerse
+The AI-Powered, Creator-First Metaverse & Dominion Economy
+🚀Core Paradigm
+OmniWorld is a Digital Twin Economy fusing entertainment-grade gamification with high-fidelity
+economic simulation. It is powered by the Dominion Economy, a stochastic financial model
+synchronized with real-world indices via decentralized oracles.
+🛑 For Developers
+Strict Adherence to the Quantum Algorithm is required. All economic transactions must
+pass through the DominionEconomy.cs validation layer to ensure the stabilization
+equation holds true.
+🌍The Dominion Economy (Financial Physics)
+The central nervous system of OmniWorld is the Quantum Algorithm Balancing mechanism. It
+maintains equilibrium between inflation, asset velocity, and user liquidity.
+The Stabilization Equation
+The live token price ( ) is calculated per transaction tick:
+Symbol Variable Type Description
+Demand Rate float Normalized active wallet interactions/sec per zone.
+POMNI
+Getty Images
+POMNI
+POMNI =
+Up ⋅ Hr ⋅ Cx
+Dr ⋅ Zi ⋅ Ts
+Dr
+11/22/25, 11:06 AM Google Gemini
+https://gemini.google.com/app/8f0b9cc832bd0282 1/4
+Zone Inflation Index float Oracle feed linked to real-world CPI (e.g., Chainlink).
+Tier Scale int Multiplier (1-5) based on Asset Rarity (Common -> Legendary).
+User Prestige float Governance score (0.1 - 1.0). Higher prestige = lower friction
+costs.
+Housing Rarity float Inverse supply curve metric ( ).
+Circulation
+Coefficient
+float Velocity of money metric; penalizes dormant wallets.
+🏙️City Infrastructure & Zoning
+The world is sharded into 7 Global Metropolises. Each city runs on a distinct economic sub-model
+but feeds into the global Dominion Economy.
+1. OmniLanta (Atlanta, GA) 🍑
+Theme: Creator Culture, Trap Legacy, Tech Hub.
+Economics: High-velocity creator transactions, lower entry barrier for housing.
+Specialty: Event Tokenization via the Stadium District.
+2. OmniVegas (LasVegas, NV) 🎰
+Theme: High Stakes, Neon Capital, Risk/Reward.
+Economics: High volatility zone. Casino revenue sharing models active.
+Specialty: Revenue Splits & High-Roller Rentals.
+3. OmniTokyo (Tokyo, JP) ⛩️
+Theme: Cyber-Tech, Anime Culture, Nightlife.
+Economics: Tech-heavy asset class. Ad-revenue models via Vending/Billboards.
+Specialty: AI Companion Ownership & Commercial Licensing.
+(See docs/WORLD_ATLAS.md for full list including Lagos, Dubai, LA, Paris, NYC)
+🛠️Technical Stack
+Client (Unity 2022.3 LTS)
+Render Pipeline: URP (Universal Render Pipeline) for mobile/VR scalability.
+Network: Mirror / Photon Fusion for multiplayer state sync.
+Input: New Input System (Cross-platform support).
+Zi
+Ts
+Up
+Hr 1/Supply
+Cx
+11/22/25, 11:06 AM Google Gemini
+https://gemini.google.com/app/8f0b9cc832bd0282 2/4
+Blockchain Layer (EVM)
+Primary Chain: Polygon (MATIC) for high-frequency, low-cost interactions.
+Standards: * ERC-721: Land Parcels, Penthouses, Jets.
+ERC-1155: Consumables, Materials, Access Passes.
+Oracles: Chainlink for (Inflation Index) data feeds.
+Backend & AI
+Orchestrator: Python (FastAPI) handling agent dispatch.
+MCP Agent: Custom Model Context Protocol agent for automated code generation.
+LLMs: Integrated for NPC dialogue ("OmniMentors") and procedural asset generation.
+🤖The Quantum Unity Agent (MCP)
+We utilize a custom MCP Server ( omni_agent_mcp.py ) to accelerate development. It is contextaware and enforces the Dominion Economy constraints in all generated code.
+Setup & Usage
+1. Initialize:
+python omni_agent_mcp.py --init
+2. Generate Feature:
+python omni_agent_mcp.py --task "Generate OmniLanta Transit System" --priority HIGH
+The agent will:
+1. Analyze Assets/Scripts/ to prevent namespace collisions.
+Zi
+Getty Images
+11/22/25, 11:06 AM Google Gemini
+https://gemini.google.com/app/8f0b9cc832bd0282 3/4
+2. Calculate the "Economic Impact" of the code.
+3. Generate the C# script adhering to the DominionEconomy namespace.
+📂Directory Structure
+OmniWorld/
+├── Assets/
+│ ├── _Core/ # Singleton Managers (GameManager, NetworkManager)
+│ ├── Scenes/ # OmniLanta, OmniVegas, MainMenu
+│ ├── Prefabs/ # Housing, Vehicles, Avatars
+│ ├── Scripts/
+│ │ ├── Economy/ # DominionEconomy.cs, TransactionValidator.cs
+│ │ ├── World/ # ZoneController.cs, TransitSystem.cs
+│ │ ├── Web3/ # WalletConnect.cs, ContractBridge.cs
+│ │ └── AI/ # NPCBrain.cs, ProceduralGeneration.cs
+│ └── Contracts/ # ABIs and Solidity source
+├── Backend/ # Python MCP Agents & API
+└── Docs/ # Architectural Decision Records (ADRs)
+📄 Governance
+License: Proprietary (Closed Source Phase 1).
+DAO: Governance logic located in Assets/Scripts/Economy/Governance.cs . Tier 5 Citizens hold
+voting weight.
+Architected by Omega Prime for OmniWorld IncYou said:
 
 Do you want me to now **turn this into a formal “OmniWorld Whitepaper v1.0”**, with diagrams, contract references, and city-by-city breakdown for presentation to devs/investors? Ask ChatGPT
 
