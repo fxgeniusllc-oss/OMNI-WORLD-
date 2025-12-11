@@ -1,0 +1,35 @@
+{
+  "name": "omniworld-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for OmniWorld metaverse",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network polygon-mumbai",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network polygon",
+    "verify": "hardhat verify --network polygon-mumbai"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "polygon",
+    "nft",
+    "erc721",
+    "erc1155",
+    "metaverse"
+  ],
+  "author": "OmniWorld Inc",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "hardhat": "^2.19.2",
+    "hardhat-gas-reporter": "^1.0.9"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.9.0"
+  }
+}

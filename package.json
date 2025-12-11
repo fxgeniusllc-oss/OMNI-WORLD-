@@ -1,0 +1,37 @@
+{
+  "name": "omniworld",
+  "version": "1.0.0",
+  "description": "OmniWorld - AI-Powered Creator-First Metaverse",
+  "main": "index.js",
+  "scripts": {
+    "backend": "cd Backend && python api/main.py",
+    "backend:dev": "cd Backend && uvicorn api.main:app --reload",
+    "contracts:install": "cd Assets/Contracts/Source && npm install",
+    "contracts:compile": "cd Assets/Contracts/Source && npx hardhat compile",
+    "contracts:test": "cd Assets/Contracts/Source && npx hardhat test",
+    "contracts:deploy:testnet": "cd Assets/Contracts/Source && npx hardhat run scripts/deploy.js --network polygon-mumbai",
+    "agent:init": "python Backend/omni_agent_mcp.py --init",
+    "install": "npm run contracts:install && pip install -r Backend/requirements.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fxgeniusllc-oss/OMNI-WORLD-.git"
+  },
+  "keywords": [
+    "metaverse",
+    "blockchain",
+    "nft",
+    "unity",
+    "web3",
+    "gaming",
+    "creator-economy"
+  ],
+  "author": "OmniWorld Inc",
+  "license": "Proprietary",
+  "bugs": {
+    "url": "https://github.com/fxgeniusllc-oss/OMNI-WORLD-/issues"
+  },
+  "homepage": "https://github.com/fxgeniusllc-oss/OMNI-WORLD-#readme",
+  "devDependencies": {},
+  "dependencies": {}
+}
