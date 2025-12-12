@@ -1,0 +1,104 @@
+{
+  "prefabName": "Vehicle_Bike_Sportbike",
+  "category": "Vehicles",
+  "subCategory": "Bikes",
+  "type": "Sportbike",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Premium",
+    "performanceClass": "Super Sport"
+  },
+  "specifications": {
+    "class": "Sportbike",
+    "seats": 2,
+    "engine": "1.0L Inline-4",
+    "horsepower": 200,
+    "topSpeed": 186,
+    "acceleration": 2.6,
+    "handling": 10.0,
+    "fuelType": "Premium Gasoline"
+  },
+  "physics": {
+    "mass": 200,
+    "centerOfMass": { "x": 0, "y": 0.5, "z": -0.1 },
+    "wheelBase": 1.45,
+    "suspensionTravel": 0.12,
+    "leanAngleMax": 55
+  },
+  "model": {
+    "dimensions": {
+      "length": 2.1,
+      "width": 0.72,
+      "height": 1.15,
+      "wheelbase": 1.45
+    },
+    "bodyStyle": "Supersport",
+    "fairing": "Full"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 55000,
+      "lod1": 27000,
+      "lod2": 12500,
+      "lod3": 5000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Paint_Racing_Livery",
+      "Carbon_Fiber_Bodywork",
+      "Aluminum_Frame",
+      "Rubber_Racing_Tire_Sport",
+      "Glass_Windscreen_Tinted",
+      "LED_Headlight_Matrix"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Suspension Animation",
+      "Working Lights",
+      "Animated Rider",
+      "Lean Physics",
+      "Aerodynamic Details"
+    ]
+  },
+  "audio": {
+    "engineSound": "Inline_4_High_Rev",
+    "exhaustNote": "Race_Tuned_Sport",
+    "quickShifter": true
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "underTailExhaust": true,
+      "flames": true
+    },
+    "tireSmokeOnBurnout": true,
+    "headlightBeam": true,
+    "wheelie": true
+  },
+  "components": [
+    "Rigidbody",
+    "MotorcycleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "QuickShifter"
+  ],
+  "price": {
+    "purchasePrice": 22000,
+    "dailyRent": 180,
+    "currency": "OMNI"
+  }
+}

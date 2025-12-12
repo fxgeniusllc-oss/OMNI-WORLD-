@@ -1,0 +1,95 @@
+{
+  "prefabName": "Vehicle_Car_Pickup",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Pickup Truck",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Standard",
+    "performanceClass": "Utility"
+  },
+  "specifications": {
+    "class": "Full-Size Pickup",
+    "seats": 5,
+    "engine": "5.0L V8",
+    "horsepower": 395,
+    "topSpeed": 115,
+    "acceleration": 6.5,
+    "handling": 6.0,
+    "fuelType": "Gasoline",
+    "drivetrain": "4WD",
+    "payloadCapacity": 3000,
+    "towingCapacity": 12000
+  },
+  "physics": {
+    "mass": 2500,
+    "centerOfMass": { "x": 0, "y": 0.75, "z": 0.2 },
+    "wheelBase": 3.7,
+    "trackWidth": 1.75,
+    "suspensionTravel": 0.28,
+    "springRate": 48000,
+    "damperRate": 3600,
+    "groundClearance": 0.28
+  },
+  "model": {
+    "dimensions": {
+      "length": 5.9,
+      "width": 2.0,
+      "height": 1.95,
+      "wheelbase": 3.7
+    },
+    "doors": 4,
+    "bed": "6.5ft",
+    "bodyStyle": "Crew Cab Pickup"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 62000,
+      "lod1": 31000,
+      "lod2": 15000,
+      "lod3": 6500
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Car_Paint_Solid",
+      "Chrome_Heavy_Duty",
+      "Plastic_Bedliner",
+      "Rubber_All_Terrain_Tire_Aggressive",
+      "Fabric_Interior_Durable",
+      "Steel_Bed_Textured"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Suspension Animation",
+      "Working Lights",
+      "Bed Detail",
+      "Towing Hitch"
+    ]
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "FourWDSystem",
+    "TowingSystem"
+  ],
+  "price": {
+    "purchasePrice": 52000,
+    "dailyRent": 210,
+    "currency": "OMNI"
+  }
+}

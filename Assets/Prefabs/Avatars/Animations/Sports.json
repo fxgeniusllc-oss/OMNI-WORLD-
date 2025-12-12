@@ -1,0 +1,142 @@
+{
+  "prefabName": "Avatar_Animations_Sports",
+  "category": "Avatars",
+  "subCategory": "Animations",
+  "type": "Sports Animation Set",
+  "metadata": {
+    "nftCompatible": true,
+    "compatibleWith": ["All Base Avatars"],
+    "animationType": "Athletic",
+    "rigType": "Mecanim Humanoid"
+  },
+  "sports": {
+    "basketball": [
+      {
+        "name": "Dribble",
+        "duration": 3.0,
+        "looped": true
+      },
+      {
+        "name": "Shoot",
+        "duration": 2.0,
+        "looped": false
+      },
+      {
+        "name": "Layup",
+        "duration": 2.5,
+        "looped": false
+      },
+      {
+        "name": "Dunk",
+        "duration": 3.0,
+        "looped": false
+      }
+    ],
+    "soccer": [
+      {
+        "name": "Kick_Ball",
+        "duration": 1.5,
+        "looped": false
+      },
+      {
+        "name": "Dribble_Soccer",
+        "duration": 4.0,
+        "looped": true
+      },
+      {
+        "name": "Header",
+        "duration": 1.2,
+        "looped": false
+      },
+      {
+        "name": "Goal_Celebration",
+        "duration": 3.0,
+        "looped": false
+      }
+    ],
+    "tennis": [
+      {
+        "name": "Forehand",
+        "duration": 1.5,
+        "looped": false
+      },
+      {
+        "name": "Backhand",
+        "duration": 1.5,
+        "looped": false
+      },
+      {
+        "name": "Serve",
+        "duration": 2.5,
+        "looped": false
+      }
+    ],
+    "golf": [
+      {
+        "name": "Drive",
+        "duration": 3.0,
+        "looped": false
+      },
+      {
+        "name": "Putt",
+        "duration": 2.5,
+        "looped": false
+      },
+      {
+        "name": "Chip_Shot",
+        "duration": 2.0,
+        "looped": false
+      }
+    ],
+    "boxing": [
+      {
+        "name": "Jab_Combo",
+        "duration": 2.0,
+        "looped": true
+      },
+      {
+        "name": "Uppercut",
+        "duration": 1.2,
+        "looped": false
+      },
+      {
+        "name": "Bob_Weave",
+        "duration": 2.0,
+        "looped": true
+      }
+    ],
+    "fitness": [
+      {
+        "name": "Pushup",
+        "duration": 2.0,
+        "looped": true
+      },
+      {
+        "name": "Situp",
+        "duration": 2.0,
+        "looped": true
+      },
+      {
+        "name": "Jumping_Jack",
+        "duration": 1.5,
+        "looped": true
+      },
+      {
+        "name": "Burpee",
+        "duration": 3.0,
+        "looped": true
+      },
+      {
+        "name": "Yoga_Pose",
+        "duration": 10.0,
+        "looped": true,
+        "variations": ["Tree_Pose", "Warrior", "Downward_Dog"]
+      }
+    ]
+  },
+  "price": {
+    "basicSports": 10,
+    "premiumSports": 25,
+    "currency": "OMNI"
+  }
+}

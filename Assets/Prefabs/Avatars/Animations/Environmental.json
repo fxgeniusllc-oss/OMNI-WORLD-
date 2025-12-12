@@ -1,0 +1,160 @@
+{
+  "prefabName": "Avatar_Animations_Environmental",
+  "category": "Avatars",
+  "subCategory": "Animations",
+  "type": "Environmental Interaction Set",
+  "metadata": {
+    "nftCompatible": true,
+    "compatibleWith": ["All Base Avatars"],
+    "animationType": "Interaction",
+    "rigType": "Mecanim Humanoid"
+  },
+  "categories": {
+    "climbing": [
+      {
+        "name": "Climb_Ladder",
+        "duration": 2.0,
+        "looped": true,
+        "ikTargets": ["LeftHand", "RightHand", "LeftFoot", "RightFoot"]
+      },
+      {
+        "name": "Climb_Wall",
+        "duration": 3.0,
+        "looped": true,
+        "ikTargets": ["LeftHand", "RightHand", "LeftFoot", "RightFoot"]
+      },
+      {
+        "name": "Shimmy_Ledge",
+        "duration": 2.5,
+        "looped": true,
+        "ikTargets": ["LeftHand", "RightHand"]
+      },
+      {
+        "name": "Pull_Up_Ledge",
+        "duration": 2.0,
+        "looped": false
+      }
+    ],
+    "swimming": [
+      {
+        "name": "Swim_Forward",
+        "duration": 3.0,
+        "looped": true
+      },
+      {
+        "name": "Tread_Water",
+        "duration": 2.0,
+        "looped": true
+      },
+      {
+        "name": "Dive",
+        "duration": 2.5,
+        "looped": false
+      },
+      {
+        "name": "Surface",
+        "duration": 1.5,
+        "looped": false
+      }
+    ],
+    "doors": [
+      {
+        "name": "Open_Door_Push",
+        "duration": 1.5,
+        "looped": false
+      },
+      {
+        "name": "Open_Door_Pull",
+        "duration": 1.5,
+        "looped": false
+      },
+      {
+        "name": "Kick_Door",
+        "duration": 1.0,
+        "looped": false
+      },
+      {
+        "name": "Slide_Door",
+        "duration": 1.8,
+        "looped": false
+      }
+    ],
+    "obstacles": [
+      {
+        "name": "Vault_Low",
+        "duration": 1.5,
+        "looped": false
+      },
+      {
+        "name": "Vault_High",
+        "duration": 2.0,
+        "looped": false
+      },
+      {
+        "name": "Crawl_Under",
+        "duration": 3.0,
+        "looped": true
+      },
+      {
+        "name": "Squeeze_Through",
+        "duration": 4.0,
+        "looped": false
+      }
+    ],
+    "furniture": [
+      {
+        "name": "Enter_Bed",
+        "duration": 3.0,
+        "looped": false
+      },
+      {
+        "name": "Exit_Bed",
+        "duration": 2.5,
+        "looped": false
+      },
+      {
+        "name": "Sit_Down_Chair",
+        "duration": 1.5,
+        "looped": false
+      },
+      {
+        "name": "Stand_Up_Chair",
+        "duration": 1.2,
+        "looped": false
+      },
+      {
+        "name": "Lean_Wall",
+        "duration": 2.0,
+        "looped": true
+      }
+    ],
+    "special": [
+      {
+        "name": "Zipline",
+        "duration": 5.0,
+        "looped": true,
+        "ikTargets": ["LeftHand", "RightHand"]
+      },
+      {
+        "name": "Parachute",
+        "duration": 8.0,
+        "looped": true
+      },
+      {
+        "name": "Grappling_Hook",
+        "duration": 3.0,
+        "looped": false
+      }
+    ]
+  },
+  "contextual": {
+    "autoDetection": true,
+    "smoothTransitions": true,
+    "ikBlending": true
+  },
+  "price": {
+    "basicInteractions": 10,
+    "advancedInteractions": 30,
+    "currency": "OMNI"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "prefabName": "Avatar_Animations_Idles",
+  "category": "Avatars",
+  "subCategory": "Animations",
+  "type": "Idle Animation Variations",
+  "metadata": {
+    "nftCompatible": true,
+    "compatibleWith": ["All Base Avatars"],
+    "animationType": "Ambient",
+    "rigType": "Mecanim Humanoid"
+  },
+  "categories": {
+    "casual": [
+      {
+        "name": "Idle_Hands_In_Pockets",
+        "duration": 5.0,
+        "looped": true,
+        "weight": 0.3
+      },
+      {
+        "name": "Idle_Check_Phone",
+        "duration": 8.0,
+        "looped": true,
+        "weight": 0.4
+      },
+      {
+        "name": "Idle_Stretch",
+        "duration": 6.0,
+        "looped": false,
+        "weight": 0.2
+      },
+      {
+        "name": "Idle_Yawn",
+        "duration": 3.0,
+        "looped": false,
+        "weight": 0.15,
+        "facialAnimation": true
+      },
+      {
+        "name": "Idle_Scratch_Head",
+        "duration": 3.0,
+        "looped": false,
+        "weight": 0.2
+      }
+    ],
+    "professional": [
+      {
+        "name": "Idle_Arms_Crossed",
+        "duration": 6.0,
+        "looped": true,
+        "weight": 0.4
+      },
+      {
+        "name": "Idle_Hands_Behind_Back",
+        "duration": 5.0,
+        "looped": true,
+        "weight": 0.3
+      },
+      {
+        "name": "Idle_Check_Watch",
+        "duration": 3.0,
+        "looped": false,
+        "weight": 0.25
+      },
+      {
+        "name": "Idle_Adjust_Tie",
+        "duration": 2.5,
+        "looped": false,
+        "weight": 0.2
+      }
+    ],
+    "energetic": [
+      {
+        "name": "Idle_Bounce",
+        "duration": 4.0,
+        "looped": true,
+        "weight": 0.3
+      },
+      {
+        "name": "Idle_Shadowbox",
+        "duration": 6.0,
+        "looped": true,
+        "weight": 0.25
+      },
+      {
+        "name": "Idle_Foot_Tap",
+        "duration": 5.0,
+        "looped": true,
+        "weight": 0.35
+      }
+    ],
+    "bored": [
+      {
+        "name": "Idle_Look_Around",
+        "duration": 6.0,
+        "looped": true,
+        "weight": 0.4
+      },
+      {
+        "name": "Idle_Sigh",
+        "duration": 3.0,
+        "looped": false,
+        "weight": 0.2,
+        "facialAnimation": true
+      },
+      {
+        "name": "Idle_Kick_Ground",
+        "duration": 3.0,
+        "looped": false,
+        "weight": 0.15
+      }
+    ],
+    "confident": [
+      {
+        "name": "Idle_Power_Stance",
+        "duration": 6.0,
+        "looped": true,
+        "weight": 0.4
+      },
+      {
+        "name": "Idle_Flex",
+        "duration": 4.0,
+        "looped": false,
+        "weight": 0.2
+      }
+    ]
+  },
+  "blending": {
+    "randomSelection": true,
+    "transitionTime": 0.5,
+    "weightedProbability": true
+  },
+  "price": {
+    "basicIdles": 0,
+    "premiumIdles": 10,
+    "currency": "OMNI"
+  }
+}

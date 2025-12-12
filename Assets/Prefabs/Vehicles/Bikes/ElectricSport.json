@@ -1,0 +1,103 @@
+{
+  "prefabName": "Vehicle_Bike_ElectricSport",
+  "category": "Vehicles",
+  "subCategory": "Bikes",
+  "type": "Electric Sport Bike",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Premium",
+    "performanceClass": "Electric Sport"
+  },
+  "specifications": {
+    "class": "Electric Sport",
+    "seats": 1,
+    "motor": "Electric Motor",
+    "horsepower": 150,
+    "topSpeed": 155,
+    "acceleration": 3.0,
+    "handling": 9.5,
+    "fuelType": "Electric",
+    "range": 150,
+    "batteryCapacity": 15.5
+  },
+  "physics": {
+    "mass": 225,
+    "centerOfMass": { "x": 0, "y": 0.45, "z": 0 },
+    "wheelBase": 1.48,
+    "suspensionTravel": 0.13,
+    "leanAngleMax": 50
+  },
+  "model": {
+    "dimensions": {
+      "length": 2.15,
+      "width": 0.77,
+      "height": 1.18,
+      "wheelbase": 1.48
+    },
+    "bodyStyle": "Electric Sport",
+    "design": "Futuristic"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 60000,
+      "lod1": 30000,
+      "lod2": 14000,
+      "lod3": 6000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Paint_Matte_Futuristic",
+      "Carbon_Fiber_Monocoque",
+      "LED_Strip_Accent",
+      "Rubber_Sport_Tire_Low_Profile",
+      "Glass_Digital_Display",
+      "Aluminum_Forged_Wheels"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Suspension Animation",
+      "Working LED Lights",
+      "Animated Rider",
+      "Lean Physics",
+      "Holographic Display",
+      "LED Underglow"
+    ]
+  },
+  "audio": {
+    "engineSound": "Electric_Motor_Whine_Sport",
+    "artificialSound": "Futuristic_Hum"
+  },
+  "effects": {
+    "noExhaust": true,
+    "tireSmokeOnBurnout": true,
+    "headlightBeam": true,
+    "ledAccents": true,
+    "regenerativeBraking": true
+  },
+  "components": [
+    "Rigidbody",
+    "MotorcycleController",
+    "WheelCollider",
+    "AudioSource",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "BatterySystem",
+    "TractionControl"
+  ],
+  "price": {
+    "purchasePrice": 35000,
+    "dailyRent": 250,
+    "currency": "OMNI"
+  }
+}

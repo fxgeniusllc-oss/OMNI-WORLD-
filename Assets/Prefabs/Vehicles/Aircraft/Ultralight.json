@@ -1,0 +1,84 @@
+{
+  "prefabName": "Vehicle_Aircraft_Ultralight",
+  "category": "Vehicles",
+  "subCategory": "Aircraft",
+  "type": "Ultralight Aircraft",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Entry",
+    "performanceClass": "Sport Aviation"
+  },
+  "specifications": {
+    "class": "Ultralight",
+    "seats": 1,
+    "engine": "Rotax 582",
+    "horsepower": 65,
+    "cruiseSpeed": 45,
+    "maxSpeed": 55,
+    "range": 150,
+    "ceiling": 10000,
+    "fuelType": "Automotive Gasoline"
+  },
+  "physics": {
+    "mass": 250,
+    "emptyWeight": 180,
+    "maxTakeoffWeight": 450,
+    "wingSpan": 9.8,
+    "length": 5.8,
+    "height": 2.4,
+    "liftCoefficient": 2.2,
+    "dragCoefficient": 0.045
+  },
+  "model": {
+    "dimensions": {
+      "length": 5.8,
+      "width": 9.8,
+      "height": 2.4,
+      "wingspan": 9.8
+    },
+    "design": "Weight-Shift Trike",
+    "wing": "Fabric"
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 28000,
+      "lod1": 14000,
+      "lod2": 6000
+    },
+    "textureResolution": {
+      "diffuse": 2048,
+      "normal": 2048,
+      "roughness": 1024,
+      "metallic": 1024
+    },
+    "materials": [
+      "Fabric_Wing_Colored",
+      "Aluminum_Tube_Frame",
+      "Plastic_Fairing",
+      "Rubber_Tire_Small"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Dynamic Shadows",
+      "Animated Pilot",
+      "Wing Flex Animation",
+      "Fabric Movement"
+    ]
+  },
+  "components": [
+    "Rigidbody",
+    "UltralightController",
+    "AudioSource",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem"
+  ],
+  "price": {
+    "purchasePrice": 15000,
+    "hourlyRent": 80,
+    "currency": "OMNI"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "prefabName": "Avatar_Animations_Emotes",
+  "category": "Avatars",
+  "subCategory": "Animations",
+  "type": "Emote Animation Set",
+  "metadata": {
+    "nftCompatible": true,
+    "compatibleWith": ["All Base Avatars"],
+    "animationType": "Social",
+    "rigType": "Mecanim Humanoid"
+  },
+  "categories": {
+    "greetings": [
+      {
+        "name": "Wave_Hello",
+        "duration": 2.0,
+        "looped": false
+      },
+      {
+        "name": "Handshake",
+        "duration": 3.0,
+        "looped": false,
+        "synchronized": true
+      },
+      {
+        "name": "Bow",
+        "duration": 2.5,
+        "looped": false,
+        "variations": ["Bow_Slight", "Bow_Deep", "Bow_Japanese"]
+      },
+      {
+        "name": "Salute",
+        "duration": 2.0,
+        "looped": false
+      },
+      {
+        "name": "Hug",
+        "duration": 4.0,
+        "looped": false,
+        "synchronized": true
+      }
+    ],
+    "expressions": [
+      {
+        "name": "Laugh",
+        "duration": 3.0,
+        "looped": true,
+        "facialAnimation": true
+      },
+      {
+        "name": "Cry",
+        "duration": 4.0,
+        "looped": true,
+        "facialAnimation": true
+      },
+      {
+        "name": "Angry",
+        "duration": 2.5,
+        "looped": false,
+        "facialAnimation": true
+      },
+      {
+        "name": "Confused",
+        "duration": 2.0,
+        "looped": false,
+        "facialAnimation": true
+      },
+      {
+        "name": "Surprised",
+        "duration": 1.5,
+        "looped": false,
+        "facialAnimation": true
+      }
+    ],
+    "celebrations": [
+      {
+        "name": "Cheer",
+        "duration": 3.0,
+        "looped": false
+      },
+      {
+        "name": "Victory_Pose",
+        "duration": 2.5,
+        "looped": false
+      },
+      {
+        "name": "Fist_Pump",
+        "duration": 2.0,
+        "looped": true
+      },
+      {
+        "name": "Clap",
+        "duration": 3.0,
+        "looped": true
+      },
+      {
+        "name": "Jump_Joy",
+        "duration": 2.5,
+        "looped": false
+      }
+    ],
+    "gestures": [
+      {
+        "name": "Point",
+        "duration": 2.0,
+        "looped": false,
+        "directional": true
+      },
+      {
+        "name": "Thumbs_Up",
+        "duration": 1.5,
+        "looped": false
+      },
+      {
+        "name": "Thumbs_Down",
+        "duration": 1.5,
+        "looped": false
+      },
+      {
+        "name": "Shrug",
+        "duration": 2.0,
+        "looped": false
+      },
+      {
+        "name": "Facepalm",
+        "duration": 2.5,
+        "looped": false
+      }
+    ]
+  },
+  "price": {
+    "basicEmotes": 5,
+    "premiumEmotes": 15,
+    "rareEmotes": 50,
+    "currency": "OMNI"
+  }
+}

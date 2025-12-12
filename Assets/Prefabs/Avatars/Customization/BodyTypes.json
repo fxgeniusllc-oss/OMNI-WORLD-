@@ -1,0 +1,147 @@
+{
+  "prefabName": "Avatar_Customization_BodyTypes",
+  "category": "Avatars",
+  "subCategory": "Customization",
+  "type": "Body Type Options",
+  "metadata": {
+    "nftCompatible": true,
+    "compatibleWith": ["Male", "Female"],
+    "customizationType": "BodyShape"
+  },
+  "maleBodyTypes": [
+    {
+      "name": "Ectomorph_Slim",
+      "description": "Lean and slender build",
+      "blendShapeWeights": {
+        "Muscular": 0.2,
+        "Thin": 0.8,
+        "Heavy": 0.0
+      }
+    },
+    {
+      "name": "Mesomorph_Athletic",
+      "description": "Naturally muscular and athletic",
+      "blendShapeWeights": {
+        "Muscular": 0.7,
+        "Thin": 0.3,
+        "Heavy": 0.0
+      }
+    },
+    {
+      "name": "Endomorph_Heavy",
+      "description": "Stocky and larger build",
+      "blendShapeWeights": {
+        "Muscular": 0.3,
+        "Thin": 0.0,
+        "Heavy": 0.8
+      }
+    },
+    {
+      "name": "Bodybuilder",
+      "description": "Highly muscular physique",
+      "blendShapeWeights": {
+        "Muscular": 1.0,
+        "Thin": 0.0,
+        "Heavy": 0.2
+      }
+    },
+    {
+      "name": "Average",
+      "description": "Standard proportions",
+      "blendShapeWeights": {
+        "Muscular": 0.4,
+        "Thin": 0.4,
+        "Heavy": 0.2
+      }
+    }
+  ],
+  "femaleBodyTypes": [
+    {
+      "name": "Petite",
+      "description": "Smaller, delicate frame",
+      "blendShapeWeights": {
+        "Thin": 0.7,
+        "Curvy": 0.2,
+        "Muscular": 0.1
+      }
+    },
+    {
+      "name": "Athletic",
+      "description": "Toned and fit",
+      "blendShapeWeights": {
+        "Thin": 0.4,
+        "Curvy": 0.3,
+        "Muscular": 0.7
+      }
+    },
+    {
+      "name": "Curvy",
+      "description": "Full feminine curves",
+      "blendShapeWeights": {
+        "Thin": 0.2,
+        "Curvy": 0.9,
+        "Muscular": 0.2
+      }
+    },
+    {
+      "name": "Plus_Size",
+      "description": "Fuller figure",
+      "blendShapeWeights": {
+        "Thin": 0.0,
+        "Curvy": 0.7,
+        "Heavy": 0.7
+      }
+    },
+    {
+      "name": "Model",
+      "description": "Tall and slender",
+      "blendShapeWeights": {
+        "Thin": 0.8,
+        "Curvy": 0.4,
+        "Muscular": 0.3
+      }
+    }
+  ],
+  "customizableParameters": {
+    "height": {
+      "min": 1.5,
+      "max": 2.0,
+      "default": 1.75
+    },
+    "shoulderWidth": {
+      "min": 0.7,
+      "max": 1.3,
+      "default": 1.0
+    },
+    "waistSize": {
+      "min": 0.6,
+      "max": 1.4,
+      "default": 1.0
+    },
+    "hipWidth": {
+      "min": 0.7,
+      "max": 1.3,
+      "default": 1.0
+    },
+    "chestSize": {
+      "min": 0.6,
+      "max": 1.5,
+      "default": 1.0
+    },
+    "armLength": {
+      "min": 0.9,
+      "max": 1.1,
+      "default": 1.0
+    },
+    "legLength": {
+      "min": 0.9,
+      "max": 1.1,
+      "default": 1.0
+    }
+  },
+  "price": {
+    "basicTypes": 0,
+    "customSliders": 25,
+    "currency": "OMNI"
+  }
+}

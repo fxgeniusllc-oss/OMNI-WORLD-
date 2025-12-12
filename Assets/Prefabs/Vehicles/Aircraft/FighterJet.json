@@ -1,0 +1,119 @@
+{
+  "prefabName": "Vehicle_Aircraft_FighterJet",
+  "category": "Vehicles",
+  "subCategory": "Aircraft",
+  "type": "Sport Fighter Jet",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Ultra-Luxury",
+    "performanceClass": "High Performance"
+  },
+  "specifications": {
+    "class": "Sport Fighter",
+    "seats": 1,
+    "engines": "2x Afterburning Turbofan",
+    "thrust": 38000,
+    "cruiseSpeed": 850,
+    "maxSpeed": 1450,
+    "range": 2000,
+    "ceiling": 55000,
+    "fuelType": "JP-8",
+    "supersonic": true
+  },
+  "physics": {
+    "mass": 14550,
+    "emptyWeight": 11500,
+    "maxTakeoffWeight": 18500,
+    "wingSpan": 11.9,
+    "length": 16.2,
+    "height": 4.5,
+    "liftCoefficient": 1.6,
+    "dragCoefficient": 0.018,
+    "thrustVectoring": true
+  },
+  "model": {
+    "dimensions": {
+      "length": 16.2,
+      "width": 11.9,
+      "height": 4.5,
+      "wingspan": 11.9
+    },
+    "design": "Delta Wing",
+    "canopy": "Bubble"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 125000,
+      "lod1": 62000,
+      "lod2": 30000,
+      "lod3": 14000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 4096,
+      "metallic": 4096,
+      "ao": 2048
+    },
+    "materials": [
+      "Aircraft_Paint_Military_Grade",
+      "Metal_Titanium_Airframe",
+      "Glass_Canopy_Hardened",
+      "Carbon_Fiber_Composite",
+      "Ceramic_Heat_Tiles",
+      "LED_Formation_Lights"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Animated Control Surfaces",
+      "Working Navigation Lights",
+      "Cockpit Instruments",
+      "Afterburner Effects",
+      "Vapor Cone at Transonic",
+      "Contrail Effects",
+      "Heat Distortion"
+    ]
+  },
+  "audio": {
+    "engineSound": "Turbofan_Afterburning",
+    "sonicBoom": true,
+    "hydraulics": true
+  },
+  "effects": {
+    "engineExhaust": {
+      "particleSystem": true,
+      "afterburner": true,
+      "heatShimmer": true
+    },
+    "contrails": true,
+    "vaporCone": true,
+    "shockwave": true,
+    "navigationLights": true
+  },
+  "components": [
+    "Rigidbody",
+    "FighterJetController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "FlightComputer",
+    "GForceSystem"
+  ],
+  "customization": {
+    "paintSchemes": ["Stealth Gray", "Show Colors", "Custom Livery"],
+    "upgrades": ["Enhanced Avionics", "Increased Fuel Capacity", "Performance Tune"]
+  },
+  "price": {
+    "purchasePrice": 12000000,
+    "hourlyRent": 8500,
+    "currency": "OMNI"
+  }
+}

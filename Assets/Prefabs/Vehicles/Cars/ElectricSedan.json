@@ -1,0 +1,109 @@
+{
+  "prefabName": "Vehicle_Car_ElectricSedan",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Electric Sedan",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Premium",
+    "performanceClass": "Electric Performance"
+  },
+  "specifications": {
+    "class": "Electric Sedan",
+    "seats": 5,
+    "motor": "Dual Motor AWD",
+    "horsepower": 670,
+    "topSpeed": 155,
+    "acceleration": 3.1,
+    "handling": 9.0,
+    "fuelType": "Electric",
+    "range": 400,
+    "batteryCapacity": 100
+  },
+  "physics": {
+    "mass": 2250,
+    "centerOfMass": { "x": 0, "y": 0.35, "z": 0 },
+    "wheelBase": 2.96,
+    "trackWidth": 1.65,
+    "suspensionTravel": 0.14,
+    "springRate": 50000,
+    "damperRate": 3800,
+    "batteryMass": 600
+  },
+  "model": {
+    "dimensions": {
+      "length": 4.97,
+      "width": 1.96,
+      "height": 1.45,
+      "wheelbase": 2.96
+    },
+    "doors": 4,
+    "trunk": "Large + Frunk",
+    "bodyStyle": "Sedan"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 70000,
+      "lod1": 35000,
+      "lod2": 17000,
+      "lod3": 7500
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Car_Paint_Metallic_Pearl",
+      "Glass_Panoramic_Roof",
+      "Aluminum_Wheels_Aero",
+      "Rubber_Low_Rolling_Resistance_Tire",
+      "Synthetic_Leather_Vegan",
+      "Touchscreen_Display"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Suspension Animation",
+      "Working Lights",
+      "Digital Dashboard",
+      "Autopilot Indicators",
+      "Charging Port Animation"
+    ]
+  },
+  "audio": {
+    "engineSound": "Electric_Motor_Whine",
+    "artificialSound": "Futuristic_Hum",
+    "hornSound": "Modern",
+    "doorSound": "Electric_Seal"
+  },
+  "effects": {
+    "noExhaust": true,
+    "tireSmokeOnBurnout": true,
+    "brakelightGlow": true,
+    "headlightBeams": true,
+    "underglowLED": true,
+    "regenerativeBraking": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "BatterySystem",
+    "AutopilotController"
+  ],
+  "price": {
+    "purchasePrice": 75000,
+    "dailyRent": 380,
+    "currency": "OMNI"
+  }
+}

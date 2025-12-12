@@ -1,0 +1,84 @@
+{
+  "prefabName": "Avatar_Customization_Tattoos",
+  "category": "Avatars",
+  "subCategory": "Customization",
+  "type": "Tattoo Collection",
+  "metadata": {
+    "nftCompatible": true,
+    "compatibleWith": ["All"],
+    "customizationType": "BodyArt"
+  },
+  "categories": {
+    "traditional": [
+      "Anchor",
+      "Rose",
+      "Eagle",
+      "Skull",
+      "Dragon",
+      "Heart",
+      "Dagger"
+    ],
+    "tribal": [
+      "Maori_Pattern",
+      "Polynesian_Band",
+      "Celtic_Knot",
+      "Native_American"
+    ],
+    "japanese": [
+      "Koi_Fish",
+      "Cherry_Blossom",
+      "Samurai",
+      "Geisha",
+      "Tiger"
+    ],
+    "geometric": [
+      "Sacred_Geometry",
+      "Mandala",
+      "Dotwork",
+      "Line_Art"
+    ],
+    "realistic": [
+      "Portrait",
+      "Wildlife",
+      "Landscape",
+      "Biomechanical"
+    ],
+    "text": [
+      "Script_Cursive",
+      "Gothic_Text",
+      "Calligraphy",
+      "Custom_Text"
+    ]
+  },
+  "placements": [
+    "Arm_Upper",
+    "Arm_Lower",
+    "Forearm",
+    "Shoulder",
+    "Chest",
+    "Back_Upper",
+    "Back_Lower",
+    "Leg_Upper",
+    "Leg_Lower",
+    "Neck",
+    "Hand",
+    "Full_Sleeve"
+  ],
+  "graphics": {
+    "textureResolution": 2048,
+    "layerable": true,
+    "colorOptions": [
+      "Black_Gray",
+      "Color",
+      "Watercolor",
+      "Custom"
+    ]
+  },
+  "price": {
+    "small": 15,
+    "medium": 40,
+    "large": 80,
+    "fullSleeve": 200,
+    "currency": "OMNI"
+  }
+}

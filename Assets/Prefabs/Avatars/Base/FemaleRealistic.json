@@ -1,0 +1,154 @@
+{
+  "prefabName": "Avatar_Base_FemaleRealistic",
+  "category": "Avatars",
+  "subCategory": "Base",
+  "type": "Female Base Avatar",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "style": "Realistic",
+    "rigType": "Humanoid"
+  },
+  "specifications": {
+    "gender": "Female",
+    "height": 1.65,
+    "bodyType": "Athletic",
+    "skinTone": "Medium",
+    "ageRange": "Adult"
+  },
+  "model": {
+    "vertices": 19200,
+    "triangles": 33500,
+    "bones": 78,
+    "blendShapes": 58,
+    "rigType": "Mecanim Humanoid"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 33500,
+      "lod1": 16500,
+      "lod2": 7800,
+      "lod3": 3400
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 1024,
+      "subsurface": 2048,
+      "detail": 1024
+    },
+    "materials": [
+      "Skin_Realistic_PBR_Female",
+      "Eyes_Realistic_Shader",
+      "Hair_Strand_Based_Long",
+      "Teeth_Translucent",
+      "Nails_Realistic_Manicured",
+      "Makeup_Layer"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Skin Shader",
+      "Subsurface Scattering",
+      "Eye Refraction",
+      "Hair Cards with Physics",
+      "Facial Blend Shapes",
+      "Muscle Deformation",
+      "Realistic Proportions",
+      "High Detail Textures",
+      "Pore Detail",
+      "Makeup Support",
+      "Eyelash Detail"
+    ]
+  },
+  "skeleton": {
+    "bones": 78,
+    "ikTargets": {
+      "leftHand": true,
+      "rightHand": true,
+      "leftFoot": true,
+      "rightFoot": true,
+      "head": true
+    },
+    "facialBones": 23,
+    "fingerBones": 30
+  },
+  "blendShapes": {
+    "facial": [
+      "Blink_Left",
+      "Blink_Right",
+      "EyeWide_Left",
+      "EyeWide_Right",
+      "BrowUp_Left",
+      "BrowUp_Right",
+      "BrowDown_Left",
+      "BrowDown_Right",
+      "Smile_Left",
+      "Smile_Right",
+      "Frown",
+      "JawOpen",
+      "MouthPucker",
+      "CheekPuff",
+      "LipSync_A",
+      "LipSync_E",
+      "LipSync_I",
+      "LipSync_O",
+      "LipSync_U"
+    ],
+    "body": [
+      "Muscular",
+      "Thin",
+      "Curvy",
+      "Bust_Size",
+      "Hip_Width",
+      "Waist_Size"
+    ]
+  },
+  "components": [
+    "Animator",
+    "CharacterController",
+    "AvatarCustomization",
+    "IKController",
+    "FacialAnimationController",
+    "ClothingSystem",
+    "NFTMetadata",
+    "PlayerController",
+    "MakeupSystem"
+  ],
+  "customizationSlots": [
+    "Hair",
+    "Eyes",
+    "Eyebrows",
+    "Eyelashes",
+    "SkinTone",
+    "BodyType",
+    "Height",
+    "Makeup",
+    "Clothing_Head",
+    "Clothing_Torso",
+    "Clothing_Legs",
+    "Clothing_Feet",
+    "Accessories",
+    "Jewelry"
+  ],
+  "animations": {
+    "compatible": true,
+    "retargeting": "Mecanim",
+    "defaultAnimations": [
+      "Idle",
+      "Walk",
+      "Run",
+      "Jump",
+      "Crouch",
+      "Sit",
+      "Wave",
+      "Dance"
+    ]
+  },
+  "price": {
+    "purchasePrice": 0,
+    "premiumVariants": 500,
+    "currency": "OMNI"
+  }
+}

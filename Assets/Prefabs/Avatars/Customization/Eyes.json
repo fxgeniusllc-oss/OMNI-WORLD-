@@ -1,0 +1,101 @@
+{
+  "prefabName": "Avatar_Customization_Eyes",
+  "category": "Avatars",
+  "subCategory": "Customization",
+  "type": "Eye Customization",
+  "metadata": {
+    "nftCompatible": true,
+    "compatibleWith": ["All"],
+    "customizationType": "Eyes"
+  },
+  "options": {
+    "eyeColors": [
+      {
+        "name": "Brown_Dark",
+        "hex": "#3E2723",
+        "realistic": true
+      },
+      {
+        "name": "Brown_Light",
+        "hex": "#8D6E63",
+        "realistic": true
+      },
+      {
+        "name": "Blue",
+        "hex": "#1976D2",
+        "realistic": true
+      },
+      {
+        "name": "Green",
+        "hex": "#388E3C",
+        "realistic": true
+      },
+      {
+        "name": "Hazel",
+        "hex": "#C77300",
+        "realistic": true
+      },
+      {
+        "name": "Gray",
+        "hex": "#607D8B",
+        "realistic": true
+      },
+      {
+        "name": "Amber",
+        "hex": "#FF6F00",
+        "realistic": true
+      },
+      {
+        "name": "Violet",
+        "hex": "#9C27B0",
+        "realistic": false,
+        "premium": true
+      },
+      {
+        "name": "Red",
+        "hex": "#C62828",
+        "realistic": false,
+        "premium": true
+      },
+      {
+        "name": "Custom_RGB",
+        "customizable": true,
+        "premium": true
+      }
+    ],
+    "eyeShapes": [
+      "Almond",
+      "Round",
+      "Hooded",
+      "Monolid",
+      "Upturned",
+      "Downturned",
+      "Deep_Set",
+      "Wide_Set"
+    ],
+    "pupilShapes": [
+      "Round_Normal",
+      "Cat_Slit",
+      "Reptilian",
+      "Star",
+      "Heart"
+    ]
+  },
+  "graphics": {
+    "textureResolution": 1024,
+    "shader": "Eye_Realistic_Refraction",
+    "features": [
+      "Iris Detail",
+      "Pupil Dilation",
+      "Cornea Refraction",
+      "Sclera Veins",
+      "Eye Moisture"
+    ]
+  },
+  "price": {
+    "basicColors": 0,
+    "premiumColors": 20,
+    "specialEffects": 50,
+    "currency": "OMNI"
+  }
+}

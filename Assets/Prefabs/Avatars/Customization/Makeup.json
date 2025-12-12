@@ -1,0 +1,119 @@
+{
+  "prefabName": "Avatar_Customization_Makeup",
+  "category": "Avatars",
+  "subCategory": "Customization",
+  "type": "Makeup Options",
+  "metadata": {
+    "nftCompatible": true,
+    "compatibleWith": ["All"],
+    "customizationType": "Makeup"
+  },
+  "categories": {
+    "foundation": {
+      "coverage": ["Light", "Medium", "Full"],
+      "finish": ["Matte", "Dewy", "Natural"]
+    },
+    "eyes": {
+      "eyeshadow": [
+        "Natural",
+        "Smokey",
+        "Cut_Crease",
+        "Halo",
+        "Glitter",
+        "Colorful"
+      ],
+      "eyeliner": [
+        "None",
+        "Thin",
+        "Winged",
+        "Cat_Eye",
+        "Graphic",
+        "Smudged"
+      ],
+      "mascara": [
+        "None",
+        "Natural",
+        "Volumizing",
+        "Lengthening",
+        "Dramatic"
+      ],
+      "falseLashes": [
+        "None",
+        "Natural",
+        "Wispy",
+        "Dramatic",
+        "Glam"
+      ]
+    },
+    "lips": {
+      "lipstick": [
+        "Nude",
+        "Pink",
+        "Red",
+        "Berry",
+        "Plum",
+        "Bold",
+        "Gloss",
+        "Matte"
+      ],
+      "lipliner": [
+        "None",
+        "Natural",
+        "Defined",
+        "Ombre"
+      ]
+    },
+    "cheeks": {
+      "blush": [
+        "None",
+        "Soft_Pink",
+        "Peachy",
+        "Coral",
+        "Rosy",
+        "Contoured"
+      ],
+      "highlighter": [
+        "None",
+        "Subtle_Glow",
+        "Intense",
+        "Holographic"
+      ]
+    },
+    "brows": {
+      "style": [
+        "Natural",
+        "Filled",
+        "Bold",
+        "Feathered",
+        "Laminated"
+      ]
+    },
+    "special": {
+      "effects": [
+        "Glitter",
+        "Gems",
+        "Face_Paint",
+        "Metallic",
+        "Neon",
+        "Fantasy"
+      ]
+    }
+  },
+  "colorPalettes": {
+    "neutral": ["Browns", "Beiges", "Taupes"],
+    "warm": ["Oranges", "Reds", "Golds"],
+    "cool": ["Purples", "Blues", "Silvers"],
+    "vibrant": ["Bright_Colors", "Neons", "Pastels"]
+  },
+  "graphics": {
+    "textureResolution": 2048,
+    "layerable": true,
+    "blendModes": ["Normal", "Multiply", "Overlay", "Screen"]
+  },
+  "price": {
+    "basicMakeup": 5,
+    "premiumLooks": 20,
+    "specialEffects": 40,
+    "currency": "OMNI"
+  }
+}

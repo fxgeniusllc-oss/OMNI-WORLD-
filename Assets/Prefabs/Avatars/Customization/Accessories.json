@@ -1,0 +1,75 @@
+{
+  "prefabName": "Avatar_Customization_Accessories",
+  "category": "Avatars",
+  "subCategory": "Customization",
+  "type": "Accessories Collection",
+  "metadata": {
+    "nftCompatible": true,
+    "compatibleWith": ["All"],
+    "customizationType": "Accessories"
+  },
+  "categories": {
+    "headwear": [
+      "Baseball_Cap",
+      "Beanie",
+      "Fedora",
+      "Top_Hat",
+      "Sun_Hat",
+      "Bandana",
+      "Crown",
+      "VR_Headset"
+    ],
+    "eyewear": [
+      "Sunglasses_Aviator",
+      "Sunglasses_Wayfarer",
+      "Reading_Glasses",
+      "Sports_Glasses",
+      "Goggles",
+      "Monocle",
+      "Smart_Glasses"
+    ],
+    "jewelry": [
+      "Necklace_Chain",
+      "Necklace_Pendant",
+      "Earrings_Stud",
+      "Earrings_Hoop",
+      "Bracelet",
+      "Watch_Sport",
+      "Watch_Luxury",
+      "Ring_Simple",
+      "Ring_Diamond"
+    ],
+    "bags": [
+      "Backpack",
+      "Messenger_Bag",
+      "Handbag",
+      "Clutch",
+      "Briefcase",
+      "Duffel_Bag"
+    ],
+    "other": [
+      "Scarf",
+      "Tie",
+      "Bow_Tie",
+      "Belt",
+      "Gloves",
+      "Face_Mask"
+    ]
+  },
+  "graphics": {
+    "textureResolution": 1024,
+    "physicsEnabled": true,
+    "materials": [
+      "Metal_Jewelry_PBR",
+      "Fabric_Accessory_PBR",
+      "Leather_Accessory_PBR",
+      "Glass_Lens_PBR"
+    ]
+  },
+  "price": {
+    "basicItems": 5,
+    "premiumItems": 25,
+    "luxuryItems": 100,
+    "currency": "OMNI"
+  }
+}

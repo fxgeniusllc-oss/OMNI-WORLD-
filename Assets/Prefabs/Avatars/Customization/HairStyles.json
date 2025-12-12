@@ -1,0 +1,106 @@
+{
+  "prefabName": "Avatar_Customization_HairStyles",
+  "category": "Avatars",
+  "subCategory": "Customization",
+  "type": "Hair Styles Collection",
+  "metadata": {
+    "nftCompatible": true,
+    "compatibleWith": ["Male", "Female"],
+    "customizationType": "Hair"
+  },
+  "items": [
+    {
+      "name": "Short_Professional",
+      "gender": "Male",
+      "style": "Business",
+      "polyCount": 8500,
+      "physics": true
+    },
+    {
+      "name": "Long_Wavy",
+      "gender": "Female",
+      "style": "Casual",
+      "polyCount": 22000,
+      "physics": true
+    },
+    {
+      "name": "Buzz_Cut",
+      "gender": "Male",
+      "style": "Sport",
+      "polyCount": 1500,
+      "physics": false
+    },
+    {
+      "name": "Ponytail",
+      "gender": "Female",
+      "style": "Active",
+      "polyCount": 12000,
+      "physics": true
+    },
+    {
+      "name": "Dreadlocks",
+      "gender": "Unisex",
+      "style": "Cultural",
+      "polyCount": 18000,
+      "physics": true
+    },
+    {
+      "name": "Mohawk",
+      "gender": "Unisex",
+      "style": "Punk",
+      "polyCount": 9500,
+      "physics": false
+    },
+    {
+      "name": "Braid_Crown",
+      "gender": "Female",
+      "style": "Elegant",
+      "polyCount": 15000,
+      "physics": false
+    },
+    {
+      "name": "Afro",
+      "gender": "Unisex",
+      "style": "Natural",
+      "polyCount": 25000,
+      "physics": true
+    },
+    {
+      "name": "Bald",
+      "gender": "Unisex",
+      "style": "Minimal",
+      "polyCount": 0,
+      "physics": false
+    },
+    {
+      "name": "Pixie_Cut",
+      "gender": "Female",
+      "style": "Modern",
+      "polyCount": 6500,
+      "physics": false
+    }
+  ],
+  "graphics": {
+    "textureResolution": 2048,
+    "strandBased": true,
+    "materials": [
+      "Hair_Realistic_Shader",
+      "Hair_Strand_Anisotropic"
+    ],
+    "colorVariants": [
+      "Black",
+      "Brown_Dark",
+      "Brown_Light",
+      "Blonde",
+      "Red",
+      "Gray",
+      "White",
+      "Custom_RGB"
+    ]
+  },
+  "price": {
+    "basicStyles": 0,
+    "premiumStyles": 50,
+    "currency": "OMNI"
+  }
+}

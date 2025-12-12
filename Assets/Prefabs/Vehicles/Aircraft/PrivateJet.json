@@ -1,0 +1,116 @@
+{
+  "prefabName": "Vehicle_Aircraft_PrivateJet",
+  "category": "Vehicles",
+  "subCategory": "Aircraft",
+  "type": "Private Jet",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Ultra-Luxury",
+    "performanceClass": "Business Aviation"
+  },
+  "specifications": {
+    "class": "Light Business Jet",
+    "seats": 8,
+    "engines": "2x Turbofan",
+    "thrust": 3650,
+    "cruiseSpeed": 450,
+    "maxSpeed": 545,
+    "range": 3500,
+    "ceiling": 45000,
+    "fuelType": "Jet A-1"
+  },
+  "physics": {
+    "mass": 7300,
+    "emptyWeight": 5800,
+    "maxTakeoffWeight": 9980,
+    "wingSpan": 16.3,
+    "length": 16.9,
+    "height": 5.2,
+    "liftCoefficient": 1.8,
+    "dragCoefficient": 0.025
+  },
+  "model": {
+    "dimensions": {
+      "length": 16.9,
+      "width": 16.3,
+      "height": 5.2,
+      "wingspan": 16.3
+    },
+    "cabin": "Luxury Interior",
+    "lavatory": true,
+    "galley": true
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 95000,
+      "lod1": 48000,
+      "lod2": 22000,
+      "lod3": 10000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Aircraft_Paint_Premium",
+      "Metal_Aluminum_Polished",
+      "Glass_Cockpit_Tinted",
+      "Leather_Cabin_Luxury",
+      "Carbon_Fiber_Winglets",
+      "Rubber_Landing_Gear_Tire"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Animated Landing Gear",
+      "Working Navigation Lights",
+      "Animated Control Surfaces",
+      "Cockpit Instruments",
+      "Engine Nacelles Detail",
+      "Contrail Effects"
+    ]
+  },
+  "audio": {
+    "engineSound": "Turbofan_Business_Jet",
+    "windNoise": true,
+    "hydraulics": true
+  },
+  "effects": {
+    "engineExhaust": {
+      "particleSystem": true,
+      "heatShimmer": true
+    },
+    "contrails": true,
+    "landingLights": true,
+    "navigationLights": true,
+    "strobes": true
+  },
+  "components": [
+    "Rigidbody",
+    "AircraftController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "AutopilotSystem",
+    "NavigationSystem"
+  ],
+  "customization": {
+    "paintSchemes": ["Corporate White", "Executive Black", "Custom Livery"],
+    "interiors": ["Standard Luxury", "VIP Configuration", "Conference Setup"],
+    "upgrades": ["Satellite Communications", "Enhanced Avionics", "Extended Range Tanks"]
+  },
+  "price": {
+    "purchasePrice": 5500000,
+    "hourlyRent": 3500,
+    "currency": "OMNI"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "prefabName": "Vehicle_Aircraft_Helicopter",
+  "category": "Vehicles",
+  "subCategory": "Aircraft",
+  "type": "Luxury Helicopter",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Luxury",
+    "performanceClass": "Rotorcraft"
+  },
+  "specifications": {
+    "class": "Light Twin Helicopter",
+    "seats": 6,
+    "engines": "2x Turboshaft",
+    "horsepower": 1400,
+    "cruiseSpeed": 140,
+    "maxSpeed": 160,
+    "range": 370,
+    "ceiling": 20000,
+    "fuelType": "Jet A-1"
+  },
+  "physics": {
+    "mass": 2300,
+    "emptyWeight": 1850,
+    "maxTakeoffWeight": 3200,
+    "rotorDiameter": 11.3,
+    "length": 13.0,
+    "height": 3.7,
+    "liftCoefficient": 2.5
+  },
+  "model": {
+    "dimensions": {
+      "length": 13.0,
+      "width": 2.6,
+      "height": 3.7,
+      "rotorDiameter": 11.3
+    },
+    "cabin": "Executive Interior",
+    "doors": "Sliding"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 75000,
+      "lod1": 38000,
+      "lod2": 18000,
+      "lod3": 8000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Aircraft_Paint_Gloss",
+      "Metal_Aluminum_Frame",
+      "Glass_Cockpit_Panoramic",
+      "Leather_Cabin_Premium",
+      "Carbon_Fiber_Rotor_Blades",
+      "Metal_Landing_Skids"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Animated Rotor Blades",
+      "Working Navigation Lights",
+      "Cockpit Instruments",
+      "Rotor Blur Effect",
+      "Downwash Particle Effects"
+    ]
+  },
+  "audio": {
+    "engineSound": "Turboshaft_Twin",
+    "rotorSound": "Main_Rotor_Whomp",
+    "tailRotor": true
+  },
+  "effects": {
+    "rotorWash": {
+      "particleSystem": true,
+      "dustKickup": true,
+      "waterRipples": true
+    },
+    "navigationLights": true,
+    "searchlight": true,
+    "engineExhaust": true
+  },
+  "components": [
+    "Rigidbody",
+    "HelicopterController",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "StabilityAugmentation"
+  ],
+  "price": {
+    "purchasePrice": 3200000,
+    "hourlyRent": 2200,
+    "currency": "OMNI"
+  }
+}

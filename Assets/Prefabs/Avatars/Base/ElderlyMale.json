@@ -1,0 +1,55 @@
+{
+  "prefabName": "Avatar_Base_ElderlyMale",
+  "category": "Avatars",
+  "subCategory": "Base",
+  "type": "Elderly Male Avatar",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "style": "Realistic",
+    "rigType": "Humanoid",
+    "ageGroup": "Senior"
+  },
+  "specifications": {
+    "gender": "Male",
+    "height": 1.72,
+    "bodyType": "Elderly",
+    "skinTone": "Medium",
+    "ageRange": "65+"
+  },
+  "model": {
+    "vertices": 19500,
+    "triangles": 34000,
+    "bones": 78,
+    "blendShapes": 55,
+    "rigType": "Mecanim Humanoid"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 34000,
+      "lod1": 17000,
+      "lod2": 8000,
+      "lod3": 3500
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "subsurface": 2048,
+      "detail": 2048
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Skin Shader",
+      "Age Wrinkles",
+      "Age Spots",
+      "Gray Hair Support",
+      "Detailed Skin Texture"
+    ]
+  },
+  "price": {
+    "purchasePrice": 0,
+    "currency": "OMNI"
+  }
+}
