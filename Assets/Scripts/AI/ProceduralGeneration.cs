@@ -195,7 +195,7 @@ namespace OmniWorld.AI
             NPCData npc = new NPCData
             {
                 name = GenerateRandomName(),
-                role = (NPCRole)random.Next(0, 7),
+                role = (NPCRole)random.Next(0, System.Enum.GetValues(typeof(NPCRole)).Length),
                 personality = GetRandomPersonality(),
                 walletBalance = (float)random.NextDouble() * 5000f + 500f,
                 reputation = (float)random.NextDouble()
@@ -688,8 +688,9 @@ namespace OmniWorld.AI
             // Generate city-themed quests
             for (int i = 0; i < 10; i++)
             {
-                NPCRole randomRole = (NPCRole)random.Next(0, 7);
-                GenerateCityQuest(cityName, randomRole);
+                NPCRole randomRole = (NPCRole)random.Next(0, System.Enum.GetValues(typeof(NPCRole)).Length);
+                Quest quest = GenerateCityQuest(cityName, randomRole);
+                // Quest is already added to generatedQuests list in GenerateQuest method
             }
             
             // Generate city events
