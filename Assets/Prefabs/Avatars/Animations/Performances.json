@@ -1,0 +1,122 @@
+{
+  "prefabName": "Avatar_Animations_Performances",
+  "category": "Avatars",
+  "subCategory": "Animations",
+  "type": "Performance Animation Set",
+  "metadata": {
+    "nftCompatible": true,
+    "compatibleWith": ["All Base Avatars"],
+    "animationType": "Entertainment",
+    "rigType": "Mecanim Humanoid"
+  },
+  "categories": {
+    "music": [
+      {
+        "name": "Play_Guitar",
+        "duration": 10.0,
+        "looped": true,
+        "ikTargets": ["LeftHand", "RightHand"],
+        "variations": ["Electric_Guitar", "Acoustic_Guitar", "Bass"]
+      },
+      {
+        "name": "Play_Piano",
+        "duration": 12.0,
+        "looped": true,
+        "ikTargets": ["LeftHand", "RightHand"]
+      },
+      {
+        "name": "Play_Drums",
+        "duration": 8.0,
+        "looped": true,
+        "ikTargets": ["LeftHand", "RightHand", "LeftFoot", "RightFoot"]
+      },
+      {
+        "name": "Sing_Microphone",
+        "duration": 10.0,
+        "looped": true,
+        "ikTargets": ["RightHand"],
+        "facialAnimation": true
+      },
+      {
+        "name": "DJ",
+        "duration": 12.0,
+        "looped": true,
+        "ikTargets": ["LeftHand", "RightHand"]
+      }
+    ],
+    "magic": [
+      {
+        "name": "Card_Trick",
+        "duration": 5.0,
+        "looped": false,
+        "ikTargets": ["LeftHand", "RightHand"]
+      },
+      {
+        "name": "Wand_Wave",
+        "duration": 2.5,
+        "looped": false,
+        "ikTargets": ["RightHand"]
+      },
+      {
+        "name": "Levitate",
+        "duration": 8.0,
+        "looped": true
+      }
+    ],
+    "theater": [
+      {
+        "name": "Dramatic_Bow",
+        "duration": 3.0,
+        "looped": false
+      },
+      {
+        "name": "Monologue",
+        "duration": 15.0,
+        "looped": true,
+        "facialAnimation": true
+      },
+      {
+        "name": "Shakespearean_Pose",
+        "duration": 5.0,
+        "looped": true
+      }
+    ],
+    "comedy": [
+      {
+        "name": "Stand_Up_Routine",
+        "duration": 20.0,
+        "looped": true,
+        "facialAnimation": true
+      },
+      {
+        "name": "Mime",
+        "duration": 10.0,
+        "looped": true,
+        "variations": ["Invisible_Wall", "Rope_Pull", "Trapped_Box"]
+      }
+    ],
+    "circus": [
+      {
+        "name": "Juggle",
+        "duration": 6.0,
+        "looped": true,
+        "ikTargets": ["LeftHand", "RightHand"]
+      },
+      {
+        "name": "Tightrope_Walk",
+        "duration": 8.0,
+        "looped": true
+      },
+      {
+        "name": "Fire_Breathing",
+        "duration": 3.0,
+        "looped": false
+      }
+    ]
+  },
+  "price": {
+    "basicPerformances": 15,
+    "premiumPerformances": 40,
+    "currency": "OMNI"
+  }
+}

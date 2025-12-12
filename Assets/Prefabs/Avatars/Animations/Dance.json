@@ -1,0 +1,167 @@
+{
+  "prefabName": "Avatar_Animations_Dance",
+  "category": "Avatars",
+  "subCategory": "Animations",
+  "type": "Dance Animation Set",
+  "metadata": {
+    "nftCompatible": true,
+    "compatibleWith": ["All Base Avatars"],
+    "animationType": "Dance",
+    "rigType": "Mecanim Humanoid"
+  },
+  "dances": {
+    "freestyle": [
+      {
+        "name": "Dance_Freestyle_1",
+        "duration": 8.0,
+        "looped": true,
+        "bpm": 120,
+        "style": "Modern"
+      },
+      {
+        "name": "Dance_Freestyle_2",
+        "duration": 8.0,
+        "looped": true,
+        "bpm": 128,
+        "style": "Hip Hop"
+      },
+      {
+        "name": "Dance_Freestyle_3",
+        "duration": 8.0,
+        "looped": true,
+        "bpm": 140,
+        "style": "Electronic"
+      }
+    ],
+    "classic": [
+      {
+        "name": "Waltz",
+        "duration": 12.0,
+        "looped": true,
+        "bpm": 90,
+        "synchronized": true,
+        "style": "Ballroom"
+      },
+      {
+        "name": "Tango",
+        "duration": 10.0,
+        "looped": true,
+        "bpm": 120,
+        "synchronized": true,
+        "style": "Latin"
+      },
+      {
+        "name": "Salsa",
+        "duration": 8.0,
+        "looped": true,
+        "bpm": 180,
+        "synchronized": true,
+        "style": "Latin"
+      }
+    ],
+    "street": [
+      {
+        "name": "Breakdance",
+        "duration": 10.0,
+        "looped": true,
+        "bpm": 120,
+        "style": "Breaking",
+        "difficulty": "Advanced"
+      },
+      {
+        "name": "Pop_Lock",
+        "duration": 8.0,
+        "looped": true,
+        "bpm": 100,
+        "style": "Popping"
+      },
+      {
+        "name": "Shuffle",
+        "duration": 6.0,
+        "looped": true,
+        "bpm": 128,
+        "style": "Melbourne Shuffle"
+      }
+    ],
+    "contemporary": [
+      {
+        "name": "Contemporary_1",
+        "duration": 12.0,
+        "looped": true,
+        "bpm": 80,
+        "style": "Modern Dance"
+      },
+      {
+        "name": "Ballet_Inspired",
+        "duration": 10.0,
+        "looped": true,
+        "bpm": 90,
+        "style": "Contemporary Ballet"
+      }
+    ],
+    "cultural": [
+      {
+        "name": "Bollywood",
+        "duration": 8.0,
+        "looped": true,
+        "bpm": 140,
+        "style": "Indian"
+      },
+      {
+        "name": "Irish_Step",
+        "duration": 6.0,
+        "looped": true,
+        "bpm": 160,
+        "style": "Irish"
+      },
+      {
+        "name": "Flamenco",
+        "duration": 10.0,
+        "looped": true,
+        "bpm": 120,
+        "style": "Spanish"
+      }
+    ],
+    "popular": [
+      {
+        "name": "Robot",
+        "duration": 6.0,
+        "looped": true,
+        "bpm": 110,
+        "style": "Retro"
+      },
+      {
+        "name": "Moonwalk",
+        "duration": 4.0,
+        "looped": true,
+        "bpm": 120,
+        "style": "Classic"
+      },
+      {
+        "name": "Dab",
+        "duration": 1.5,
+        "looped": false,
+        "style": "Modern"
+      },
+      {
+        "name": "Floss",
+        "duration": 4.0,
+        "looped": true,
+        "bpm": 120,
+        "style": "Modern"
+      }
+    ]
+  },
+  "synchronization": {
+    "multiplayerSync": true,
+    "beatMatching": true,
+    "groupDances": true
+  },
+  "price": {
+    "basicDances": 10,
+    "premiumDances": 30,
+    "rareDances": 75,
+    "legendaryDances": 200,
+    "currency": "OMNI"
+  }
+}

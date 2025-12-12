@@ -1,0 +1,137 @@
+{
+  "prefabName": "Avatar_Animations_Actions",
+  "category": "Avatars",
+  "subCategory": "Animations",
+  "type": "Action Animation Set",
+  "metadata": {
+    "nftCompatible": true,
+    "compatibleWith": ["All Base Avatars"],
+    "animationType": "Actions",
+    "rigType": "Mecanim Humanoid"
+  },
+  "categories": {
+    "sitting": [
+      {
+        "name": "Sit_Chair",
+        "duration": 2.0,
+        "looped": true,
+        "variations": ["Sit_Relaxed", "Sit_Formal", "Sit_Crossed_Legs"]
+      },
+      {
+        "name": "Sit_Ground",
+        "duration": 2.5,
+        "looped": true,
+        "variations": ["Sit_Cross_Legged", "Sit_Meditation", "Sit_Casual"]
+      },
+      {
+        "name": "Sit_Sofa",
+        "duration": 2.0,
+        "looped": true,
+        "variations": ["Sit_Laid_Back", "Sit_Edge"]
+      }
+    ],
+    "lying": [
+      {
+        "name": "Lie_Back",
+        "duration": 3.0,
+        "looped": true,
+        "variations": ["Lie_Relaxed", "Lie_Sleep"]
+      },
+      {
+        "name": "Lie_Stomach",
+        "duration": 3.0,
+        "looped": true
+      }
+    ],
+    "interaction": [
+      {
+        "name": "Pickup_Object",
+        "duration": 2.0,
+        "looped": false,
+        "ikTargets": ["RightHand"]
+      },
+      {
+        "name": "Use_Phone",
+        "duration": 5.0,
+        "looped": true,
+        "ikTargets": ["LeftHand", "RightHand"]
+      },
+      {
+        "name": "Drink",
+        "duration": 3.0,
+        "looped": false,
+        "ikTargets": ["RightHand"]
+      },
+      {
+        "name": "Eat",
+        "duration": 4.0,
+        "looped": true,
+        "ikTargets": ["RightHand"]
+      },
+      {
+        "name": "Write",
+        "duration": 5.0,
+        "looped": true,
+        "ikTargets": ["RightHand"]
+      },
+      {
+        "name": "Type_Keyboard",
+        "duration": 6.0,
+        "looped": true,
+        "ikTargets": ["LeftHand", "RightHand"]
+      }
+    ],
+    "combat": [
+      {
+        "name": "Punch_Left",
+        "duration": 0.8,
+        "looped": false
+      },
+      {
+        "name": "Punch_Right",
+        "duration": 0.8,
+        "looped": false
+      },
+      {
+        "name": "Kick",
+        "duration": 1.2,
+        "looped": false
+      },
+      {
+        "name": "Block",
+        "duration": 1.0,
+        "looped": false
+      },
+      {
+        "name": "Dodge_Roll",
+        "duration": 1.5,
+        "looped": false
+      }
+    ],
+    "vehicles": [
+      {
+        "name": "Drive_Car",
+        "duration": 10.0,
+        "looped": true,
+        "ikTargets": ["LeftHand", "RightHand", "LeftFoot", "RightFoot"]
+      },
+      {
+        "name": "Ride_Motorcycle",
+        "duration": 10.0,
+        "looped": true,
+        "ikTargets": ["LeftHand", "RightHand", "LeftFoot", "RightFoot"]
+      },
+      {
+        "name": "Pilot_Aircraft",
+        "duration": 10.0,
+        "looped": true,
+        "ikTargets": ["LeftHand", "RightHand"]
+      }
+    ]
+  },
+  "price": {
+    "basicActions": 5,
+    "premiumActions": 20,
+    "currency": "OMNI"
+  }
+}

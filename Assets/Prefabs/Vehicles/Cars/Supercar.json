@@ -1,0 +1,129 @@
+{
+  "prefabName": "Vehicle_Car_Supercar",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Supercar",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Ultra-Luxury",
+    "performanceClass": "Exotic"
+  },
+  "specifications": {
+    "class": "Supercar",
+    "seats": 2,
+    "engine": "6.5L V12",
+    "horsepower": 770,
+    "topSpeed": 217,
+    "acceleration": 2.8,
+    "handling": 10.0,
+    "fuelType": "Racing Gasoline"
+  },
+  "physics": {
+    "mass": 1575,
+    "centerOfMass": { "x": 0, "y": 0.3, "z": -0.3 },
+    "wheelBase": 2.7,
+    "trackWidth": 1.7,
+    "suspensionTravel": 0.08,
+    "springRate": 75000,
+    "damperRate": 6500,
+    "downforce": 800
+  },
+  "model": {
+    "dimensions": {
+      "length": 4.8,
+      "width": 2.0,
+      "height": 1.15,
+      "wheelbase": 2.7
+    },
+    "doors": 2,
+    "doorType": "Scissor",
+    "trunk": "Minimal",
+    "bodyStyle": "Supercar"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 120000,
+      "lod1": 60000,
+      "lod2": 28000,
+      "lod3": 12000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 4096,
+      "metallic": 4096,
+      "ao": 2048
+    },
+    "materials": [
+      "Car_Paint_Exotic_Metallic",
+      "Carbon_Fiber_Exposed",
+      "Glass_Windshield_Curved",
+      "Rubber_Racing_Tire_Pirelli",
+      "Alcantara_Interior",
+      "Titanium_Exhaust",
+      "LED_Lighting_Signature"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Tire Deformation",
+      "Suspension Animation",
+      "Working Lights",
+      "Digital Dashboard",
+      "Animated Steering Wheel",
+      "Active Aerodynamics",
+      "Brake Caliper Detail",
+      "Engine Detail",
+      "Undercarriage Detail"
+    ]
+  },
+  "audio": {
+    "engineSound": "V12_Exotic",
+    "exhaustNote": "Race_Tuned",
+    "turboWhistle": false,
+    "hornSound": "Exotic",
+    "doorSound": "Exotic_Scissor",
+    "brakeSound": "Carbon_Ceramic"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "centralExhaust": true,
+      "flames": true,
+      "position": { "x": 0, "y": 0.3, "z": -2.4 }
+    },
+    "tireSmokeOnBurnout": true,
+    "brakelightGlow": true,
+    "headlightBeams": true,
+    "exhaustFlames": true,
+    "brakeDiskGlow": true,
+    "heatShimmer": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "AerodynamicsController",
+    "LaunchControl"
+  ],
+  "customization": {
+    "paintColors": ["Rosso Corsa", "Giallo Modena", "Nero Daytona", "Bianco Avus", "Blu Elettrico"],
+    "wheels": ["Forged 20in", "Carbon Fiber 21in"],
+    "interior": ["Full Alcantara", "Carbon Fiber Package", "Racing Seats"],
+    "upgrades": ["Titanium Exhaust", "Carbon Fiber Aero Kit", "Racing Suspension", "ECU Tune"]
+  },
+  "price": {
+    "purchasePrice": 450000,
+    "dailyRent": 3500,
+    "currency": "OMNI"
+  }
+}

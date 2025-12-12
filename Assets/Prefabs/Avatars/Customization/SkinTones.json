@@ -1,0 +1,87 @@
+{
+  "prefabName": "Avatar_Customization_SkinTones",
+  "category": "Avatars",
+  "subCategory": "Customization",
+  "type": "Skin Tone Options",
+  "metadata": {
+    "nftCompatible": true,
+    "compatibleWith": ["All"],
+    "customizationType": "Skin"
+  },
+  "options": {
+    "skinTones": [
+      {
+        "name": "Very_Fair",
+        "fitzpatrickType": "I",
+        "hex": "#FFE0BD",
+        "undertone": "Pink"
+      },
+      {
+        "name": "Fair",
+        "fitzpatrickType": "II",
+        "hex": "#FFCD94",
+        "undertone": "Yellow"
+      },
+      {
+        "name": "Medium_Fair",
+        "fitzpatrickType": "III",
+        "hex": "#EAC086",
+        "undertone": "Neutral"
+      },
+      {
+        "name": "Olive",
+        "fitzpatrickType": "IV",
+        "hex": "#C68642",
+        "undertone": "Golden"
+      },
+      {
+        "name": "Medium_Brown",
+        "fitzpatrickType": "V",
+        "hex": "#8D5524",
+        "undertone": "Red"
+      },
+      {
+        "name": "Dark_Brown",
+        "fitzpatrickType": "VI",
+        "hex": "#4A312C",
+        "undertone": "Cool"
+      },
+      {
+        "name": "Very_Dark",
+        "fitzpatrickType": "VI",
+        "hex": "#2D1B00",
+        "undertone": "Neutral"
+      }
+    ],
+    "specialFeatures": [
+      "Freckles",
+      "Beauty_Marks",
+      "Age_Spots",
+      "Vitiligo",
+      "Birthmarks",
+      "Tattoos"
+    ],
+    "skinConditions": [
+      "Normal",
+      "Dry",
+      "Oily",
+      "Combination"
+    ]
+  },
+  "graphics": {
+    "textureResolution": 4096,
+    "subsurfaceScattering": true,
+    "features": [
+      "Pore Detail",
+      "Skin Texture Variation",
+      "Vein Maps",
+      "Blood Flow Simulation",
+      "Melanin Distribution"
+    ]
+  },
+  "price": {
+    "basicTones": 0,
+    "specialFeatures": 15,
+    "currency": "OMNI"
+  }
+}

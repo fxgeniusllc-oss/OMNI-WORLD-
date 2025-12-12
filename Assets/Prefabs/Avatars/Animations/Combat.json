@@ -1,0 +1,203 @@
+{
+  "prefabName": "Avatar_Animations_Combat",
+  "category": "Avatars",
+  "subCategory": "Animations",
+  "type": "Combat Animation Set",
+  "metadata": {
+    "nftCompatible": true,
+    "compatibleWith": ["All Base Avatars"],
+    "animationType": "Combat",
+    "rigType": "Mecanim Humanoid"
+  },
+  "categories": {
+    "melee": {
+      "unarmed": [
+        {
+          "name": "Jab",
+          "duration": 0.5,
+          "looped": false,
+          "damage": 10
+        },
+        {
+          "name": "Cross",
+          "duration": 0.6,
+          "looped": false,
+          "damage": 15
+        },
+        {
+          "name": "Hook",
+          "duration": 0.7,
+          "looped": false,
+          "damage": 20
+        },
+        {
+          "name": "Uppercut",
+          "duration": 0.8,
+          "looped": false,
+          "damage": 25
+        },
+        {
+          "name": "Roundhouse_Kick",
+          "duration": 1.0,
+          "looped": false,
+          "damage": 30
+        }
+      ],
+      "sword": [
+        {
+          "name": "Slash_Horizontal",
+          "duration": 0.8,
+          "looped": false,
+          "weaponTrail": true
+        },
+        {
+          "name": "Slash_Vertical",
+          "duration": 0.9,
+          "looped": false,
+          "weaponTrail": true
+        },
+        {
+          "name": "Thrust",
+          "duration": 0.7,
+          "looped": false
+        },
+        {
+          "name": "Spin_Attack",
+          "duration": 1.5,
+          "looped": false,
+          "weaponTrail": true
+        }
+      ]
+    },
+    "ranged": [
+      {
+        "name": "Aim_Pistol",
+        "duration": 1.0,
+        "looped": true,
+        "ikTargets": ["RightHand"]
+      },
+      {
+        "name": "Fire_Pistol",
+        "duration": 0.4,
+        "looped": false,
+        "recoil": true
+      },
+      {
+        "name": "Aim_Rifle",
+        "duration": 1.5,
+        "looped": true,
+        "ikTargets": ["LeftHand", "RightHand"]
+      },
+      {
+        "name": "Fire_Rifle",
+        "duration": 0.5,
+        "looped": false,
+        "recoil": true
+      },
+      {
+        "name": "Draw_Bow",
+        "duration": 1.2,
+        "looped": false
+      },
+      {
+        "name": "Release_Arrow",
+        "duration": 0.6,
+        "looped": false
+      }
+    ],
+    "defensive": [
+      {
+        "name": "Block_High",
+        "duration": 0.5,
+        "looped": true
+      },
+      {
+        "name": "Block_Low",
+        "duration": 0.5,
+        "looped": true
+      },
+      {
+        "name": "Parry",
+        "duration": 0.6,
+        "looped": false
+      },
+      {
+        "name": "Dodge_Left",
+        "duration": 0.7,
+        "looped": false,
+        "invulnerabilityFrames": 10
+      },
+      {
+        "name": "Dodge_Right",
+        "duration": 0.7,
+        "looped": false,
+        "invulnerabilityFrames": 10
+      },
+      {
+        "name": "Backflip_Dodge",
+        "duration": 1.0,
+        "looped": false,
+        "invulnerabilityFrames": 15
+      }
+    ],
+    "special": [
+      {
+        "name": "Special_Attack_1",
+        "duration": 2.5,
+        "looped": false,
+        "energyCost": 25,
+        "particleEffects": true
+      },
+      {
+        "name": "Special_Attack_2",
+        "duration": 3.0,
+        "looped": false,
+        "energyCost": 50,
+        "particleEffects": true
+      },
+      {
+        "name": "Ultimate_Attack",
+        "duration": 5.0,
+        "looped": false,
+        "energyCost": 100,
+        "particleEffects": true,
+        "cameraShake": true
+      }
+    ],
+    "reactions": [
+      {
+        "name": "Hit_Light",
+        "duration": 0.4,
+        "looped": false
+      },
+      {
+        "name": "Hit_Heavy",
+        "duration": 0.8,
+        "looped": false,
+        "stagger": true
+      },
+      {
+        "name": "Knockdown",
+        "duration": 2.0,
+        "looped": false
+      },
+      {
+        "name": "Death",
+        "duration": 3.0,
+        "looped": false,
+        "variations": ["Death_Forward", "Death_Backward"]
+      }
+    ]
+  },
+  "combo System": {
+    "enabled": true,
+    "maxComboLength": 5,
+    "comboWindow": 1.0
+  },
+  "price": {
+    "basicCombat": 15,
+    "premiumCombat": 35,
+    "specialMoves": 75,
+    "currency": "OMNI"
+  }
+}

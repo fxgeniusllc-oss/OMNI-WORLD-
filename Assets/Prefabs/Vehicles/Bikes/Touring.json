@@ -1,0 +1,91 @@
+{
+  "prefabName": "Vehicle_Bike_Touring",
+  "category": "Vehicles",
+  "subCategory": "Bikes",
+  "type": "Touring Motorcycle",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Premium",
+    "performanceClass": "Touring"
+  },
+  "specifications": {
+    "class": "Touring",
+    "seats": 2,
+    "engine": "1.8L Flat-Six",
+    "horsepower": 125,
+    "topSpeed": 130,
+    "acceleration": 4.2,
+    "handling": 7.5,
+    "fuelType": "Premium Gasoline",
+    "range": 350
+  },
+  "physics": {
+    "mass": 420,
+    "centerOfMass": { "x": 0, "y": 0.65, "z": 0 },
+    "wheelBase": 1.63,
+    "suspensionTravel": 0.14,
+    "leanAngleMax": 38
+  },
+  "model": {
+    "dimensions": {
+      "length": 2.55,
+      "width": 0.96,
+      "height": 1.45,
+      "wheelbase": 1.63
+    },
+    "bodyStyle": "Touring",
+    "storage": "Large Panniers + Top Case",
+    "comfort": "Luxury Seating"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 65000,
+      "lod1": 32000,
+      "lod2": 15000,
+      "lod3": 6500
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Paint_Luxury_Metallic",
+      "Chrome_Premium",
+      "Leather_Seat_Heated",
+      "Rubber_Touring_Tire",
+      "Plastic_Fairing_Premium",
+      "Glass_Windscreen_Adjustable"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Suspension Animation",
+      "Working Lights",
+      "Animated Rider",
+      "Adjustable Windscreen",
+      "Digital Display"
+    ]
+  },
+  "components": [
+    "Rigidbody",
+    "MotorcycleController",
+    "WheelCollider",
+    "AudioSource",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "CruiseControl",
+    "GPSNavigation"
+  ],
+  "price": {
+    "purchasePrice": 28000,
+    "dailyRent": 195,
+    "currency": "OMNI"
+  }
+}

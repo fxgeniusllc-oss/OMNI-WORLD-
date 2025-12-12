@@ -1,0 +1,108 @@
+{
+  "prefabName": "Housing_Apartment_Studio",
+  "category": "Housing",
+  "subCategory": "Apartments",
+  "type": "Studio",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Entry",
+    "dominionZone": "Downtown"
+  },
+  "specifications": {
+    "squareFootage": 450,
+    "bedrooms": 0,
+    "bathrooms": 1,
+    "floors": 1,
+    "parkingSpaces": 0
+  },
+  "layout": {
+    "dimensions": {
+      "width": 20,
+      "length": 22.5,
+      "height": 10
+    },
+    "rooms": [
+      {
+        "name": "Main Living Area",
+        "type": "Combination",
+        "dimensions": { "width": 15, "length": 18, "height": 10 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "features": ["Murphy Bed", "Kitchenette", "Living Space", "Work Desk"]
+      },
+      {
+        "name": "Bathroom",
+        "type": "Full Bath",
+        "dimensions": { "width": 5, "length": 8, "height": 10 },
+        "position": { "x": 15, "y": 0, "z": 0 },
+        "features": ["Shower", "Toilet", "Sink", "Mirror"]
+      },
+      {
+        "name": "Closet",
+        "type": "Storage",
+        "dimensions": { "width": 5, "length": 4, "height": 10 },
+        "position": { "x": 15, "y": 0, "z": 8 },
+        "features": ["Shelving", "Hanging Rod"]
+      }
+    ],
+    "entryPoints": [
+      {
+        "name": "Main Door",
+        "position": { "x": 0, "y": 0, "z": 11 },
+        "type": "Standard",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 20, "y": 5, "z": 5 }, "size": "Large", "type": "Fixed" },
+      { "position": { "x": 20, "y": 5, "z": 15 }, "size": "Large", "type": "Fixed" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 25000,
+      "lod1": 12000,
+      "lod2": 5000
+    },
+    "textureResolution": {
+      "diffuse": 2048,
+      "normal": 2048,
+      "roughness": 1024,
+      "metallic": 1024
+    },
+    "materials": [
+      "Hardwood_Floor_PBR",
+      "Painted_Wall_White",
+      "Granite_Countertop",
+      "Glass_Window_Clear",
+      "Wood_Door_Modern"
+    ],
+    "lighting": {
+      "realtimeLights": 2,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction"
+  ],
+  "price": {
+    "purchasePrice": 50000,
+    "monthlyRent": 1200,
+    "currency": "OMNI"
+  }
+}

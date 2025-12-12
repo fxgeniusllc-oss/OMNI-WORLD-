@@ -1,0 +1,88 @@
+{
+  "prefabName": "Vehicle_Bike_DirtBike",
+  "category": "Vehicles",
+  "subCategory": "Bikes",
+  "type": "Dirt Bike",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Entry",
+    "performanceClass": "Off-Road"
+  },
+  "specifications": {
+    "class": "Dirt Bike",
+    "seats": 1,
+    "engine": "450cc Single Cylinder",
+    "horsepower": 55,
+    "topSpeed": 85,
+    "acceleration": 3.8,
+    "handling": 9.0,
+    "fuelType": "Gasoline",
+    "offRoadCapable": true
+  },
+  "physics": {
+    "mass": 110,
+    "centerOfMass": { "x": 0, "y": 0.55, "z": 0 },
+    "wheelBase": 1.48,
+    "suspensionTravel": 0.31,
+    "leanAngleMax": 40,
+    "groundClearance": 0.37
+  },
+  "model": {
+    "dimensions": {
+      "length": 2.19,
+      "width": 0.83,
+      "height": 1.27,
+      "wheelbase": 1.48
+    },
+    "bodyStyle": "Motocross",
+    "protection": "Skid Plate"
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 35000,
+      "lod1": 17000,
+      "lod2": 7500
+    },
+    "textureResolution": {
+      "diffuse": 2048,
+      "normal": 2048,
+      "roughness": 1024,
+      "metallic": 1024
+    },
+    "materials": [
+      "Plastic_Racing_Graphics",
+      "Aluminum_Frame_Anodized",
+      "Rubber_Knobby_Tire",
+      "Foam_Seat",
+      "Metal_Suspension_Components"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Dynamic Shadows",
+      "Suspension Animation",
+      "Working Lights",
+      "Animated Rider",
+      "Lean Physics",
+      "Mud Splatter Effects"
+    ]
+  },
+  "components": [
+    "Rigidbody",
+    "MotorcycleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "OffRoadSystem"
+  ],
+  "price": {
+    "purchasePrice": 9500,
+    "dailyRent": 85,
+    "currency": "OMNI"
+  }
+}

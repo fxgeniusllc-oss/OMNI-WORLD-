@@ -1,0 +1,144 @@
+{
+  "prefabName": "Avatar_Base_MaleRealistic",
+  "category": "Avatars",
+  "subCategory": "Base",
+  "type": "Male Base Avatar",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "style": "Realistic",
+    "rigType": "Humanoid"
+  },
+  "specifications": {
+    "gender": "Male",
+    "height": 1.78,
+    "bodyType": "Athletic",
+    "skinTone": "Medium",
+    "ageRange": "Adult"
+  },
+  "model": {
+    "vertices": 18500,
+    "triangles": 32000,
+    "bones": 78,
+    "blendShapes": 52,
+    "rigType": "Mecanim Humanoid"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 32000,
+      "lod1": 16000,
+      "lod2": 7500,
+      "lod3": 3200
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 1024,
+      "subsurface": 2048,
+      "detail": 1024
+    },
+    "materials": [
+      "Skin_Realistic_PBR",
+      "Eyes_Realistic_Shader",
+      "Hair_Strand_Based",
+      "Teeth_Translucent",
+      "Nails_Realistic"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Skin Shader",
+      "Subsurface Scattering",
+      "Eye Refraction",
+      "Hair Cards with Physics",
+      "Facial Blend Shapes",
+      "Muscle Deformation",
+      "Realistic Proportions",
+      "High Detail Textures",
+      "Pore Detail",
+      "Vein Maps",
+      "Skin Tone Variation"
+    ]
+  },
+  "skeleton": {
+    "bones": 78,
+    "ikTargets": {
+      "leftHand": true,
+      "rightHand": true,
+      "leftFoot": true,
+      "rightFoot": true,
+      "head": true
+    },
+    "facialBones": 23,
+    "fingerBones": 30
+  },
+  "blendShapes": {
+    "facial": [
+      "Blink_Left",
+      "Blink_Right",
+      "EyeWide_Left",
+      "EyeWide_Right",
+      "BrowUp_Left",
+      "BrowUp_Right",
+      "BrowDown_Left",
+      "BrowDown_Right",
+      "Smile_Left",
+      "Smile_Right",
+      "Frown",
+      "JawOpen",
+      "MouthPucker",
+      "CheekPuff"
+    ],
+    "body": [
+      "Muscular",
+      "Thin",
+      "Heavy",
+      "Chest_Size",
+      "Shoulders_Width"
+    ]
+  },
+  "components": [
+    "Animator",
+    "CharacterController",
+    "AvatarCustomization",
+    "IKController",
+    "FacialAnimationController",
+    "ClothingSystem",
+    "NFTMetadata",
+    "PlayerController"
+  },
+  "customizationSlots": [
+    "Hair",
+    "FacialHair",
+    "Eyes",
+    "Eyebrows",
+    "SkinTone",
+    "BodyType",
+    "Height",
+    "Clothing_Head",
+    "Clothing_Torso",
+    "Clothing_Legs",
+    "Clothing_Feet",
+    "Accessories"
+  ],
+  "animations": {
+    "compatible": true,
+    "retargeting": "Mecanim",
+    "defaultAnimations": [
+      "Idle",
+      "Walk",
+      "Run",
+      "Jump",
+      "Crouch",
+      "Sit",
+      "Wave",
+      "Point"
+    ]
+  },
+  "price": {
+    "purchasePrice": 0,
+    "premiumVariants": 500,
+    "currency": "OMNI"
+  }
+}

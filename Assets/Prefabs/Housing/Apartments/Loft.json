@@ -1,0 +1,135 @@
+{
+  "prefabName": "Housing_Apartment_Loft",
+  "category": "Housing",
+  "subCategory": "Apartments",
+  "type": "Loft",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Premium",
+    "dominionZone": "Arts District"
+  },
+  "specifications": {
+    "squareFootage": 1200,
+    "bedrooms": 1,
+    "bathrooms": 1.5,
+    "floors": 2,
+    "parkingSpaces": 1
+  },
+  "layout": {
+    "dimensions": {
+      "width": 40,
+      "length": 30,
+      "height": 20
+    },
+    "rooms": [
+      {
+        "name": "Main Living Area",
+        "type": "Open Concept",
+        "dimensions": { "width": 30, "length": 25, "height": 20 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "features": ["Double Height Ceiling", "Exposed Brick", "Industrial Windows", "Open Floor Plan"]
+      },
+      {
+        "name": "Kitchen",
+        "type": "Chef's Kitchen",
+        "dimensions": { "width": 15, "length": 12, "height": 10 },
+        "position": { "x": 25, "y": 0, "z": 0 },
+        "features": ["Professional Appliances", "Island with Seating", "Wine Fridge", "Concrete Counters"]
+      },
+      {
+        "name": "Mezzanine Bedroom",
+        "type": "Loft Bedroom",
+        "dimensions": { "width": 20, "length": 15, "height": 10 },
+        "position": { "x": 10, "y": 10, "z": 10 },
+        "features": ["Overlooks Living Area", "King Bed Space", "Glass Railing", "Skylight"]
+      },
+      {
+        "name": "Master Bathroom",
+        "type": "Luxury Bath",
+        "dimensions": { "width": 12, "length": 10, "height": 10 },
+        "position": { "x": 28, "y": 10, "z": 15 },
+        "features": ["Rainfall Shower", "Freestanding Tub", "Double Vanity", "Heated Floors"]
+      },
+      {
+        "name": "Powder Room",
+        "type": "Half Bath",
+        "dimensions": { "width": 6, "length": 6, "height": 10 },
+        "position": { "x": 34, "y": 0, "z": 12 },
+        "features": ["Toilet", "Pedestal Sink", "Mirror"]
+      }
+    ],
+    "entryPoints": [
+      {
+        "name": "Main Door",
+        "position": { "x": 20, "y": 0, "z": 30 },
+        "type": "Industrial Steel",
+        "interactable": true
+      },
+      {
+        "name": "Rooftop Access",
+        "position": { "x": 15, "y": 10, "z": 25 },
+        "type": "Spiral Staircase",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 0, "y": 8, "z": 15 }, "size": "Industrial", "type": "Fixed" },
+      { "position": { "x": 40, "y": 8, "z": 6 }, "size": "Industrial", "type": "Fixed" },
+      { "position": { "x": 20, "y": 15, "z": 15 }, "size": "Skylight", "type": "Fixed" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 55000,
+      "lod1": 28000,
+      "lod2": 12000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Concrete_Floor_Polished",
+      "Exposed_Brick_Red",
+      "Industrial_Steel_Beams",
+      "Glass_Window_Industrial",
+      "Wood_Reclaimed_Ceiling"
+    ],
+    "lighting": {
+      "realtimeLights": 6,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field",
+      "Bloom"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SecuritySystem",
+    "SmartHome"
+  ],
+  "price": {
+    "purchasePrice": 250000,
+    "monthlyRent": 3500,
+    "currency": "OMNI"
+  }
+}

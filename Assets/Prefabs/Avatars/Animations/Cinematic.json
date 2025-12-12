@@ -1,0 +1,131 @@
+{
+  "prefabName": "Avatar_Animations_Cinematic",
+  "category": "Avatars",
+  "subCategory": "Animations",
+  "type": "Cinematic Animation Set",
+  "metadata": {
+    "nftCompatible": true,
+    "compatibleWith": ["All Base Avatars"],
+    "animationType": "Cinematic",
+    "rigType": "Mecanim Humanoid"
+  },
+  "categories": {
+    "heroic": [
+      {
+        "name": "Hero_Landing",
+        "duration": 3.0,
+        "looped": false,
+        "cameraShake": true
+      },
+      {
+        "name": "Dramatic_Walk",
+        "duration": 5.0,
+        "looped": true,
+        "slowMotion": true
+      },
+      {
+        "name": "Victory_Stand",
+        "duration": 4.0,
+        "looped": true
+      },
+      {
+        "name": "Cape_Flourish",
+        "duration": 2.5,
+        "looped": false
+      }
+    ],
+    "dramatic": [
+      {
+        "name": "Fall_To_Knees",
+        "duration": 3.0,
+        "looped": false,
+        "facialAnimation": true
+      },
+      {
+        "name": "Reach_Out",
+        "duration": 2.5,
+        "looped": false,
+        "facialAnimation": true
+      },
+      {
+        "name": "Slow_Turn",
+        "duration": 4.0,
+        "looped": false,
+        "slowMotion": true
+      }
+    ],
+    "action": [
+      {
+        "name": "Dive_Roll",
+        "duration": 2.0,
+        "looped": false
+      },
+      {
+        "name": "Wall_Run",
+        "duration": 3.0,
+        "looped": false
+      },
+      {
+        "name": "Backflip",
+        "duration": 1.5,
+        "looped": false
+      },
+      {
+        "name": "Slide_Under",
+        "duration": 2.0,
+        "looped": false
+      }
+    ],
+    "transformation": [
+      {
+        "name": "Power_Up",
+        "duration": 5.0,
+        "looped": false,
+        "particleEffects": true
+      },
+      {
+        "name": "Levitate_Meditation",
+        "duration": 8.0,
+        "looped": true
+      },
+      {
+        "name": "Morph_Sequence",
+        "duration": 4.0,
+        "looped": false,
+        "particleEffects": true
+      }
+    ],
+    "emotional": [
+      {
+        "name": "Embrace",
+        "duration": 5.0,
+        "looped": true,
+        "synchronized": true
+      },
+      {
+        "name": "Grief",
+        "duration": 6.0,
+        "looped": true,
+        "facialAnimation": true
+      },
+      {
+        "name": "Joy_Spin",
+        "duration": 3.0,
+        "looped": false,
+        "facialAnimation": true
+      }
+    ]
+  },
+  "production": {
+    "mocapQuality": "High",
+    "keyframeSmoothing": true,
+    "cinematicCamera": true,
+    "vfxIntegration": true
+  },
+  "price": {
+    "basicCinematic": 25,
+    "premiumCinematic": 75,
+    "epicCinematic": 150,
+    "currency": "OMNI"
+  }
+}

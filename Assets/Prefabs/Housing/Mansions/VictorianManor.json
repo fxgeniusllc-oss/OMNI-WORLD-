@@ -1,0 +1,82 @@
+{
+  "prefabName": "Housing_Mansion_Victorian",
+  "category": "Housing",
+  "subCategory": "Mansions",
+  "type": "Victorian Manor",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Historic Luxury",
+    "dominionZone": "Heritage District"
+  },
+  "specifications": {
+    "squareFootage": 5200,
+    "bedrooms": 6,
+    "bathrooms": 5.5,
+    "floors": 3,
+    "parkingSpaces": 2,
+    "lotSize": 12000
+  },
+  "layout": {
+    "dimensions": {
+      "width": 60,
+      "length": 86.67,
+      "height": 36
+    },
+    "features": ["Turret", "Wrap-around Porch", "Bay Windows", "Ornate Trim", "Gingerbread Details", "Widow's Walk", "Stained Glass"]
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 140000,
+      "lod1": 70000,
+      "lod2": 35000,
+      "lod3": 17000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 4096,
+      "metallic": 2048
+    },
+    "materials": [
+      "Wood_Siding_Painted",
+      "Trim_Ornate_Victorian",
+      "Hardwood_Floor_Antique",
+      "Glass_Stained_Decorative",
+      "Metal_Roof_Slate"
+    ],
+    "lighting": {
+      "realtimeLights": 14,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field",
+      "Bloom"
+    ]
+  },
+  "components": [
+    "MeshCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SecuritySystem",
+    "ClimateControl"
+  ],
+  "price": {
+    "purchasePrice": 2800000,
+    "monthlyRent": 19000,
+    "currency": "OMNI"
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "prefabName": "Housing_Condo_TownhouseStyle",
+  "category": "Housing",
+  "subCategory": "Condos",
+  "type": "Townhouse",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Standard",
+    "dominionZone": "Suburban"
+  },
+  "specifications": {
+    "squareFootage": 1400,
+    "bedrooms": 2,
+    "bathrooms": 2.5,
+    "floors": 2,
+    "parkingSpaces": 1
+  },
+  "layout": {
+    "dimensions": {
+      "width": 24,
+      "length": 35,
+      "height": 20
+    },
+    "rooms": [
+      {
+        "name": "Entry Foyer",
+        "type": "Entrance",
+        "dimensions": { "width": 8, "length": 8, "height": 10 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "floor": 1,
+        "features": ["Coat Closet", "Tile Entry", "Staircase Access"]
+      },
+      {
+        "name": "Living Room",
+        "type": "Living",
+        "dimensions": { "width": 16, "length": 14, "height": 10 },
+        "position": { "x": 8, "y": 0, "z": 0 },
+        "floor": 1,
+        "features": ["Gas Fireplace", "Large Windows", "Open to Dining"]
+      },
+      {
+        "name": "Dining Room",
+        "type": "Dining",
+        "dimensions": { "width": 12, "length": 11, "height": 10 },
+        "position": { "x": 8, "y": 0, "z": 14 },
+        "floor": 1,
+        "features": ["Chandelier", "Kitchen Pass-through"]
+      },
+      {
+        "name": "Kitchen",
+        "type": "Modern Kitchen",
+        "dimensions": { "width": 12, "length": 12, "height": 10 },
+        "position": { "x": 0, "y": 0, "z": 23 },
+        "floor": 1,
+        "features": ["Breakfast Bar", "Pantry", "Stainless Appliances", "Granite Counters"]
+      },
+      {
+        "name": "Powder Room",
+        "type": "Half Bath",
+        "dimensions": { "width": 5, "length": 6, "height": 10 },
+        "position": { "x": 0, "y": 0, "z": 17 },
+        "floor": 1,
+        "features": ["Toilet", "Pedestal Sink"]
+      },
+      {
+        "name": "Master Bedroom",
+        "type": "Master",
+        "dimensions": { "width": 14, "length": 16, "height": 10 },
+        "position": { "x": 0, "y": 10, "z": 0 },
+        "floor": 2,
+        "features": ["Tray Ceiling", "Walk-in Closet", "Window Seat"]
+      },
+      {
+        "name": "Master Bathroom",
+        "type": "Full Bath",
+        "dimensions": { "width": 10, "length": 12, "height": 10 },
+        "position": { "x": 14, "y": 10, "z": 0 },
+        "floor": 2,
+        "features": ["Double Vanity", "Soaking Tub", "Separate Shower", "Linen Closet"]
+      },
+      {
+        "name": "Second Bedroom",
+        "type": "Bedroom",
+        "dimensions": { "width": 12, "length": 12, "height": 10 },
+        "position": { "x": 0, "y": 10, "z": 16 },
+        "floor": 2,
+        "features": ["Closet", "Window", "Ceiling Fan"]
+      },
+      {
+        "name": "Guest Bathroom",
+        "type": "Full Bath",
+        "dimensions": { "width": 8, "length": 8, "height": 10 },
+        "position": { "x": 12, "y": 10, "z": 16 },
+        "floor": 2,
+        "features": ["Tub/Shower Combo", "Vanity"]
+      },
+      {
+        "name": "Laundry",
+        "type": "Utility",
+        "dimensions": { "width": 6, "length": 6, "height": 10 },
+        "position": { "x": 18, "y": 10, "z": 24 },
+        "floor": 2,
+        "features": ["Washer/Dryer Hookups", "Storage"]
+      }
+    ],
+    "entryPoints": [
+      {
+        "name": "Front Door",
+        "position": { "x": 4, "y": 0, "z": 0 },
+        "type": "Security Door",
+        "interactable": true
+      },
+      {
+        "name": "Garage Entry",
+        "position": { "x": 20, "y": 0, "z": 35 },
+        "type": "Interior Door",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 24, "y": 5, "z": 7 }, "size": "Large", "type": "Double Hung" },
+      { "position": { "x": 0, "y": 5, "z": 28 }, "size": "Medium", "type": "Fixed" },
+      { "position": { "x": 7, "y": 15, "z": 0 }, "size": "Medium", "type": "Double Hung" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 48000,
+      "lod1": 24000,
+      "lod2": 11000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Hardwood_Floor_Cherry",
+      "Carpet_Plush_Beige",
+      "Painted_Wall_Modern",
+      "Tile_Ceramic_Kitchen",
+      "Brick_Exterior_Red"
+    ],
+    "lighting": {
+      "realtimeLights": 6,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SecuritySystem"
+  ],
+  "price": {
+    "purchasePrice": 220000,
+    "monthlyRent": 2800,
+    "currency": "OMNI"
+  }
+}

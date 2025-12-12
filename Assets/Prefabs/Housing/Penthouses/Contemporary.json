@@ -1,0 +1,82 @@
+{
+  "prefabName": "Housing_Penthouse_Contemporary",
+  "category": "Housing",
+  "subCategory": "Penthouses",
+  "type": "Contemporary Penthouse",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Luxury",
+    "dominionZone": "Arts District High Rise"
+  },
+  "specifications": {
+    "squareFootage": 2800,
+    "bedrooms": 3,
+    "bathrooms": 3.5,
+    "floors": 1,
+    "parkingSpaces": 2,
+    "floor": 38
+  },
+  "layout": {
+    "dimensions": {
+      "width": 50,
+      "length": 56,
+      "height": 12
+    },
+    "features": ["Open Floor Plan", "Art Gallery Walls", "Wrap Terrace", "Gourmet Kitchen", "Smart Technology", "Minimalist Design"]
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 65000,
+      "lod1": 32000,
+      "lod2": 16000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Concrete_Polished_Modern",
+      "Glass_Floor_To_Ceiling",
+      "Steel_Brushed",
+      "Wood_Light_Oak",
+      "Quartz_White_Pure"
+    ],
+    "lighting": {
+      "realtimeLights": 8,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field",
+      "Bloom"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SecuritySystem",
+    "SmartHome",
+    "ClimateControl"
+  ],
+  "price": {
+    "purchasePrice": 3800000,
+    "monthlyRent": 25000,
+    "currency": "OMNI"
+  }
+}

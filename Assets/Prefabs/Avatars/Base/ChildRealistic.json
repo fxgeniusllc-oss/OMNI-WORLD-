@@ -1,0 +1,53 @@
+{
+  "prefabName": "Avatar_Base_ChildRealistic",
+  "category": "Avatars",
+  "subCategory": "Base",
+  "type": "Child Base Avatar",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "style": "Realistic",
+    "rigType": "Humanoid",
+    "ageGroup": "Child"
+  },
+  "specifications": {
+    "gender": "Neutral",
+    "height": 1.3,
+    "bodyType": "Child",
+    "skinTone": "Medium",
+    "ageRange": "8-12"
+  },
+  "model": {
+    "vertices": 14500,
+    "triangles": 25000,
+    "bones": 72,
+    "blendShapes": 45,
+    "rigType": "Mecanim Humanoid"
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 25000,
+      "lod1": 12000,
+      "lod2": 5500
+    },
+    "textureResolution": {
+      "diffuse": 2048,
+      "normal": 2048,
+      "roughness": 1024,
+      "metallic": 1024,
+      "subsurface": 2048
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Skin Shader",
+      "Subsurface Scattering",
+      "Proportionate Child Features",
+      "Soft Facial Features"
+    ]
+  },
+  "price": {
+    "purchasePrice": 0,
+    "currency": "OMNI"
+  }
+}

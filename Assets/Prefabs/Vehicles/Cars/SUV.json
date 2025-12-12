@@ -1,0 +1,92 @@
+{
+  "prefabName": "Vehicle_Car_SUV",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "SUV",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Standard",
+    "performanceClass": "Utility"
+  },
+  "specifications": {
+    "class": "Mid-Size SUV",
+    "seats": 7,
+    "engine": "3.5L V6",
+    "horsepower": 290,
+    "topSpeed": 125,
+    "acceleration": 7.2,
+    "handling": 6.8,
+    "fuelType": "Gasoline",
+    "drivetrain": "AWD"
+  },
+  "physics": {
+    "mass": 2000,
+    "centerOfMass": { "x": 0, "y": 0.7, "z": 0 },
+    "wheelBase": 2.85,
+    "trackWidth": 1.7,
+    "suspensionTravel": 0.22,
+    "springRate": 42000,
+    "damperRate": 3200,
+    "groundClearance": 0.22
+  },
+  "model": {
+    "dimensions": {
+      "length": 4.9,
+      "width": 1.95,
+      "height": 1.75,
+      "wheelbase": 2.85
+    },
+    "doors": 4,
+    "trunk": "Extra Large",
+    "bodyStyle": "SUV"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 55000,
+      "lod1": 28000,
+      "lod2": 13000,
+      "lod3": 5500
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Car_Paint_Metallic",
+      "Plastic_Cladding_Black",
+      "Glass_Window_Tinted",
+      "Rubber_All_Terrain_Tire",
+      "Fabric_Interior",
+      "Chrome_Trim"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Suspension Animation",
+      "Working Lights",
+      "Roof Rack Detail",
+      "Third Row Seating"
+    ]
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "AWDSystem"
+  ],
+  "price": {
+    "purchasePrice": 45000,
+    "dailyRent": 180,
+    "currency": "OMNI"
+  }
+}

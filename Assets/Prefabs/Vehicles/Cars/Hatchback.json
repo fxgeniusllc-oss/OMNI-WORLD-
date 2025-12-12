@@ -1,0 +1,88 @@
+{
+  "prefabName": "Vehicle_Car_Hatchback",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Hot Hatchback",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Standard",
+    "performanceClass": "Sport Compact"
+  },
+  "specifications": {
+    "class": "Hot Hatch",
+    "seats": 5,
+    "engine": "2.0L Turbo I4",
+    "horsepower": 290,
+    "topSpeed": 155,
+    "acceleration": 5.7,
+    "handling": 8.5,
+    "fuelType": "Premium Gasoline"
+  },
+  "physics": {
+    "mass": 1400,
+    "centerOfMass": { "x": 0, "y": 0.42, "z": -0.1 },
+    "wheelBase": 2.64,
+    "trackWidth": 1.54,
+    "suspensionTravel": 0.12,
+    "springRate": 40000,
+    "damperRate": 3200
+  },
+  "model": {
+    "dimensions": {
+      "length": 4.28,
+      "width": 1.8,
+      "height": 1.46,
+      "wheelbase": 2.64
+    },
+    "doors": 5,
+    "trunk": "Cargo Area",
+    "bodyStyle": "Hatchback"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 48000,
+      "lod1": 24000,
+      "lod2": 11000,
+      "lod3": 4800
+    },
+    "textureResolution": {
+      "diffuse": 2048,
+      "normal": 2048,
+      "roughness": 1024,
+      "metallic": 1024
+    },
+    "materials": [
+      "Car_Paint_Bright",
+      "Glass_Window_Sport_Tint",
+      "Rubber_Performance_Tire",
+      "Plastic_Sport_Trim",
+      "Cloth_Sport_Seats"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Suspension Animation",
+      "Working Lights",
+      "Rally Inspired Details"
+    ]
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem"
+  ],
+  "price": {
+    "purchasePrice": 32000,
+    "dailyRent": 95,
+    "currency": "OMNI"
+  }
+}

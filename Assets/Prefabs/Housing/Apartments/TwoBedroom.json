@@ -1,0 +1,148 @@
+{
+  "prefabName": "Housing_Apartment_TwoBedroom",
+  "category": "Housing",
+  "subCategory": "Apartments",
+  "type": "Two Bedroom",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Standard",
+    "dominionZone": "Residential District"
+  },
+  "specifications": {
+    "squareFootage": 950,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "floors": 1,
+    "parkingSpaces": 1
+  },
+  "layout": {
+    "dimensions": {
+      "width": 35,
+      "length": 27.14,
+      "height": 10
+    },
+    "rooms": [
+      {
+        "name": "Living Room",
+        "type": "Living",
+        "dimensions": { "width": 18, "length": 16, "height": 10 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "features": ["Large Sofa Area", "Entertainment Center", "Floor-to-Ceiling Windows"]
+      },
+      {
+        "name": "Dining Area",
+        "type": "Dining",
+        "dimensions": { "width": 10, "length": 12, "height": 10 },
+        "position": { "x": 18, "y": 0, "z": 0 },
+        "features": ["Dining Table Space", "Chandelier", "Bar Counter"]
+      },
+      {
+        "name": "Kitchen",
+        "type": "Modern Kitchen",
+        "dimensions": { "width": 12, "length": 12, "height": 10 },
+        "position": { "x": 18, "y": 0, "z": 12 },
+        "features": ["Island", "Double Sink", "Refrigerator", "Gas Range", "Dishwasher", "Pantry"]
+      },
+      {
+        "name": "Master Bedroom",
+        "type": "Master",
+        "dimensions": { "width": 14, "length": 14, "height": 10 },
+        "position": { "x": 0, "y": 0, "z": 16 },
+        "features": ["King Bed Space", "Walk-in Closet", "En-suite Access", "Window Seat"]
+      },
+      {
+        "name": "Master Bathroom",
+        "type": "Full Bath",
+        "dimensions": { "width": 10, "length": 10, "height": 10 },
+        "position": { "x": 14, "y": 0, "z": 16 },
+        "features": ["Double Vanity", "Soaking Tub", "Separate Shower", "Toilet", "Linen Closet"]
+      },
+      {
+        "name": "Second Bedroom",
+        "type": "Bedroom",
+        "dimensions": { "width": 12, "length": 11, "height": 10 },
+        "position": { "x": 0, "y": 0, "z": 30 },
+        "features": ["Full Bed Space", "Closet", "Window", "Desk Area"]
+      },
+      {
+        "name": "Guest Bathroom",
+        "type": "Full Bath",
+        "dimensions": { "width": 8, "length": 8, "height": 10 },
+        "position": { "x": 24, "y": 0, "z": 26 },
+        "features": ["Shower", "Toilet", "Vanity"]
+      }
+    ],
+    "entryPoints": [
+      {
+        "name": "Main Door",
+        "position": { "x": 30, "y": 0, "z": 8 },
+        "type": "Security Door",
+        "interactable": true
+      },
+      {
+        "name": "Balcony Door",
+        "position": { "x": 0, "y": 0, "z": 8 },
+        "type": "French Doors",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 0, "y": 5, "z": 8 }, "size": "Floor-to-Ceiling", "type": "Sliding" },
+      { "position": { "x": 7, "y": 5, "z": 30 }, "size": "Large", "type": "Fixed" },
+      { "position": { "x": 7, "y": 5, "z": 41 }, "size": "Medium", "type": "Fixed" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 45000,
+      "lod1": 22000,
+      "lod2": 10000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Hardwood_Floor_Walnut",
+      "Painted_Wall_Premium",
+      "Marble_Tile_Italian",
+      "Quartz_Countertop",
+      "Glass_Window_LowE",
+      "Stainless_Steel_Appliances"
+    ],
+    "lighting": {
+      "realtimeLights": 5,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SecuritySystem"
+  ],
+  "price": {
+    "purchasePrice": 145000,
+    "monthlyRent": 2500,
+    "currency": "OMNI"
+  }
+}

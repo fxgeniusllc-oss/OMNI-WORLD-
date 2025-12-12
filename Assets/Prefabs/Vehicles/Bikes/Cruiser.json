@@ -1,0 +1,99 @@
+{
+  "prefabName": "Vehicle_Bike_Cruiser",
+  "category": "Vehicles",
+  "subCategory": "Bikes",
+  "type": "Cruiser Motorcycle",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Standard",
+    "performanceClass": "Cruiser"
+  },
+  "specifications": {
+    "class": "Cruiser",
+    "seats": 2,
+    "engine": "1.7L V-Twin",
+    "horsepower": 85,
+    "topSpeed": 110,
+    "acceleration": 5.8,
+    "handling": 7.0,
+    "fuelType": "Gasoline"
+  },
+  "physics": {
+    "mass": 350,
+    "centerOfMass": { "x": 0, "y": 0.6, "z": 0 },
+    "wheelBase": 1.7,
+    "suspensionTravel": 0.12,
+    "leanAngleMax": 35
+  },
+  "model": {
+    "dimensions": {
+      "length": 2.4,
+      "width": 0.95,
+      "height": 1.2,
+      "wheelbase": 1.7
+    },
+    "bodyStyle": "Cruiser",
+    "saddlebags": true
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 45000,
+      "lod1": 22000,
+      "lod2": 10000,
+      "lod3": 4000
+    },
+    "textureResolution": {
+      "diffuse": 2048,
+      "normal": 2048,
+      "roughness": 1024,
+      "metallic": 1024
+    },
+    "materials": [
+      "Metal_Chrome_Polished",
+      "Paint_Candy_Metallic",
+      "Leather_Seat_Classic",
+      "Rubber_Tire_Cruiser",
+      "Glass_Windscreen"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Suspension Animation",
+      "Working Lights",
+      "Animated Rider",
+      "Lean Physics"
+    ]
+  },
+  "audio": {
+    "engineSound": "V_Twin_Rumble",
+    "exhaustNote": "Classic_Cruiser",
+    "hornSound": "Motorcycle"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "dualExhaust": true
+    },
+    "tireSmokeOnBurnout": true,
+    "headlightBeam": true
+  },
+  "components": [
+    "Rigidbody",
+    "MotorcycleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem"
+  ],
+  "price": {
+    "purchasePrice": 18000,
+    "dailyRent": 120,
+    "currency": "OMNI"
+  }
+}

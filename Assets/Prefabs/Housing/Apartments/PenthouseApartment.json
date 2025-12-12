@@ -1,0 +1,169 @@
+{
+  "prefabName": "Housing_Apartment_Penthouse",
+  "category": "Housing",
+  "subCategory": "Apartments",
+  "type": "Penthouse Apartment",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Luxury",
+    "dominionZone": "Financial District"
+  },
+  "specifications": {
+    "squareFootage": 1800,
+    "bedrooms": 2,
+    "bathrooms": 2.5,
+    "floors": 1,
+    "parkingSpaces": 2
+  },
+  "layout": {
+    "dimensions": {
+      "width": 50,
+      "length": 36,
+      "height": 12
+    },
+    "rooms": [
+      {
+        "name": "Grand Living Room",
+        "type": "Living",
+        "dimensions": { "width": 25, "length": 20, "height": 12 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "features": ["Fireplace", "City Views", "Marble Floors", "Wet Bar", "Floor-to-Ceiling Windows"]
+      },
+      {
+        "name": "Formal Dining",
+        "type": "Dining",
+        "dimensions": { "width": 15, "length": 16, "height": 12 },
+        "position": { "x": 25, "y": 0, "z": 0 },
+        "features": ["Chandelier", "Built-in Wine Storage", "Butler's Pantry"]
+      },
+      {
+        "name": "Gourmet Kitchen",
+        "type": "Chef's Kitchen",
+        "dimensions": { "width": 18, "length": 16, "height": 12 },
+        "position": { "x": 25, "y": 0, "z": 16 },
+        "features": ["Professional Range", "Double Oven", "Large Island", "Walk-in Pantry", "Premium Appliances"]
+      },
+      {
+        "name": "Master Suite",
+        "type": "Master",
+        "dimensions": { "width": 20, "length": 18, "height": 12 },
+        "position": { "x": 0, "y": 0, "z": 20 },
+        "features": ["Sitting Area", "King Bed Space", "Dual Walk-in Closets", "Private Balcony", "Smart Lighting"]
+      },
+      {
+        "name": "Master Bathroom",
+        "type": "Spa Bath",
+        "dimensions": { "width": 16, "length": 12, "height": 12 },
+        "position": { "x": 20, "y": 0, "z": 20 },
+        "features": ["Jacuzzi Tub", "Rain Shower", "Steam Room", "Double Vanity", "Heated Floors", "Towel Warmer"]
+      },
+      {
+        "name": "Second Bedroom",
+        "type": "Guest Suite",
+        "dimensions": { "width": 14, "length": 14, "height": 12 },
+        "position": { "x": 36, "y": 0, "z": 20 },
+        "features": ["Queen Bed Space", "En-suite Access", "Closet", "Desk Area"]
+      },
+      {
+        "name": "Guest Bathroom",
+        "type": "Full Bath",
+        "dimensions": { "width": 10, "length": 10, "height": 12 },
+        "position": { "x": 40, "y": 0, "z": 34 },
+        "features": ["Shower", "Vanity", "Premium Fixtures"]
+      },
+      {
+        "name": "Powder Room",
+        "type": "Half Bath",
+        "dimensions": { "width": 6, "length": 8, "height": 12 },
+        "position": { "x": 40, "y": 0, "z": 8 },
+        "features": ["Toilet", "Designer Sink", "Art Piece"]
+      },
+      {
+        "name": "Home Office",
+        "type": "Office",
+        "dimensions": { "width": 12, "length": 12, "height": 12 },
+        "position": { "x": 43, "y": 0, "z": 16 },
+        "features": ["Built-in Shelving", "Large Desk", "Window", "Smart Technology"]
+      }
+    ],
+    "entryPoints": [
+      {
+        "name": "Private Elevator",
+        "position": { "x": 43, "y": 0, "z": 0 },
+        "type": "Private Access",
+        "interactable": true
+      },
+      {
+        "name": "Terrace Door",
+        "position": { "x": 0, "y": 0, "z": 10 },
+        "type": "French Doors",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 0, "y": 6, "z": 10 }, "size": "Floor-to-Ceiling", "type": "Sliding" },
+      { "position": { "x": 50, "y": 6, "z": 18 }, "size": "Floor-to-Ceiling", "type": "Fixed" },
+      { "position": { "x": 25, "y": 6, "z": 36 }, "size": "Large", "type": "Fixed" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 75000,
+      "lod1": 38000,
+      "lod2": 18000,
+      "lod3": 8000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048,
+      "ao": 2048
+    },
+    "materials": [
+      "Marble_Floor_Carrara",
+      "Hardwood_Floor_Mahogany",
+      "Painted_Wall_Designer",
+      "Glass_Window_SmartTint",
+      "Granite_Countertop_Premium",
+      "Stainless_Steel_Professional"
+    ],
+    "lighting": {
+      "realtimeLights": 8,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field",
+      "Bloom",
+      "Motion Blur",
+      "Chromatic Aberration"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SecuritySystem",
+    "SmartHome",
+    "ClimateControl"
+  ],
+  "price": {
+    "purchasePrice": 500000,
+    "monthlyRent": 7500,
+    "currency": "OMNI"
+  }
+}

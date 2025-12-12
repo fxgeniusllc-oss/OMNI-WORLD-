@@ -1,0 +1,100 @@
+{
+  "prefabName": "Avatar_Animations_Locomotion",
+  "category": "Avatars",
+  "subCategory": "Animations",
+  "type": "Locomotion Animation Set",
+  "metadata": {
+    "nftCompatible": true,
+    "compatibleWith": ["All Base Avatars"],
+    "animationType": "Movement",
+    "rigType": "Mecanim Humanoid"
+  },
+  "animations": {
+    "idle": {
+      "name": "Idle_Standard",
+      "duration": 3.0,
+      "looped": true,
+      "blendable": true,
+      "variations": [
+        "Idle_Relaxed",
+        "Idle_Alert",
+        "Idle_Fidget_1",
+        "Idle_Fidget_2",
+        "Idle_Looking_Around"
+      ]
+    },
+    "walk": {
+      "name": "Walk_Normal",
+      "speedRange": [0.5, 2.0],
+      "looped": true,
+      "blendable": true,
+      "variations": [
+        "Walk_Casual",
+        "Walk_Confident",
+        "Walk_Tired",
+        "Walk_Sneaky"
+      ]
+    },
+    "run": {
+      "name": "Run_Standard",
+      "speedRange": [3.0, 6.0],
+      "looped": true,
+      "blendable": true,
+      "variations": [
+        "Run_Sprint",
+        "Run_Jog",
+        "Run_Athletic"
+      ]
+    },
+    "jump": {
+      "name": "Jump_Standard",
+      "duration": 1.2,
+      "looped": false,
+      "phases": ["Preparation", "InAir", "Landing"],
+      "variations": [
+        "Jump_High",
+        "Jump_Long",
+        "Jump_Running"
+      ]
+    },
+    "crouch": {
+      "name": "Crouch_Standard",
+      "looped": true,
+      "blendable": true,
+      "variations": [
+        "Crouch_Idle",
+        "Crouch_Walk"
+      ]
+    },
+    "strafe": {
+      "name": "Strafe_Standard",
+      "directions": ["Left", "Right", "Forward", "Backward"],
+      "looped": true,
+      "blendable": true
+    }
+  },
+  "blendTrees": {
+    "locomotion": {
+      "type": "2D_Freeform",
+      "parameters": ["Speed", "Direction"],
+      "animations": [
+        "Idle",
+        "Walk_Forward",
+        "Run_Forward",
+        "Walk_Left",
+        "Walk_Right",
+        "Walk_Backward"
+      ]
+    }
+  },
+  "graphics": {
+    "frameRate": 60,
+    "rootMotion": true,
+    "inPlaceVariants": true
+  },
+  "price": {
+    "basicSet": 0,
+    "premiumVariations": 25,
+    "currency": "OMNI"
+  }
+}

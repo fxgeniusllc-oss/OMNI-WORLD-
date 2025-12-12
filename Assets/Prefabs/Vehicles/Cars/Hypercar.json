@@ -1,0 +1,129 @@
+{
+  "prefabName": "Vehicle_Car_Hypercar",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Hypercar",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Billionaire",
+    "performanceClass": "Hypercar"
+  },
+  "specifications": {
+    "class": "Hypercar",
+    "seats": 2,
+    "engine": "8.0L Quad-Turbo W16",
+    "horsepower": 1500,
+    "topSpeed": 261,
+    "acceleration": 2.4,
+    "handling": 10.0,
+    "fuelType": "Racing Fuel",
+    "limitedEdition": true,
+    "productionNumber": 500
+  },
+  "physics": {
+    "mass": 1995,
+    "centerOfMass": { "x": 0, "y": 0.28, "z": -0.4 },
+    "wheelBase": 2.71,
+    "trackWidth": 1.74,
+    "suspensionTravel": 0.06,
+    "springRate": 95000,
+    "damperRate": 8500,
+    "downforce": 1800
+  },
+  "model": {
+    "dimensions": {
+      "length": 4.54,
+      "width": 2.04,
+      "height": 1.16,
+      "wheelbase": 2.71
+    },
+    "doors": 2,
+    "doorType": "Dihedral",
+    "trunk": "None",
+    "bodyStyle": "Hypercar"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 200000,
+      "lod1": 100000,
+      "lod2": 48000,
+      "lod3": 22000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 4096,
+      "metallic": 4096,
+      "ao": 4096,
+      "emissive": 2048
+    },
+    "materials": [
+      "Car_Paint_Exclusive_Masterpiece",
+      "Carbon_Fiber_Visible_Weave",
+      "Titanium_Exhaust_Polished",
+      "Glass_Aerospace_Grade",
+      "Leather_Handcrafted_Italian",
+      "Rubber_Michelin_Pilot_Sport_Cup",
+      "LED_Matrix_Headlights"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Tire Deformation",
+      "Suspension Animation",
+      "Working Lights",
+      "Full Digital Cockpit",
+      "Animated Steering Wheel",
+      "Active Aerodynamics",
+      "Brake Caliper Detail",
+      "Engine Bay Detail",
+      "Undercarriage Detail",
+      "Heat Haze Effects",
+      "Wind Tunnel Optimized Model"
+    ]
+  },
+  "audio": {
+    "engineSound": "W16_Quad_Turbo_Symphony",
+    "exhaustNote": "Hypercar_Exclusive",
+    "turboWhistle": true,
+    "hornSound": "Hypercar",
+    "doorSound": "Dihedral_Precision"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "quadExhaust": true,
+      "flames": true,
+      "intensityHigh": true
+    },
+    "tireSmokeOnBurnout": true,
+    "brakelightGlow": true,
+    "headlightBeams": true,
+    "exhaustFlames": true,
+    "brakeDiskGlow": true,
+    "heatShimmer": true,
+    "shockwaveAtTopSpeed": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "AerodynamicsController",
+    "LaunchControl",
+    "TelemetrySystem"
+  ],
+  "price": {
+    "purchasePrice": 3500000,
+    "dailyRent": 25000,
+    "currency": "OMNI"
+  }
+}

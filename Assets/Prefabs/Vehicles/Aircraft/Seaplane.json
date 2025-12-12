@@ -1,0 +1,108 @@
+{
+  "prefabName": "Vehicle_Aircraft_Seaplane",
+  "category": "Vehicles",
+  "subCategory": "Aircraft",
+  "type": "Amphibious Seaplane",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Premium",
+    "performanceClass": "Utility Aviation"
+  },
+  "specifications": {
+    "class": "Light Seaplane",
+    "seats": 6,
+    "engine": "Turboprop",
+    "horsepower": 850,
+    "cruiseSpeed": 165,
+    "maxSpeed": 185,
+    "range": 950,
+    "ceiling": 24500,
+    "fuelType": "Jet A-1",
+    "amphibious": true
+  },
+  "physics": {
+    "mass": 2400,
+    "emptyWeight": 1950,
+    "maxTakeoffWeight": 3600,
+    "wingSpan": 15.2,
+    "length": 12.1,
+    "height": 4.6,
+    "liftCoefficient": 1.9,
+    "dragCoefficient": 0.032,
+    "waterDynamics": true
+  },
+  "model": {
+    "dimensions": {
+      "length": 12.1,
+      "width": 15.2,
+      "height": 4.6,
+      "wingspan": 15.2
+    },
+    "floats": "Amphibious",
+    "propeller": "Four-Blade"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 68000,
+      "lod1": 34000,
+      "lod2": 16000,
+      "lod3": 7500
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Aircraft_Paint_Marine",
+      "Metal_Aluminum_Seaplane",
+      "Glass_Cockpit",
+      "Rubber_Float_Bumpers",
+      "Propeller_Metal"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Animated Propeller",
+      "Working Lights",
+      "Cockpit Instruments",
+      "Water Spray Effects",
+      "Retractable Landing Gear"
+    ]
+  },
+  "audio": {
+    "engineSound": "Turboprop_Single",
+    "propellerSound": true,
+    "waterSplash": true
+  },
+  "effects": {
+    "waterSpray": {
+      "particleSystem": true,
+      "wakeEffect": true
+    },
+    "propellerBlur": true,
+    "navigationLights": true,
+    "engineExhaust": true
+  },
+  "components": [
+    "Rigidbody",
+    "SeaplaneController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "WaterPhysics"
+  ],
+  "price": {
+    "purchasePrice": 1800000,
+    "hourlyRent": 1200,
+    "currency": "OMNI"
+  }
+}

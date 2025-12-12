@@ -1,0 +1,56 @@
+{
+  "prefabName": "Avatar_Customization_Clothing",
+  "category": "Avatars",
+  "subCategory": "Customization",
+  "type": "Clothing Collection",
+  "metadata": {
+    "nftCompatible": true,
+    "compatibleWith": ["All"],
+    "customizationType": "Clothing"
+  },
+  "categories": {
+    "casual": {
+      "tops": ["T-Shirt", "Polo", "Hoodie", "Sweater", "Tank Top"],
+      "bottoms": ["Jeans", "Shorts", "Joggers", "Chinos"],
+      "shoes": ["Sneakers", "Sandals", "Loafers"]
+    },
+    "formal": {
+      "tops": ["Dress Shirt", "Blouse", "Blazer", "Suit Jacket"],
+      "bottoms": ["Dress Pants", "Skirt", "Dress"],
+      "shoes": ["Dress Shoes", "Heels", "Oxfords"]
+    },
+    "athletic": {
+      "tops": ["Sports Bra", "Athletic Shirt", "Jersey"],
+      "bottoms": ["Leggings", "Gym Shorts", "Track Pants"],
+      "shoes": ["Running Shoes", "Training Shoes"]
+    },
+    "luxury": {
+      "tops": ["Designer Jacket", "Silk Shirt", "Evening Gown Top"],
+      "bottoms": ["Designer Pants", "Evening Gown"],
+      "shoes": ["Designer Heels", "Luxury Loafers"]
+    },
+    "streetwear": {
+      "tops": ["Graphic Tee", "Bomber Jacket", "Oversized Hoodie"],
+      "bottoms": ["Cargo Pants", "Ripped Jeans"],
+      "shoes": ["High-top Sneakers", "Boots"]
+    }
+  },
+  "graphics": {
+    "clothSimulation": true,
+    "layering": true,
+    "textureResolution": 2048,
+    "materials": [
+      "Fabric_Cotton_PBR",
+      "Fabric_Silk_PBR",
+      "Fabric_Denim_PBR",
+      "Leather_PBR",
+      "Synthetic_Athletic_PBR"
+    ]
+  },
+  "price": {
+    "basicItems": 10,
+    "premiumItems": 50,
+    "luxuryItems": 200,
+    "currency": "OMNI"
+  }
+}

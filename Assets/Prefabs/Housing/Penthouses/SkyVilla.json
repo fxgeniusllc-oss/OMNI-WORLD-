@@ -1,0 +1,88 @@
+{
+  "prefabName": "Housing_Penthouse_SkyVilla",
+  "category": "Housing",
+  "subCategory": "Penthouses",
+  "type": "Sky Villa",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Ultra-Luxury",
+    "dominionZone": "Downtown Skyline"
+  },
+  "specifications": {
+    "squareFootage": 4500,
+    "bedrooms": 4,
+    "bathrooms": 5.5,
+    "floors": 2,
+    "parkingSpaces": 4,
+    "floor": 45
+  },
+  "layout": {
+    "dimensions": {
+      "width": 65,
+      "length": 69.23,
+      "height": 24
+    },
+    "features": ["360-Degree Views", "Private Rooftop", "Infinity Pool", "Sky Garden", "Wine Room", "Smart Home", "Private Elevator"]
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 95000,
+      "lod1": 48000,
+      "lod2": 24000,
+      "lod3": 12000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048,
+      "ao": 2048
+    },
+    "materials": [
+      "Glass_Floor_To_Ceiling_Panoramic",
+      "Marble_Floor_Luxury",
+      "Steel_Stainless_Brushed",
+      "Wood_Exotic_Ebony",
+      "Stone_Granite_Black"
+    ],
+    "lighting": {
+      "realtimeLights": 12,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field",
+      "Bloom",
+      "Motion Blur",
+      "Chromatic Aberration"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SecuritySystem",
+    "SmartHome",
+    "ClimateControl",
+    "ElevatorController",
+    "PoolController"
+  ],
+  "price": {
+    "purchasePrice": 8500000,
+    "monthlyRent": 55000,
+    "currency": "OMNI"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "prefabName": "Avatar_Customization_FacialHair",
+  "category": "Avatars",
+  "subCategory": "Customization",
+  "type": "Facial Hair Collection",
+  "metadata": {
+    "nftCompatible": true,
+    "compatibleWith": ["Male"],
+    "customizationType": "FacialHair"
+  },
+  "items": [
+    {
+      "name": "Full_Beard",
+      "style": "Classic",
+      "polyCount": 12000,
+      "coverage": "Full"
+    },
+    {
+      "name": "Goatee",
+      "style": "Modern",
+      "polyCount": 4500,
+      "coverage": "Chin"
+    },
+    {
+      "name": "Mustache_Handlebar",
+      "style": "Vintage",
+      "polyCount": 3500,
+      "coverage": "Upper Lip"
+    },
+    {
+      "name": "Stubble",
+      "style": "Casual",
+      "polyCount": 8000,
+      "coverage": "Light"
+    },
+    {
+      "name": "Van_Dyke",
+      "style": "Distinguished",
+      "polyCount": 5500,
+      "coverage": "Chin and Mustache"
+    },
+    {
+      "name": "Soul_Patch",
+      "style": "Minimal",
+      "polyCount": 1500,
+      "coverage": "Under Lip"
+    },
+    {
+      "name": "Mutton_Chops",
+      "style": "Historical",
+      "polyCount": 9500,
+      "coverage": "Sideburns"
+    },
+    {
+      "name": "Clean_Shaven",
+      "style": "Professional",
+      "polyCount": 0,
+      "coverage": "None"
+    }
+  ],
+  "graphics": {
+    "textureResolution": 2048,
+    "strandBased": true,
+    "colorVariants": [
+      "Black",
+      "Brown",
+      "Blonde",
+      "Red",
+      "Gray",
+      "White"
+    ]
+  },
+  "price": {
+    "basicStyles": 0,
+    "premiumStyles": 30,
+    "currency": "OMNI"
+  }
+}

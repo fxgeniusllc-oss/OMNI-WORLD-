@@ -1,0 +1,147 @@
+{
+  "prefabName": "Housing_Condo_ModernFlat",
+  "category": "Housing",
+  "subCategory": "Condos",
+  "type": "Modern Flat",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Premium",
+    "dominionZone": "Urban Core"
+  },
+  "specifications": {
+    "squareFootage": 1100,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "floors": 1,
+    "parkingSpaces": 1
+  },
+  "layout": {
+    "dimensions": {
+      "width": 33,
+      "length": 33.33,
+      "height": 11
+    },
+    "rooms": [
+      {
+        "name": "Open Living/Dining",
+        "type": "Great Room",
+        "dimensions": { "width": 20, "length": 18, "height": 11 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "features": ["Floor-to-Ceiling Windows", "Built-in Entertainment Center", "Modern Lighting", "Balcony Access"]
+      },
+      {
+        "name": "Kitchen",
+        "type": "Contemporary Kitchen",
+        "dimensions": { "width": 13, "length": 15, "height": 11 },
+        "position": { "x": 20, "y": 0, "z": 0 },
+        "features": ["Waterfall Island", "Soft-close Cabinets", "Induction Cooktop", "Smart Appliances"]
+      },
+      {
+        "name": "Master Bedroom",
+        "type": "Master",
+        "dimensions": { "width": 15, "length": 14, "height": 11 },
+        "position": { "x": 0, "y": 0, "z": 18 },
+        "features": ["En-suite Access", "Large Closet", "Accent Wall", "Smart Windows"]
+      },
+      {
+        "name": "Master Bathroom",
+        "type": "Luxury Bath",
+        "dimensions": { "width": 11, "length": 10, "height": 11 },
+        "position": { "x": 15, "y": 0, "z": 18 },
+        "features": ["Walk-in Shower", "Floating Vanity", "Backlit Mirror", "Rainfall Showerhead"]
+      },
+      {
+        "name": "Second Bedroom",
+        "type": "Bedroom/Office",
+        "dimensions": { "width": 11, "length": 11, "height": 11 },
+        "position": { "x": 0, "y": 0, "z": 32 },
+        "features": ["Closet", "Window", "Flexible Layout"]
+      },
+      {
+        "name": "Second Bathroom",
+        "type": "Full Bath",
+        "dimensions": { "width": 8, "length": 9, "height": 11 },
+        "position": { "x": 11, "y": 0, "z": 32 },
+        "features": ["Shower", "Modern Vanity", "Designer Fixtures"]
+      },
+      {
+        "name": "Storage/Laundry",
+        "type": "Utility",
+        "dimensions": { "width": 7, "length": 6, "height": 11 },
+        "position": { "x": 26, "y": 0, "z": 18 },
+        "features": ["In-unit Washer/Dryer", "Storage Shelving"]
+      }
+    ],
+    "entryPoints": [
+      {
+        "name": "Main Door",
+        "position": { "x": 26, "y": 0, "z": 9 },
+        "type": "Smart Lock",
+        "interactable": true
+      },
+      {
+        "name": "Balcony Door",
+        "position": { "x": 0, "y": 0, "z": 9 },
+        "type": "Sliding Glass",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 0, "y": 5.5, "z": 9 }, "size": "Floor-to-Ceiling", "type": "Sliding" },
+      { "position": { "x": 7.5, "y": 5.5, "z": 33 }, "size": "Large", "type": "Fixed" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 42000,
+      "lod1": 21000,
+      "lod2": 9500
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Engineered_Wood_Modern",
+      "Quartz_Countertop_White",
+      "Glass_Backsplash",
+      "Painted_Wall_Contemporary",
+      "Tile_Large_Format"
+    ],
+    "lighting": {
+      "realtimeLights": 5,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field",
+      "Bloom"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SmartHome"
+  ],
+  "price": {
+    "purchasePrice": 195000,
+    "monthlyRent": 2600,
+    "currency": "OMNI"
+  }
+}

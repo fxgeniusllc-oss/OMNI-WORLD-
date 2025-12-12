@@ -1,0 +1,234 @@
+{
+  "prefabName": "Housing_Mansion_Modern",
+  "category": "Housing",
+  "subCategory": "Mansions",
+  "type": "Modern Estate",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Ultra-Luxury",
+    "dominionZone": "Hills District"
+  },
+  "specifications": {
+    "squareFootage": 7200,
+    "bedrooms": 6,
+    "bathrooms": 7.5,
+    "floors": 3,
+    "parkingSpaces": 4,
+    "lotSize": 20000
+  },
+  "layout": {
+    "dimensions": {
+      "width": 80,
+      "length": 90,
+      "height": 36
+    },
+    "rooms": [
+      {
+        "name": "Great Room",
+        "type": "Living",
+        "dimensions": { "width": 40, "length": 30, "height": 24 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "floor": 1,
+        "features": ["Double-height Ceiling", "Floor-to-Ceiling Glass", "Minimalist Fireplace", "Retractable Glass Walls", "Infinity Pool View"]
+      },
+      {
+        "name": "Chef's Kitchen",
+        "type": "Gourmet Kitchen",
+        "dimensions": { "width": 30, "length": 24, "height": 12 },
+        "position": { "x": 40, "y": 0, "z": 0 },
+        "floor": 1,
+        "features": ["Waterfall Island", "Miele Appliances", "Wine Cellar Access", "Catering Kitchen", "Smart Technology"]
+      },
+      {
+        "name": "Dining Room",
+        "type": "Formal Dining",
+        "dimensions": { "width": 24, "length": 20, "height": 12 },
+        "position": { "x": 40, "y": 0, "z": 24 },
+        "floor": 1,
+        "features": ["Sculptural Lighting", "Glass Wine Display", "Garden View"]
+      },
+      {
+        "name": "Home Theater",
+        "type": "Entertainment",
+        "dimensions": { "width": 28, "length": 20, "height": 12 },
+        "position": { "x": 0, "y": 0, "z": 30 },
+        "floor": 1,
+        "features": ["Dolby Atmos", "Stadium Seating", "Acoustic Panels", "Projection System"]
+      },
+      {
+        "name": "Wine Cellar",
+        "type": "Storage",
+        "dimensions": { "width": 16, "length": 14, "height": 10 },
+        "position": { "x": 28, "y": 0, "z": 50 },
+        "floor": 1,
+        "features": ["Climate Controlled", "Glass Walls", "Tasting Area", "1000+ Bottle Capacity"]
+      },
+      {
+        "name": "Gym",
+        "type": "Fitness",
+        "dimensions": { "width": 24, "length": 20, "height": 12 },
+        "position": { "x": 44, "y": 0, "z": 44 },
+        "floor": 1,
+        "features": ["Mirrors", "Rubber Flooring", "Equipment Area", "Yoga Studio"]
+      },
+      {
+        "name": "Spa",
+        "type": "Wellness",
+        "dimensions": { "width": 20, "length": 18, "height": 12 },
+        "position": { "x": 44, "y": 0, "z": 64 },
+        "floor": 1,
+        "features": ["Sauna", "Steam Room", "Massage Room", "Relaxation Lounge"]
+      },
+      {
+        "name": "Master Suite",
+        "type": "Master",
+        "dimensions": { "width": 36, "length": 28, "height": 14 },
+        "position": { "x": 0, "y": 12, "z": 0 },
+        "floor": 2,
+        "features": ["Sitting Lounge", "Private Terrace", "Fireplace", "Smart Glass", "His & Her Closets"]
+      },
+      {
+        "name": "Master Bathroom",
+        "type": "Luxury Spa Bath",
+        "dimensions": { "width": 24, "length": 20, "height": 14 },
+        "position": { "x": 36, "y": 12, "z": 0 },
+        "floor": 2,
+        "features": ["Freestanding Tub", "Rain Shower", "Steam Shower", "Dual Vanities", "Heated Floors", "Smart Mirror"]
+      },
+      {
+        "name": "Guest Suite 1",
+        "type": "Bedroom",
+        "dimensions": { "width": 20, "length": 18, "height": 10 },
+        "position": { "x": 0, "y": 12, "z": 28 },
+        "floor": 2,
+        "features": ["En-suite Bath", "Balcony", "Walk-in Closet"]
+      },
+      {
+        "name": "Guest Suite 2",
+        "type": "Bedroom",
+        "dimensions": { "width": 20, "length": 18, "height": 10 },
+        "position": { "x": 20, "y": 12, "z": 28 },
+        "floor": 2,
+        "features": ["En-suite Bath", "Balcony", "Walk-in Closet"]
+      },
+      {
+        "name": "Guest Suite 3",
+        "type": "Bedroom",
+        "dimensions": { "width": 20, "length": 18, "height": 10 },
+        "position": { "x": 40, "y": 12, "z": 28 },
+        "floor": 2,
+        "features": ["En-suite Bath", "Terrace", "Walk-in Closet"]
+      },
+      {
+        "name": "Office",
+        "type": "Study",
+        "dimensions": { "width": 22, "length": 18, "height": 10 },
+        "position": { "x": 0, "y": 12, "z": 46 },
+        "floor": 2,
+        "features": ["Built-in Desk", "Bookshelves", "Balcony", "Smart Technology"]
+      },
+      {
+        "name": "Rooftop Terrace",
+        "type": "Outdoor Living",
+        "dimensions": { "width": 60, "length": 40, "height": 10 },
+        "position": { "x": 10, "y": 24, "z": 10 },
+        "floor": 3,
+        "features": ["Outdoor Kitchen", "Fire Pit", "Lounge Area", "Panoramic Views", "Green Roof"]
+      }
+    ],
+    "exteriorFeatures": [
+      "Infinity Pool",
+      "Pool House",
+      "4-Car Garage",
+      "Automated Gate",
+      "Landscaped Gardens",
+      "Outdoor Shower",
+      "Cabana",
+      "Solar Panels",
+      "Smart Irrigation"
+    ],
+    "entryPoints": [
+      {
+        "name": "Main Entrance",
+        "position": { "x": 40, "y": 0, "z": 90 },
+        "type": "Pivot Door",
+        "interactable": true
+      },
+      {
+        "name": "Pool Access",
+        "position": { "x": 0, "y": 0, "z": 15 },
+        "type": "Sliding Glass",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 0, "y": 12, "z": 15 }, "size": "Floor-to-Ceiling", "type": "Frameless" },
+      { "position": { "x": 80, "y": 6, "z": 45 }, "size": "Picture Window", "type": "Fixed" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 150000,
+      "lod1": 75000,
+      "lod2": 35000,
+      "lod3": 18000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 4096,
+      "metallic": 4096,
+      "ao": 2048
+    },
+    "materials": [
+      "Concrete_Polished_Modern",
+      "Glass_Floor_To_Ceiling",
+      "Steel_Brushed_Stainless",
+      "Wood_Exotic_Teak",
+      "Stone_Natural_Travertine",
+      "Marble_Italian_White"
+    ],
+    "lighting": {
+      "realtimeLights": 20,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field",
+      "Bloom",
+      "Motion Blur",
+      "Chromatic Aberration",
+      "Film Grain",
+      "Ray Traced Reflections"
+    ]
+  },
+  "components": [
+    "MeshCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SecuritySystem",
+    "SmartHome",
+    "ClimateControl",
+    "PoolController",
+    "AudioSystem",
+    "TheaterController"
+  ],
+  "price": {
+    "purchasePrice": 4800000,
+    "monthlyRent": 35000,
+    "currency": "OMNI"
+  }
+}

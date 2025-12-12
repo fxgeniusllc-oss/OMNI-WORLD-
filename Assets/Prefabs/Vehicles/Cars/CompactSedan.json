@@ -1,0 +1,119 @@
+{
+  "prefabName": "Vehicle_Car_CompactSedan",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Compact Sedan",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Entry",
+    "performanceClass": "Economy"
+  },
+  "specifications": {
+    "class": "Compact",
+    "seats": 5,
+    "engine": "1.6L I4",
+    "horsepower": 120,
+    "topSpeed": 110,
+    "acceleration": 9.5,
+    "handling": 6.5,
+    "fuelType": "Gasoline"
+  },
+  "physics": {
+    "mass": 1200,
+    "centerOfMass": { "x": 0, "y": 0.4, "z": 0 },
+    "wheelBase": 2.6,
+    "trackWidth": 1.5,
+    "suspensionTravel": 0.15,
+    "springRate": 35000,
+    "damperRate": 2500
+  },
+  "model": {
+    "dimensions": {
+      "length": 4.4,
+      "width": 1.7,
+      "height": 1.45,
+      "wheelbase": 2.6
+    },
+    "doors": 4,
+    "trunk": "Standard",
+    "bodyStyle": "Sedan"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 35000,
+      "lod1": 18000,
+      "lod2": 8000,
+      "lod3": 3000
+    },
+    "textureResolution": {
+      "diffuse": 2048,
+      "normal": 2048,
+      "roughness": 1024,
+      "metallic": 1024
+    },
+    "materials": [
+      "Car_Paint_Metallic",
+      "Glass_Window_Tinted",
+      "Rubber_Tire_Realistic",
+      "Chrome_Trim",
+      "Plastic_Interior"
+    ],
+    "lighting": {
+      "headlights": true,
+      "taillights": true,
+      "brakelights": true,
+      "turnsignals": true,
+      "interiorLights": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Tire Deformation",
+      "Suspension Animation",
+      "Working Lights",
+      "Dashboard Instruments",
+      "Animated Steering Wheel"
+    ]
+  },
+  "audio": {
+    "engineSound": "I4_Economy",
+    "exhaustNote": "Mild",
+    "hornSound": "Standard",
+    "doorSound": "Compact",
+    "brakeSound": "Standard"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "position": { "x": 0, "y": 0.2, "z": -2.2 }
+    },
+    "tireSmokeOnBurnout": true,
+    "brakelightGlow": true,
+    "headlightBeams": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem"
+  ],
+  "customization": {
+    "paintColors": ["Red", "Blue", "White", "Black", "Silver", "Gray"],
+    "wheels": ["Stock", "Sport", "Alloy"],
+    "interior": ["Cloth", "Leather"],
+    "upgrades": ["Performance Exhaust", "Sport Suspension", "Turbo Kit"]
+  },
+  "price": {
+    "purchasePrice": 18000,
+    "dailyRent": 45,
+    "currency": "OMNI"
+  }
+}
