@@ -1,0 +1,85 @@
+{
+  "prefabName": "Housing_Mansion_Mediterranean",
+  "category": "Housing",
+  "subCategory": "Mansions",
+  "type": "Mediterranean Villa",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Luxury",
+    "dominionZone": "Coastal District"
+  },
+  "specifications": {
+    "squareFootage": 6400,
+    "bedrooms": 5,
+    "bathrooms": 6.5,
+    "floors": 2,
+    "parkingSpaces": 3,
+    "lotSize": 18000
+  },
+  "layout": {
+    "dimensions": {
+      "width": 75,
+      "length": 85.33,
+      "height": 24
+    },
+    "features": ["Courtyard Design", "Terracotta Roof", "Arched Windows", "Stucco Exterior", "Fountain", "Loggia", "Tower Elements"]
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 130000,
+      "lod1": 65000,
+      "lod2": 32000,
+      "lod3": 16000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 4096,
+      "metallic": 4096
+    },
+    "materials": [
+      "Tile_Terracotta_Mediterranean",
+      "Stucco_Textured_Cream",
+      "Stone_Floor_Travertine",
+      "Wood_Beam_Exposed",
+      "Iron_Wrought_Decorative"
+    ],
+    "lighting": {
+      "realtimeLights": 16,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field",
+      "Bloom"
+    ]
+  },
+  "components": [
+    "MeshCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SecuritySystem",
+    "SmartHome",
+    "ClimateControl",
+    "PoolController",
+    "FountainController"
+  ],
+  "price": {
+    "purchasePrice": 3200000,
+    "monthlyRent": 22000,
+    "currency": "OMNI"
+  }
+}

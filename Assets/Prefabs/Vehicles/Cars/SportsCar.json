@@ -1,0 +1,133 @@
+{
+  "prefabName": "Vehicle_Car_SportsCar",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Sports Car",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Premium",
+    "performanceClass": "Sport"
+  },
+  "specifications": {
+    "class": "Sports",
+    "seats": 2,
+    "engine": "3.0L Twin-Turbo V6",
+    "horsepower": 400,
+    "topSpeed": 180,
+    "acceleration": 4.2,
+    "handling": 9.5,
+    "fuelType": "Premium Gasoline"
+  },
+  "physics": {
+    "mass": 1450,
+    "centerOfMass": { "x": 0, "y": 0.35, "z": -0.2 },
+    "wheelBase": 2.55,
+    "trackWidth": 1.6,
+    "suspensionTravel": 0.1,
+    "springRate": 55000,
+    "damperRate": 4500,
+    "downforce": 200
+  },
+  "model": {
+    "dimensions": {
+      "length": 4.5,
+      "width": 1.85,
+      "height": 1.25,
+      "wheelbase": 2.55
+    },
+    "doors": 2,
+    "trunk": "Compact",
+    "bodyStyle": "Coupe"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 65000,
+      "lod1": 32000,
+      "lod2": 15000,
+      "lod3": 6000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Car_Paint_Metallic_Premium",
+      "Carbon_Fiber_Weave",
+      "Glass_Window_Tinted_Dark",
+      "Rubber_Performance_Tire",
+      "Chrome_Polished",
+      "Leather_Premium_Interior",
+      "Aluminum_Brushed"
+    ],
+    "lighting": {
+      "headlights": true,
+      "taillights": true,
+      "brakelights": true,
+      "turnsignals": true,
+      "interiorLights": true,
+      "ledAccents": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Tire Deformation",
+      "Suspension Animation",
+      "Working Lights",
+      "Dashboard Instruments",
+      "Animated Steering Wheel",
+      "Active Spoiler",
+      "Brake Caliper Detail"
+    ]
+  },
+  "audio": {
+    "engineSound": "V6_Twin_Turbo_Sport",
+    "exhaustNote": "Aggressive",
+    "turboWhistle": true,
+    "hornSound": "Sport",
+    "doorSound": "Premium",
+    "brakeSound": "Performance"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "dualExhaust": true,
+      "position": [
+        { "x": -0.5, "y": 0.2, "z": -2.3 },
+        { "x": 0.5, "y": 0.2, "z": -2.3 }
+      ]
+    },
+    "tireSmokeOnBurnout": true,
+    "brakelightGlow": true,
+    "headlightBeams": true,
+    "turboFlames": true,
+    "brakeDiskGlow": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "AerodynamicsController"
+  ],
+  "customization": {
+    "paintColors": ["Racing Red", "Phantom Black", "Arctic White", "Carbon Gray", "Electric Blue", "Sunset Orange"],
+    "wheels": ["Sport 18in", "Racing 19in", "Carbon Fiber 20in"],
+    "interior": ["Alcantara", "Full Leather", "Carbon Fiber Trim"],
+    "upgrades": ["Stage 1 Tune", "Stage 2 Tune", "Exhaust System", "Carbon Fiber Body Kit", "Big Brake Kit", "Coilover Suspension"]
+  },
+  "price": {
+    "purchasePrice": 85000,
+    "dailyRent": 450,
+    "currency": "OMNI"
+  }
+}

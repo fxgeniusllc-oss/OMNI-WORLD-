@@ -1,0 +1,236 @@
+{
+  "prefabName": "Housing_Mansion_Colonial",
+  "category": "Housing",
+  "subCategory": "Mansions",
+  "type": "Colonial Estate",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Luxury",
+    "dominionZone": "Estate District"
+  },
+  "specifications": {
+    "squareFootage": 5800,
+    "bedrooms": 5,
+    "bathrooms": 5.5,
+    "floors": 2,
+    "parkingSpaces": 3,
+    "lotSize": 15000
+  },
+  "layout": {
+    "dimensions": {
+      "width": 70,
+      "length": 82.86,
+      "height": 24
+    },
+    "rooms": [
+      {
+        "name": "Grand Foyer",
+        "type": "Entrance",
+        "dimensions": { "width": 18, "length": 16, "height": 20 },
+        "position": { "x": 26, "y": 0, "z": 0 },
+        "floor": 1,
+        "features": ["Spiral Staircase", "Chandelier", "Marble Floor", "Double-height Ceiling"]
+      },
+      {
+        "name": "Formal Living Room",
+        "type": "Living",
+        "dimensions": { "width": 22, "length": 20, "height": 12 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "floor": 1,
+        "features": ["Fireplace", "Crown Molding", "Bay Windows", "Hardwood Floors"]
+      },
+      {
+        "name": "Formal Dining Room",
+        "type": "Dining",
+        "dimensions": { "width": 18, "length": 16, "height": 12 },
+        "position": { "x": 44, "y": 0, "z": 0 },
+        "floor": 1,
+        "features": ["Tray Ceiling", "Built-in China Cabinet", "Wainscoting", "Chandelier"]
+      },
+      {
+        "name": "Gourmet Kitchen",
+        "type": "Chef's Kitchen",
+        "dimensions": { "width": 24, "length": 20, "height": 12 },
+        "position": { "x": 26, "y": 0, "z": 16 },
+        "floor": 1,
+        "features": ["Double Island", "Wolf Range", "Sub-Zero Fridge", "Butler's Pantry", "Walk-in Pantry"]
+      },
+      {
+        "name": "Breakfast Room",
+        "type": "Casual Dining",
+        "dimensions": { "width": 14, "length": 12, "height": 12 },
+        "position": { "x": 50, "y": 0, "z": 16 },
+        "floor": 1,
+        "features": ["Bay Window", "Garden View", "Coffered Ceiling"]
+      },
+      {
+        "name": "Family Room",
+        "type": "Living",
+        "dimensions": { "width": 26, "length": 22, "height": 12 },
+        "position": { "x": 0, "y": 0, "z": 20 },
+        "floor": 1,
+        "features": ["Stone Fireplace", "Built-in Entertainment", "Vaulted Ceiling", "Patio Access"]
+      },
+      {
+        "name": "Library/Office",
+        "type": "Study",
+        "dimensions": { "width": 18, "length": 16, "height": 12 },
+        "position": { "x": 0, "y": 0, "z": 42 },
+        "floor": 1,
+        "features": ["Built-in Bookshelves", "Fireplace", "Coffered Ceiling", "French Doors"]
+      },
+      {
+        "name": "Guest Suite",
+        "type": "Bedroom",
+        "dimensions": { "width": 16, "length": 14, "height": 12 },
+        "position": { "x": 18, "y": 0, "z": 42 },
+        "floor": 1,
+        "features": ["En-suite Bath", "Walk-in Closet", "Private Entrance"]
+      },
+      {
+        "name": "Master Bedroom Suite",
+        "type": "Master",
+        "dimensions": { "width": 28, "length": 24, "height": 12 },
+        "position": { "x": 0, "y": 12, "z": 0 },
+        "floor": 2,
+        "features": ["Sitting Area", "Fireplace", "Private Balcony", "Tray Ceiling", "Dual Walk-ins"]
+      },
+      {
+        "name": "Master Bathroom",
+        "type": "Spa Bath",
+        "dimensions": { "width": 20, "length": 16, "height": 12 },
+        "position": { "x": 28, "y": 12, "z": 0 },
+        "floor": 2,
+        "features": ["Jacuzzi Tub", "Walk-in Shower", "His & Her Vanities", "Water Closet", "Bidet"]
+      },
+      {
+        "name": "Bedroom 2",
+        "type": "Bedroom",
+        "dimensions": { "width": 16, "length": 14, "height": 10 },
+        "position": { "x": 0, "y": 12, "z": 24 },
+        "floor": 2,
+        "features": ["En-suite Bath", "Walk-in Closet", "Balcony"]
+      },
+      {
+        "name": "Bedroom 3",
+        "type": "Bedroom",
+        "dimensions": { "width": 15, "length": 14, "height": 10 },
+        "position": { "x": 16, "y": 12, "z": 24 },
+        "floor": 2,
+        "features": ["En-suite Bath", "Closet", "Window Seat"]
+      },
+      {
+        "name": "Bedroom 4",
+        "type": "Bedroom",
+        "dimensions": { "width": 15, "length": 13, "height": 10 },
+        "position": { "x": 31, "y": 12, "z": 24 },
+        "floor": 2,
+        "features": ["Jack-and-Jill Bath", "Closet", "Desk Area"]
+      },
+      {
+        "name": "Bonus Room",
+        "type": "Recreation",
+        "dimensions": { "width": 20, "length": 18, "height": 10 },
+        "position": { "x": 46, "y": 12, "z": 20 },
+        "floor": 2,
+        "features": ["Media Area", "Game Space", "Built-in Storage"]
+      }
+    ],
+    "exteriorFeatures": [
+      "Circular Driveway",
+      "3-Car Garage",
+      "Columned Portico",
+      "Brick Facade",
+      "Manicured Lawn",
+      "Outdoor Kitchen",
+      "Swimming Pool",
+      "Pool House"
+    ],
+    "entryPoints": [
+      {
+        "name": "Front Door",
+        "position": { "x": 35, "y": 0, "z": 0 },
+        "type": "Grand Entrance",
+        "interactable": true
+      },
+      {
+        "name": "Garage Entry",
+        "position": { "x": 64, "y": 0, "z": 40 },
+        "type": "Interior Door",
+        "interactable": true
+      },
+      {
+        "name": "Patio Doors",
+        "position": { "x": 0, "y": 0, "z": 31 },
+        "type": "French Doors",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 11, "y": 6, "z": 0 }, "size": "Bay Window", "type": "Decorative" },
+      { "position": { "x": 0, "y": 6, "z": 31 }, "size": "Floor-to-Ceiling", "type": "Sliding" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 120000,
+      "lod1": 60000,
+      "lod2": 30000,
+      "lod3": 15000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 4096,
+      "metallic": 4096,
+      "ao": 2048
+    },
+    "materials": [
+      "Hardwood_Floor_Premium_Oak",
+      "Marble_Floor_Carrara",
+      "Granite_Countertop_Exotic",
+      "Brick_Exterior_Colonial",
+      "Trim_Crown_Molding",
+      "Glass_Window_Premium"
+    ],
+    "lighting": {
+      "realtimeLights": 15,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field",
+      "Bloom",
+      "Motion Blur",
+      "Chromatic Aberration",
+      "Film Grain"
+    ]
+  },
+  "components": [
+    "MeshCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SecuritySystem",
+    "SmartHome",
+    "ClimateControl",
+    "PoolController"
+  ],
+  "price": {
+    "purchasePrice": 2500000,
+    "monthlyRent": 18000,
+    "currency": "OMNI"
+  }
+}

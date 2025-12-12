@@ -1,0 +1,82 @@
+{
+  "prefabName": "Housing_Penthouse_CornerTower",
+  "category": "Housing",
+  "subCategory": "Penthouses",
+  "type": "Corner Tower Suite",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Luxury",
+    "dominionZone": "Financial District"
+  },
+  "specifications": {
+    "squareFootage": 3200,
+    "bedrooms": 3,
+    "bathrooms": 4,
+    "floors": 1,
+    "parkingSpaces": 3,
+    "floor": 52
+  },
+  "layout": {
+    "dimensions": {
+      "width": 55,
+      "length": 58.18,
+      "height": 13
+    },
+    "features": ["Corner Location", "Wraparound Terrace", "City Views", "Library", "Wine Cellar", "Media Room", "Chef's Kitchen"]
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 72000,
+      "lod1": 36000,
+      "lod2": 18000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Hardwood_Floor_Walnut",
+      "Marble_Wall_Calacatta",
+      "Glass_Window_Smart",
+      "Metal_Trim_Bronze",
+      "Stone_Countertop_Quartzite"
+    ],
+    "lighting": {
+      "realtimeLights": 10,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field",
+      "Bloom"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SecuritySystem",
+    "SmartHome",
+    "ClimateControl"
+  ],
+  "price": {
+    "purchasePrice": 5200000,
+    "monthlyRent": 35000,
+    "currency": "OMNI"
+  }
+}

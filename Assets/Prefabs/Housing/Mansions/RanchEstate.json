@@ -1,0 +1,84 @@
+{
+  "prefabName": "Housing_Mansion_Ranch",
+  "category": "Housing",
+  "subCategory": "Mansions",
+  "type": "Luxury Ranch Estate",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Luxury",
+    "dominionZone": "Ranch District"
+  },
+  "specifications": {
+    "squareFootage": 8200,
+    "bedrooms": 6,
+    "bathrooms": 7.5,
+    "floors": 1,
+    "parkingSpaces": 6,
+    "lotSize": 50000
+  },
+  "layout": {
+    "dimensions": {
+      "width": 150,
+      "length": 54.67,
+      "height": 14
+    },
+    "features": ["Single Story", "Sprawling Layout", "Multiple Wings", "Covered Patios", "Horse Stables", "Guest House", "Workshop"]
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 160000,
+      "lod1": 80000,
+      "lod2": 40000,
+      "lod3": 20000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 4096,
+      "metallic": 4096
+    },
+    "materials": [
+      "Stone_Exterior_Natural",
+      "Wood_Beam_Cedar",
+      "Tile_Floor_Saltillo",
+      "Glass_Window_Ranch",
+      "Metal_Roof_Standing_Seam"
+    ],
+    "lighting": {
+      "realtimeLights": 18,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field",
+      "Bloom",
+      "Motion Blur"
+    ]
+  },
+  "components": [
+    "MeshCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SecuritySystem",
+    "SmartHome",
+    "ClimateControl"
+  ],
+  "price": {
+    "purchasePrice": 5500000,
+    "monthlyRent": 38000,
+    "currency": "OMNI"
+  }
+}

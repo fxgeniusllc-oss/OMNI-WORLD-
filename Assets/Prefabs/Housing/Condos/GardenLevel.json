@@ -1,0 +1,150 @@
+{
+  "prefabName": "Housing_Condo_GardenLevel",
+  "category": "Housing",
+  "subCategory": "Condos",
+  "type": "Garden Level",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Standard",
+    "dominionZone": "Garden District"
+  },
+  "specifications": {
+    "squareFootage": 1250,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "floors": 1,
+    "parkingSpaces": 1
+  },
+  "layout": {
+    "dimensions": {
+      "width": 35,
+      "length": 35.71,
+      "height": 10
+    },
+    "rooms": [
+      {
+        "name": "Living/Dining",
+        "type": "Great Room",
+        "dimensions": { "width": 22, "length": 16, "height": 10 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "features": ["Patio Access", "Garden View", "Open Layout", "Fireplace"]
+      },
+      {
+        "name": "Kitchen",
+        "type": "Modern Kitchen",
+        "dimensions": { "width": 13, "length": 14, "height": 10 },
+        "position": { "x": 22, "y": 0, "z": 0 },
+        "features": ["Breakfast Bar", "Pantry", "Garden Window", "Modern Appliances"]
+      },
+      {
+        "name": "Master Bedroom",
+        "type": "Master",
+        "dimensions": { "width": 14, "length": 13, "height": 10 },
+        "position": { "x": 0, "y": 0, "z": 16 },
+        "features": ["Patio Door", "Walk-in Closet", "En-suite", "Garden View"]
+      },
+      {
+        "name": "Master Bathroom",
+        "type": "Full Bath",
+        "dimensions": { "width": 10, "length": 10, "height": 10 },
+        "position": { "x": 14, "y": 0, "z": 16 },
+        "features": ["Shower", "Double Sink", "Water Closet"]
+      },
+      {
+        "name": "Second Bedroom",
+        "type": "Bedroom",
+        "dimensions": { "width": 12, "length": 11, "height": 10 },
+        "position": { "x": 0, "y": 0, "z": 29 },
+        "features": ["Closet", "Window", "Ceiling Fan"]
+      },
+      {
+        "name": "Guest Bathroom",
+        "type": "Full Bath",
+        "dimensions": { "width": 8, "length": 8, "height": 10 },
+        "position": { "x": 12, "y": 0, "z": 29 },
+        "features": ["Tub/Shower", "Vanity"]
+      },
+      {
+        "name": "Laundry Room",
+        "type": "Utility",
+        "dimensions": { "width": 7, "length": 8, "height": 10 },
+        "position": { "x": 24, "y": 0, "z": 16 },
+        "features": ["Washer/Dryer", "Sink", "Storage"]
+      }
+    ],
+    "entryPoints": [
+      {
+        "name": "Main Entry",
+        "position": { "x": 31, "y": 0, "z": 7 },
+        "type": "Standard",
+        "interactable": true
+      },
+      {
+        "name": "Patio Door 1",
+        "position": { "x": 0, "y": 0, "z": 8 },
+        "type": "Sliding Glass",
+        "interactable": true
+      },
+      {
+        "name": "Patio Door 2",
+        "position": { "x": 0, "y": 0, "z": 22 },
+        "type": "French Doors",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 0, "y": 5, "z": 5 }, "size": "Large", "type": "Sliding" },
+      { "position": { "x": 6, "y": 5, "z": 36 }, "size": "Medium", "type": "Fixed" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 40000,
+      "lod1": 20000,
+      "lod2": 9000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Hardwood_Floor_Maple",
+      "Painted_Wall_Neutral",
+      "Tile_Ceramic_Earth",
+      "Quartz_Countertop",
+      "Glass_Door_Patio"
+    ],
+    "lighting": {
+      "realtimeLights": 4,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController"
+  ],
+  "price": {
+    "purchasePrice": 185000,
+    "monthlyRent": 2400,
+    "currency": "OMNI"
+  }
+}

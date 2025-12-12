@@ -1,0 +1,91 @@
+{
+  "prefabName": "Housing_Penthouse_Triplex",
+  "category": "Housing",
+  "subCategory": "Penthouses",
+  "type": "Triplex Penthouse",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Billionaire",
+    "dominionZone": "Platinum Tower"
+  },
+  "specifications": {
+    "squareFootage": 12000,
+    "bedrooms": 7,
+    "bathrooms": 9.5,
+    "floors": 3,
+    "parkingSpaces": 6,
+    "floor": 58
+  },
+  "layout": {
+    "dimensions": {
+      "width": 90,
+      "length": 133.33,
+      "height": 39
+    },
+    "features": ["Three-Story", "Private Elevator", "Rooftop Helipad", "Indoor Lap Pool", "Basketball Court", "Theater", "Multiple Kitchens"]
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 180000,
+      "lod1": 90000,
+      "lod2": 45000,
+      "lod3": 22000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 4096,
+      "metallic": 4096,
+      "ao": 4096
+    },
+    "materials": [
+      "Marble_Floor_Rare_Onyx",
+      "Gold_Leaf_Accents",
+      "Glass_Structural_Bulletproof",
+      "Wood_Exotic_Rare",
+      "Stone_Precious_Unique"
+    ],
+    "lighting": {
+      "realtimeLights": 25,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field",
+      "Bloom",
+      "Motion Blur",
+      "Chromatic Aberration",
+      "Film Grain",
+      "Ray Traced Reflections"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SecuritySystem",
+    "SmartHome",
+    "ClimateControl",
+    "ElevatorController",
+    "PoolController",
+    "HelipadController"
+  ],
+  "price": {
+    "purchasePrice": 45000000,
+    "monthlyRent": 250000,
+    "currency": "OMNI"
+  }
+}

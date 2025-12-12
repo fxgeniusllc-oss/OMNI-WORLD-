@@ -1,0 +1,87 @@
+{
+  "prefabName": "Housing_Penthouse_Duplex",
+  "category": "Housing",
+  "subCategory": "Penthouses",
+  "type": "Duplex Penthouse",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Ultra-Luxury",
+    "dominionZone": "Luxury Tower"
+  },
+  "specifications": {
+    "squareFootage": 5200,
+    "bedrooms": 5,
+    "bathrooms": 6.5,
+    "floors": 2,
+    "parkingSpaces": 4,
+    "floor": 48
+  },
+  "layout": {
+    "dimensions": {
+      "width": 70,
+      "length": 74.29,
+      "height": 26
+    },
+    "features": ["Two-Story", "Internal Staircase", "Double-Height Living", "Multiple Terraces", "Indoor Pool", "Sauna", "Home Office"]
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 105000,
+      "lod1": 52000,
+      "lod2": 26000,
+      "lod3": 13000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 4096,
+      "metallic": 4096,
+      "ao": 2048
+    },
+    "materials": [
+      "Marble_Floor_Emperador",
+      "Glass_Structural_Clear",
+      "Wood_Floor_Herringbone",
+      "Stone_Wall_Limestone",
+      "Metal_Staircase_Floating"
+    ],
+    "lighting": {
+      "realtimeLights": 15,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field",
+      "Bloom",
+      "Motion Blur",
+      "Chromatic Aberration"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SecuritySystem",
+    "SmartHome",
+    "ClimateControl",
+    "PoolController"
+  ],
+  "price": {
+    "purchasePrice": 9800000,
+    "monthlyRent": 65000,
+    "currency": "OMNI"
+  }
+}

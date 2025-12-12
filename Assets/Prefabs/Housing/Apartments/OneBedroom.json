@@ -1,0 +1,130 @@
+{
+  "prefabName": "Housing_Apartment_OneBedroom",
+  "category": "Housing",
+  "subCategory": "Apartments",
+  "type": "One Bedroom",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Entry",
+    "dominionZone": "Midtown"
+  },
+  "specifications": {
+    "squareFootage": 650,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "floors": 1,
+    "parkingSpaces": 1
+  },
+  "layout": {
+    "dimensions": {
+      "width": 26,
+      "length": 25,
+      "height": 10
+    },
+    "rooms": [
+      {
+        "name": "Living Room",
+        "type": "Living",
+        "dimensions": { "width": 14, "length": 16, "height": 10 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "features": ["Sofa Area", "TV Mount", "Large Window", "Balcony Access"]
+      },
+      {
+        "name": "Kitchen",
+        "type": "Galley Kitchen",
+        "dimensions": { "width": 8, "length": 9, "height": 10 },
+        "position": { "x": 14, "y": 0, "z": 0 },
+        "features": ["Refrigerator", "Stove", "Microwave", "Dishwasher", "Counter Space"]
+      },
+      {
+        "name": "Bedroom",
+        "type": "Master",
+        "dimensions": { "width": 12, "length": 12, "height": 10 },
+        "position": { "x": 0, "y": 0, "z": 16 },
+        "features": ["Queen Bed Space", "Closet", "Window", "Ceiling Fan"]
+      },
+      {
+        "name": "Bathroom",
+        "type": "Full Bath",
+        "dimensions": { "width": 8, "length": 8, "height": 10 },
+        "position": { "x": 12, "y": 0, "z": 16 },
+        "features": ["Bathtub", "Toilet", "Sink", "Linen Closet"]
+      },
+      {
+        "name": "Hallway",
+        "type": "Corridor",
+        "dimensions": { "width": 4, "length": 8, "height": 10 },
+        "position": { "x": 20, "y": 0, "z": 16 },
+        "features": ["Coat Closet"]
+      }
+    ],
+    "entryPoints": [
+      {
+        "name": "Main Door",
+        "position": { "x": 22, "y": 0, "z": 9 },
+        "type": "Standard",
+        "interactable": true
+      },
+      {
+        "name": "Balcony Door",
+        "position": { "x": 0, "y": 0, "z": 8 },
+        "type": "Sliding Glass",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 0, "y": 5, "z": 5 }, "size": "Large", "type": "Sliding" },
+      { "position": { "x": 6, "y": 5, "z": 25 }, "size": "Medium", "type": "Fixed" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 35000,
+      "lod1": 18000,
+      "lod2": 8000
+    },
+    "textureResolution": {
+      "diffuse": 2048,
+      "normal": 2048,
+      "roughness": 1024,
+      "metallic": 1024
+    },
+    "materials": [
+      "Hardwood_Floor_Oak",
+      "Painted_Wall_Beige",
+      "Ceramic_Tile_White",
+      "Granite_Countertop_Black",
+      "Glass_Window_Tinted"
+    ],
+    "lighting": {
+      "realtimeLights": 3,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController"
+  ],
+  "price": {
+    "purchasePrice": 85000,
+    "monthlyRent": 1800,
+    "currency": "OMNI"
+  }
+}

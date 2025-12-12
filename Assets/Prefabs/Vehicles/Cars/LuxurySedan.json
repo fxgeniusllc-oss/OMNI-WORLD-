@@ -1,0 +1,92 @@
+{
+  "prefabName": "Vehicle_Car_LuxurySedan",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Luxury Sedan",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Luxury",
+    "performanceClass": "Luxury"
+  },
+  "specifications": {
+    "class": "Full-Size Luxury",
+    "seats": 5,
+    "engine": "4.0L Twin-Turbo V8",
+    "horsepower": 450,
+    "topSpeed": 155,
+    "acceleration": 4.5,
+    "handling": 8.0,
+    "fuelType": "Premium Gasoline"
+  },
+  "physics": {
+    "mass": 2100,
+    "centerOfMass": { "x": 0, "y": 0.45, "z": 0 },
+    "wheelBase": 3.1,
+    "trackWidth": 1.65,
+    "suspensionTravel": 0.18,
+    "springRate": 45000,
+    "damperRate": 3500
+  },
+  "model": {
+    "dimensions": {
+      "length": 5.2,
+      "width": 1.9,
+      "height": 1.5,
+      "wheelbase": 3.1
+    },
+    "doors": 4,
+    "trunk": "Large",
+    "bodyStyle": "Sedan"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 75000,
+      "lod1": 38000,
+      "lod2": 18000,
+      "lod3": 8000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Car_Paint_Luxury_Metallic",
+      "Chrome_Premium_Trim",
+      "Glass_Window_Laminated",
+      "Leather_Nappa_Interior",
+      "Wood_Veneer_Dash",
+      "Rubber_Luxury_Tire"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Suspension Animation",
+      "Working Lights",
+      "Digital Dashboard",
+      "Ambient Interior Lighting",
+      "Chrome Details"
+    ]
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "ComfortSystem"
+  ],
+  "price": {
+    "purchasePrice": 95000,
+    "dailyRent": 550,
+    "currency": "OMNI"
+  }
+}

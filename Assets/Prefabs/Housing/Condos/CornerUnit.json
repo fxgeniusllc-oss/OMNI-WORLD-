@@ -1,0 +1,158 @@
+{
+  "prefabName": "Housing_Condo_CornerUnit",
+  "category": "Housing",
+  "subCategory": "Condos",
+  "type": "Corner Unit",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Premium",
+    "dominionZone": "High Rise District"
+  },
+  "specifications": {
+    "squareFootage": 1550,
+    "bedrooms": 2,
+    "bathrooms": 2.5,
+    "floors": 1,
+    "parkingSpaces": 2
+  },
+  "layout": {
+    "dimensions": {
+      "width": 40,
+      "length": 38.75,
+      "height": 11
+    },
+    "rooms": [
+      {
+        "name": "Living Room",
+        "type": "Living",
+        "dimensions": { "width": 20, "length": 16, "height": 11 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "features": ["Corner Windows", "City Views", "Built-in Shelving", "Hardwood"]
+      },
+      {
+        "name": "Dining Area",
+        "type": "Dining",
+        "dimensions": { "width": 12, "length": 14, "height": 11 },
+        "position": { "x": 20, "y": 0, "z": 0 },
+        "features": ["Wine Storage", "Pendant Lighting", "Corner Views"]
+      },
+      {
+        "name": "Kitchen",
+        "type": "Chef's Kitchen",
+        "dimensions": { "width": 14, "length": 14, "height": 11 },
+        "position": { "x": 20, "y": 0, "z": 14 },
+        "features": ["Large Island", "Double Refrigerator", "Gas Range", "Butler's Pantry"]
+      },
+      {
+        "name": "Family Room",
+        "type": "Flex Space",
+        "dimensions": { "width": 12, "length": 12, "height": 11 },
+        "position": { "x": 0, "y": 0, "z": 16 },
+        "features": ["Corner Windows", "Built-ins", "Fireplace"]
+      },
+      {
+        "name": "Master Bedroom",
+        "type": "Master",
+        "dimensions": { "width": 16, "length": 14, "height": 11 },
+        "position": { "x": 0, "y": 0, "z": 28 },
+        "features": ["Corner Windows", "Sitting Area", "Dual Closets", "Tray Ceiling"]
+      },
+      {
+        "name": "Master Bathroom",
+        "type": "Luxury Bath",
+        "dimensions": { "width": 12, "length": 11, "height": 11 },
+        "position": { "x": 16, "y": 0, "z": 28 },
+        "features": ["Soaking Tub", "Walk-in Shower", "Double Vanity", "Heated Floors"]
+      },
+      {
+        "name": "Second Bedroom",
+        "type": "Guest Suite",
+        "dimensions": { "width": 13, "length": 12, "height": 11 },
+        "position": { "x": 28, "y": 0, "z": 28 },
+        "features": ["En-suite Access", "Closet", "Window"]
+      },
+      {
+        "name": "Guest Bathroom",
+        "type": "Full Bath",
+        "dimensions": { "width": 9, "length": 8, "height": 11 },
+        "position": { "x": 28, "y": 0, "z": 40 },
+        "features": ["Shower", "Vanity", "Modern Fixtures"]
+      },
+      {
+        "name": "Powder Room",
+        "type": "Half Bath",
+        "dimensions": { "width": 6, "length": 6, "height": 11 },
+        "position": { "x": 34, "y": 0, "z": 8 },
+        "features": ["Toilet", "Pedestal Sink"]
+      }
+    ],
+    "entryPoints": [
+      {
+        "name": "Main Door",
+        "position": { "x": 34, "y": 0, "z": 14 },
+        "type": "Smart Entry",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 0, "y": 5.5, "z": 8 }, "size": "Floor-to-Ceiling", "type": "Fixed" },
+      { "position": { "x": 10, "y": 5.5, "z": 0 }, "size": "Floor-to-Ceiling", "type": "Fixed" },
+      { "position": { "x": 0, "y": 5.5, "z": 22 }, "size": "Large", "type": "Fixed" },
+      { "position": { "x": 0, "y": 5.5, "z": 35 }, "size": "Large", "type": "Fixed" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 50000,
+      "lod1": 25000,
+      "lod2": 11500
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Hardwood_Floor_Exotic",
+      "Marble_Tile_Premium",
+      "Painted_Wall_Designer",
+      "Glass_Window_Panoramic",
+      "Granite_Countertop_Luxury"
+    ],
+    "lighting": {
+      "realtimeLights": 7,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field",
+      "Bloom"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SecuritySystem",
+    "SmartHome"
+  ],
+  "price": {
+    "purchasePrice": 385000,
+    "monthlyRent": 4200,
+    "currency": "OMNI"
+  }
+}

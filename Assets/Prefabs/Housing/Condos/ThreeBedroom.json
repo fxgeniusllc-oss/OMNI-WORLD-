@@ -1,0 +1,170 @@
+{
+  "prefabName": "Housing_Condo_ThreeBedroom",
+  "category": "Housing",
+  "subCategory": "Condos",
+  "type": "Three Bedroom",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Premium",
+    "dominionZone": "Waterfront"
+  },
+  "specifications": {
+    "squareFootage": 1650,
+    "bedrooms": 3,
+    "bathrooms": 2.5,
+    "floors": 1,
+    "parkingSpaces": 2
+  },
+  "layout": {
+    "dimensions": {
+      "width": 45,
+      "length": 36.67,
+      "height": 11
+    },
+    "rooms": [
+      {
+        "name": "Living Room",
+        "type": "Living",
+        "dimensions": { "width": 20, "length": 18, "height": 11 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "features": ["Gas Fireplace", "Built-ins", "Water View", "High Ceilings"]
+      },
+      {
+        "name": "Dining Room",
+        "type": "Dining",
+        "dimensions": { "width": 14, "length": 13, "height": 11 },
+        "position": { "x": 20, "y": 0, "z": 0 },
+        "features": ["Tray Ceiling", "Crown Molding", "Chandelier"]
+      },
+      {
+        "name": "Kitchen",
+        "type": "Gourmet Kitchen",
+        "dimensions": { "width": 16, "length": 15, "height": 11 },
+        "position": { "x": 20, "y": 0, "z": 13 },
+        "features": ["Center Island", "Double Oven", "Wine Cooler", "Walk-in Pantry", "Breakfast Nook"]
+      },
+      {
+        "name": "Master Bedroom",
+        "type": "Master",
+        "dimensions": { "width": 16, "length": 15, "height": 11 },
+        "position": { "x": 0, "y": 0, "z": 18 },
+        "features": ["Sitting Area", "Dual Closets", "Water View", "Private Balcony Access"]
+      },
+      {
+        "name": "Master Bathroom",
+        "type": "Spa Bath",
+        "dimensions": { "width": 14, "length": 11, "height": 11 },
+        "position": { "x": 16, "y": 0, "z": 18 },
+        "features": ["Soaking Tub", "Large Shower", "Double Vanity", "Water Closet", "Heated Floors"]
+      },
+      {
+        "name": "Bedroom 2",
+        "type": "Bedroom",
+        "dimensions": { "width": 13, "length": 12, "height": 11 },
+        "position": { "x": 0, "y": 0, "z": 33 },
+        "features": ["Large Closet", "Window", "Ceiling Fan"]
+      },
+      {
+        "name": "Bedroom 3",
+        "type": "Bedroom",
+        "dimensions": { "width": 12, "length": 12, "height": 11 },
+        "position": { "x": 13, "y": 0, "z": 33 },
+        "features": ["Closet", "Window", "Desk Space"]
+      },
+      {
+        "name": "Full Bathroom 2",
+        "type": "Full Bath",
+        "dimensions": { "width": 9, "length": 9, "height": 11 },
+        "position": { "x": 25, "y": 0, "z": 33 },
+        "features": ["Tub/Shower", "Vanity", "Linen Storage"]
+      },
+      {
+        "name": "Powder Room",
+        "type": "Half Bath",
+        "dimensions": { "width": 6, "length": 7, "height": 11 },
+        "position": { "x": 34, "y": 0, "z": 0 },
+        "features": ["Toilet", "Vanity", "Designer Fixtures"]
+      },
+      {
+        "name": "Den/Office",
+        "type": "Flex Space",
+        "dimensions": { "width": 11, "length": 10, "height": 11 },
+        "position": { "x": 34, "y": 0, "z": 7 },
+        "features": ["Built-in Shelving", "French Doors", "Window"]
+      }
+    ],
+    "entryPoints": [
+      {
+        "name": "Front Door",
+        "position": { "x": 36, "y": 0, "z": 28 },
+        "type": "Security Door",
+        "interactable": true
+      },
+      {
+        "name": "Balcony Access",
+        "position": { "x": 0, "y": 0, "z": 9 },
+        "type": "French Doors",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 0, "y": 5.5, "z": 9 }, "size": "Floor-to-Ceiling", "type": "Fixed" },
+      { "position": { "x": 0, "y": 5.5, "z": 25 }, "size": "Large", "type": "Fixed" },
+      { "position": { "x": 45, "y": 5.5, "z": 20 }, "size": "Medium", "type": "Double Hung" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 52000,
+      "lod1": 26000,
+      "lod2": 12000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Hardwood_Floor_Bamboo",
+      "Granite_Countertop_Premium",
+      "Painted_Wall_Designer",
+      "Tile_Porcelain_Large",
+      "Glass_Window_LowE"
+    ],
+    "lighting": {
+      "realtimeLights": 7,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field",
+      "Bloom"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SecuritySystem",
+    "SmartHome"
+  ],
+  "price": {
+    "purchasePrice": 325000,
+    "monthlyRent": 3800,
+    "currency": "OMNI"
+  }
+}
