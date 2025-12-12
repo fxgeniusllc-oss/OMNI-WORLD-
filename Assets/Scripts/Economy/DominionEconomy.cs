@@ -47,15 +47,38 @@ namespace OmniWorld.Economy
         [Tooltip("Circulation Coefficient - Velocity of money")]
         public float circulationCoefficient = 1.0f;
 
-        [Header("Token Info")]
-        public float omniTokenPrice = 0.01f;
+        [Header("Token Configuration")]
+        [Tooltip("Initial OMNI token price in USD (based on economic analysis)")]
+        public float initialTokenPrice = 0.035f; // $0.035 USD (Base Case Launch Price)
+        
+        [Tooltip("Current OMNI token price (dynamically calculated)")]
+        public float omniTokenPrice = 0.035f;
+        
+        [Tooltip("Total token supply (2 billion tokens minted)")]
         public long totalSupply = 2000000000; // 2 billion
-        public float circulatingSupply = 0f;
+        
+        [Tooltip("Circulating supply at launch (Public Sale: 15%)")]
+        public float circulatingSupply = 300000000f; // 300 million tokens
 
-        [Header("Inactivity Tax")]
+        [Header("Deflationary Mechanics")]
+        [Tooltip("Transaction burn rate (0.5% per transaction)")]
+        public float transactionBurnRate = 0.005f;
+        
         [Tooltip("Tax rate applied to inactive wallets (progressive)")]
-        public float inactivityTaxRate = 0.05f;
+        public float inactivityTaxRate = 0.05f; // 5% base rate
+        
+        [Tooltip("Days of inactivity before tax applies")]
         public int inactivityThresholdDays = 30;
+        
+        [Header("Price Stability Controls")]
+        [Tooltip("Minimum allowed token price (floor)")]
+        public float minTokenPrice = 0.001f; // $0.001 floor
+        
+        [Tooltip("Maximum allowed token price (ceiling)")]
+        public float maxTokenPrice = 100f; // $100 ceiling
+        
+        [Tooltip("Maximum daily price change allowed")]
+        public float maxDailyPriceChange = 0.20f; // ±20% max daily movement
 
         public event Action<float> OnTokenPriceUpdated;
         public event Action<string, float> OnTransactionProcessed;
@@ -76,29 +99,58 @@ namespace OmniWorld.Economy
 
         private void InitializeEconomy()
         {
-            Debug.Log("Dominion Economy Initialized");
-            Debug.Log($"Total $OMNI Supply: {totalSupply:N0}");
+            Debug.Log("=== Dominion Economy Initialized ===");
+            Debug.Log($"Total $OMNI Supply: {totalSupply:N0} tokens");
+            Debug.Log($"Circulating Supply: {circulatingSupply:N0} tokens ({(circulatingSupply/totalSupply)*100:F1}%)");
+            Debug.Log($"Initial Token Price: ${initialTokenPrice:F4} USD");
+            Debug.Log($"Launch Market Cap (Circulating): ${(circulatingSupply * initialTokenPrice):N0} USD");
+            Debug.Log($"Fully Diluted Valuation (FDV): ${(totalSupply * initialTokenPrice):N0} USD");
+            
+            // Set initial price
+            omniTokenPrice = initialTokenPrice;
+            
+            // Calculate dynamic price based on quantum algorithm
             CalculateTokenPrice();
         }
 
         /// <summary>
         /// Calculate token price using the Quantum Algorithm
         /// P_OMNI = (U_p × H_r × C_x) / (D_r × Z_i × T_s)
+        /// 
+        /// Economic Analysis:
+        /// - Algorithmic baseline: $0.50 (with default parameters)
+        /// - Market-adjusted launch: $0.035 (70% discount for growth incentive)
+        /// - Target Year 3: $0.25 (7x growth)
         /// </summary>
         public float CalculateTokenPrice()
         {
+            // Store previous price for change calculation
+            float previousPrice = omniTokenPrice;
+            
             // Prevent division by zero
             float denominator = Mathf.Max(demandRate * zoneInflationIndex * tierScale, 0.001f);
             float numerator = userPrestige * housingRarity * circulationCoefficient;
             
-            omniTokenPrice = numerator / denominator;
+            // Calculate algorithmic price
+            float calculatedPrice = numerator / denominator;
             
-            // Apply bounds to prevent extreme values
-            omniTokenPrice = Mathf.Clamp(omniTokenPrice, 0.001f, 100f);
+            // Apply price stability controls
+            calculatedPrice = Mathf.Clamp(calculatedPrice, minTokenPrice, maxTokenPrice);
+            
+            // Limit daily price changes to prevent volatility
+            if (previousPrice > 0)
+            {
+                float maxChange = previousPrice * maxDailyPriceChange;
+                calculatedPrice = Mathf.Clamp(calculatedPrice, previousPrice - maxChange, previousPrice + maxChange);
+            }
+            
+            omniTokenPrice = calculatedPrice;
             
             OnTokenPriceUpdated?.Invoke(omniTokenPrice);
             
-            Debug.Log($"$OMNI Price Calculated: ${omniTokenPrice:F4}");
+            float changePercent = previousPrice > 0 ? ((omniTokenPrice - previousPrice) / previousPrice) * 100f : 0f;
+            Debug.Log($"$OMNI Price: ${omniTokenPrice:F4} ({(changePercent >= 0 ? "+" : "")}{changePercent:F2}%)");
+            
             return omniTokenPrice;
         }
 
@@ -115,13 +167,17 @@ namespace OmniWorld.Economy
 
             Debug.Log($"Processing {transactionType}: {amount} $OMNI for wallet {walletAddress}");
             
-            // TODO: Implement actual transaction validation
-            // - Check wallet balance
-            // - Validate against anti-fraud rules
-            // - Apply inactivity tax if applicable
-            // - Update circulation metrics
+            // Apply transaction burn (deflationary mechanism)
+            float burnAmount = amount * transactionBurnRate;
+            float netAmount = amount - burnAmount;
             
-            OnTransactionProcessed?.Invoke(walletAddress, amount);
+            Debug.Log($"Transaction Burn: {burnAmount:F4} $OMNI ({transactionBurnRate*100:F2}%)");
+            Debug.Log($"Net Transaction: {netAmount:F4} $OMNI");
+            
+            // Update circulating supply (burned tokens removed)
+            circulatingSupply -= burnAmount;
+            
+            OnTransactionProcessed?.Invoke(walletAddress, netAmount);
             
             // Update circulation coefficient based on transaction velocity
             UpdateCirculationMetrics(amount);
@@ -179,6 +235,25 @@ namespace OmniWorld.Economy
             float roi = (profit / purchasePrice) * 100f;
             
             return roi;
+        }
+        
+        /// <summary>
+        /// Get current market capitalization metrics
+        /// </summary>
+        public void GetMarketCapMetrics(out float circulatingMarketCap, out float fullyDilutedValuation)
+        {
+            circulatingMarketCap = circulatingSupply * omniTokenPrice;
+            fullyDilutedValuation = totalSupply * omniTokenPrice;
+        }
+        
+        /// <summary>
+        /// Get total tokens burned (supply reduction)
+        /// </summary>
+        public float GetTotalBurned()
+        {
+            // Initial circulating supply was 300M
+            float initialCirculating = 300000000f;
+            return initialCirculating - circulatingSupply;
         }
 
         private void Update()

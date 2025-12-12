@@ -339,8 +339,11 @@ OmniWorld/
 │   ├── agents/
 │   └── omni_agent_mcp.py
 └── Docs/                   # Documentation
-    ├── WHITEPAPER.md
-    ├── WORLD_ATLAS.md
+    ├── TOKENOMICS.md       # Comprehensive economic analysis
+    ├── ECONOMIC_ANALYSIS_SUMMARY.md  # Executive summary
+    ├── ARCHITECTURE.md
+    ├── DEVELOPMENT_GUIDE.md
+    ├── QUICKSTART.md
     └── ADRs/               # Architecture Decision Records
 ```
 
@@ -400,7 +403,11 @@ OmniWorld/
 
 ### 🪙 $OMNI Token Distribution
 
-**Total Supply:** 2,000,000,000 $OMNI (Deflationary Model)
+**Total Supply:** 2,000,000,000 $OMNI (Deflationary Model)  
+**Initial Token Price:** $0.035 USD  
+**Launch Market Cap:** $10.5M (Circulating) / $70M (FDV)
+
+> 📊 **[View Complete Economic Analysis](Docs/ECONOMIC_ANALYSIS_SUMMARY.md)** | **[Detailed Tokenomics](Docs/TOKENOMICS.md)**
 
 | Allocation | Percentage | Amount | Vesting |
 |------------|------------|--------|---------|
