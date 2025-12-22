@@ -1,0 +1,306 @@
+{
+  "prefabName": "Housing_Mansion_FrenchChateau",
+  "category": "Housing",
+  "subCategory": "Mansions",
+  "type": "French Chateau",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Ultra-Luxury",
+    "dominionZone": "Estate District"
+  },
+  "specifications": {
+    "squareFootage": 12000,
+    "bedrooms": 8,
+    "bathrooms": 11,
+    "floors": 3,
+    "parkingSpaces": 6,
+    "lotSize": 35000
+  },
+  "layout": {
+    "dimensions": {
+      "width": 110,
+      "length": 109.09,
+      "height": 42
+    },
+    "rooms": [
+      {
+        "name": "Grand Hall",
+        "type": "Entrance",
+        "dimensions": { "width": 30, "length": 24, "height": 28 },
+        "position": { "x": 40, "y": 0, "z": 50 },
+        "floor": 1,
+        "features": ["Sweeping Staircase", "Ornate Chandelier", "Marble Floors", "French Limestone Walls", "Art Niches"]
+      },
+      {
+        "name": "Drawing Room",
+        "type": "Formal Living",
+        "dimensions": { "width": 32, "length": 26, "height": 16 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "floor": 1,
+        "features": ["Ornate Fireplace", "Crown Molding", "French Doors", "Garden Views", "Crystal Chandelier"]
+      },
+      {
+        "name": "Music Room",
+        "type": "Entertainment",
+        "dimensions": { "width": 28, "length": 22, "height": 16 },
+        "position": { "x": 32, "y": 0, "z": 0 },
+        "floor": 1,
+        "features": ["Acoustic Design", "Performance Platform", "Built-in Seating", "Grand Piano Space"]
+      },
+      {
+        "name": "Library",
+        "type": "Study",
+        "dimensions": { "width": 26, "length": 24, "height": 16 },
+        "position": { "x": 60, "y": 0, "z": 0 },
+        "floor": 1,
+        "features": ["Floor-to-Ceiling Shelves", "Ladder Rail", "Reading Fireplace", "Leather Seating", "Window Seats"]
+      },
+      {
+        "name": "Formal Dining",
+        "type": "Banquet Hall",
+        "dimensions": { "width": 36, "length": 28, "height": 16 },
+        "position": { "x": 0, "y": 0, "z": 26 },
+        "floor": 1,
+        "features": ["Seating for 20", "Wine Wall", "Butler's Pantry", "Crystal Chandeliers", "Coffered Ceiling"]
+      },
+      {
+        "name": "Gourmet Kitchen",
+        "type": "Chef's Kitchen",
+        "dimensions": { "width": 32, "length": 26, "height": 14 },
+        "position": { "x": 36, "y": 0, "z": 26 },
+        "floor": 1,
+        "features": ["La Cornue Range", "Two Islands", "Professional Grade", "Breakfast Room", "Pantry Complex"]
+      },
+      {
+        "name": "Family Room",
+        "type": "Casual Living",
+        "dimensions": { "width": 28, "length": 24, "height": 14 },
+        "position": { "x": 68, "y": 0, "z": 26 },
+        "floor": 1,
+        "features": ["Stone Fireplace", "Beam Ceiling", "Terrace Access", "Built-in Media"]
+      },
+      {
+        "name": "Conservatory",
+        "type": "Garden Room",
+        "dimensions": { "width": 24, "length": 20, "height": 18 },
+        "position": { "x": 86, "y": 0, "z": 0 },
+        "floor": 1,
+        "features": ["Glass Ceiling", "Garden Views", "Fountain", "Tropical Plants", "Sitting Area"]
+      },
+      {
+        "name": "Wine Cellar",
+        "type": "Storage",
+        "dimensions": { "width": 28, "length": 22, "height": 12 },
+        "position": { "x": 0, "y": 0, "z": 54 },
+        "floor": 1,
+        "features": ["Stone Walls", "Barrel Vault", "Tasting Room", "3000+ Bottles", "Humidor"]
+      },
+      {
+        "name": "Billiard Room",
+        "type": "Recreation",
+        "dimensions": { "width": 26, "length": 22, "height": 14 },
+        "position": { "x": 28, "y": 0, "z": 74 },
+        "floor": 1,
+        "features": ["Custom Table", "Bar", "Fireplace", "Lounge Area"]
+      },
+      {
+        "name": "Cinema",
+        "type": "Theater",
+        "dimensions": { "width": 30, "length": 24, "height": 14 },
+        "position": { "x": 54, "y": 0, "z": 74 },
+        "floor": 1,
+        "features": ["Tiered Seating", "150\" Screen", "Dolby Atmos", "Starlight Ceiling", "Lobby Bar"]
+      },
+      {
+        "name": "Master Suite",
+        "type": "Master",
+        "dimensions": { "width": 38, "length": 32, "height": 14 },
+        "position": { "x": 0, "y": 14, "z": 0 },
+        "floor": 2,
+        "features": ["Sitting Room", "Private Terrace", "Fireplace", "His/Her Dressing Rooms", "Morning Kitchen"]
+      },
+      {
+        "name": "Master Bathroom",
+        "type": "Spa Bath",
+        "dimensions": { "width": 26, "length": 22, "height": 14 },
+        "position": { "x": 38, "y": 14, "z": 0 },
+        "floor": 2,
+        "features": ["Marble Bath", "Steam Shower", "His/Her Vanities", "Bidet", "Heated Floors", "Chandelier"]
+      },
+      {
+        "name": "VIP Suite 1",
+        "type": "Bedroom",
+        "dimensions": { "width": 24, "length": 20, "height": 12 },
+        "position": { "x": 0, "y": 14, "z": 32 },
+        "floor": 2,
+        "features": ["Fireplace", "En-suite", "Dressing Room", "Balcony"]
+      },
+      {
+        "name": "VIP Suite 2",
+        "type": "Bedroom",
+        "dimensions": { "width": 24, "length": 20, "height": 12 },
+        "position": { "x": 24, "y": 14, "z": 32 },
+        "floor": 2,
+        "features": ["Fireplace", "En-suite", "Dressing Room", "Balcony"]
+      },
+      {
+        "name": "Guest Suite 1",
+        "type": "Bedroom",
+        "dimensions": { "width": 22, "length": 18, "height": 12 },
+        "position": { "x": 48, "y": 14, "z": 32 },
+        "floor": 2,
+        "features": ["En-suite", "Closet", "Garden Views"]
+      },
+      {
+        "name": "Guest Suite 2",
+        "type": "Bedroom",
+        "dimensions": { "width": 22, "length": 18, "height": 12 },
+        "position": { "x": 70, "y": 14, "z": 32 },
+        "floor": 2,
+        "features": ["En-suite", "Closet", "Estate Views"]
+      },
+      {
+        "name": "Guest Suite 3",
+        "type": "Bedroom",
+        "dimensions": { "width": 20, "length": 18, "height": 12 },
+        "position": { "x": 64, "y": 14, "z": 0 },
+        "floor": 2,
+        "features": ["En-suite", "Closet", "Terrace"]
+      },
+      {
+        "name": "Children's Wing",
+        "type": "Playroom/Bedroom",
+        "dimensions": { "width": 32, "length": 26, "height": 12 },
+        "position": { "x": 0, "y": 14, "z": 52 },
+        "floor": 2,
+        "features": ["Play Area", "Study Nooks", "Built-in Storage", "Balcony"]
+      },
+      {
+        "name": "Gym/Spa",
+        "type": "Fitness",
+        "dimensions": { "width": 30, "length": 24, "height": 12 },
+        "position": { "x": 32, "y": 14, "z": 52 },
+        "floor": 2,
+        "features": ["Equipment Area", "Yoga Studio", "Sauna", "Steam Room", "Massage Room"]
+      },
+      {
+        "name": "Ballroom",
+        "type": "Entertainment",
+        "dimensions": { "width": 50, "length": 40, "height": 16 },
+        "position": { "x": 30, "y": 28, "z": 15 },
+        "floor": 3,
+        "features": ["Vaulted Ceiling", "Crystal Chandeliers", "Parquet Floor", "Balcony", "Bar", "Catering Kitchen"]
+      },
+      {
+        "name": "Tower Suite",
+        "type": "Private Retreat",
+        "dimensions": { "width": 24, "length": 22, "height": 10 },
+        "position": { "x": 0, "y": 28, "z": 0 },
+        "floor": 3,
+        "features": ["360° Views", "Sitting Room", "En-suite", "Private Stair"]
+      }
+    ],
+    "exteriorFeatures": [
+      "Formal Gardens",
+      "Fountain Courtyard",
+      "Pool & Spa Complex",
+      "Pool House",
+      "Tennis Court",
+      "Guest House (2BR)",
+      "6-Car Carriage House",
+      "Porte-Cochere",
+      "Gated Entry",
+      "Circular Driveway",
+      "Greenhouse",
+      "Gazebo",
+      "Outdoor Kitchen",
+      "Security System"
+    ],
+    "entryPoints": [
+      {
+        "name": "Main Entrance",
+        "position": { "x": 55, "y": 0, "z": 109 },
+        "type": "Arched Double Doors",
+        "interactable": true
+      },
+      {
+        "name": "Garden Entrance",
+        "position": { "x": 0, "y": 0, "z": 13 },
+        "type": "French Doors",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 16, "y": 8, "z": 0 }, "size": "French Casement", "type": "Arched" },
+      { "position": { "x": 55, "y": 21, "z": 13 }, "size": "Palladian", "type": "Fixed" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 220000,
+      "lod1": 110000,
+      "lod2": 52000,
+      "lod3": 26000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 4096,
+      "metallic": 4096,
+      "ao": 4096
+    },
+    "materials": [
+      "Stone_French_Limestone",
+      "Marble_Carrara_White",
+      "Wood_French_Oak_Herringbone",
+      "Copper_Roof_Patina",
+      "Iron_Wrought_Ornate",
+      "Silk_Wall_Covering"
+    ],
+    "lighting": {
+      "realtimeLights": 30,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field",
+      "Bloom",
+      "Motion Blur",
+      "Chromatic Aberration",
+      "Film Grain",
+      "Ray Traced Reflections",
+      "Ray Traced Ambient Occlusion"
+    ]
+  },
+  "components": [
+    "MeshCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SecuritySystem",
+    "SmartHome",
+    "ClimateControl",
+    "PoolController",
+    "AudioSystem",
+    "TheaterController",
+    "ElevatorSystem",
+    "FountainController"
+  ],
+  "price": {
+    "purchasePrice": 18500000,
+    "monthlyRent": 120000,
+    "currency": "OMNI"
+  }
+}

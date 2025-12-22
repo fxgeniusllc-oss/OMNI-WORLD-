@@ -1,0 +1,281 @@
+{
+  "prefabName": "Housing_Mansion_Contemporary",
+  "category": "Housing",
+  "subCategory": "Mansions",
+  "type": "Contemporary Architectural",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Ultra-Luxury",
+    "dominionZone": "Platinum Hills"
+  },
+  "specifications": {
+    "squareFootage": 8500,
+    "bedrooms": 7,
+    "bathrooms": 9.5,
+    "floors": 3,
+    "parkingSpaces": 5,
+    "lotSize": 25000
+  },
+  "layout": {
+    "dimensions": {
+      "width": 95,
+      "length": 89.47,
+      "height": 39
+    },
+    "rooms": [
+      {
+        "name": "Grand Foyer",
+        "type": "Entrance",
+        "dimensions": { "width": 20, "length": 18, "height": 26 },
+        "position": { "x": 37.5, "y": 0, "z": 45 },
+        "floor": 1,
+        "features": ["Double-Height", "Floating Staircase", "Sculptural Chandelier", "Art Gallery Lighting", "Skylight"]
+      },
+      {
+        "name": "Great Room",
+        "type": "Living",
+        "dimensions": { "width": 45, "length": 35, "height": 18 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "floor": 1,
+        "features": ["Soaring Ceilings", "Frameless Glass Walls", "Linear Fireplace", "Retractable Doors", "Pool Views"]
+      },
+      {
+        "name": "Chef's Kitchen",
+        "type": "Gourmet Kitchen",
+        "dimensions": { "width": 35, "length": 28, "height": 14 },
+        "position": { "x": 45, "y": 0, "z": 0 },
+        "floor": 1,
+        "features": ["Two Islands", "Sub-Zero/Wolf", "Espresso Bar", "Wine Room", "Butler's Pantry", "Prep Kitchen"]
+      },
+      {
+        "name": "Formal Dining",
+        "type": "Dining Room",
+        "dimensions": { "width": 28, "length": 22, "height": 14 },
+        "position": { "x": 45, "y": 0, "z": 28 },
+        "floor": 1,
+        "features": ["Statement Lighting", "Wine Display", "Garden Views", "Built-in Bar"]
+      },
+      {
+        "name": "Library/Office",
+        "type": "Study",
+        "dimensions": { "width": 24, "length": 20, "height": 14 },
+        "position": { "x": 0, "y": 0, "z": 35 },
+        "floor": 1,
+        "features": ["Floor-to-Ceiling Bookshelves", "Fireplace", "Terrace Access", "Smart Tech"]
+      },
+      {
+        "name": "Home Theater",
+        "type": "Entertainment",
+        "dimensions": { "width": 32, "length": 24, "height": 14 },
+        "position": { "x": 24, "y": 0, "z": 35 },
+        "floor": 1,
+        "features": ["Dolby Atmos", "Tiered Seating", "120\" Screen", "Starlight Ceiling", "Concession Area"]
+      },
+      {
+        "name": "Wine Cellar",
+        "type": "Storage",
+        "dimensions": { "width": 20, "length": 18, "height": 12 },
+        "position": { "x": 73, "y": 0, "z": 35 },
+        "floor": 1,
+        "features": ["Climate Control", "Glass Walls", "Tasting Room", "2000+ Bottles", "Display Lighting"]
+      },
+      {
+        "name": "Fitness Center",
+        "type": "Gym",
+        "dimensions": { "width": 30, "length": 24, "height": 14 },
+        "position": { "x": 0, "y": 0, "z": 55 },
+        "floor": 1,
+        "features": ["Full Equipment", "Yoga Studio", "Mirrors", "Sound System", "Spa Access"]
+      },
+      {
+        "name": "Spa Complex",
+        "type": "Wellness",
+        "dimensions": { "width": 28, "length": 22, "height": 14 },
+        "position": { "x": 30, "y": 0, "z": 55 },
+        "floor": 1,
+        "features": ["Sauna", "Steam Room", "Massage Rooms", "Plunge Pool", "Relaxation Lounge"]
+      },
+      {
+        "name": "Guest Suite 1",
+        "type": "Bedroom",
+        "dimensions": { "width": 18, "length": 16, "height": 14 },
+        "position": { "x": 58, "y": 0, "z": 55 },
+        "floor": 1,
+        "features": ["En-suite", "Walk-in Closet", "Sitting Area", "Private Terrace"]
+      },
+      {
+        "name": "Master Wing",
+        "type": "Master Suite",
+        "dimensions": { "width": 42, "length": 32, "height": 15 },
+        "position": { "x": 0, "y": 13, "z": 0 },
+        "floor": 2,
+        "features": ["Sitting Room", "Fireplace", "Private Balcony", "Morning Bar", "His/Her Closets", "Office Nook"]
+      },
+      {
+        "name": "Master Bathroom",
+        "type": "Spa Bath",
+        "dimensions": { "width": 28, "length": 24, "height": 15 },
+        "position": { "x": 42, "y": 13, "z": 0 },
+        "floor": 2,
+        "features": ["Freestanding Tub", "Steam Shower", "Rain Shower", "Dual Vanities", "Makeup Station", "Smart Mirror", "Heated Floors"]
+      },
+      {
+        "name": "VIP Suite 1",
+        "type": "Bedroom",
+        "dimensions": { "width": 22, "length": 18, "height": 12 },
+        "position": { "x": 0, "y": 13, "z": 32 },
+        "floor": 2,
+        "features": ["En-suite", "Walk-in Closet", "Balcony", "Sitting Area"]
+      },
+      {
+        "name": "VIP Suite 2",
+        "type": "Bedroom",
+        "dimensions": { "width": 22, "length": 18, "height": 12 },
+        "position": { "x": 22, "y": 13, "z": 32 },
+        "floor": 2,
+        "features": ["En-suite", "Walk-in Closet", "Balcony", "Sitting Area"]
+      },
+      {
+        "name": "Guest Suite 2",
+        "type": "Bedroom",
+        "dimensions": { "width": 20, "length": 16, "height": 12 },
+        "position": { "x": 44, "y": 13, "z": 32 },
+        "floor": 2,
+        "features": ["En-suite", "Closet", "Balcony"]
+      },
+      {
+        "name": "Guest Suite 3",
+        "type": "Bedroom",
+        "dimensions": { "width": 20, "length": 16, "height": 12 },
+        "position": { "x": 64, "y": 13, "z": 32 },
+        "floor": 2,
+        "features": ["En-suite", "Closet", "Terrace"]
+      },
+      {
+        "name": "Game Room",
+        "type": "Recreation",
+        "dimensions": { "width": 32, "length": 24, "height": 12 },
+        "position": { "x": 0, "y": 13, "z": 50 },
+        "floor": 2,
+        "features": ["Pool Table", "Bar", "Lounge Area", "Gaming Consoles", "Balcony"]
+      },
+      {
+        "name": "Rooftop Lounge",
+        "type": "Penthouse Level",
+        "dimensions": { "width": 50, "length": 40, "height": 11 },
+        "position": { "x": 22.5, "y": 26, "z": 10 },
+        "floor": 3,
+        "features": ["360° Views", "Outdoor Kitchen", "Fire Features", "Lounge Seating", "Bar", "Green Roof"]
+      },
+      {
+        "name": "Observatory",
+        "type": "View Room",
+        "dimensions": { "width": 20, "length": 18, "height": 11 },
+        "position": { "x": 37.5, "y": 26, "z": 50 },
+        "floor": 3,
+        "features": ["Glass Walls", "Telescope Platform", "Stargazing Area", "Climate Control"]
+      }
+    ],
+    "exteriorFeatures": [
+      "Negative Edge Pool",
+      "Spa & Water Features",
+      "Outdoor Kitchen",
+      "Pool House with Bath",
+      "5-Car Gallery Garage",
+      "Porte-Cochere",
+      "Automated Gates",
+      "Landscape Lighting",
+      "Putting Green",
+      "Sport Court",
+      "Meditation Garden",
+      "Solar Panels",
+      "Smart Irrigation",
+      "Security System"
+    ],
+    "entryPoints": [
+      {
+        "name": "Grand Entrance",
+        "position": { "x": 47.5, "y": 0, "z": 89 },
+        "type": "Pivot Door 12ft",
+        "interactable": true
+      },
+      {
+        "name": "Pool Access",
+        "position": { "x": 0, "y": 0, "z": 17.5 },
+        "type": "Sliding Glass Wall",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 0, "y": 9, "z": 17.5 }, "size": "Floor-to-Ceiling", "type": "Frameless Glass Wall" },
+      { "position": { "x": 47.5, "y": 19.5, "z": 0 }, "size": "Picture Window", "type": "Fixed" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 185000,
+      "lod1": 92500,
+      "lod2": 42000,
+      "lod3": 21000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 4096,
+      "metallic": 4096,
+      "ao": 2048
+    },
+    "materials": [
+      "Concrete_Architectural_White",
+      "Glass_Frameless_Ultra",
+      "Steel_Brushed_Architectural",
+      "Stone_Limestone_Jerusalem",
+      "Wood_Exotic_Wenge",
+      "Marble_Statuario"
+    ],
+    "lighting": {
+      "realtimeLights": 25,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field",
+      "Bloom",
+      "Motion Blur",
+      "Chromatic Aberration",
+      "Film Grain",
+      "Ray Traced Reflections",
+      "Ray Traced Ambient Occlusion"
+    ]
+  },
+  "components": [
+    "MeshCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SecuritySystem",
+    "SmartHome",
+    "ClimateControl",
+    "PoolController",
+    "AudioSystem",
+    "TheaterController",
+    "ElevatorSystem"
+  ],
+  "price": {
+    "purchasePrice": 9800000,
+    "monthlyRent": 65000,
+    "currency": "OMNI"
+  }
+}

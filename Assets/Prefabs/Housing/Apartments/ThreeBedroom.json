@@ -1,0 +1,158 @@
+{
+  "prefabName": "Housing_Apartment_ThreeBedroom",
+  "category": "Housing",
+  "subCategory": "Apartments",
+  "type": "Three Bedroom Family",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Mid-Range",
+    "dominionZone": "Suburban Core"
+  },
+  "specifications": {
+    "squareFootage": 1350,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "floors": 1,
+    "parkingSpaces": 2
+  },
+  "layout": {
+    "dimensions": {
+      "width": 40,
+      "length": 33.75,
+      "height": 10
+    },
+    "rooms": [
+      {
+        "name": "Living Room",
+        "type": "Living",
+        "dimensions": { "width": 18, "length": 16, "height": 10 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "features": ["Large Windows", "Open Layout", "Patio Access"]
+      },
+      {
+        "name": "Dining Area",
+        "type": "Dining",
+        "dimensions": { "width": 12, "length": 10, "height": 10 },
+        "position": { "x": 18, "y": 0, "z": 0 },
+        "features": ["Open to Kitchen", "Natural Light"]
+      },
+      {
+        "name": "Kitchen",
+        "type": "Family Kitchen",
+        "dimensions": { "width": 10, "length": 16, "height": 10 },
+        "position": { "x": 30, "y": 0, "z": 0 },
+        "features": ["Breakfast Bar", "Pantry", "Modern Appliances", "Tile Backsplash"]
+      },
+      {
+        "name": "Master Bedroom",
+        "type": "Master",
+        "dimensions": { "width": 14, "length": 12, "height": 10 },
+        "position": { "x": 0, "y": 0, "z": 16 },
+        "features": ["Walk-in Closet", "En-suite Bath", "Ceiling Fan"]
+      },
+      {
+        "name": "Master Bathroom",
+        "type": "Full Bath",
+        "dimensions": { "width": 10, "length": 8, "height": 10 },
+        "position": { "x": 14, "y": 0, "z": 16 },
+        "features": ["Dual Sinks", "Shower/Tub Combo", "Linen Closet"]
+      },
+      {
+        "name": "Bedroom 2",
+        "type": "Bedroom",
+        "dimensions": { "width": 11, "length": 10, "height": 10 },
+        "position": { "x": 0, "y": 0, "z": 28 },
+        "features": ["Closet", "Window", "Overhead Light"]
+      },
+      {
+        "name": "Bedroom 3",
+        "type": "Bedroom",
+        "dimensions": { "width": 11, "length": 10, "height": 10 },
+        "position": { "x": 11, "y": 0, "z": 28 },
+        "features": ["Closet", "Window", "Overhead Light"]
+      },
+      {
+        "name": "Hall Bathroom",
+        "type": "Full Bath",
+        "dimensions": { "width": 8, "length": 7, "height": 10 },
+        "position": { "x": 22, "y": 0, "z": 28 },
+        "features": ["Tub/Shower", "Single Vanity", "Storage"]
+      },
+      {
+        "name": "Laundry Room",
+        "type": "Utility",
+        "dimensions": { "width": 6, "length": 6, "height": 10 },
+        "position": { "x": 30, "y": 0, "z": 16 },
+        "features": ["Washer/Dryer", "Storage Cabinets", "Utility Sink"]
+      }
+    ],
+    "entryPoints": [
+      {
+        "name": "Main Door",
+        "position": { "x": 30, "y": 0, "z": 10 },
+        "type": "Standard",
+        "interactable": true
+      },
+      {
+        "name": "Patio Door",
+        "position": { "x": 0, "y": 0, "z": 8 },
+        "type": "Sliding Glass",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 0, "y": 5, "z": 5 }, "size": "Large", "type": "Double Hung" },
+      { "position": { "x": 0, "y": 5, "z": 20 }, "size": "Medium", "type": "Double Hung" },
+      { "position": { "x": 5.5, "y": 5, "z": 34 }, "size": "Medium", "type": "Double Hung" },
+      { "position": { "x": 16.5, "y": 5, "z": 34 }, "size": "Medium", "type": "Double Hung" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 38000,
+      "lod1": 19000,
+      "lod2": 8500
+    },
+    "textureResolution": {
+      "diffuse": 2048,
+      "normal": 2048,
+      "roughness": 1024,
+      "metallic": 1024
+    },
+    "materials": [
+      "Carpet_Beige_Soft",
+      "Tile_Ceramic_Kitchen",
+      "Painted_Wall_Eggshell",
+      "Laminate_Countertop",
+      "Wood_Door_Standard"
+    ],
+    "lighting": {
+      "realtimeLights": 4,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction"
+  ],
+  "price": {
+    "purchasePrice": 165000,
+    "monthlyRent": 2400,
+    "currency": "OMNI"
+  }
+}

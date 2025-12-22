@@ -1,0 +1,160 @@
+{
+  "prefabName": "Housing_Condo_SkylineView",
+  "category": "Housing",
+  "subCategory": "Condos",
+  "type": "Skyline View",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Premium",
+    "dominionZone": "Midtown Tower"
+  },
+  "specifications": {
+    "squareFootage": 1450,
+    "bedrooms": 2,
+    "bathrooms": 2.5,
+    "floors": 1,
+    "parkingSpaces": 1
+  },
+  "layout": {
+    "dimensions": {
+      "width": 42,
+      "length": 34.52,
+      "height": 11
+    },
+    "rooms": [
+      {
+        "name": "Living/Dining Room",
+        "type": "Open Concept",
+        "dimensions": { "width": 26, "length": 20, "height": 11 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "features": ["Floor-to-Ceiling Windows", "Panoramic City Views", "Hardwood Floors", "Recessed Lighting", "Balcony Access"]
+      },
+      {
+        "name": "Kitchen",
+        "type": "Modern Kitchen",
+        "dimensions": { "width": 16, "length": 14, "height": 11 },
+        "position": { "x": 26, "y": 0, "z": 0 },
+        "features": ["Peninsula Island", "Quartz Counters", "Stainless Appliances", "Glass Tile Backsplash", "Wine Rack"]
+      },
+      {
+        "name": "Powder Room",
+        "type": "Half Bath",
+        "dimensions": { "width": 5, "length": 6, "height": 11 },
+        "position": { "x": 26, "y": 0, "z": 14 },
+        "features": ["Modern Vanity", "Decorative Mirror", "Designer Fixtures"]
+      },
+      {
+        "name": "Master Bedroom",
+        "type": "Master Suite",
+        "dimensions": { "width": 16, "length": 14, "height": 11 },
+        "position": { "x": 0, "y": 0, "z": 20 },
+        "features": ["Large Walk-in Closet", "City Views", "Private Balcony", "Ceiling Fan"]
+      },
+      {
+        "name": "Master Bathroom",
+        "type": "Luxury Bath",
+        "dimensions": { "width": 12, "length": 10, "height": 11 },
+        "position": { "x": 16, "y": 0, "z": 20 },
+        "features": ["Walk-in Shower", "Separate Tub", "Double Vanity", "Heated Floors", "Skylight"]
+      },
+      {
+        "name": "Second Bedroom",
+        "type": "Guest Room",
+        "dimensions": { "width": 13, "length": 12, "height": 11 },
+        "position": { "x": 28, "y": 0, "z": 20 },
+        "features": ["Large Closet", "Window", "En-suite Access"]
+      },
+      {
+        "name": "Second Bathroom",
+        "type": "Full Bath",
+        "dimensions": { "width": 9, "length": 8, "height": 11 },
+        "position": { "x": 28, "y": 0, "z": 32 },
+        "features": ["Tub/Shower", "Vanity", "Modern Fixtures"]
+      },
+      {
+        "name": "Den/Office",
+        "type": "Flex Space",
+        "dimensions": { "width": 10, "length": 10, "height": 11 },
+        "position": { "x": 0, "y": 0, "z": 34 },
+        "features": ["Glass French Doors", "Built-in Shelving", "Flexible Layout"]
+      },
+      {
+        "name": "Laundry Closet",
+        "type": "Utility",
+        "dimensions": { "width": 4, "length": 6, "height": 11 },
+        "position": { "x": 31, "y": 0, "z": 14 },
+        "features": ["Stacked Washer/Dryer", "Storage", "Folding Shelf"]
+      }
+    ],
+    "entryPoints": [
+      {
+        "name": "Main Door",
+        "position": { "x": 35, "y": 0, "z": 14 },
+        "type": "Smart Lock",
+        "interactable": true
+      },
+      {
+        "name": "Balcony Door",
+        "position": { "x": 0, "y": 0, "z": 10 },
+        "type": "Sliding Glass",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 0, "y": 5.5, "z": 10 }, "size": "Floor-to-Ceiling", "type": "Panoramic" },
+      { "position": { "x": 0, "y": 5.5, "z": 27 }, "size": "Large", "type": "Sliding" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 45000,
+      "lod1": 22500,
+      "lod2": 10000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Hardwood_Engineered_Modern",
+      "Quartz_Countertop_Grey",
+      "Glass_Tile_Backsplash",
+      "Painted_Wall_Designer",
+      "Tile_Porcelain_Modern"
+    ],
+    "lighting": {
+      "realtimeLights": 6,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Bloom"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SmartHome"
+  ],
+  "price": {
+    "purchasePrice": 365000,
+    "monthlyRent": 3200,
+    "currency": "OMNI"
+  }
+}

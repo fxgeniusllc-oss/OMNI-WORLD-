@@ -1,0 +1,115 @@
+{
+  "prefabName": "Housing_Condo_UrbanStudio",
+  "category": "Housing",
+  "subCategory": "Condos",
+  "type": "Urban Studio",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Entry",
+    "dominionZone": "Downtown"
+  },
+  "specifications": {
+    "squareFootage": 650,
+    "bedrooms": 0,
+    "bathrooms": 1,
+    "floors": 1,
+    "parkingSpaces": 0
+  },
+  "layout": {
+    "dimensions": {
+      "width": 22,
+      "length": 29.55,
+      "height": 10
+    },
+    "rooms": [
+      {
+        "name": "Main Living Space",
+        "type": "Studio",
+        "dimensions": { "width": 18, "length": 20, "height": 10 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "features": ["Modern Kitchen", "Living Area", "Sleeping Space", "Large Window", "Built-in Storage"]
+      },
+      {
+        "name": "Kitchen",
+        "type": "Galley Kitchen",
+        "dimensions": { "width": 8, "length": 10, "height": 10 },
+        "position": { "x": 0, "y": 0, "z": 20 },
+        "features": ["Efficient Layout", "Modern Appliances", "Breakfast Bar", "Under-cabinet Lighting"]
+      },
+      {
+        "name": "Bathroom",
+        "type": "Full Bath",
+        "dimensions": { "width": 8, "length": 7, "height": 10 },
+        "position": { "x": 8, "y": 0, "z": 20 },
+        "features": ["Walk-in Shower", "Modern Vanity", "Storage", "Exhaust Fan"]
+      },
+      {
+        "name": "Entry/Storage",
+        "type": "Foyer",
+        "dimensions": { "width": 6, "length": 7, "height": 10 },
+        "position": { "x": 16, "y": 0, "z": 20 },
+        "features": ["Coat Closet", "Entry Bench", "Key Hook"]
+      }
+    ],
+    "entryPoints": [
+      {
+        "name": "Main Door",
+        "position": { "x": 19, "y": 0, "z": 27 },
+        "type": "Smart Lock",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 0, "y": 5, "z": 10 }, "size": "Large", "type": "Picture Window" },
+      { "position": { "x": 11, "y": 5, "z": 0 }, "size": "Medium", "type": "Casement" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 22000,
+      "lod1": 11000,
+      "lod2": 5000
+    },
+    "textureResolution": {
+      "diffuse": 2048,
+      "normal": 2048,
+      "roughness": 1024,
+      "metallic": 1024
+    },
+    "materials": [
+      "Vinyl_Floor_Modern",
+      "Painted_Wall_Neutral",
+      "Laminate_Countertop_White",
+      "Glass_Window_Standard",
+      "Wood_Door_Modern"
+    ],
+    "lighting": {
+      "realtimeLights": 3,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction"
+  ],
+  "price": {
+    "purchasePrice": 125000,
+    "monthlyRent": 1650,
+    "currency": "OMNI"
+  }
+}

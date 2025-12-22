@@ -1,0 +1,292 @@
+{
+  "prefabName": "Housing_Mansion_TuscanEstate",
+  "category": "Housing",
+  "subCategory": "Mansions",
+  "type": "Tuscan Estate",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Ultra-Luxury",
+    "dominionZone": "Wine Country"
+  },
+  "specifications": {
+    "squareFootage": 10500,
+    "bedrooms": 8,
+    "bathrooms": 10.5,
+    "floors": 3,
+    "parkingSpaces": 6,
+    "lotSize": 40000,
+    "vineyardAcres": 5
+  },
+  "layout": {
+    "dimensions": {
+      "width": 105,
+      "length": 100,
+      "height": 42
+    },
+    "rooms": [
+      {
+        "name": "Grand Sala",
+        "type": "Great Room",
+        "dimensions": { "width": 40, "length": 32, "height": 22 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "floor": 1,
+        "features": ["Vaulted Ceiling", "Exposed Beams", "Stone Fireplace", "Arched Windows", "Vineyard Views", "Terrace Access"]
+      },
+      {
+        "name": "Tuscan Kitchen",
+        "type": "Gourmet Kitchen",
+        "dimensions": { "width": 34, "length": 28, "height": 16 },
+        "position": { "x": 40, "y": 0, "z": 0 },
+        "floor": 1,
+        "features": ["Wood-Fired Oven", "La Cornue Range", "Two Islands", "Copper Accents", "Herb Garden Window", "Butler's Pantry"]
+      },
+      {
+        "name": "Formal Dining",
+        "type": "Dining Room",
+        "dimensions": { "width": 30, "length": 26, "height": 16 },
+        "position": { "x": 40, "y": 0, "z": 28 },
+        "floor": 1,
+        "features": ["Vaulted Ceiling", "Wine Cellar Access", "Vineyard Views", "Tuscan Chandelier"]
+      },
+      {
+        "name": "Loggia",
+        "type": "Covered Outdoor Living",
+        "dimensions": { "width": 36, "length": 18, "height": 16 },
+        "position": { "x": 0, "y": 0, "z": 32 },
+        "floor": 1,
+        "features": ["Stone Columns", "Outdoor Fireplace", "Dining Area", "Kitchen", "Vineyard Views"]
+      },
+      {
+        "name": "Library",
+        "type": "Study",
+        "dimensions": { "width": 26, "length": 22, "height": 16 },
+        "position": { "x": 74, "y": 0, "z": 0 },
+        "floor": 1,
+        "features": ["Floor-to-Ceiling Shelves", "Fireplace", "Leather Seating", "Arched Windows"]
+      },
+      {
+        "name": "Wine Cellar & Tasting Room",
+        "type": "Storage/Entertainment",
+        "dimensions": { "width": 36, "length": 28, "height": 14 },
+        "position": { "x": 0, "y": 0, "z": 50 },
+        "floor": 1,
+        "features": ["Barrel Vault", "Stone Walls", "Tasting Bar", "4000+ Bottles", "Cheese Cave", "Climate Control"]
+      },
+      {
+        "name": "Billiard Room",
+        "type": "Recreation",
+        "dimensions": { "width": 28, "length": 24, "height": 16 },
+        "position": { "x": 36, "y": 0, "z": 54 },
+        "floor": 1,
+        "features": ["Custom Table", "Bar", "Fireplace", "Terrace Access"]
+      },
+      {
+        "name": "Home Cinema",
+        "type": "Theater",
+        "dimensions": { "width": 30, "length": 24, "height": 14 },
+        "position": { "x": 64, "y": 0, "z": 54 },
+        "floor": 1,
+        "features": ["Tiered Seating", "140\" Screen", "Dolby Atmos", "Concession Bar"]
+      },
+      {
+        "name": "Guest Suite 1",
+        "type": "Casita",
+        "dimensions": { "width": 24, "length": 20, "height": 14 },
+        "position": { "x": 0, "y": 0, "z": 78 },
+        "floor": 1,
+        "features": ["Separate Entrance", "Living Area", "Kitchenette", "En-suite", "Patio"]
+      },
+      {
+        "name": "Guest Suite 2",
+        "type": "Casita",
+        "dimensions": { "width": 24, "length": 20, "height": 14 },
+        "position": { "x": 24, "y": 0, "z": 78 },
+        "floor": 1,
+        "features": ["Separate Entrance", "Living Area", "Kitchenette", "En-suite", "Patio"]
+      },
+      {
+        "name": "Fitness & Wellness",
+        "type": "Gym/Spa",
+        "dimensions": { "width": 32, "length": 26, "height": 14 },
+        "position": { "x": 64, "y": 0, "z": 78 },
+        "floor": 1,
+        "features": ["Equipment Area", "Yoga Studio", "Sauna", "Steam Room", "Massage Room", "Pool Access"]
+      },
+      {
+        "name": "Master Suite",
+        "type": "Master",
+        "dimensions": { "width": 40, "length": 34, "height": 16 },
+        "position": { "x": 0, "y": 14, "z": 0 },
+        "floor": 2,
+        "features": ["Fireplace", "Sitting Room", "Morning Kitchen", "Private Terrace", "Vineyard Views", "His/Her Closets"]
+      },
+      {
+        "name": "Master Bathroom",
+        "type": "Spa Bath",
+        "dimensions": { "width": 28, "length": 24, "height": 16 },
+        "position": { "x": 40, "y": 14, "z": 0 },
+        "floor": 2,
+        "features": ["Soaking Tub", "Steam Shower", "Rain Shower", "Dual Vanities", "Bidet", "Heated Stone Floors", "Terrace"]
+      },
+      {
+        "name": "VIP Suite 1",
+        "type": "Bedroom",
+        "dimensions": { "width": 24, "length": 22, "height": 14 },
+        "position": { "x": 0, "y": 14, "z": 34 },
+        "floor": 2,
+        "features": ["Fireplace", "En-suite", "Dressing Room", "Private Balcony"]
+      },
+      {
+        "name": "VIP Suite 2",
+        "type": "Bedroom",
+        "dimensions": { "width": 24, "length": 22, "height": 14 },
+        "position": { "x": 24, "y": 14, "z": 34 },
+        "floor": 2,
+        "features": ["Fireplace", "En-suite", "Dressing Room", "Private Balcony"]
+      },
+      {
+        "name": "Guest Suite 3",
+        "type": "Bedroom",
+        "dimensions": { "width": 22, "length": 20, "height": 14 },
+        "position": { "x": 48, "y": 14, "z": 34 },
+        "floor": 2,
+        "features": ["En-suite", "Walk-in Closet", "Balcony"]
+      },
+      {
+        "name": "Guest Suite 4",
+        "type": "Bedroom",
+        "dimensions": { "width": 22, "length": 20, "height": 14 },
+        "position": { "x": 70, "y": 14, "z": 34 },
+        "floor": 2,
+        "features": ["En-suite", "Walk-in Closet", "Balcony"]
+      },
+      {
+        "name": "Art Studio",
+        "type": "Creative Space",
+        "dimensions": { "width": 28, "length": 24, "height": 14 },
+        "position": { "x": 68, "y": 14, "z": 0 },
+        "floor": 2,
+        "features": ["North Light", "Sink", "Storage", "Display Area", "Terrace"]
+      },
+      {
+        "name": "Tower Suite",
+        "type": "Private Retreat",
+        "dimensions": { "width": 32, "length": 28, "height": 12 },
+        "position": { "x": 36.5, "y": 28, "z": 15 },
+        "floor": 3,
+        "features": ["360° Views", "Sitting Room", "Fireplace", "En-suite", "Private Stair", "Observation Deck"]
+      },
+      {
+        "name": "Rooftop Terrace",
+        "type": "Outdoor Living",
+        "dimensions": { "width": 45, "length": 35, "height": 12 },
+        "position": { "x": 30, "y": 28, "z": 43 },
+        "floor": 3,
+        "features": ["Pergola", "Outdoor Kitchen", "Fire Pit", "Vineyard Views", "Sunset Views", "Dining Area"]
+      }
+    ],
+    "exteriorFeatures": [
+      "Infinity Pool",
+      "Spa with Grottos",
+      "Pool House",
+      "Bocce Court",
+      "Private Vineyard (5 acres)",
+      "Olive Grove",
+      "Herb Garden",
+      "Vegetable Garden",
+      "6-Car Garage",
+      "Wine Production Facility",
+      "Barrel Storage",
+      "Gated Entry",
+      "Fountain Courtyard",
+      "Pergola Walkways",
+      "Outdoor Fireplace",
+      "Security System"
+    ],
+    "entryPoints": [
+      {
+        "name": "Main Entrance",
+        "position": { "x": 70, "y": 0, "z": 28 },
+        "type": "Arched Wood Doors",
+        "interactable": true
+      },
+      {
+        "name": "Courtyard Gate",
+        "position": { "x": 18, "y": 0, "z": 50 },
+        "type": "Iron Gates",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 20, "y": 11, "z": 0 }, "size": "Arched", "type": "Tuscan" },
+      { "position": { "x": 52.5, "y": 21, "z": 16 }, "size": "Palladian", "type": "Fixed" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 210000,
+      "lod1": 105000,
+      "lod2": 50000,
+      "lod3": 25000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 4096,
+      "metallic": 4096,
+      "ao": 4096
+    },
+    "materials": [
+      "Stone_Tuscan_Aged",
+      "Terracotta_Tile_Handmade",
+      "Wood_Aged_Beams",
+      "Plaster_Venetian_Warm",
+      "Iron_Wrought_Rustic",
+      "Travertine_Italian"
+    ],
+    "lighting": {
+      "realtimeLights": 32,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field",
+      "Bloom",
+      "Motion Blur",
+      "Chromatic Aberration",
+      "Film Grain",
+      "Ray Traced Reflections",
+      "Ray Traced Ambient Occlusion"
+    ]
+  },
+  "components": [
+    "MeshCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SecuritySystem",
+    "SmartHome",
+    "ClimateControl",
+    "PoolController",
+    "AudioSystem",
+    "TheaterController",
+    "VineyardController"
+  ],
+  "price": {
+    "purchasePrice": 16800000,
+    "monthlyRent": 110000,
+    "currency": "OMNI"
+  }
+}

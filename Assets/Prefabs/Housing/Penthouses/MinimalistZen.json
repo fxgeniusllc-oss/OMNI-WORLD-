@@ -1,0 +1,176 @@
+{
+  "prefabName": "Housing_Penthouse_Minimalist",
+  "category": "Housing",
+  "subCategory": "Penthouses",
+  "type": "Minimalist Zen",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Luxury",
+    "dominionZone": "Design District Tower"
+  },
+  "specifications": {
+    "squareFootage": 3200,
+    "bedrooms": 2,
+    "bathrooms": 2.5,
+    "floors": 1,
+    "parkingSpaces": 2,
+    "floor": 42
+  },
+  "layout": {
+    "dimensions": {
+      "width": 55,
+      "length": 58.18,
+      "height": 12
+    },
+    "rooms": [
+      {
+        "name": "Open Living Space",
+        "type": "Great Room",
+        "dimensions": { "width": 38, "length": 28, "height": 12 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "features": ["Frameless Glass Walls", "Hidden Storage", "Floating Furniture", "Zen Garden View", "Minimal Design"]
+      },
+      {
+        "name": "Kitchen",
+        "type": "Minimalist Kitchen",
+        "dimensions": { "width": 17, "length": 16, "height": 12 },
+        "position": { "x": 38, "y": 0, "z": 0 },
+        "features": ["Handleless Cabinets", "Integrated Appliances", "Stone Island", "Hidden Pantry", "Clean Lines"]
+      },
+      {
+        "name": "Dining Area",
+        "type": "Dining",
+        "dimensions": { "width": 16, "length": 14, "height": 12 },
+        "position": { "x": 38, "y": 0, "z": 16 },
+        "features": ["Floating Table", "Skyline Views", "Recessed Lighting"]
+      },
+      {
+        "name": "Meditation Room",
+        "type": "Zen Space",
+        "dimensions": { "width": 14, "length": 12, "height": 12 },
+        "position": { "x": 0, "y": 0, "z": 28 },
+        "features": ["Tatami Mats", "Shoji Screens", "Zen Garden", "Natural Light", "Minimalist Design"]
+      },
+      {
+        "name": "Master Suite",
+        "type": "Master",
+        "dimensions": { "width": 24, "length": 20, "height": 12 },
+        "position": { "x": 14, "y": 0, "z": 28 },
+        "features": ["Platform Bed", "Hidden Closet", "City Views", "Minimal Aesthetic", "Terrace Access"]
+      },
+      {
+        "name": "Master Bathroom",
+        "type": "Spa Bath",
+        "dimensions": { "width": 16, "length": 14, "height": 12 },
+        "position": { "x": 38, "y": 0, "z": 28 },
+        "features": ["Floating Vanity", "Soaking Tub", "Walk-in Shower", "Heated Floors", "Natural Stone", "Skylight"]
+      },
+      {
+        "name": "Guest Suite",
+        "type": "Bedroom",
+        "dimensions": { "width": 18, "length": 16, "height": 12 },
+        "position": { "x": 0, "y": 0, "z": 48 },
+        "features": ["En-suite", "Built-in Closet", "Views", "Minimalist Design"]
+      },
+      {
+        "name": "Guest Bathroom",
+        "type": "Full Bath",
+        "dimensions": { "width": 10, "length": 9, "height": 12 },
+        "position": { "x": 18, "y": 0, "z": 48 },
+        "features": ["Walk-in Shower", "Floating Vanity", "Clean Design"]
+      },
+      {
+        "name": "Powder Room",
+        "type": "Half Bath",
+        "dimensions": { "width": 6, "length": 6, "height": 12 },
+        "position": { "x": 28, "y": 0, "z": 48 },
+        "features": ["Minimalist Fixtures", "Hidden Storage", "Art Lighting"]
+      },
+      {
+        "name": "Home Office",
+        "type": "Study",
+        "dimensions": { "width": 14, "length": 12, "height": 12 },
+        "position": { "x": 34, "y": 0, "z": 42 },
+        "features": ["Built-in Desk", "Hidden Storage", "Views", "Smart Tech"]
+      },
+      {
+        "name": "Laundry",
+        "type": "Utility",
+        "dimensions": { "width": 7, "length": 6, "height": 12 },
+        "position": { "x": 48, "y": 0, "z": 42 },
+        "features": ["Hidden Appliances", "Storage", "Folding Area"]
+      }
+    ],
+    "entryPoints": [
+      {
+        "name": "Private Elevator",
+        "position": { "x": 48, "y": 0, "z": 16 },
+        "type": "Hidden Door",
+        "interactable": true
+      },
+      {
+        "name": "Terrace Door",
+        "position": { "x": 0, "y": 0, "z": 14 },
+        "type": "Sliding Glass",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 0, "y": 6, "z": 14 }, "size": "Floor-to-Ceiling", "type": "Frameless" },
+      { "position": { "x": 31, "y": 6, "z": 58 }, "size": "Skylight", "type": "Fixed" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 52000,
+      "lod1": 26000,
+      "lod2": 12000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Concrete_Polished_White",
+      "Glass_Frameless_Clear",
+      "Wood_Natural_Oak",
+      "Stone_Natural_Limestone",
+      "Steel_Brushed_Minimal"
+    ],
+    "lighting": {
+      "realtimeLights": 6,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SmartHome",
+    "ClimateControl"
+  ],
+  "price": {
+    "purchasePrice": 4200000,
+    "monthlyRent": 28000,
+    "currency": "OMNI"
+  }
+}

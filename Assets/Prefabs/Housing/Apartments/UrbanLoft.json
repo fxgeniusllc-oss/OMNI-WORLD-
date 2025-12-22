@@ -1,0 +1,163 @@
+{
+  "prefabName": "Housing_Apartment_UrbanLoft",
+  "category": "Housing",
+  "subCategory": "Apartments",
+  "type": "Urban Loft",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Premium",
+    "dominionZone": "Urban Core"
+  },
+  "specifications": {
+    "squareFootage": 1600,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "floors": 2,
+    "parkingSpaces": 1
+  },
+  "layout": {
+    "dimensions": {
+      "width": 32,
+      "length": 50,
+      "height": 20
+    },
+    "rooms": [
+      {
+        "name": "Great Room",
+        "type": "Living/Dining",
+        "dimensions": { "width": 32, "length": 26, "height": 16 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "floor": 1,
+        "features": ["Double-Height Ceilings", "Open Kitchen", "Exposed Ductwork", "Polished Concrete", "Gallery Lighting"]
+      },
+      {
+        "name": "Kitchen",
+        "type": "Modern Kitchen",
+        "dimensions": { "width": 14, "length": 12, "height": 16 },
+        "position": { "x": 0, "y": 0, "z": 26 },
+        "floor": 1,
+        "features": ["Island", "Stainless Appliances", "Open Shelving", "Industrial Fixtures"]
+      },
+      {
+        "name": "Half Bath",
+        "type": "Powder Room",
+        "dimensions": { "width": 6, "length": 5, "height": 16 },
+        "position": { "x": 14, "y": 0, "z": 26 },
+        "floor": 1,
+        "features": ["Toilet", "Modern Sink", "Mirror"]
+      },
+      {
+        "name": "Storage/Utility",
+        "type": "Utility",
+        "dimensions": { "width": 6, "length": 7, "height": 16 },
+        "position": { "x": 14, "y": 0, "z": 31 },
+        "floor": 1,
+        "features": ["Washer/Dryer", "Storage", "Mechanical"]
+      },
+      {
+        "name": "Master Bedroom",
+        "type": "Master Suite",
+        "dimensions": { "width": 18, "length": 16, "height": 10 },
+        "position": { "x": 0, "y": 10, "z": 0 },
+        "floor": 2,
+        "features": ["Walk-in Closet", "Skylight", "Loft Views", "Exposed Beams"]
+      },
+      {
+        "name": "Master Bathroom",
+        "type": "Full Bath",
+        "dimensions": { "width": 10, "length": 10, "height": 10 },
+        "position": { "x": 18, "y": 10, "z": 0 },
+        "floor": 2,
+        "features": ["Walk-in Shower", "Dual Sinks", "Soaking Tub", "Heated Floors"]
+      },
+      {
+        "name": "Second Bedroom/Office",
+        "type": "Bedroom",
+        "dimensions": { "width": 14, "length": 12, "height": 10 },
+        "position": { "x": 0, "y": 10, "z": 16 },
+        "floor": 2,
+        "features": ["Closet", "Skylight", "Flex Space"]
+      },
+      {
+        "name": "Second Bathroom",
+        "type": "Full Bath",
+        "dimensions": { "width": 8, "length": 8, "height": 10 },
+        "position": { "x": 14, "y": 10, "z": 16 },
+        "floor": 2,
+        "features": ["Shower", "Vanity", "Modern Fixtures"]
+      },
+      {
+        "name": "Loft Lounge",
+        "type": "Reading Nook",
+        "dimensions": { "width": 10, "length": 10, "height": 10 },
+        "position": { "x": 18, "y": 10, "z": 10 },
+        "floor": 2,
+        "features": ["Overlooks Main Level", "Built-in Seating", "Bookshelves"]
+      }
+    ],
+    "entryPoints": [
+      {
+        "name": "Main Door",
+        "position": { "x": 20, "y": 0, "z": 38 },
+        "type": "Industrial Steel",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 0, "y": 8, "z": 13 }, "size": "Floor-to-Ceiling", "type": "Industrial" },
+      { "position": { "x": 32, "y": 8, "z": 13 }, "size": "Floor-to-Ceiling", "type": "Industrial" },
+      { "position": { "x": 16, "y": 15, "z": 0 }, "size": "Skylight", "type": "Fixed" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 48000,
+      "lod1": 24000,
+      "lod2": 11000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Concrete_Polished_Industrial",
+      "Brick_Exposed_White",
+      "Steel_Industrial_Raw",
+      "Glass_Window_Industrial",
+      "Wood_Reclaimed_Dark"
+    ],
+    "lighting": {
+      "realtimeLights": 6,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController"
+  ],
+  "price": {
+    "purchasePrice": 285000,
+    "monthlyRent": 3500,
+    "currency": "OMNI"
+  }
+}

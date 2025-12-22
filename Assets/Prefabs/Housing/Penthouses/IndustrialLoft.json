@@ -1,0 +1,219 @@
+{
+  "prefabName": "Housing_Penthouse_Industrial",
+  "category": "Housing",
+  "subCategory": "Penthouses",
+  "type": "Industrial Loft",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Premium",
+    "dominionZone": "Converted Warehouse District"
+  },
+  "specifications": {
+    "squareFootage": 4200,
+    "bedrooms": 3,
+    "bathrooms": 3.5,
+    "floors": 2,
+    "parkingSpaces": 3,
+    "floor": 12
+  },
+  "layout": {
+    "dimensions": {
+      "width": 65,
+      "length": 64.62,
+      "height": 24
+    },
+    "rooms": [
+      {
+        "name": "Great Room",
+        "type": "Living",
+        "dimensions": { "width": 45, "length": 35, "height": 18 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "floor": 1,
+        "features": ["Double-Height Ceilings", "Exposed Brick", "Steel Beams", "Concrete Floors", "Industrial Windows", "Gallery Lighting"]
+      },
+      {
+        "name": "Kitchen",
+        "type": "Industrial Kitchen",
+        "dimensions": { "width": 20, "length": 18, "height": 18 },
+        "position": { "x": 45, "y": 0, "z": 0 },
+        "floor": 1,
+        "features": ["Concrete Island", "Exposed Ductwork", "Stainless Steel", "Open Shelving", "Industrial Fixtures"]
+      },
+      {
+        "name": "Dining Area",
+        "type": "Dining",
+        "dimensions": { "width": 18, "length": 16, "height": 18 },
+        "position": { "x": 45, "y": 0, "z": 18 },
+        "floor": 1,
+        "features": ["Reclaimed Wood Table", "Edison Bulbs", "Exposed Brick", "City Views"]
+      },
+      {
+        "name": "Art Studio",
+        "type": "Creative Space",
+        "dimensions": { "width": 24, "length": 20, "height": 14 },
+        "position": { "x": 0, "y": 0, "z": 35 },
+        "floor": 1,
+        "features": ["North Light", "Concrete Floor", "Industrial Sink", "Storage", "High Ceilings"]
+      },
+      {
+        "name": "Media Room",
+        "type": "Entertainment",
+        "dimensions": { "width": 22, "length": 18, "height": 14 },
+        "position": { "x": 24, "y": 0, "z": 35 },
+        "floor": 1,
+        "features": ["Leather Seating", "Projection Screen", "Industrial Bar", "Exposed Systems"]
+      },
+      {
+        "name": "Powder Room",
+        "type": "Half Bath",
+        "dimensions": { "width": 6, "length": 7, "height": 14 },
+        "position": { "x": 46, "y": 0, "z": 34 },
+        "floor": 1,
+        "features": ["Industrial Fixtures", "Concrete Sink", "Edison Lighting"]
+      },
+      {
+        "name": "Utility/Storage",
+        "type": "Utility",
+        "dimensions": { "width": 8, "length": 8, "height": 14 },
+        "position": { "x": 52, "y": 0, "z": 34 },
+        "floor": 1,
+        "features": ["Washer/Dryer", "Industrial Shelving", "Mechanical"]
+      },
+      {
+        "name": "Master Loft",
+        "type": "Master Suite",
+        "dimensions": { "width": 28, "length": 24, "height": 12 },
+        "position": { "x": 0, "y": 12, "z": 0 },
+        "floor": 2,
+        "features": ["Open to Below", "Exposed Beams", "Skylight", "His/Her Closets", "Sitting Area"]
+      },
+      {
+        "name": "Master Bathroom",
+        "type": "Industrial Bath",
+        "dimensions": { "width": 18, "length": 16, "height": 12 },
+        "position": { "x": 28, "y": 12, "z": 0 },
+        "floor": 2,
+        "features": ["Concrete Tub", "Industrial Shower", "Steel Fixtures", "Heated Concrete Floors", "Skylight"]
+      },
+      {
+        "name": "Bedroom 2",
+        "type": "Bedroom",
+        "dimensions": { "width": 18, "length": 16, "height": 10 },
+        "position": { "x": 0, "y": 12, "z": 24 },
+        "floor": 2,
+        "features": ["Exposed Brick", "En-suite", "Walk-in Closet", "Skylight"]
+      },
+      {
+        "name": "Bathroom 2",
+        "type": "Full Bath",
+        "dimensions": { "width": 10, "length": 9, "height": 10 },
+        "position": { "x": 18, "y": 12, "z": 24 },
+        "floor": 2,
+        "features": ["Industrial Shower", "Concrete Vanity", "Steel Fixtures"]
+      },
+      {
+        "name": "Bedroom 3/Office",
+        "type": "Flex Room",
+        "dimensions": { "width": 18, "length": 16, "height": 10 },
+        "position": { "x": 28, "y": 12, "z": 24 },
+        "floor": 2,
+        "features": ["Exposed Systems", "Closet", "Flexible Layout", "Skylight"]
+      },
+      {
+        "name": "Bathroom 3",
+        "type": "Full Bath",
+        "dimensions": { "width": 10, "length": 9, "height": 10 },
+        "position": { "x": 46, "y": 12, "z": 24 },
+        "floor": 2,
+        "features": ["Walk-in Shower", "Industrial Design", "Concrete Elements"]
+      },
+      {
+        "name": "Loft Lounge",
+        "type": "Reading Nook",
+        "dimensions": { "width": 16, "length": 14, "height": 10 },
+        "position": { "x": 46, "y": 12, "z": 0 },
+        "floor": 2,
+        "features": ["Overlooks Great Room", "Built-in Seating", "Bookshelves", "Exposed Beams"]
+      },
+      {
+        "name": "Rooftop Deck",
+        "type": "Outdoor",
+        "dimensions": { "width": 35, "length": 30, "height": 10 },
+        "position": { "x": 15, "y": 12, "z": 40 },
+        "floor": 2,
+        "features": ["City Views", "Fire Pit", "Lounge Area", "Planters", "String Lights"]
+      }
+    ],
+    "entryPoints": [
+      {
+        "name": "Freight Elevator",
+        "position": { "x": 60, "y": 0, "z": 42 },
+        "type": "Industrial Elevator",
+        "interactable": true
+      },
+      {
+        "name": "Rooftop Access",
+        "position": { "x": 32.5, "y": 12, "z": 40 },
+        "type": "Steel Door",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 0, "y": 9, "z": 17.5 }, "size": "Extra Large", "type": "Industrial Steel Frame" },
+      { "position": { "x": 22.5, "y": 18, "z": 0 }, "size": "Skylight", "type": "Industrial" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 68000,
+      "lod1": 34000,
+      "lod2": 16000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Concrete_Polished_Industrial",
+      "Brick_Exposed_Red",
+      "Steel_Industrial_Raw",
+      "Wood_Reclaimed_Dark",
+      "Glass_Industrial_Steel_Frame"
+    ],
+    "lighting": {
+      "realtimeLights": 12,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field",
+      "Bloom"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "ElevatorSystem"
+  ],
+  "price": {
+    "purchasePrice": 2850000,
+    "monthlyRent": 19500,
+    "currency": "OMNI"
+  }
+}

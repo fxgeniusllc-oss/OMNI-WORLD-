@@ -1,0 +1,277 @@
+{
+  "prefabName": "Housing_Mansion_BeachfrontVilla",
+  "category": "Housing",
+  "subCategory": "Mansions",
+  "type": "Beachfront Villa",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Ultra-Luxury",
+    "dominionZone": "Coastal Estates"
+  },
+  "specifications": {
+    "squareFootage": 9500,
+    "bedrooms": 7,
+    "bathrooms": 10,
+    "floors": 3,
+    "parkingSpaces": 5,
+    "lotSize": 30000,
+    "beachFrontage": 150
+  },
+  "layout": {
+    "dimensions": {
+      "width": 100,
+      "length": 95,
+      "height": 39
+    },
+    "rooms": [
+      {
+        "name": "Ocean Great Room",
+        "type": "Living",
+        "dimensions": { "width": 48, "length": 36, "height": 20 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "floor": 1,
+        "features": ["Disappearing Glass Walls", "Ocean Views", "Linear Fireplace", "Double-Height Ceiling", "Direct Beach Access"]
+      },
+      {
+        "name": "Gourmet Kitchen",
+        "type": "Chef's Kitchen",
+        "dimensions": { "width": 32, "length": 26, "height": 14 },
+        "position": { "x": 48, "y": 0, "z": 0 },
+        "floor": 1,
+        "features": ["Ocean-View Island", "Professional Appliances", "Two Pantries", "Scullery", "Wine Storage"]
+      },
+      {
+        "name": "Dining Pavilion",
+        "type": "Formal Dining",
+        "dimensions": { "width": 28, "length": 24, "height": 14 },
+        "position": { "x": 48, "y": 0, "z": 26 },
+        "floor": 1,
+        "features": ["Ocean Views", "Retractable Walls", "Indoor/Outdoor", "Wine Display"]
+      },
+      {
+        "name": "Beach Bar & Lounge",
+        "type": "Entertainment",
+        "dimensions": { "width": 20, "length": 18, "height": 14 },
+        "position": { "x": 80, "y": 0, "z": 0 },
+        "floor": 1,
+        "features": ["Full Bar", "Ocean Views", "Lounge Seating", "Direct Beach Access", "Sound System"]
+      },
+      {
+        "name": "Home Office",
+        "type": "Study",
+        "dimensions": { "width": 22, "length": 18, "height": 14 },
+        "position": { "x": 76, "y": 0, "z": 26 },
+        "floor": 1,
+        "features": ["Ocean Views", "Built-ins", "Terrace", "Video Conference Setup"]
+      },
+      {
+        "name": "Media Room",
+        "type": "Theater",
+        "dimensions": { "width": 28, "length": 22, "height": 14 },
+        "position": { "x": 0, "y": 0, "z": 36 },
+        "floor": 1,
+        "features": ["Theater Seating", "140\" Screen", "Dolby Atmos", "Lounge Area", "Wet Bar"]
+      },
+      {
+        "name": "Fitness Center",
+        "type": "Gym",
+        "dimensions": { "width": 26, "length": 22, "height": 14 },
+        "position": { "x": 28, "y": 0, "z": 36 },
+        "floor": 1,
+        "features": ["Ocean Views", "Full Equipment", "Yoga Space", "Mirrors", "Terrace Access"]
+      },
+      {
+        "name": "Spa Suite",
+        "type": "Wellness",
+        "dimensions": { "width": 24, "length": 20, "height": 14 },
+        "position": { "x": 54, "y": 0, "z": 36 },
+        "floor": 1,
+        "features": ["Sauna", "Steam", "Massage Room", "Relaxation Area", "Outdoor Shower"]
+      },
+      {
+        "name": "Guest Suite 1",
+        "type": "Bedroom",
+        "dimensions": { "width": 20, "length": 18, "height": 14 },
+        "position": { "x": 0, "y": 0, "z": 58 },
+        "floor": 1,
+        "features": ["Ocean Views", "En-suite", "Walk-in Closet", "Private Terrace"]
+      },
+      {
+        "name": "Guest Suite 2",
+        "type": "Bedroom",
+        "dimensions": { "width": 20, "length": 18, "height": 14 },
+        "position": { "x": 20, "y": 0, "z": 58 },
+        "floor": 1,
+        "features": ["Garden Views", "En-suite", "Walk-in Closet", "Terrace"]
+      },
+      {
+        "name": "Master Retreat",
+        "type": "Master Suite",
+        "dimensions": { "width": 42, "length": 34, "height": 15 },
+        "position": { "x": 0, "y": 13, "z": 0 },
+        "floor": 2,
+        "features": ["Panoramic Ocean Views", "Sitting Room", "Morning Bar", "Fireplace", "Private Balcony", "His/Her Closets"]
+      },
+      {
+        "name": "Master Bathroom",
+        "type": "Spa Bath",
+        "dimensions": { "width": 28, "length": 24, "height": 15 },
+        "position": { "x": 42, "y": 13, "z": 0 },
+        "floor": 2,
+        "features": ["Ocean-View Soaking Tub", "Steam Shower", "Rain Shower", "Dual Vanities", "Heated Floors", "Balcony Access"]
+      },
+      {
+        "name": "VIP Suite 1",
+        "type": "Bedroom",
+        "dimensions": { "width": 24, "length": 20, "height": 12 },
+        "position": { "x": 0, "y": 13, "z": 34 },
+        "floor": 2,
+        "features": ["Ocean Views", "En-suite", "Dressing Room", "Private Balcony"]
+      },
+      {
+        "name": "VIP Suite 2",
+        "type": "Bedroom",
+        "dimensions": { "width": 24, "length": 20, "height": 12 },
+        "position": { "x": 24, "y": 13, "z": 34 },
+        "floor": 2,
+        "features": ["Ocean Views", "En-suite", "Dressing Room", "Private Balcony"]
+      },
+      {
+        "name": "Children's Suite",
+        "type": "Bedroom/Play",
+        "dimensions": { "width": 28, "length": 22, "height": 12 },
+        "position": { "x": 48, "y": 13, "z": 34 },
+        "floor": 2,
+        "features": ["Play Area", "Study Space", "En-suite", "Built-in Storage", "Balcony"]
+      },
+      {
+        "name": "Game Room",
+        "type": "Recreation",
+        "dimensions": { "width": 26, "length": 22, "height": 12 },
+        "position": { "x": 70, "y": 13, "z": 0 },
+        "floor": 2,
+        "features": ["Pool Table", "Gaming Area", "Bar", "Ocean Views", "Terrace"]
+      },
+      {
+        "name": "Sky Lounge",
+        "type": "Rooftop Living",
+        "dimensions": { "width": 50, "length": 40, "height": 11 },
+        "position": { "x": 25, "y": 26, "z": 10 },
+        "floor": 3,
+        "features": ["360° Ocean/City Views", "Outdoor Kitchen", "Fire Features", "Bar", "Lounge Areas", "Hot Tub"]
+      },
+      {
+        "name": "Observatory Deck",
+        "type": "View Deck",
+        "dimensions": { "width": 30, "length": 24, "height": 11 },
+        "position": { "x": 35, "y": 26, "z": 50 },
+        "floor": 3,
+        "features": ["Glass Railings", "Telescope Area", "Seating", "Sunset Views"]
+      }
+    ],
+    "exteriorFeatures": [
+      "Infinity Edge Pool",
+      "Beach-Entry Pool Section",
+      "Spa & Water Features",
+      "Cabana with Bath",
+      "Outdoor Kitchen",
+      "Fire Pit Lounge",
+      "Beach Deck",
+      "Direct Beach Access",
+      "Private Dock",
+      "5-Car Garage",
+      "Circular Driveway",
+      "Automated Gates",
+      "Solar Panels",
+      "Smart Irrigation",
+      "Landscape Lighting",
+      "Security System"
+    ],
+    "entryPoints": [
+      {
+        "name": "Main Entrance",
+        "position": { "x": 50, "y": 0, "z": 95 },
+        "type": "Pivot Door",
+        "interactable": true
+      },
+      {
+        "name": "Beach Access",
+        "position": { "x": 24, "y": 0, "z": 0 },
+        "type": "Sliding Glass Wall",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 0, "y": 10, "z": 18 }, "size": "Floor-to-Ceiling", "type": "Disappearing Glass" },
+      { "position": { "x": 21, "y": 19.5, "z": 0 }, "size": "Panoramic", "type": "Fixed" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 195000,
+      "lod1": 97500,
+      "lod2": 45000,
+      "lod3": 22500
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 4096,
+      "metallic": 4096,
+      "ao": 2048
+    },
+    "materials": [
+      "Limestone_White_Natural",
+      "Glass_Frameless_Ocean",
+      "Teak_Wood_Outdoor",
+      "Stone_Coral_Natural",
+      "Concrete_Polished_White",
+      "Tile_Porcelain_Beach"
+    ],
+    "lighting": {
+      "realtimeLights": 28,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field",
+      "Bloom",
+      "Motion Blur",
+      "Chromatic Aberration",
+      "Film Grain",
+      "Ray Traced Reflections",
+      "Ray Traced Ambient Occlusion",
+      "Water Caustics"
+    ]
+  },
+  "components": [
+    "MeshCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SecuritySystem",
+    "SmartHome",
+    "ClimateControl",
+    "PoolController",
+    "AudioSystem",
+    "TheaterController",
+    "WaterFeatureController"
+  ],
+  "price": {
+    "purchasePrice": 14200000,
+    "monthlyRent": 95000,
+    "currency": "OMNI"
+  }
+}
