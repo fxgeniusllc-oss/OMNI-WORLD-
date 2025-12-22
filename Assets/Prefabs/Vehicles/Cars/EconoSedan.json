@@ -1,0 +1,119 @@
+{
+  "prefabName": "Vehicle_Car_EconoSedan",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Economy Sedan",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Entry",
+    "performanceClass": "Economy",
+    "make": "Apex Motors",
+    "model": "Civic Spirit"
+  },
+  "specifications": {
+    "class": "Economy",
+    "seats": 5,
+    "engine": "1.5L I4",
+    "horsepower": 110,
+    "topSpeed": 105,
+    "acceleration": 10.2,
+    "handling": 6.0,
+    "fuelType": "Gasoline",
+    "mpg": 38
+  },
+  "physics": {
+    "mass": 1150,
+    "centerOfMass": { "x": 0, "y": 0.4, "z": 0 },
+    "wheelBase": 2.55,
+    "trackWidth": 1.48,
+    "suspensionTravel": 0.14,
+    "springRate": 32000,
+    "damperRate": 2300
+  },
+  "model": {
+    "dimensions": {
+      "length": 4.3,
+      "width": 1.65,
+      "height": 1.42,
+      "wheelbase": 2.55
+    },
+    "doors": 4,
+    "trunk": "Compact",
+    "bodyStyle": "Sedan"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 32000,
+      "lod1": 16000,
+      "lod2": 7500,
+      "lod3": 2800
+    },
+    "textureResolution": {
+      "diffuse": 2048,
+      "normal": 2048,
+      "roughness": 1024,
+      "metallic": 1024
+    },
+    "materials": [
+      "Car_Paint_Basic",
+      "Glass_Window_Standard",
+      "Rubber_Tire_Economy",
+      "Plastic_Trim_Black",
+      "Fabric_Interior_Basic"
+    ],
+    "lighting": {
+      "headlights": true,
+      "taillights": true,
+      "brakelights": true,
+      "turnsignals": true,
+      "interiorLights": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Suspension Animation",
+      "Working Lights",
+      "Basic Dashboard"
+    ]
+  },
+  "audio": {
+    "engineSound": "I4_Economy_Base",
+    "exhaustNote": "Quiet",
+    "hornSound": "Standard",
+    "doorSound": "Economy",
+    "brakeSound": "Standard"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "position": { "x": 0, "y": 0.18, "z": -2.15 }
+    },
+    "tireSmokeOnBurnout": false,
+    "brakelightGlow": true,
+    "headlightBeams": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem"
+  ],
+  "customization": {
+    "paintColors": ["White", "Silver", "Black", "Blue", "Red"],
+    "wheels": ["Stock", "Steel"],
+    "interior": ["Cloth"],
+    "upgrades": ["Radio Upgrade", "Floor Mats"]
+  },
+  "price": {
+    "purchasePrice": 15000,
+    "dailyRent": 35,
+    "currency": "OMNI"
+  }
+}

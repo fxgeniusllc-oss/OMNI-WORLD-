@@ -1,0 +1,146 @@
+{
+  "prefabName": "Vehicle_Car_UltraLuxCoupe",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Ultra-Luxury Grand Coupe",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Ultra-Luxury",
+    "performanceClass": "Grand Touring Luxury",
+    "make": "Stuttgart Prestige",
+    "model": "AMG GT 63 S"
+  },
+  "specifications": {
+    "class": "Grand Coupe",
+    "seats": 4,
+    "engine": "4.0L Twin-Turbo V8",
+    "horsepower": 630,
+    "topSpeed": 195,
+    "acceleration": 3.2,
+    "handling": 9.3,
+    "fuelType": "Premium Gasoline"
+  },
+  "physics": {
+    "mass": 2045,
+    "centerOfMass": { "x": 0, "y": 0.38, "z": -0.15 },
+    "wheelBase": 2.94,
+    "trackWidth": 1.69,
+    "suspensionTravel": 0.11,
+    "springRate": 62000,
+    "damperRate": 5800,
+    "downforce": 350
+  },
+  "model": {
+    "dimensions": {
+      "length": 5.09,
+      "width": 1.95,
+      "height": 1.42,
+      "wheelbase": 2.94
+    },
+    "doors": 4,
+    "trunk": "Moderate",
+    "bodyStyle": "Grand Coupe"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 92000,
+      "lod1": 46000,
+      "lod2": 22000,
+      "lod3": 10000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 4096,
+      "metallic": 4096,
+      "ao": 2048
+    },
+    "materials": [
+      "Car_Paint_AMG_Exclusive",
+      "Carbon_Fiber_AMG_Performance",
+      "Glass_Window_Sport",
+      "Leather_Nappa_AMG_Performance",
+      "Aluminum_AMG_Trim",
+      "Rubber_Michelin_Pilot_Sport_Cup",
+      "LED_Matrix_Signature"
+    ],
+    "lighting": {
+      "headlights": true,
+      "taillights": true,
+      "brakelights": true,
+      "turnsignals": true,
+      "interiorLights": true,
+      "ledMultibeam": true,
+      "ambientInterior": true,
+      "amgPerformanceLighting": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Tire Deformation",
+      "Suspension Animation",
+      "Working Lights",
+      "Carbon Fiber Details",
+      "AMG Panamericana Grille",
+      "Large Brake Calipers",
+      "Quad Exhaust System",
+      "Active Rear Spoiler"
+    ]
+  },
+  "audio": {
+    "engineSound": "V8_AMG_Twin_Turbo_Race",
+    "exhaustNote": "AMG_Performance_Exhaust",
+    "turboWhistle": true,
+    "hornSound": "Luxury_Sport",
+    "doorSound": "Sport_Premium_Heavy",
+    "brakeSound": "Carbon_Ceramic_AMG"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "quadExhaust": true,
+      "flames": true,
+      "position": [
+        { "x": -0.42, "y": 0.22, "z": -2.55 },
+        { "x": 0.42, "y": 0.22, "z": -2.55 },
+        { "x": -0.62, "y": 0.22, "z": -2.55 },
+        { "x": 0.62, "y": 0.22, "z": -2.55 }
+      ]
+    },
+    "tireSmokeOnBurnout": true,
+    "brakelightGlow": true,
+    "headlightBeams": true,
+    "exhaustFlames": true,
+    "brakeDiskGlow": true,
+    "heatShimmer": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "AerodynamicsController",
+    "LaunchControl",
+    "AMGDriftMode",
+    "RaceMode"
+  ],
+  "customization": {
+    "paintColors": ["AMG Selenite Gray", "Graphite Gray", "Obsidian Black", "Brilliant Blue", "Jupiter Red"],
+    "wheels": ["20in AMG Forged", "21in AMG Cross-Spoke"],
+    "interior": ["AMG Nappa Leather", "Full AMG Performance Leather"],
+    "upgrades": ["AMG Carbon Package", "AMG Night Package", "AMG Track Package"]
+  },
+  "price": {
+    "purchasePrice": 165000,
+    "dailyRent": 1050,
+    "currency": "OMNI"
+  }
+}

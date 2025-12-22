@@ -1,0 +1,140 @@
+{
+  "prefabName": "Vehicle_Car_PerformanceSportSedan",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Performance Sport Sedan",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Premium",
+    "performanceClass": "Performance Luxury",
+    "make": "Bavarian Motor Works",
+    "model": "M4 Competition"
+  },
+  "specifications": {
+    "class": "Performance",
+    "seats": 4,
+    "engine": "3.0L Twin-Turbo I6",
+    "horsepower": 503,
+    "topSpeed": 180,
+    "acceleration": 3.8,
+    "handling": 9.2,
+    "fuelType": "Premium Gasoline"
+  },
+  "physics": {
+    "mass": 1730,
+    "centerOfMass": { "x": 0, "y": 0.36, "z": -0.1 },
+    "wheelBase": 2.86,
+    "trackWidth": 1.66,
+    "suspensionTravel": 0.12,
+    "springRate": 58000,
+    "damperRate": 5200,
+    "downforce": 280
+  },
+  "model": {
+    "dimensions": {
+      "length": 4.81,
+      "width": 1.89,
+      "height": 1.39,
+      "wheelbase": 2.86
+    },
+    "doors": 4,
+    "trunk": "Moderate",
+    "bodyStyle": "Sport Sedan"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 78000,
+      "lod1": 39000,
+      "lod2": 18000,
+      "lod3": 8000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Car_Paint_M_Metallic",
+      "Carbon_Fiber_M_Parts",
+      "Glass_Window_M_Tint",
+      "Rubber_Michelin_Pilot_Sport",
+      "Leather_Merino_M_Interior",
+      "Aluminum_M_Trim"
+    ],
+    "lighting": {
+      "headlights": true,
+      "taillights": true,
+      "brakelights": true,
+      "turnsignals": true,
+      "interiorLights": true,
+      "ledMatrix": true,
+      "ambientInterior": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Tire Deformation",
+      "Suspension Animation",
+      "Working Lights",
+      "M Sport Styling",
+      "Carbon Fiber Details",
+      "Large Brake Calipers",
+      "Quad Exhaust Tips"
+    ]
+  },
+  "audio": {
+    "engineSound": "I6_Twin_Turbo_M_Sport",
+    "exhaustNote": "M_Sport_Aggressive",
+    "turboWhistle": true,
+    "hornSound": "Luxury",
+    "doorSound": "Sport_Premium",
+    "brakeSound": "M_Carbon_Ceramic"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "quadExhaust": true,
+      "flames": true,
+      "position": [
+        { "x": -0.35, "y": 0.2, "z": -2.41 },
+        { "x": 0.35, "y": 0.2, "z": -2.41 },
+        { "x": -0.55, "y": 0.2, "z": -2.41 },
+        { "x": 0.55, "y": 0.2, "z": -2.41 }
+      ]
+    },
+    "tireSmokeOnBurnout": true,
+    "brakelightGlow": true,
+    "headlightBeams": true,
+    "exhaustFlames": true,
+    "brakeDiskGlow": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "TractionControl",
+    "LaunchControl",
+    "DriftMode"
+  ],
+  "customization": {
+    "paintColors": ["M Brooklyn Gray", "M Isle of Man Green", "M Portimao Blue", "Frozen Black", "Sao Paulo Yellow"],
+    "wheels": ["19in M Sport", "20in M Forged"],
+    "interior": ["Merino Leather", "Full Merino with Carbon"],
+    "upgrades": ["M Carbon Package", "M Track Package", "Competition Package"]
+  },
+  "price": {
+    "purchasePrice": 92000,
+    "dailyRent": 520,
+    "currency": "OMNI"
+  }
+}

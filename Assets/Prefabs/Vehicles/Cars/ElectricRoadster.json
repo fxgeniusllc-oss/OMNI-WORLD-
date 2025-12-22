@@ -1,0 +1,146 @@
+{
+  "prefabName": "Vehicle_Car_ElectricRoadster",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Electric Roadster",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Ultra-Luxury",
+    "performanceClass": "Electric Hypercar",
+    "make": "Volt Motors",
+    "model": "Roadster 2.0"
+  },
+  "specifications": {
+    "class": "Electric Hypercar",
+    "seats": 2,
+    "motor": "Tri Motor AWD",
+    "horsepower": 1020,
+    "topSpeed": 250,
+    "acceleration": 1.9,
+    "handling": 10.0,
+    "fuelType": "Electric",
+    "range": 620,
+    "batteryCapacity": 200,
+    "limitedEdition": true
+  },
+  "physics": {
+    "mass": 1950,
+    "centerOfMass": { "x": 0, "y": 0.28, "z": 0 },
+    "wheelBase": 2.5,
+    "trackWidth": 1.68,
+    "suspensionTravel": 0.08,
+    "springRate": 85000,
+    "damperRate": 7500,
+    "downforce": 1000,
+    "batteryMass": 600
+  },
+  "model": {
+    "dimensions": {
+      "length": 4.72,
+      "width": 1.96,
+      "height": 1.13,
+      "wheelbase": 2.5
+    },
+    "doors": 2,
+    "doorType": "Butterfly",
+    "trunk": "Minimal",
+    "bodyStyle": "Roadster"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 150000,
+      "lod1": 75000,
+      "lod2": 36000,
+      "lod3": 16000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 4096,
+      "metallic": 4096,
+      "ao": 4096,
+      "emissive": 2048
+    },
+    "materials": [
+      "Car_Paint_Electric_Exclusive",
+      "Carbon_Fiber_Aerospace_Grade",
+      "Glass_Aerospace_Windshield",
+      "Rubber_Custom_Performance_Tire",
+      "Alcantara_Racing_Interior",
+      "Aluminum_Structural",
+      "LED_Strip_Lighting"
+    ],
+    "lighting": {
+      "headlights": true,
+      "taillights": true,
+      "brakelights": true,
+      "turnsignals": true,
+      "interiorLights": true,
+      "ledStrip": true,
+      "underglowLED": true,
+      "ambientCockpit": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Tire Deformation",
+      "Suspension Animation",
+      "Working Lights",
+      "Full Digital Cockpit",
+      "Animated Steering Wheel",
+      "Active Aerodynamics",
+      "Butterfly Doors",
+      "Removable Glass Roof",
+      "Cold Air Thrusters",
+      "Undercarriage Detail"
+    ]
+  },
+  "audio": {
+    "engineSound": "Electric_Tri_Motor_Hypercar",
+    "artificialSound": "Futuristic_Propulsion",
+    "hornSound": "Hypercar_Electric",
+    "doorSound": "Butterfly_Precision"
+  },
+  "effects": {
+    "noExhaust": true,
+    "tireSmokeOnBurnout": true,
+    "brakelightGlow": true,
+    "headlightBeams": true,
+    "underglowLED": true,
+    "regenerativeBraking": true,
+    "plasmaThrusterEffects": true,
+    "brakeDiskGlow": true,
+    "electricArcs": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "BatterySystem",
+    "AutopilotController",
+    "AerodynamicsController",
+    "LaunchControl",
+    "PlaidMode",
+    "ColdGasThrusters"
+  ],
+  "customization": {
+    "paintColors": ["Red Multi-Coat", "Midnight Silver", "Pearl White", "Deep Blue", "Founders Edition Black"],
+    "wheels": ["21in Forged", "22in Carbon Fiber"],
+    "interior": ["All Black Alcantara", "Carbon Fiber Package"],
+    "upgrades": ["SpaceX Package", "Plaid+ Mode", "Track Package"]
+  },
+  "price": {
+    "purchasePrice": 250000,
+    "dailyRent": 1800,
+    "currency": "OMNI"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "prefabName": "Vehicle_Car_FamilyMinivan",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Family Minivan",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Standard",
+    "performanceClass": "Family",
+    "make": "Apex Motors",
+    "model": "Odyssey Elite"
+  },
+  "specifications": {
+    "class": "Minivan",
+    "seats": 8,
+    "engine": "3.5L V6",
+    "horsepower": 280,
+    "topSpeed": 115,
+    "acceleration": 7.4,
+    "handling": 6.2,
+    "fuelType": "Gasoline",
+    "mpg": 28
+  },
+  "physics": {
+    "mass": 2050,
+    "centerOfMass": { "x": 0, "y": 0.72, "z": 0.2 },
+    "wheelBase": 3.0,
+    "trackWidth": 1.72,
+    "suspensionTravel": 0.18,
+    "springRate": 40000,
+    "damperRate": 3100
+  },
+  "model": {
+    "dimensions": {
+      "length": 5.15,
+      "width": 1.99,
+      "height": 1.77,
+      "wheelbase": 3.0
+    },
+    "doors": 5,
+    "trunk": "Large Rear Cargo",
+    "bodyStyle": "Minivan"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 52000,
+      "lod1": 26000,
+      "lod2": 12000,
+      "lod3": 5000
+    },
+    "textureResolution": {
+      "diffuse": 2048,
+      "normal": 2048,
+      "roughness": 1024,
+      "metallic": 1024
+    },
+    "materials": [
+      "Car_Paint_Metallic",
+      "Glass_Window_Tinted",
+      "Fabric_Interior_Family",
+      "Plastic_Trim_Gray",
+      "Chrome_Trim",
+      "Rubber_Tire_All_Season"
+    ],
+    "lighting": {
+      "headlights": true,
+      "taillights": true,
+      "brakelights": true,
+      "turnsignals": true,
+      "interiorLights": true,
+      "slidingDoorLights": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Suspension Animation",
+      "Working Lights",
+      "Sliding Doors",
+      "Third Row Seating",
+      "Rear Entertainment"
+    ]
+  },
+  "audio": {
+    "engineSound": "V6_Family_Refined",
+    "exhaustNote": "Quiet",
+    "hornSound": "Standard",
+    "doorSound": "Sliding_Door",
+    "brakeSound": "Standard"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "position": { "x": 0, "y": 0.22, "z": -2.58 }
+    },
+    "tireSmokeOnBurnout": false,
+    "brakelightGlow": true,
+    "headlightBeams": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "SlidingDoorSystem"
+  ],
+  "customization": {
+    "paintColors": ["White", "Black", "Silver", "Blue", "Red"],
+    "wheels": ["Stock 17in", "Alloy 18in"],
+    "interior": ["Cloth", "Leather"],
+    "upgrades": ["Rear Entertainment System", "Navigation", "Cargo Management"]
+  },
+  "price": {
+    "purchasePrice": 38000,
+    "dailyRent": 125,
+    "currency": "OMNI"
+  }
+}

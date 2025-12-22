@@ -1,0 +1,111 @@
+{
+  "prefabName": "Vehicle_Car_BudgetHatch",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Budget Hatchback",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Entry",
+    "performanceClass": "Economy",
+    "make": "Zenith Auto",
+    "model": "Fit Lite"
+  },
+  "specifications": {
+    "class": "Subcompact",
+    "seats": 5,
+    "engine": "1.3L I4",
+    "horsepower": 98,
+    "topSpeed": 98,
+    "acceleration": 11.5,
+    "handling": 6.2,
+    "fuelType": "Gasoline",
+    "mpg": 42
+  },
+  "physics": {
+    "mass": 1050,
+    "centerOfMass": { "x": 0, "y": 0.38, "z": 0 },
+    "wheelBase": 2.45,
+    "trackWidth": 1.45,
+    "suspensionTravel": 0.13,
+    "springRate": 30000,
+    "damperRate": 2100
+  },
+  "model": {
+    "dimensions": {
+      "length": 3.9,
+      "width": 1.6,
+      "height": 1.48,
+      "wheelbase": 2.45
+    },
+    "doors": 5,
+    "trunk": "Cargo Area",
+    "bodyStyle": "Hatchback"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 28000,
+      "lod1": 14000,
+      "lod2": 6500,
+      "lod3": 2500
+    },
+    "textureResolution": {
+      "diffuse": 2048,
+      "normal": 2048,
+      "roughness": 1024,
+      "metallic": 1024
+    },
+    "materials": [
+      "Car_Paint_Basic",
+      "Glass_Window_Standard",
+      "Rubber_Tire_Economy",
+      "Plastic_Trim_Unpainted",
+      "Fabric_Interior_Basic"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Suspension Animation",
+      "Working Lights"
+    ]
+  },
+  "audio": {
+    "engineSound": "I4_Small_Economy",
+    "exhaustNote": "Quiet",
+    "hornSound": "Standard",
+    "doorSound": "Light",
+    "brakeSound": "Standard"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "position": { "x": 0, "y": 0.16, "z": -1.95 }
+    },
+    "tireSmokeOnBurnout": false,
+    "brakelightGlow": true,
+    "headlightBeams": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem"
+  ],
+  "customization": {
+    "paintColors": ["White", "Silver", "Black", "Red"],
+    "wheels": ["Stock"],
+    "interior": ["Cloth"],
+    "upgrades": ["Roof Rack", "Cargo Net"]
+  },
+  "price": {
+    "purchasePrice": 13500,
+    "dailyRent": 30,
+    "currency": "OMNI"
+  }
+}
