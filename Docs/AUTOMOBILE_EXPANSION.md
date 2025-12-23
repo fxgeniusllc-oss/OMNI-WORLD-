@@ -7,42 +7,42 @@ The automobile industry has been expanded by **190%**, adding **19 new vehicle m
 
 ### 1. Apex Motors (Honda-inspired)
 **Philosophy**: Reliable, affordable, and practical transportation
-- **Civic Spirit** (EconoSedan) - $15,000 OMNI - Entry tier economy sedan
-- **Accord Elite** (MidSizeSedan) - $28,000 OMNI - Mid-market family sedan
-- **Odyssey Elite** (FamilyMinivan) - $38,000 OMNI - Family-oriented minivan
+- **Civic Spirit** (EconoSedan) - 15,000 OMNI - Entry tier economy sedan
+- **Accord Elite** (MidSizeSedan) - 28,000 OMNI - Mid-market family sedan
+- **Odyssey Elite** (FamilyMinivan) - 38,000 OMNI - Family-oriented minivan
 
 ### 2. Zenith Auto (Nissan-inspired)
 **Philosophy**: Value-oriented performance and practicality
-- **Fit Lite** (BudgetHatch) - $13,500 OMNI - Subcompact budget hatchback
-- **Rogue Explorer** (CrossoverSUV) - $32,000 OMNI - Compact crossover utility
-- **Z-Sport 370** (SportyCoupe) - $38,000 OMNI - Accessible sport coupe
+- **Fit Lite** (BudgetHatch) - 13,500 OMNI - Subcompact budget hatchback
+- **Rogue Explorer** (CrossoverSUV) - 32,000 OMNI - Compact crossover utility
+- **Z-Sport 370** (SportyCoupe) - 38,000 OMNI - Accessible sport coupe
 
 ### 3. Bavarian Motor Works (BMW-inspired)
 **Philosophy**: Ultimate driving machine with German engineering
-- **5 Executive** (ExecutiveSedan) - $68,000 OMNI - Executive luxury sedan
-- **M4 Competition** (PerformanceSportSedan) - $92,000 OMNI - Performance sport sedan
-- **X5 M Sport** (LuxuryCrossover) - $72,000 OMNI - Luxury crossover SUV
-- **X7 xDrive40i** (OffRoadSUV) - $78,000 OMNI - Large luxury SUV
+- **5 Executive** (ExecutiveSedan) - 68,000 OMNI - Executive luxury sedan
+- **M4 Competition** (PerformanceSportSedan) - 92,000 OMNI - Performance sport sedan
+- **X5 M Sport** (LuxuryCrossover) - 72,000 OMNI - Luxury crossover SUV
+- **X7 xDrive40i** (OffRoadSUV) - 78,000 OMNI - Large luxury SUV
 
 ### 4. American Luxury Division (Cadillac-inspired)
 **Philosophy**: American refinement and grandeur
-- **CT6-V Blackwing** (GrandTourer) - $98,000 OMNI - Grand touring luxury
-- **Escalade ESV Platinum** (LuxuryLimoSUV) - $115,000 OMNI - Ultra-luxury full-size SUV
+- **CT6-V Blackwing** (GrandTourer) - 98,000 OMNI - Grand touring luxury
+- **Escalade ESV Platinum** (LuxuryLimoSUV) - 115,000 OMNI - Ultra-luxury full-size SUV
 
 ### 5. Stuttgart Prestige (Mercedes-inspired)
 **Philosophy**: Luxury engineering and innovation
-- **S-Class Maybach** (PrestigeSedan) - $185,000 OMNI - Ultimate luxury sedan
-- **AMG GT 63 S** (UltraLuxCoupe) - $165,000 OMNI - Grand coupe performance
-- **EQS SUV 580** (LuxuryElectricSUV) - $135,000 OMNI - Electric luxury SUV
+- **S-Class Maybach** (PrestigeSedan) - 185,000 OMNI - Ultimate luxury sedan
+- **AMG GT 63 S** (UltraLuxCoupe) - 165,000 OMNI - Grand coupe performance
+- **EQS SUV 580** (LuxuryElectricSUV) - 135,000 OMNI - Electric luxury SUV
 
 ### 6. Volt Motors (Tesla-inspired)
 **Philosophy**: Electric revolution and autonomous technology
-- **Model Y Performance** (ElectricCrossover) - $62,000 OMNI - Electric crossover
-- **Roadster 2.0** (ElectricRoadster) - $250,000 OMNI - Electric hypercar
+- **Model Y Performance** (ElectricCrossover) - 62,000 OMNI - Electric crossover
+- **Roadster 2.0** (ElectricRoadster) - 250,000 OMNI - Electric hypercar
 
 ### 7. American Performance (Dodge-inspired)
 **Philosophy**: Raw power and American muscle
-- **Challenger Hellcat** (MuscleCar) - $82,000 OMNI - Supercharged muscle car
+- **Challenger Hellcat** (MuscleCar) - 82,000 OMNI - Supercharged muscle car
 
 ### 8. Prancing Horse Motors (Ferrari-inspired)
 **Philosophy**: Italian racing heritage and exotic performance
