@@ -1,0 +1,77 @@
+{
+  "prefabName": "Boxing_Ring_Professional",
+  "category": "Equipment",
+  "subCategory": "Boxing",
+  "type": "Training Equipment",
+  "variation": 3,
+  "metadata": {
+    "nftCompatible": true,
+    "gymCompatibility": ["BoxingGym"],
+    "durability": 100,
+    "maintenance": "High"
+  },
+  "equipment": {
+    "name": "Professional Boxing Ring",
+    "type": "Boxing Ring",
+    "dimensions": {
+      "size": "20x20 feet",
+      "ropeHeight": "4 levels at 18, 30, 42, 54 inches",
+      "canvasHeight": "48 inches off ground"
+    },
+    "materials": {
+      "frame": "Steel construction",
+      "canvas": "Heavy-duty white canvas",
+      "ropes": "Nylon-covered steel cable",
+      "padding": "2-inch foam under canvas",
+      "corners": "Padded turnbuckles"
+    },
+    "aesthetic": {
+      "canvasColor": "White with gym logo center",
+      "ropeColors": "Red, white, blue (traditional)",
+      "cornerPads": "Red padding",
+      "posts": "Black painted steel",
+      "condition": "Tournament quality"
+    }
+  },
+  "stats": {
+    "durability": 95,
+    "safetyRating": 100,
+    "professionalGrade": 95,
+    "trainingEffectiveness": 100
+  },
+  "trainingBonuses": {
+    "technique": 5,
+    "footwork": 5,
+    "ringControl": 5,
+    "sparring": 10
+  },
+  "installation": {
+    "mounting": "Floor-anchored platform",
+    "requiredSpace": "30x30 feet minimum",
+    "assembly": "Professional installation required",
+    "weight": "2500 lbs total"
+  },
+  "features": {
+    "bellSystem": "Ring bell for rounds",
+    "cornerStools": "4 included",
+    "waterBottles": "4 included",
+    "timerClock": "Digital display",
+    "lighting": "Overhead spotlight ready"
+  },
+  "economics": {
+    "purchasePrice": 5000,
+    "maintenanceCost": 100,
+    "lifespan": "15 years with proper care",
+    "currency": "OMNI"
+  },
+  "sounds": {
+    "bell": "Classic boxing bell",
+    "canvas": "Soft footstep thuds",
+    "ropes": "Tension wire vibration"
+  },
+  "price": {
+    "basePrice": 5000,
+    "tier": "Legendary",
+    "currency": "OMNI"
+  }
+}

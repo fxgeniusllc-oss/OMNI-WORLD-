@@ -1,0 +1,281 @@
+{
+  "prefabName": "Underground_Gym_MMA",
+  "category": "Gyms",
+  "subCategory": "Underground",
+  "type": "MMA Training Center - Variation 2",
+  "metadata": {
+    "nftCompatible": true,
+    "ownable": true,
+    "businessType": "Gym",
+    "zoneType": "Recreation",
+    "cityCompatibility": ["OmniLanta", "OmniVegas", "OmniNYC", "OmniLA", "OmniTokyo", "OmniDubai", "OmniParis"]
+  },
+  "gymConfiguration": {
+    "name": "Omega Fight Lab",
+    "gymType": "MMATrainingCenter",
+    "theme": "MMA - Complete Combat System",
+    "description": "State-of-the-art underground MMA facility with octagon and comprehensive training regimen. Modern, intense, professional atmosphere.",
+    "specialization": "Mixed martial arts, grappling, striking, wrestling, submissions, kickboxing",
+    "atmosphere": "Modern, intense, professional. LED lighting, octagon cage, extensive mat space, high-tech equipment and monitoring"
+  },
+  "facilities": {
+    "mainArea": {
+      "octagonCage": {
+        "size": "30 feet diameter",
+        "condition": "Professional grade",
+        "surface": "Premium canvas over foam",
+        "lighting": "LED overhead ring lights",
+        "cameras": "4 HD cameras for recording"
+      },
+      "grapplingMats": {
+        "coverage": "1200 square feet",
+        "thickness": "2 inches",
+        "type": "Tatami-style puzzle mats",
+        "color": "Black with red accents"
+      },
+      "strikingZone": {
+        "heavyBags": 8,
+        "thaiPads": 6,
+        "kickShields": 4,
+        "waveMaster": 2
+      },
+      "grapplingDummies": {
+        "standing": 3,
+        "submission": 4,
+        "throwingDummy": 2
+      }
+    },
+    "trainingZones": {
+      "strengthConditioning": {
+        "squat rack": 2,
+        "benchPress": 2,
+        "pullUpBars": 4,
+        "dumbellRack": "5-100 lbs",
+        "kettlebells": "Full set 10-80 lbs",
+        "battleRopes": 2,
+        "tires": "Various sizes for flipping"
+      },
+      "cardioZone": {
+        "treadmills": 4,
+        "rowingMachines": 2,
+        "assaultBikes": 3,
+        "jumpRopes": 15
+      },
+      "technicalArea": {
+        "videoAnalysis": "Large screen with replay system",
+        "shadowBoxing": "Mirrored wall area",
+        "filmStudy": "Computer workstations x3"
+      }
+    },
+    "lockerRoom": {
+      "lockers": 50,
+      "showers": 6,
+      "saunas": 2,
+      "benches": 10,
+      "condition": "Premium modern facility"
+    },
+    "medicalRoom": {
+      "treatmentTable": 2,
+      "iceBaths": 2,
+      "firstAidStation": "Fully stocked",
+      "physioEquipment": "Professional grade"
+    },
+    "office": {
+      "receptionArea": "Modern with digital check-in",
+      "coachOffices": 3,
+      "proShop": "Gear and supplement sales",
+      "hallOfFame": "Digital display screens"
+    }
+  },
+  "dimensions": {
+    "totalSquareFeet": 6000,
+    "ceilingHeight": "16 feet",
+    "layout": "Sectioned zones with octagon as focal point"
+  },
+  "aesthetics": {
+    "lighting": "Modern LED system with zone controls, red/blue accent lighting",
+    "walls": "Matte black with gym branding, motivational quotes",
+    "floor": "Polished concrete in circulation areas, mats in training zones",
+    "colors": ["Black", "Red", "Steel gray", "White accents"],
+    "decorations": [
+      "Championship belt display wall",
+      "Fighter photo gallery",
+      "Digital leaderboard screens",
+      "Sponsor banners",
+      "Motivational wall art",
+      "Equipment brand logos"
+    ]
+  },
+  "equipment": {
+    "striking": [
+      "Heavy Bag x8",
+      "Thai Pads x6 pairs",
+      "Focus Mitts x8 pairs",
+      "Kick Shields x4",
+      "WaveMaster x2",
+      "Wall-Mounted Strike Pads x6"
+    ],
+    "grappling": [
+      "Grappling Dummies (Various) x9",
+      "Submission Trainer x4",
+      "Wrestling Mats (full coverage)",
+      "Jiu-Jitsu Gi's (rental) x20"
+    ],
+    "protective": [
+      "MMA Gloves x30 pairs",
+      "Sparring Headgear x15",
+      "Shin Guards x20 pairs",
+      "Groin Protectors x12",
+      "Mouthguards (individual) x50",
+      "Chest Protectors x8"
+    ],
+    "strength": [
+      "Olympic Barbells x6",
+      "Weight Plates (full set)",
+      "Power Rack x2",
+      "Bench Press Station x2",
+      "Dumbbells 5-100 lbs",
+      "Kettlebells 10-80 lbs",
+      "Medicine Balls x15",
+      "Resistance Bands (full set)"
+    ],
+    "cardio": [
+      "Treadmills x4",
+      "Rowing Machines x2",
+      "Assault Bikes x3",
+      "Jump Ropes x15",
+      "Battle Ropes x2"
+    ],
+    "technology": [
+      "HD Camera System (4 cameras)",
+      "Large Video Display x2",
+      "Computer Workstations x3",
+      "Tablet Scoring System",
+      "Heart Rate Monitoring System",
+      "Digital Timer System x5"
+    ]
+  },
+  "staff": {
+    "headCoach": {
+      "name": "Viktor \"The Architect\" Volkov",
+      "specialty": "MMA strategy and game planning",
+      "experience": "18 years professional, 10 years coaching",
+      "credentials": "Former UFC competitor",
+      "personality": "Intense, detail-oriented, results-driven"
+    },
+    "specialists": [
+      {
+        "name": "Rafael \"Rolling Thunder\" Silva",
+        "specialty": "Brazilian Jiu-Jitsu & Grappling",
+        "rank": "4th Degree Black Belt",
+        "experience": "20 years"
+      },
+      {
+        "name": "Kwan \"The Dragon\" Park",
+        "specialty": "Muay Thai & Kickboxing",
+        "experience": "15 years",
+        "record": "Professional 45-8-0"
+      },
+      {
+        "name": "Mike \"Greco\" Anderson",
+        "specialty": "Wrestling & Takedowns",
+        "credentials": "NCAA Division I Champion",
+        "experience": "12 years"
+      },
+      {
+        "name": "Dr. Jessica Torres",
+        "specialty": "Sports medicine & nutrition",
+        "credentials": "MD, Sports Medicine certified"
+      }
+    ],
+    "support": [
+      {
+        "name": "Alex Kim",
+        "role": "Strength & conditioning coach"
+      },
+      {
+        "name": "Maria Santos",
+        "role": "Front desk manager"
+      },
+      {
+        "name": "James Wilson",
+        "role": "Equipment manager"
+      }
+    ]
+  },
+  "economics": {
+    "purchasePrice": 500000,
+    "monthlyOperatingCost": 18000,
+    "revenueStreams": {
+      "memberships": {
+        "daily": 8,
+        "weekly": 35,
+        "monthly": 120,
+        "lifetime": 800
+      },
+      "training": {
+        "basic": 15,
+        "advanced": 35,
+        "elite": 75,
+        "privateLesson": 150,
+        "specialistSession": 200
+      },
+      "fightEvents": {
+        "entryFee": 30,
+        "spectatorFee": 10,
+        "gymRevenue": 25
+      },
+      "additional": {
+        "proShop": "Variable",
+        "supplements": "Variable",
+        "videoAnalysis": 50
+      }
+    },
+    "projectedMonthlyRevenue": {
+      "low": 25000,
+      "medium": 40000,
+      "high": 60000
+    },
+    "currency": "OMNI"
+  },
+  "capacity": {
+    "maxOccupancy": 75,
+    "optimalTraining": 45,
+    "spectators": 150
+  },
+  "hours": {
+    "weekdays": "5:00 AM - 11:00 PM",
+    "weekends": "6:00 AM - 11:00 PM",
+    "specialEvents": "24/7 available for elite members"
+  },
+  "reputation": {
+    "startingReputation": 70,
+    "specialty": "Complete MMA training and professional fighter development",
+    "knownFor": "Producing professional MMA fighters and comprehensive martial arts education"
+  },
+  "programs": {
+    "beginner": "Fundamentals of MMA (8-week program)",
+    "intermediate": "Advanced techniques and sparring",
+    "advanced": "Pro fighter training camp",
+    "specialty": [
+      "Women's MMA",
+      "Youth program (ages 12-17)",
+      "Self-defense courses",
+      "Corporate team building"
+    ]
+  },
+  "integrations": {
+    "dominionEconomy": true,
+    "nftMarketplace": true,
+    "fightSystem": true,
+    "zoneController": true,
+    "proceduralGeneration": false,
+    "videoStreaming": true
+  },
+  "price": {
+    "basePrice": 500000,
+    "tier": "Ultra-Legendary",
+    "rarity": "Limited (3 per city)",
+    "currency": "OMNI"
+  }
+}

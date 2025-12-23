@@ -1,0 +1,169 @@
+{
+  "prefabName": "StreetFight_ImprovisedWeapons_Training",
+  "category": "Equipment",
+  "subCategory": "StreetFight",
+  "type": "Training Equipment",
+  "variation": 3,
+  "metadata": {
+    "nftCompatible": true,
+    "gymCompatibility": ["StreetFightArena"],
+    "durability": 100,
+    "maintenance": "Low",
+    "warningLevel": "Extreme - Weapons training"
+  },
+  "equipment": {
+    "name": "Improvised Weapons Training Set",
+    "type": "Weapons Training Collection",
+    "description": "Collection of improvised weapons for real-world combat training",
+    "items": [
+      {
+        "name": "Training Chains",
+        "count": 6,
+        "weight": "3-5 lbs each",
+        "length": "3-6 feet",
+        "material": "Heavy steel chain",
+        "use": "Striking, whipping, grappling"
+      },
+      {
+        "name": "Metal Pipes",
+        "count": 8,
+        "lengths": "2-4 feet",
+        "material": "Steel pipe",
+        "condition": "Weighted for realistic feel",
+        "use": "Striking weapon defense/offense"
+      },
+      {
+        "name": "Tire Stacks",
+        "count": 6,
+        "sizes": "Various car and truck tires",
+        "use": "Striking target, conditioning, strength"
+      },
+      {
+        "name": "Wooden Bats",
+        "count": 4,
+        "type": "Baseball bats",
+        "condition": "Reinforced for heavy use",
+        "use": "Weapon defense training"
+      },
+      {
+        "name": "Empty Bottles",
+        "count": 20,
+        "type": "Glass bottles (training dummies)",
+        "use": "Improvised weapon awareness"
+      },
+      {
+        "name": "Training Knives",
+        "count": 12,
+        "type": "Rubber training knives",
+        "sizes": "Various blade lengths",
+        "use": "Knife defense and disarming"
+      }
+    ],
+    "aesthetic": {
+      "appearance": "Gritty, street-authentic look",
+      "storage": "Mounted on graffiti-covered wall",
+      "arrangement": "Displayed like a dangerous arsenal",
+      "lighting": "Dramatic shadows"
+    }
+  },
+  "stats": {
+    "versatility": 100,
+    "realismFactor": 95,
+    "trainingValue": 90,
+    "dangerLevel": 85
+  },
+  "trainingBonuses": {
+    "weaponDefense": 10,
+    "improvisation": 8,
+    "streetAwareness": 10,
+    "survival": 8,
+    "disarming": 7
+  },
+  "trainingPrograms": {
+    "beginner": {
+      "focus": "Weapon awareness and basic defense",
+      "duration": "4 weeks",
+      "intensity": "Moderate"
+    },
+    "intermediate": {
+      "focus": "Disarming and counter-attacks",
+      "duration": "8 weeks",
+      "intensity": "High"
+    },
+    "advanced": {
+      "focus": "Multiple attackers with weapons",
+      "duration": "12 weeks",
+      "intensity": "Extreme"
+    },
+    "elite": {
+      "focus": "Real-world survival scenarios",
+      "duration": "Ongoing",
+      "intensity": "Life-threatening simulations"
+    }
+  },
+  "scenarios": {
+    "barFight": "Multiple attackers with bottles",
+    "alleywayAmbush": "Knife attack from behind",
+    "homeInvasion": "Armed intruders",
+    "carjacking": "Weapon threat scenarios",
+    "streetRobbery": "Disarm and escape drills"
+  },
+  "safety": {
+    "protective": [
+      "Heavy padding required",
+      "Helmet mandatory",
+      "Groin protection essential",
+      "Eye protection recommended"
+    ],
+    "supervision": "Experienced instructor required",
+    "medical": "First aid must be present",
+    "liability": "Extensive waiver signing",
+    "insurance": "High-risk coverage needed"
+  },
+  "techniques": {
+    "chainDefense": "Block, disarm, counter",
+    "pipeDefense": "Evade, close distance, disarm",
+    "knifeDefense": "Distance control, disarming techniques",
+    "multipleAttackers": "Positioning, weapon awareness",
+    "improvisation": "Using environment as weapon"
+  },
+  "installation": {
+    "mounting": "Wall-mounted rack system",
+    "requiredSpace": "15x15 feet training area",
+    "storage": "Secure weapon storage",
+    "display": "Arsenal-style display"
+  },
+  "economics": {
+    "purchasePrice": 350,
+    "maintenanceCost": 20,
+    "replacementCost": "Items wear out, ongoing replacement",
+    "lifespan": "3-5 years average",
+    "trainingValue": "Extremely high for street combat",
+    "currency": "OMNI"
+  },
+  "sounds": {
+    "chainWhip": "Metal chain whipping through air",
+    "pipeImpact": "Metal on metal/wood clang",
+    "glassBreak": "Bottle smashing",
+    "metalDrag": "Chain dragging on concrete"
+  },
+  "warnings": {
+    "legal": "For training only - illegal in real use",
+    "injury": "High injury risk even with protection",
+    "psychological": "Intense, can be traumatic",
+    "age": "21+ only, mature content",
+    "experience": "Not for beginners"
+  },
+  "lore": {
+    "philosophy": "The streets have no rules - train for reality",
+    "expert": "Maya 'Blade' Chen teaches these classes",
+    "reputation": "Graduates are feared in street confrontations",
+    "reality": "Closest training to real combat situations",
+    "testimonial": "'This training saved my life' - countless graduates"
+  },
+  "price": {
+    "basePrice": 350,
+    "tier": "Rare",
+    "currency": "OMNI"
+  }
+}

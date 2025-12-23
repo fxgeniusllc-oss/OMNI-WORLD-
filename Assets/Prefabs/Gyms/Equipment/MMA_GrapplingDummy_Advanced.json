@@ -1,0 +1,92 @@
+{
+  "prefabName": "MMA_GrapplingDummy_Advanced",
+  "category": "Equipment",
+  "subCategory": "MMA",
+  "type": "Training Equipment",
+  "variation": 2,
+  "metadata": {
+    "nftCompatible": true,
+    "gymCompatibility": ["MMATrainingCenter"],
+    "durability": 100,
+    "maintenance": "Low"
+  },
+  "equipment": {
+    "name": "Advanced Grappling Dummy",
+    "type": "Training Dummy",
+    "weight": "120 lbs",
+    "material": "Heavy-duty vinyl with reinforced stitching",
+    "filling": "Mixed fabric and sand for realistic weight distribution",
+    "dimensions": {
+      "height": "70 inches (5'10\")",
+      "weight": "120 lbs",
+      "build": "Athletic male proportions"
+    },
+    "features": {
+      "arms": "Flexible, can be positioned",
+      "legs": "Articulated at hips and knees",
+      "head": "Removable for different training scenarios",
+      "handles": "Gi-style handles for grips",
+      "base": "Weighted for ground work"
+    },
+    "aesthetic": {
+      "color": "Black vinyl",
+      "details": "Anatomically correct proportions",
+      "condition": "Professional grade",
+      "branding": "Omega Fight Lab logo"
+    }
+  },
+  "stats": {
+    "durability": 90,
+    "realism": 85,
+    "trainingEffectiveness": 90,
+    "versatility": 95
+  },
+  "trainingBonuses": {
+    "grappling": 5,
+    "submissions": 4,
+    "takedowns": 3,
+    "positioning": 4
+  },
+  "trainingModes": {
+    "submissions": [
+      "Rear naked choke",
+      "Arm bar",
+      "Triangle choke",
+      "Guillotine",
+      "Kimura"
+    ],
+    "takedowns": [
+      "Double leg",
+      "Single leg",
+      "Body lock throw",
+      "Suplex"
+    ],
+    "ground": [
+      "Mount escapes",
+      "Guard passes",
+      "Side control",
+      "Back control"
+    ]
+  },
+  "installation": {
+    "mounting": "Floor placement, no mounting required",
+    "requiredSpace": "6x6 feet",
+    "portability": "Can be moved easily"
+  },
+  "economics": {
+    "purchasePrice": 400,
+    "maintenanceCost": 10,
+    "lifespan": "8 years",
+    "currency": "OMNI"
+  },
+  "sounds": {
+    "impact": "Heavy vinyl thud",
+    "movement": "Sand shifting inside",
+    "grappling": "Material friction"
+  },
+  "price": {
+    "basePrice": 400,
+    "tier": "Rare",
+    "currency": "OMNI"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "prefabName": "MMA_ThaiPads_Elite",
+  "category": "Equipment",
+  "subCategory": "MMA",
+  "type": "Training Equipment",
+  "variation": 3,
+  "metadata": {
+    "nftCompatible": true,
+    "gymCompatibility": ["MMATrainingCenter"],
+    "durability": 100,
+    "maintenance": "Medium"
+  },
+  "equipment": {
+    "name": "Elite Muay Thai Pads",
+    "type": "Striking Pads",
+    "material": "Premium leather with triple-density foam",
+    "dimensions": {
+      "length": "18 inches",
+      "width": "8 inches",
+      "thickness": "4 inches curved"
+    },
+    "features": {
+      "straps": "Reinforced Velcro forearm straps",
+      "handles": "Dual-grip handle system",
+      "padding": "Triple-density shock absorption",
+      "durability": "Double-stitched seams",
+      "wrist": "Wrist protection built-in"
+    },
+    "aesthetic": {
+      "color": "Black leather with red trim",
+      "logo": "Omega Fight Lab embossed",
+      "condition": "Professional grade",
+      "wear": "Minimal, high-quality materials"
+    }
+  },
+  "stats": {
+    "shockAbsorption": 95,
+    "durability": 90,
+    "trainingEffectiveness": 95,
+    "holderComfort": 90
+  },
+  "trainingBonuses": {
+    "power": 4,
+    "accuracy": 5,
+    "technique": 4,
+    "timing": 5
+  },
+  "trainingTechniques": {
+    "punches": [
+      "Jab",
+      "Cross",
+      "Hook",
+      "Uppercut",
+      "Overhand"
+    ],
+    "kicks": [
+      "Roundhouse",
+      "Teep (push kick)",
+      "Low kick",
+      "High kick",
+      "Switch kick"
+    ],
+    "combinations": [
+      "Jab-cross-hook",
+      "Jab-cross-low kick",
+      "Hook-hook-body kick",
+      "Dutch combinations"
+    ],
+    "advanced": [
+      "Knee strikes",
+      "Elbow strikes",
+      "Spinning techniques",
+      "Counter striking"
+    ]
+  },
+  "installation": {
+    "mounting": "Hand-held by trainer",
+    "requiredSpace": "10x10 feet minimum",
+    "users": "Requires training partner/coach"
+  },
+  "coachingNotes": {
+    "positioning": "Adjust pad angle for different strikes",
+    "movement": "Can simulate opponent movement",
+    "feedback": "Audible impact gives fighter feedback",
+    "drills": "Perfect for combination work and conditioning"
+  },
+  "economics": {
+    "purchasePrice": 250,
+    "maintenanceCost": 15,
+    "lifespan": "5 years with heavy use",
+    "currency": "OMNI"
+  },
+  "sounds": {
+    "impact": "Loud SMACK on clean strikes",
+    "leather": "Leather slap sound",
+    "velcro": "Strap adjustment"
+  },
+  "price": {
+    "basePrice": 250,
+    "tier": "Rare",
+    "currency": "OMNI"
+  }
+}

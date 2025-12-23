@@ -1,0 +1,62 @@
+{
+  "prefabName": "Boxing_SpeedBag_Pro",
+  "category": "Equipment",
+  "subCategory": "Boxing",
+  "type": "Training Equipment",
+  "variation": 2,
+  "metadata": {
+    "nftCompatible": true,
+    "gymCompatibility": ["BoxingGym"],
+    "durability": 100,
+    "maintenance": "Low"
+  },
+  "equipment": {
+    "name": "Professional Speed Bag Platform",
+    "type": "Speed Bag",
+    "weight": "Light (1-2 lbs bag)",
+    "material": "Leather bag on wooden platform",
+    "dimensions": {
+      "bagSize": "9x6 inches",
+      "platformSize": "24x24 inches",
+      "swivel": "Professional ball-bearing swivel"
+    },
+    "aesthetic": {
+      "bagColor": "Red leather",
+      "platform": "Natural wood with clear finish",
+      "condition": "Professional grade",
+      "mounting": "Wall-mounted with adjustable height"
+    }
+  },
+  "stats": {
+    "damageResistance": 70,
+    "responseSpeed": 95,
+    "trainingEffectiveness": 90,
+    "durability": 85
+  },
+  "trainingBonuses": {
+    "speed": 4,
+    "technique": 3,
+    "coordination": 4
+  },
+  "installation": {
+    "mounting": "Wall-mounted bracket system",
+    "requiredSpace": "3x3 feet",
+    "heightAdjustable": "48-72 inches"
+  },
+  "economics": {
+    "purchasePrice": 200,
+    "maintenanceCost": 3,
+    "lifespan": "7 years",
+    "currency": "OMNI"
+  },
+  "sounds": {
+    "impact": "Rapid tap-tap-tap rhythm",
+    "swivel": "Smooth bearing rotation",
+    "platform": "Hollow wood resonance"
+  },
+  "price": {
+    "basePrice": 200,
+    "tier": "Uncommon",
+    "currency": "OMNI"
+  }
+}

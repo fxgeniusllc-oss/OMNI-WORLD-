@@ -1,0 +1,123 @@
+{
+  "prefabName": "StreetFight_FightingPit_Underground",
+  "category": "Equipment",
+  "subCategory": "StreetFight",
+  "type": "Training Equipment",
+  "variation": 2,
+  "metadata": {
+    "nftCompatible": true,
+    "gymCompatibility": ["StreetFightArena"],
+    "durability": 100,
+    "maintenance": "Medium",
+    "warningLevel": "Extreme - Underground venue"
+  },
+  "equipment": {
+    "name": "The Pit - Underground Fighting Arena",
+    "type": "Fighting Pit",
+    "dimensions": {
+      "length": "25 feet",
+      "width": "25 feet",
+      "depth": "3 feet below ground",
+      "cageHeight": "8 feet chain-link"
+    },
+    "materials": {
+      "floor": "Bare concrete (blood-stained aesthetic)",
+      "walls": "Concrete walls, graffiti-covered",
+      "cage": "Chain-link fence enclosure",
+      "posts": "Steel pipes, industrial look",
+      "lighting": "Single overhead cage light, red ambiance"
+    },
+    "features": {
+      "sunkenDesign": "Pit is below ground level",
+      "spectatorElevation": "Raised concrete platforms around pit",
+      "cageDoor": "Chain-link gate with padlock",
+      "lighting": "Dramatic overhead spotlight",
+      "drainage": "Floor drains for... cleaning"
+    },
+    "aesthetic": {
+      "atmosphere": "Dark, dangerous, raw",
+      "walls": "Graffiti murals of fighters",
+      "floor": "Stained concrete with blood (aesthetic)",
+      "cage": "Rusty chain-link adds to authenticity",
+      "lighting": "Red LED strips, single overhead light",
+      "details": "Warning signs, blood splatters, fight marks"
+    }
+  },
+  "stats": {
+    "durability": 100,
+    "atmosphere": 100,
+    "intimidation": 100,
+    "authenticity": 100,
+    "legendaryStatus": 95
+  },
+  "spectator": {
+    "capacity": 100,
+    "standingArea": "Elevated concrete platforms",
+    "viewing": "360-degree views of pit",
+    "betting": "Underground betting stations",
+    "bar": "Makeshift bar area"
+  },
+  "trainingBonuses": {
+    "mentalToughness": 10,
+    "fearlessness": 8,
+    "realCombat": 10,
+    "crowdAwareness": 5
+  },
+  "fightFeatures": {
+    "noRules": "Minimal rules enforced",
+    "anythingGoes": "Street fighting mentality",
+    "hardcore": "Brutal, unforgiving environment",
+    "legendary": "Where legends are born or broken"
+  },
+  "installation": {
+    "construction": "Major construction project",
+    "requiredSpace": "40x40 feet including spectator area",
+    "excavation": "3 feet depth excavation",
+    "permits": "Gray area (OmniWorld context)",
+    "timeline": "2-3 months construction"
+  },
+  "safety": {
+    "medical": "First aid station mandatory",
+    "emergency": "Emergency exit routes",
+    "liability": "Extensive waivers required",
+    "insurance": "High-risk insurance needed"
+  },
+  "economics": {
+    "purchasePrice": 25000,
+    "constructionCost": 50000,
+    "maintenanceCost": 300,
+    "lifespan": "25+ years",
+    "revenueGenerator": "Fight nights earn 10,000-50,000 OMNI per event",
+    "currency": "OMNI"
+  },
+  "events": {
+    "fightNights": "Friday and Saturday 10PM-4AM",
+    "privateEvents": "Available for rental",
+    "tournaments": "Underground tournament hosting",
+    "specialEvents": "Celebrity street fights"
+  },
+  "sounds": {
+    "crowd": "Roaring, shouting, betting calls",
+    "impacts": "Flesh on flesh, brutal sounds",
+    "cage": "Chain-link rattle",
+    "bell": "Old school boxing bell",
+    "music": "Heavy bass, aggressive tracks"
+  },
+  "lore": {
+    "history": "Built in an abandoned warehouse basement, The Pit has seen over 10,000 fights",
+    "legends": [
+      "Ghost went 47-0 in The Pit",
+      "The Carnage Night - all 8 fights ended in knockout",
+      "The 2-hour fight that became legendary",
+      "Police raids add to the mystique"
+    ],
+    "reputation": "Most feared fighting venue in OmniWorld",
+    "notoriety": "Fighters who survive The Pit are respected everywhere"
+  },
+  "price": {
+    "basePrice": 75000,
+    "tier": "Ultra-Legendary",
+    "rarity": "Unique",
+    "currency": "OMNI"
+  }
+}
