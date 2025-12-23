@@ -234,7 +234,7 @@ All vehicles are fully functional with:
 - **Driving Physics**: Realistic handling and performance
 - **Customization**: Paint, wheels, interior, upgrades
 - **Missions**: Vehicle-specific quest lines
-- **Racing**: Competitive events with rewards
+- **Showcase Events**: Content creation and revenue-generating exhibitions
 - **Fast Travel**: Elite vehicles enable special transport
 
 ### Owner Benefits
