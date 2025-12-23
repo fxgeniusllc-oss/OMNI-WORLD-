@@ -1,5 +1,9 @@
 require("dotenv").config();
 
+// Note: @nomicfoundation/hardhat-toolbox removed due to dependency conflicts
+// For full testing functionality, install required plugins individually:
+// npm install --save-dev @nomicfoundation/hardhat-chai-matchers @nomicfoundation/hardhat-ethers
+
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: {
