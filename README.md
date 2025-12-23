@@ -8,12 +8,49 @@
 [![Unity](https://img.shields.io/badge/Unity-2022.3_LTS-black.svg?logo=unity)](https://unity.com/)
 [![Blockchain](https://img.shields.io/badge/Blockchain-Polygon-8247e5.svg)](https://polygon.technology/)
 [![Status](https://img.shields.io/badge/Status-Phase_1_Development-yellow.svg)](https://github.com/fxgeniusllc-oss/OMNI-WORLD-)
+[![Game Engine](https://img.shields.io/badge/Game_Engine-100%25_Unity-success.svg)](https://unity.com/)
 
 **A Digital Twin Economy fusing entertainment-grade gamification with high-fidelity economic simulation**
 
-[Website](https://omniworld.io) • [Documentation](docs/) • [Whitepaper](docs/WHITEPAPER.md) • [Discord](https://discord.gg/omniworld)
+**🎮 100% Unity Game** - All game systems implemented in Unity C# | Ready to open in Unity Editor
+
+[Website](https://omniworld.io) • [Documentation](docs/) • [Unity Guide](UNITY_PROJECT_GUIDE.md) • [Discord](https://discord.gg/omniworld)
 
 </div>
+
+---
+
+## 🎮 Unity Game Project
+
+**OmniWorld is a 100% Unity-based game.** All game systems, mechanics, and logic are implemented in Unity C# scripts.
+
+### Quick Start for Developers
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/fxgeniusllc-oss/OMNI-WORLD-.git
+cd OMNI-WORLD-
+
+# 2. Open in Unity 2022.3 LTS or later
+# - Open Unity Hub
+# - Add Project → Select OMNI-WORLD- folder
+# - Double-click to open
+
+# 3. All systems ready to use:
+# ✅ 24 C# game scripts (Economy, World, AI, Combat, Web3)
+# ✅ 8 Unity scenes (1 menu + 7 cities)
+# ✅ Complete project structure (ProjectSettings, Packages)
+```
+
+📖 **[Complete Unity Setup Guide →](UNITY_PROJECT_GUIDE.md)**
+
+### Game Systems (Unity C#)
+- **Economy:** Dominion Economy with quantum algorithm (`P_OMNI` formula)
+- **World:** 7 metropolises, zone management, transit system
+- **AI:** Intelligent NPCs, procedural generation
+- **Web3:** Wallet integration, smart contract bridge
+- **Combat:** Fight system, underground gym
+- **Backend:** FastAPI server for multiplayer sync (optional)
 
 ---
 
