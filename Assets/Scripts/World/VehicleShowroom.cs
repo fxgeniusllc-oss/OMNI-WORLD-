@@ -84,6 +84,7 @@ namespace OmniWorld.World
         
         private AudioSource audioSource;
         private float lightingTimer = 0f;
+        private bool isInitialized = false;
         private Dictionary<Transform, VehicleNFT> displayedVehicles = new Dictionary<Transform, VehicleNFT>();
         
         private void Start()
@@ -93,8 +94,6 @@ namespace OmniWorld.World
                 InitializeShowroom();
             }
         }
-        
-        private bool isInitialized = false;
         
         private void InitializeShowroom()
         {

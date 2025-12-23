@@ -123,6 +123,7 @@ namespace OmniWorld.World
             
             // Apply Dominion Economy factors
             // Use circulation coefficient to reward active economy participation
+            float finalPrice;
             if (dominion != null)
             {
                 float economicMultiplier = dominion.circulationCoefficient;
