@@ -539,9 +539,9 @@ namespace OmniWorld.AI
                 "Music Festival",
                 "Art Exhibition",
                 "Tech Conference",
-                "Sports Tournament",
+                "Creator Showcase",
                 "Food Fair",
-                "Gaming Convention",
+                "Digital Asset Convention",
                 "Fashion Show",
                 "Cultural Celebration"
             };
@@ -564,7 +564,7 @@ namespace OmniWorld.AI
 
         private string GetOmniTokyoEventName()
         {
-            string[] events = { "Anime Convention", "Shibuya Tech Expo", "Tokyo Game Show", "Harajuku Fashion Week", "Robot Tournament" };
+            string[] events = { "Anime Convention", "Shibuya Tech Expo", "Tokyo Creator Summit", "Harajuku Fashion Week", "AI Innovation Showcase" };
             return events[random.Next(events.Length)];
         }
 

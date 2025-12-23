@@ -4,6 +4,31 @@
 
 This document provides comprehensive mockup specifications for **three variations** of underground gyms in OmniWorld. Each gym type offers unique atmosphere, equipment, and training experiences, catering to different combat philosophies and player preferences.
 
+### OmniWorld Vision Alignment
+
+**⚠️ Important: OmniWorld is NOT a Traditional Esports Platform**
+
+These gyms serve OmniWorld's **creator-first economic metaverse** vision, not traditional competitive gaming:
+
+- **Economic Focus**: Gyms are NFT properties generating revenue through membership fees, betting, and event hosting
+- **Career Progression**: Fighting is one career path among many (alongside landlord, banker, educator, mogul)
+- **Reputation & Influence**: Success builds city reputation and governance power, not just leaderboard rankings
+- **Creator Economy**: Fight highlights, training content, and gym ownership generate revenue through the 85% creator share model
+- **Economic Competition**: Players compete for wealth accumulation, property empires, and economic dominance - not just match wins
+
+**What This Is NOT:**
+- ❌ Traditional esports matchmaking systems
+- ❌ Generic tournament brackets and leaderboards
+- ❌ Separate "competitive gaming" mode
+- ❌ Focus on combat mechanics over economic gameplay
+
+**What This IS:**
+- ✅ Economic assets (gyms as NFTs with revenue streams)
+- ✅ Career progression within the Dominion Economy
+- ✅ Social spaces for reputation building and networking
+- ✅ Content creation opportunities (fight footage, training videos)
+- ✅ Business ownership and management gameplay
+
 ---
 
 ## Table of Contents
@@ -730,11 +755,11 @@ Capacity: 150 people (including spectators)
    - Equipment upgrades
    - Staff hiring
 
-2. **Championships:**
-   - League systems
-   - Tournament brackets
-   - Championship belts
-   - Ranking systems
+2. **Economic Competitions:**
+   - Gym owner profit leagues
+   - Fighter earning rankings
+   - Reputation-based championships
+   - Economic achievement systems
 
 3. **Social Features:**
    - Gym membership communities
