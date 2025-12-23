@@ -2,7 +2,19 @@
 
 ## Overview
 
-The **OmniWorld Fight System** is a comprehensive combat mechanics framework designed to power underground gyms, street fighting arenas, and competitive combat across all seven metropolises. Built with performance optimization and economic integration in mind, it delivers realistic, engaging combat experiences.
+The **OmniWorld Fight System** is a comprehensive combat mechanics framework designed to power underground gyms and street fighting arenas across all seven metropolises as **economic assets and career progression tools**. Built with performance optimization and Dominion Economy integration in mind, it delivers combat experiences that generate revenue and build reputation.
+
+### ⚠️ Economic Focus, Not Esports
+
+This system serves OmniWorld's creator-first economic metaverse vision:
+
+- **Gyms are NFT Properties**: Combat venues generate revenue through memberships, betting, and events
+- **Fighting is a Career Path**: One way to earn OMNI and build reputation among many careers
+- **Economic Integration**: All fights connect to the Dominion Economy for rewards and taxation
+- **Content Creation**: Fight footage generates revenue through the 85% creator share model
+- **Reputation Building**: Success increases city reputation and governance power
+
+**Not Traditional Esports**: No matchmaking, ELO rankings, or separate competitive modes. See [COMPETITIVE_MODEL.md](COMPETITIVE_MODEL.md) for full vision.
 
 ## Table of Contents
 
