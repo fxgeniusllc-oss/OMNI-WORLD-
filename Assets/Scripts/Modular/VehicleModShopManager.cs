@@ -61,10 +61,17 @@ namespace OmniWorld.Vehicles
             if (onChainLogging)
             {
                 Debug.Log("Logging upgrade to blockchain...");
-                // TODO: Implement blockchain logging
+                // TODO: Implement blockchain logging via Web3 ContractBridge
+                // Requirements:
+                // 1. Create UpgradeLog smart contract with event emission
+                // 2. Call ContractBridge.LogVehicleUpgrade(vehicleId, upgradeType, upgradeName, timestamp)
+                // 3. Wait for transaction confirmation
+                // 4. Update vehicle NFT metadata with new upgrade
+                // Timeline: Phase 2 (Q3 2025) after smart contract deployment
             }
             
             // TODO: Apply upgrade effects to vehicle
+            // Update vehicle physics, performance stats, and visual modifications
         }
 
         public void MintNFTPart(string partName, string ownerAddress)

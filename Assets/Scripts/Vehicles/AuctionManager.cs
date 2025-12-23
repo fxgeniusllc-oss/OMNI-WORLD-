@@ -43,6 +43,9 @@ namespace OmniWorld.Vehicles
         [Tooltip("Minimum user prestige for VIP eligibility")]
         public float minimumPrestige = 0.8f;
         
+        [Tooltip("Minimum bid increment percentage (5%)")]
+        public float minimumBidIncrementPercent = 5f;
+        
         [Tooltip("Global livestream enabled")]
         public bool livestreamEnabled = true;
 
@@ -54,6 +57,8 @@ namespace OmniWorld.Vehicles
         public DateTime auctionStartTime;
         public DateTime auctionEndTime;
         public string currentVehicleId;
+        
+        private int lastAuctionMonth = -1; // Track last auction month to prevent duplicate triggers
         
         private List<AuctionData> activeAuctions = new List<AuctionData>();
         private List<BidData> bidHistory = new List<BidData>();
@@ -168,10 +173,10 @@ namespace OmniWorld.Vehicles
             }
 
             // Check if bid is higher than current bid
-            float minimumBid = auction.currentBid * 1.05f; // Must be at least 5% higher
+            float minimumBid = auction.currentBid * (1f + minimumBidIncrementPercent / 100f);
             if (bidAmount < minimumBid)
             {
-                Debug.LogWarning($"Bid too low. Minimum bid: {minimumBid:N0} OMNI");
+                Debug.LogWarning($"Bid too low. Minimum bid: {minimumBid:N0} OMNI (must be {minimumBidIncrementPercent}% higher)");
                 return false;
             }
 
@@ -351,10 +356,13 @@ namespace OmniWorld.Vehicles
         private void Update()
         {
             // Check if it's the first day of the month and no auction is active
-            if (!auctionActive && DateTime.UtcNow.Day == dayOfMonth)
+            DateTime now = DateTime.UtcNow;
+            if (!auctionActive && now.Day == dayOfMonth && now.Month != lastAuctionMonth)
             {
                 // Auto-start monthly auction logic could go here
                 // For now, auctions must be started manually
+                lastAuctionMonth = now.Month;
+                Debug.Log($"Auction trigger day reached (Month: {now.Month}, Day: {now.Day}). Ready to start monthly auction.");
             }
 
             // Auto-end auction if time is up

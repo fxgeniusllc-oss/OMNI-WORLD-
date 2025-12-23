@@ -72,6 +72,9 @@ namespace OmniWorld.Vehicles
         
         [Tooltip("Test drive service cost")]
         public float testDriveCost = 100f;
+
+        // Constants
+        private const float PERCENTAGE_DIVISOR = 100f;
         
         [Tooltip("Financing available")]
         public bool financingEnabled = true;
@@ -244,10 +247,11 @@ namespace OmniWorld.Vehicles
             Debug.Log($"Rarity: {vehicle.rarity}");
             Debug.Log($"Royalty: {nftRoyaltyPercent}%");
             
-            // In production, this would call smart contract minting
-            // For now, we log the mint operation
+            // TODO: Integrate with Web3 ContractBridge for on-chain NFT minting
+            // Token ID format should be sequential or based on blockchain standards
+            // For now, we use a placeholder format compatible with uint256
             vehicle.nftMinted = true;
-            vehicle.nftTokenId = Guid.NewGuid().ToString();
+            vehicle.nftTokenId = $"{vehicle.id}_{DateTime.UtcNow.Ticks}";
             
             OnNFTMinted?.Invoke(vehicle.name, true);
             
@@ -346,9 +350,9 @@ namespace OmniWorld.Vehicles
                 return null;
             }
 
-            float downPayment = vehicle.priceOmni * (downPaymentPercent / 100f);
+            float downPayment = vehicle.priceOmni * (downPaymentPercent / PERCENTAGE_DIVISOR);
             float financeAmount = vehicle.priceOmni - downPayment;
-            float monthlyRate = (interestRate / 100f) / 12f;
+            float monthlyRate = (interestRate / PERCENTAGE_DIVISOR) / 12f;
             float monthlyPayment = financeAmount * (monthlyRate * Mathf.Pow(1 + monthlyRate, termMonths)) / 
                                    (Mathf.Pow(1 + monthlyRate, termMonths) - 1);
             float totalPayment = downPayment + (monthlyPayment * termMonths);
