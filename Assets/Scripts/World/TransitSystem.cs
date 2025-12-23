@@ -134,6 +134,7 @@ namespace OmniWorld.World
 
         /// <summary>
         /// Travel to a different city
+        /// Integrates with AirportManager for OmniGate Travel Network
         /// </summary>
         public bool TravelToCity(string cityName, string walletAddress)
         {
@@ -168,6 +169,20 @@ namespace OmniWorld.World
             // TODO: Implement actual scene loading
 
             currentCity = cityName;
+            
+            // Notify music biome controller
+            MusicBiomeController musicBiome = MusicBiomeController.Instance;
+            if (musicBiome != null)
+            {
+                musicBiome.LoadBiomeForCity(cityName);
+            }
+            
+            // Update city reputation - track visit
+            CityReputationSystem repSystem = CityReputationSystem.Instance;
+            if (repSystem != null)
+            {
+                repSystem.AddReputation(cityName, 1, "Visited city");
+            }
             
             return true;
         }

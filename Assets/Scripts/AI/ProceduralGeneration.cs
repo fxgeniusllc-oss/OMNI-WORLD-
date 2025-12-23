@@ -828,4 +828,195 @@ namespace OmniWorld.AI
         Sports,
         Technology
     }
+    
+    /// <summary>
+    /// Generate music-based mission for city biome
+    /// Integrates with OmniSound Global Grid system
+    /// </summary>
+    public Quest GenerateMusicBiomeQuest(string cityName)
+    {
+        Quest quest = new Quest
+        {
+            id = random.Next(10000, 19999),
+            questType = QuestType.Social,
+            reward = (float)random.NextDouble() * 300f + 100f,
+            experienceReward = random.Next(100, 1000)
+        };
+        
+        switch (cityName)
+        {
+            case "OmniNYC":
+                quest.title = GetNYCMusicQuest();
+                quest.description = "Represent the boom bap legacy of NYC hip-hop culture.";
+                quest.reward *= 1.3f;
+                break;
+                
+            case "Berlin":
+                quest.title = GetBerlinMusicQuest();
+                quest.description = "Experience the underground techno scene of Berlin.";
+                quest.reward *= 1.4f;
+                break;
+                
+            case "Lagos":
+                quest.title = GetLagosMusicQuest();
+                quest.description = "Dive into the vibrant Afrobeats culture of Lagos.";
+                quest.reward *= 1.2f;
+                break;
+                
+            case "OmniTokyo":
+                quest.title = GetTokyoMusicQuest();
+                quest.description = "Master the cyber-minimal sound of Tokyo.";
+                quest.reward *= 1.35f;
+                break;
+                
+            case "OmniLanta":
+                quest.title = GetAtlantaMusicQuest();
+                quest.description = "Build your legacy in Atlanta's trap music scene.";
+                quest.reward *= 1.25f;
+                break;
+                
+            case "OmniVegas":
+                quest.title = GetVegasMusicQuest();
+                quest.description = "Drop the beat at Vegas' hottest EDM venues.";
+                quest.reward *= 1.5f;
+                break;
+                
+            case "OmniDubai":
+                quest.title = GetDubaiMusicQuest();
+                quest.description = "Blend Arabic pop with global luxury culture.";
+                quest.reward *= 1.6f;
+                break;
+                
+            case "OmniLA":
+                quest.title = GetLAMusicQuest();
+                quest.description = "Ride the West Coast wave in LA.";
+                quest.reward *= 1.3f;
+                break;
+                
+            case "OmniParis":
+                quest.title = GetParisMusicQuest();
+                quest.description = "Experience the artistic romance of French house.";
+                quest.reward *= 1.4f;
+                break;
+                
+            default:
+                quest.title = "Explore Local Music Scene";
+                quest.description = "Discover the unique sound of this city.";
+                break;
+        }
+        
+        Debug.Log($"Generated Music Biome Quest: {quest.title}");
+        generatedQuests.Add(quest);
+        
+        return quest;
+    }
+    
+    // Music-based quest titles per city
+    private string GetNYCMusicQuest()
+    {
+        string[] quests = {
+            "Master the 808 at The Bronx Studio",
+            "Attend Underground Cipher in Brooklyn",
+            "Sample Rare Vinyl at Queens Record Shop",
+            "Freestyle Battle at Times Square",
+            "Learn From a Boom Bap Legend"
+        };
+        return quests[random.Next(quests.Length)];
+    }
+    
+    private string GetBerlinMusicQuest()
+    {
+        string[] quests = {
+            "DJ Set at Berghain",
+            "Master Modular Synthesis Workshop",
+            "Warehouse Techno Marathon",
+            "Cold Concrete Echo Session",
+            "Underground Club Resident Night"
+        };
+        return quests[random.Next(quests.Length)];
+    }
+    
+    private string GetLagosMusicQuest()
+    {
+        string[] quests = {
+            "Play Talking Drums at Street Festival",
+            "Afrobeats Dance Battle",
+            "Market Energy Recording Session",
+            "Collaborate with Local Artists",
+            "Master Polyrhythm Patterns"
+        };
+        return quests[random.Next(quests.Length)];
+    }
+    
+    private string GetTokyoMusicQuest()
+    {
+        string[] quests = {
+            "Koto Sampling at Shibuya Studio",
+            "Anime OP Recording Session",
+            "Cyber Cafe Music Production",
+            "Minimalist Sound Design Workshop",
+            "Future Bass at Akihabara Club"
+        };
+        return quests[random.Next(quests.Length)];
+    }
+    
+    private string GetAtlantaMusicQuest()
+    {
+        string[] quests = {
+            "Record at Studio with 808 Mafia",
+            "Hi-Hat Roll Masterclass",
+            "Trap Soul Collaboration",
+            "Mercedes-Benz Stadium Performance",
+            "Creator Hub Showcase Event"
+        };
+        return quests[random.Next(quests.Length)];
+    }
+    
+    private string GetVegasMusicQuest()
+    {
+        string[] quests = {
+            "Headline at Neon Nightclub",
+            "EDM Drop Building Workshop",
+            "Casino Floor DJ Residency",
+            "Pool Party Banger Creation",
+            "Vocal Chop Masterclass"
+        };
+        return quests[random.Next(quests.Length)];
+    }
+    
+    private string GetDubaiMusicQuest()
+    {
+        string[] quests = {
+            "Oud Fusion Recording Session",
+            "Luxury Club Performance",
+            "Arabic Pop Vocal Training",
+            "Desert Rhythm Workshop",
+            "Marina Yacht Party DJ Set"
+        };
+        return quests[random.Next(quests.Length)];
+    }
+    
+    private string GetLAMusicQuest()
+    {
+        string[] quests = {
+            "Studio Session in Hollywood Hills",
+            "Beach Sunset Performance",
+            "G-Funk Bass Line Workshop",
+            "Venice Beach Freestyle Cypher",
+            "Film Score Production Class"
+        };
+        return quests[random.Next(quests.Length)];
+    }
+    
+    private string GetParisMusicQuest()
+    {
+        string[] quests = {
+            "French House Filter Workshop",
+            "Accordion Sampling Session",
+            "Bistro Live Performance",
+            "Vocoder Masterclass",
+            "Champs-Élysées Club Residency"
+        };
+        return quests[random.Next(quests.Length)];
+    }
 }

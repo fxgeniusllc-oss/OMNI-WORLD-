@@ -107,6 +107,7 @@ namespace OmniWorld.World
 
         /// <summary>
         /// Enter a specific zone
+        /// Integrates with music biome system for district-specific audio
         /// </summary>
         public void EnterZone(ZoneType zone, string customName = "")
         {
@@ -120,6 +121,13 @@ namespace OmniWorld.World
                 
                 Debug.Log($"Entered {zoneName} ({zone})");
                 Debug.Log($"Property Value Multiplier: {propertyValueMultiplier}x");
+                
+                // Notify music biome controller about district change
+                MusicBiomeController musicBiome = MusicBiomeController.Instance;
+                if (musicBiome != null && !string.IsNullOrEmpty(customName))
+                {
+                    musicBiome.EnterDistrict(customName);
+                }
             }
         }
 

@@ -1,0 +1,53 @@
+{
+  "airportCode": "JFK",
+  "airportName": "OmniGate JFK International",
+  "cityName": "OmniNYC",
+  "terminalType": "International",
+  "worldPosition": {
+    "x": 2000,
+    "y": 0,
+    "z": 1000
+  },
+  "gpsCoordinates": {
+    "lat": 40.6413,
+    "lon": -73.7781
+  },
+  "access": {
+    "isUnlocked": false,
+    "unlockCost": 250,
+    "requiredReputation": 25,
+    "unlockRequirements": []
+  },
+  "availableDestinations": [
+    "OmniLanta",
+    "OmniVegas",
+    "OmniParis",
+    "OmniLA"
+  ],
+  "terminalFeatures": {
+    "hasMissionBoard": true,
+    "hasCustomsNPC": true,
+    "hasLounge": true,
+    "hasCargoArea": true
+  },
+  "visualStyle": {
+    "architectureStyle": "Classic Metropolitan",
+    "ambientLighting": "Cool",
+    "culturalDecor": [
+      "hip_hop_history",
+      "wall_street_art",
+      "yankees_memorabilia"
+    ]
+  },
+  "services": {
+    "offersRentals": true,
+    "offersInsurance": true,
+    "offersCurrencyExchange": true,
+    "offersNFTMarketplace": true
+  },
+  "economy": {
+    "baseLandingFee": 30,
+    "economicActivityMultiplier": 2.5
+  },
+  "description": "The financial capital's gateway. Boom bap beats echo through the terminal as traders and artists mingle. Home to the most competitive market in OmniWorld."
+}

@@ -1,0 +1,56 @@
+{
+  "cityName": "OmniNYC",
+  "biomeName": "Boom Bap Metropolitan",
+  "culturalIdentity": "Classic Hip-Hop, Financial Capital, Art Scene",
+  "primaryGenre": "Hip-Hop",
+  "subGenres": ["Boom Bap", "Jazz Rap", "Underground"],
+  "ambientSoundtrack": "nyc_ambient_loop",
+  "environmentalSounds": [
+    "subway_rumble",
+    "taxi_horns",
+    "street_chatter",
+    "construction"
+  ],
+  "baseBPM": 90,
+  "daypartRhythm": "morning_hustle|afternoon_grind|evening_cool|night_pulse",
+  "culturalInstruments": [
+    "808_drums",
+    "jazz_samples",
+    "vinyl_scratches"
+  ],
+  "streetSounds": [
+    "street_vendors",
+    "police_sirens",
+    "basketball_courts"
+  ],
+  "languageAccent": "New York English",
+  "audioMix": {
+    "ambientVolume": 0.4,
+    "musicVolume": 0.6,
+    "sfxVolume": 0.8
+  },
+  "dynamicMusic": {
+    "supportsDynamicTransitions": true,
+    "transitionDuration": 2.5,
+    "introClip": "nyc_intro",
+    "loopClip": "nyc_loop",
+    "outroClip": "nyc_outro"
+  },
+  "districtVariations": {
+    "Manhattan_Financial": {
+      "ambientTrack": "wall_street_ambience",
+      "additionalSFX": ["trading_floor_sounds", "business_chatter"],
+      "intensityMultiplier": 1.2
+    },
+    "Brooklyn_Arts": {
+      "ambientTrack": "brooklyn_underground",
+      "additionalSFX": ["graffiti_sprays", "hip_hop_beats"],
+      "intensityMultiplier": 1.5
+    },
+    "Bronx_Origins": {
+      "ambientTrack": "bronx_streets",
+      "additionalSFX": ["block_parties", "basketball_bounce"],
+      "intensityMultiplier": 1.3
+    }
+  }
+}
