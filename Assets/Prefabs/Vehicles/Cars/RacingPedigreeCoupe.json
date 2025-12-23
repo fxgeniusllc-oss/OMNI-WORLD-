@@ -142,7 +142,7 @@
     "LaunchControl",
     "TelemetrySystem",
     "RaceMode",
-    "ShowcaseMode"
+    "ESportsMode"
   ],
   "customization": {
     "paintColors": ["Rosso Corsa", "Giallo Modena", "Nero Daytona", "Blu Tour de France", "Argento Nurburgring"],

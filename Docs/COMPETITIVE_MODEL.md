@@ -2,9 +2,36 @@
 
 ## Core Philosophy
 
-**OmniWorld is a creator-first economic metaverse, NOT a traditional esports platform.**
+**OmniWorld is a creator-first economic metaverse with a hybrid competitive system.**
 
-Competition in OmniWorld is fundamentally about **economic achievement, creative success, and building influence** - not traditional gaming leaderboards or matchmaking systems.
+Competition in OmniWorld balances **two complementary approaches**:
+
+1. **Economic Achievement** - Building wealth, creating content, and gaining influence (primary focus)
+2. **Skill-Based Tournaments** - Competitive events that award Trophy NFTs and generate economic activity (secondary focus)
+
+This is NOT traditional esports with pure skill rankings, but it's also NOT purely economic simulation. It's a **unique hybrid** where competitive skill earns valuable NFT assets that integrate into the broader economy.
+
+### 🎯 The Hybrid Model
+
+**Economic Competition (70% of focus):**
+- Property empire building and wealth accumulation
+- Creator success through content sales and royalties
+- City reputation and governance power
+- Business management and investment returns
+
+**Tournament Competition (30% of focus):**
+- Skill-based events (racing, combat) that award Trophy NFTs
+- Tournaments happen in player-owned venues (economic integration)
+- Victory earns collectible NFTs with VIP access and smart contract features
+- Entry fees and betting create revenue streams for venue owners
+
+**Key Difference from Traditional Esports:**
+- Tournaments are **economic events**, not separate competitive modes
+- Trophy NFTs are **valuable assets**, not just ranks
+- Success requires **both skill AND economic strategy**
+- Revenue generation is built into the competitive structure
+
+> **See [TOURNAMENT_SYSTEM.md](TOURNAMENT_SYSTEM.md) for full details on tournaments and Trophy NFTs**
 
 ---
 
@@ -68,35 +95,63 @@ Competition in OmniWorld is fundamentally about **economic achievement, creative
 - **Highest Spenders**: Economic activity and circulation contribution
 - **Prestige Leaders**: User Prestige (U_p) rankings from the quantum algorithm
 
+### 6. 🏆 Tournament Achievements
+
+**Skill-based competitions integrated with the economy:**
+
+- **Trophy NFT Collection**: Gold, Silver, Bronze trophies from tournament victories
+- **Tournament Revenue**: Earnings from entry fees, betting, and venue ownership
+- **VIP Access**: Exclusive high-stakes events unlocked by trophy ownership
+- **Smart Contract Earnings**: Passive income from Gold/Silver Trophy NFTs (alternative tokens only)
+- **Championship Prestige**: Permanent record of competitive achievements
+
+**Example**: *"OmniVegas Racing Champions"* - Trophy NFT holders with highest tournament earnings and collection value.
+
+> **Note**: Tournaments exist as economic events with real stakes and rewards, not as separate esports with pure rankings. See [TOURNAMENT_SYSTEM.md](TOURNAMENT_SYSTEM.md) for details.
+
 ---
 
-## What OmniWorld Competition is NOT
+## What OmniWorld Competition IS and IS NOT
 
-### ❌ Traditional Esports Elements We AVOID:
+### ✅ What We DO Have:
 
-1. **Generic Matchmaking Systems**
-   - No ELO ratings or skill-based matchmaking
-   - No ranked competitive modes separate from economy
-   - No "bronze to diamond" progression systems
-   - No seasonal resets of competitive rankings
+1. **Hybrid Competition Model**
+   - Economic achievement competitions (primary)
+   - Skill-based tournaments that award valuable NFT assets (secondary)
+   - Both approaches integrated into single economy
+   - Success requires strategy, skill, AND economic thinking
 
-2. **Standard Tournament Structures**
-   - No bracket-based elimination tournaments
-   - No prize pools disconnected from the economy
-   - No "win X matches to advance" systems
-   - No separate competitive ruleset from core gameplay
+2. **Tournament System with Real Stakes**
+   - Entry fees create prize pools and venue owner revenue
+   - Trophy NFTs are collectible assets with VIP access
+   - Elite trophies include smart contracts for passive income
+   - Tournaments happen in player-owned venues (gyms, race tracks)
 
-3. **Combat-Only Competition**
-   - Fighting/combat is ONE career path, not THE focus
-   - No "esports arena" separate from the metaverse
-   - No focus on mechanical skill over economic strategy
-   - No leaderboards based solely on wins/losses
+3. **Economic Integration**
+   - Victory earns NFT assets, not just ranks
+   - Tournament participation generates economic activity
+   - Betting and spectator fees create revenue streams
+   - Content creators monetize tournament footage
 
-4. **Spectator Sport Mentality**
-   - Not designed primarily for watching others compete
-   - No emphasis on "professional players" vs "casual players"
-   - No separate competitive scene from the core economy
-   - Community engagement happens through economic participation
+### ❌ What We DON'T Have:
+
+1. **Pure Traditional Esports**
+   - No ELO ratings divorced from economic value
+   - No "bronze to diamond" progression without real stakes
+   - No separate competitive mode from main economy
+   - No focus on pure mechanical skill over strategy
+
+2. **Tournaments Without Economic Purpose**
+   - No free-to-play matchmaking queues
+   - No prize pools that don't come from entry fees
+   - No competitive scene separate from venue ownership
+   - No rankings without NFT asset backing
+
+3. **Combat-Only Focus**
+   - Tournaments are ONE way to compete, not THE only way
+   - Economic achievement still primary measure of success
+   - Tournament earnings count as economic performance
+   - Victory requires wealth to enter + skill to win
 
 ---
 
