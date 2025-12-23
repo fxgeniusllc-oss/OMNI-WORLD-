@@ -1,0 +1,88 @@
+{
+  "prefabName": "StreetFight_ConcreteBag_Brutal",
+  "category": "Equipment",
+  "subCategory": "StreetFight",
+  "type": "Training Equipment",
+  "variation": 1,
+  "metadata": {
+    "nftCompatible": true,
+    "gymCompatibility": ["StreetFightArena"],
+    "durability": 100,
+    "maintenance": "Low",
+    "warningLevel": "Extreme - High injury risk"
+  },
+  "equipment": {
+    "name": "Concrete-Filled Heavy Bag",
+    "type": "Heavy Bag (Extreme)",
+    "weight": "200 lbs",
+    "material": "Heavy canvas with concrete and sand core",
+    "filling": "60% concrete mix, 40% sand",
+    "dimensions": {
+      "height": "5 feet",
+      "diameter": "16 inches"
+    },
+    "features": {
+      "surface": "Rough canvas for hand conditioning",
+      "density": "Extremely dense, minimal give",
+      "hanging": "Industrial chain (rusty aesthetic)",
+      "impact": "Bone-hardening training tool"
+    },
+    "aesthetic": {
+      "color": "Gray canvas, stained and weathered",
+      "condition": "Battle-worn, authentic street look",
+      "details": "Blood stains (aesthetic), graffiti tags",
+      "chain": "Rusty industrial chain"
+    }
+  },
+  "stats": {
+    "durability": 100,
+    "conditioning": 100,
+    "pain": 100,
+    "trainingEffectiveness": 95,
+    "injuryRisk": 80
+  },
+  "trainingBonuses": {
+    "strength": 5,
+    "toughness": 10,
+    "pain tolerance": 8,
+    "handConditioning": 10
+  },
+  "warnings": {
+    "injury": "High risk of hand/wrist injuries",
+    "recommendation": "Use hand wraps and build up slowly",
+    "experience": "Not for beginners",
+    "medical": "Have ice and first aid ready"
+  },
+  "trainingNotes": {
+    "purpose": "Condition hands and fists for real combat",
+    "technique": "Focus on proper form to avoid breaks",
+    "progression": "Start light, increase power gradually",
+    "recovery": "Allow adequate recovery time between sessions"
+  },
+  "installation": {
+    "mounting": "Heavy-duty ceiling chain or beam",
+    "requiredSpace": "8x8 feet",
+    "height": "Adjustable, typically 6-7 feet",
+    "foundation": "Requires reinforced ceiling support"
+  },
+  "economics": {
+    "purchasePrice": 80,
+    "maintenanceCost": 2,
+    "lifespan": "10+ years (virtually indestructible)",
+    "currency": "OMNI"
+  },
+  "sounds": {
+    "impact": "Brutal THUD, sounds painful",
+    "chain": "Heavy chain rattling",
+    "echo": "Deep resonance"
+  },
+  "lore": {
+    "description": "The concrete bag separates pretenders from real fighters. Many have broken their hands on it, but those who master it become truly dangerous.",
+    "legendary": "Dmitri 'The Bear' trained on this for 10 years straight"
+  },
+  "price": {
+    "basePrice": 80,
+    "tier": "Uncommon",
+    "currency": "OMNI"
+  }
+}

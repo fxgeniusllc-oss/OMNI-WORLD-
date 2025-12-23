@@ -1,0 +1,189 @@
+{
+  "prefabName": "Underground_Gym_Boxing",
+  "category": "Gyms",
+  "subCategory": "Underground",
+  "type": "Boxing Gym - Variation 1",
+  "metadata": {
+    "nftCompatible": true,
+    "ownable": true,
+    "businessType": "Gym",
+    "zoneType": "Recreation",
+    "cityCompatibility": ["OmniLanta", "OmniVegas", "OmniNYC", "OmniLA", "OmniTokyo", "OmniDubai", "OmniParis"]
+  },
+  "gymConfiguration": {
+    "name": "Iron Fist Boxing Gym",
+    "gymType": "BoxingGym",
+    "theme": "Classic Boxing - Speed & Technique",
+    "description": "Underground boxing gym focused on sweet science and technical prowess. Raw, gritty atmosphere with traditional equipment.",
+    "specialization": "Boxing techniques, footwork, combinations, defensive skills",
+    "atmosphere": "Raw, gritty, traditional. Dim lighting, heavy bags, speed bags, boxing ring with vintage aesthetic"
+  },
+  "facilities": {
+    "mainArea": {
+      "boxingRing": {
+        "size": "20x20 feet",
+        "condition": "Well-maintained",
+        "ropes": "Red, white, blue",
+        "canvas": "Weathered white with gym logo"
+      },
+      "heavyBags": {
+        "count": 6,
+        "types": ["Traditional leather", "Water-filled", "Banana bag"],
+        "hanging": "Chain suspension from ceiling"
+      },
+      "speedBags": {
+        "count": 4,
+        "platforms": "Wall-mounted wooden platforms",
+        "adjustable": true
+      },
+      "doubleEndBag": {
+        "count": 3,
+        "adjustable": true
+      }
+    },
+    "trainingZone": {
+      "mitts": "Focus mitts, hook and jab mitts available",
+      "jumpRopes": 12,
+      "mirrors": "Full-length wall mirrors",
+      "shadowBoxingArea": "Dedicated corner space"
+    },
+    "lockerRoom": {
+      "lockers": 30,
+      "showers": 4,
+      "benches": 6,
+      "condition": "Clean but aged"
+    },
+    "office": {
+      "receptionDesk": true,
+      "trainerOffice": true,
+      "wallOfFame": "Photos of gym champions"
+    }
+  },
+  "dimensions": {
+    "totalSquareFeet": 3500,
+    "ceilingHeight": "14 feet",
+    "layout": "Open floor plan with ring as centerpiece"
+  },
+  "aesthetics": {
+    "lighting": "Hanging industrial lights, some neon accents",
+    "walls": "Exposed brick with vintage fight posters",
+    "floor": "Concrete with rubber mats in training areas",
+    "colors": ["Gray concrete", "Red accents", "Black equipment"],
+    "decorations": [
+      "Vintage boxing gloves on walls",
+      "Championship belts display case",
+      "Old fight posters (Ali, Tyson, Mayweather)",
+      "Gym rules painted on wall",
+      "Speed bag rhythm timer"
+    ]
+  },
+  "equipment": {
+    "punching": [
+      "Heavy Bag x6",
+      "Speed Bag x4", 
+      "Double End Bag x3",
+      "Wall-Mounted Slip Bag x2"
+    ],
+    "training": [
+      "Focus Mitts x6 pairs",
+      "Hook and Jab Mitts x4 pairs",
+      "Jump Ropes x12",
+      "Hand Wraps (bulk supply)",
+      "Timer Clock x3"
+    ],
+    "protective": [
+      "Sparring Headgear x10",
+      "Boxing Gloves (various sizes) x20 pairs",
+      "Groin Protectors x8",
+      "Mouthguards (individual) x30"
+    ],
+    "additional": [
+      "Ring Bell",
+      "First Aid Kit x2",
+      "Water Cooler x3",
+      "Towel Rack",
+      "Bluetooth Speaker System"
+    ]
+  },
+  "staff": {
+    "headCoach": {
+      "name": "Marcus \"Old School\" Johnson",
+      "specialty": "Technical boxing",
+      "experience": "30 years",
+      "personality": "Tough but fair, old-school trainer"
+    },
+    "assistantTrainers": [
+      {
+        "name": "Rosa \"Lightning\" Martinez",
+        "specialty": "Speed and footwork",
+        "experience": "12 years"
+      },
+      {
+        "name": "Tommy \"Iron Chin\" Collins",
+        "specialty": "Defense and counter-punching",
+        "experience": "15 years"
+      }
+    ],
+    "receptionist": {
+      "name": "Sarah Chen",
+      "role": "Front desk, scheduling, membership"
+    }
+  },
+  "economics": {
+    "purchasePrice": 250000,
+    "monthlyOperatingCost": 8000,
+    "revenueStreams": {
+      "memberships": {
+        "daily": 5,
+        "weekly": 25,
+        "monthly": 75,
+        "lifetime": 500
+      },
+      "training": {
+        "basic": 10,
+        "advanced": 25,
+        "elite": 50,
+        "privateLesson": 100
+      },
+      "fightEvents": {
+        "entryFee": 20,
+        "spectatorFee": 5,
+        "gymRevenue": 15
+      }
+    },
+    "projectedMonthlyRevenue": {
+      "low": 12000,
+      "medium": 18000,
+      "high": 25000
+    },
+    "currency": "OMNI"
+  },
+  "capacity": {
+    "maxOccupancy": 50,
+    "optimalTraining": 30,
+    "spectators": 75
+  },
+  "hours": {
+    "weekdays": "5:00 AM - 11:00 PM",
+    "weekends": "6:00 AM - 10:00 PM",
+    "specialEvents": "Flexible, can close for private events"
+  },
+  "reputation": {
+    "startingReputation": 50,
+    "specialty": "Technical boxing and fundamentals",
+    "knownFor": "Producing champion-caliber boxers with strong fundamentals"
+  },
+  "integrations": {
+    "dominionEconomy": true,
+    "nftMarketplace": true,
+    "fightSystem": true,
+    "zoneController": true,
+    "proceduralGeneration": false
+  },
+  "price": {
+    "basePrice": 250000,
+    "tier": "Legendary",
+    "rarity": "Unique per city district",
+    "currency": "OMNI"
+  }
+}
