@@ -1,0 +1,208 @@
+{
+  "prefabName": "Vehicle_Car_OmniWorld_Velocity",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Legendary",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Legendary",
+    "performanceClass": "Electric Hypercar",
+    "edition": "X of 10",
+    "isOneOfOne": false,
+    "totalEditions": 10,
+    "rarityTier": "Legendary",
+    "statusSymbol": "Elite"
+  },
+  "branding": {
+    "manufacturer": "OmniWorld Electric Division",
+    "model": "Velocity X",
+    "year": 2025,
+    "designation": "Electric Revolution",
+    "uniqueFeatures": [
+      "Tri-motor all-wheel drive",
+      "1000+ mile range",
+      "5-minute ultra-fast charge",
+      "Autonomous driving Level 5",
+      "Neural link interface"
+    ]
+  },
+  "specifications": {
+    "class": "Legendary Electric Hypercar",
+    "seats": 2,
+    "engine": "Tri-Motor Electric (Front + Dual Rear)",
+    "horsepower": 1800,
+    "topSpeed": 270,
+    "acceleration": 1.8,
+    "handling": 9.9,
+    "fuelType": "Electric",
+    "limitedEdition": true,
+    "productionNumber": 10,
+    "serialNumber": "XXX-OMNI-VELOCITY",
+    "batteryCapacity": "200 kWh",
+    "range": 1000
+  },
+  "physics": {
+    "mass": 2100,
+    "centerOfMass": { "x": 0, "y": 0.2, "z": 0 },
+    "wheelBase": 2.85,
+    "trackWidth": 1.82,
+    "suspensionTravel": 0.07,
+    "springRate": 105000,
+    "damperRate": 9500,
+    "downforce": 2300
+  },
+  "model": {
+    "dimensions": {
+      "length": 4.75,
+      "width": 2.08,
+      "height": 1.18,
+      "wheelbase": 2.85
+    },
+    "doors": 2,
+    "doorType": "Gullwing with Smart Sensors",
+    "trunk": "Front and Rear Compartments",
+    "bodyStyle": "Electric Hypercar"
+  },
+  "graphics": {
+    "lodLevels": 5,
+    "polyCount": {
+      "lod0": 240000,
+      "lod1": 120000,
+      "lod2": 60000,
+      "lod3": 30000,
+      "lod4": 15000
+    },
+    "textureResolution": {
+      "diffuse": 8192,
+      "normal": 8192,
+      "roughness": 8192,
+      "metallic": 8192,
+      "ao": 4096,
+      "emissive": 4096
+    },
+    "materials": [
+      "Velocity_Electric_Paint",
+      "Carbon_Fiber_Aerospace",
+      "Glass_Electrochromic",
+      "Alcantara_Sport",
+      "Aluminum_Forged_Wheels",
+      "LED_Matrix_Future",
+      "Battery_Pack_Visible"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "Electric Motor Animation",
+      "Battery Pack Glow",
+      "Regenerative Braking VFX",
+      "Charging Port Animation",
+      "Autonomous Driving Sensors",
+      "Neural Link Interface",
+      "Aero Wheel Design",
+      "Electrochromic Glass Transition"
+    ]
+  },
+  "audio": {
+    "engineSound": "Electric_Motor_Whine_Futuristic",
+    "exhaustNote": "Silent_With_Synthesized_Note",
+    "accelerationSound": "Electric_Surge",
+    "hornSound": "Velocity_Chime",
+    "doorSound": "Gullwing_Electric",
+    "startupSound": "Electric_Awakening_Sequence"
+  },
+  "effects": {
+    "electricGlow": {
+      "particleSystem": true,
+      "underglowBlue": true,
+      "batteryIndicator": true,
+      "chargingAnimation": true
+    },
+    "tireSmokeOnBurnout": true,
+    "brakelightGlow": true,
+    "headlightBeams": true,
+    "regenerativeBraking": true,
+    "electricAura": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "ElectricMotorController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "AerodynamicsController",
+    "LaunchControl",
+    "TelemetrySystem",
+    "AutonomousDriving",
+    "BatteryManagement"
+  ],
+  "nftProperties": {
+    "mintingPrice": 2800000,
+    "currentValue": 2800000,
+    "currency": "OMNI",
+    "mintingFeePercent": 0.05,
+    "salesTaxPercent": 0.08,
+    "royaltyPercent": 0.20,
+    "appreciationRate": 0.005,
+    "prestigePoints": 480,
+    "canResell": true,
+    "minimumOwnershipDays": 60,
+    "buybackEnabled": true,
+    "buybackPercentage": 0.80
+  },
+  "auction": {
+    "eligibleForAuction": true,
+    "minimumBid": 2400000,
+    "eliteOnly": true,
+    "minimumPrestige": 0.85,
+    "auctionDuration": 48
+  },
+  "editionDetails": {
+    "totalEditions": 10,
+    "editionColors": [
+      "Electric Blue",
+      "Cyber White",
+      "Neon Green",
+      "Quantum Silver",
+      "Plasma Orange",
+      "Voltage Yellow",
+      "Laser Red",
+      "Digital Purple",
+      "Chrome Mirror",
+      "Stealth Black"
+    ],
+    "editionPriceVariation": 0.05,
+    "firstEditionBonus": 1.2
+  },
+  "exclusiveFeatures": {
+    "ownerPerks": [
+      "Lifetime supercharging",
+      "Software updates priority",
+      "Velocity Club membership",
+      "Track mode access",
+      "Battery replacement program",
+      "Autonomous driving beta"
+    ],
+    "inGameBenefits": [
+      "Zero fuel costs",
+      "+35% race rewards",
+      "Instant acceleration missions",
+      "Environmental bonus",
+      "Tech district privileges",
+      "Fast travel network"
+    ]
+  },
+  "story": {
+    "description": "The Velocity X represents the future of high-performance motoring in the OmniWorld metaverse. With tri-motor all-wheel drive delivering instant torque and a revolutionary 1000-mile range, this electric hypercar redefines what's possible. Neural link interface allows seamless communication between driver and machine, while Level 5 autonomous driving provides ultimate convenience. Limited to just 10 units, each Velocity X owner joins an exclusive club of forward-thinking enthusiasts.",
+    "designer": "Omega Prime",
+    "inspirations": [
+      "Electric vehicle revolution",
+      "Autonomous technology",
+      "Sustainable performance",
+      "Future mobility"
+    ]
+  }
+}

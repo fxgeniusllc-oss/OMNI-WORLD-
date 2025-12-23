@@ -1,0 +1,202 @@
+{
+  "prefabName": "Vehicle_Car_OmniOne_Apex",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Ultra-Legendary",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Ultra-Legendary",
+    "performanceClass": "Hypercar",
+    "edition": "1 of 1",
+    "isOneOfOne": true,
+    "rarityTier": "UltraLegendary",
+    "statusSymbol": "Elite"
+  },
+  "branding": {
+    "manufacturer": "OmniWorld Automotive",
+    "model": "Apex One",
+    "year": 2025,
+    "designation": "The Pinnacle of Digital Luxury",
+    "uniqueFeatures": [
+      "World's first AI-integrated hypercar",
+      "Quantum-tuned aerodynamics",
+      "Exclusive OmniWorld branding",
+      "Holographic display system",
+      "Self-optimizing performance"
+    ]
+  },
+  "specifications": {
+    "class": "Ultra-Legendary Hypercar",
+    "seats": 2,
+    "engine": "9.0L Twin-Turbo Hybrid V16",
+    "horsepower": 2000,
+    "topSpeed": 280,
+    "acceleration": 1.9,
+    "handling": 10.0,
+    "fuelType": "Hybrid Electric + Racing Fuel",
+    "limitedEdition": true,
+    "productionNumber": 1,
+    "serialNumber": "001-OMNI-APEX"
+  },
+  "physics": {
+    "mass": 1850,
+    "centerOfMass": { "x": 0, "y": 0.25, "z": -0.5 },
+    "wheelBase": 2.8,
+    "trackWidth": 1.85,
+    "suspensionTravel": 0.05,
+    "springRate": 110000,
+    "damperRate": 10000,
+    "downforce": 2500
+  },
+  "model": {
+    "dimensions": {
+      "length": 4.7,
+      "width": 2.1,
+      "height": 1.12,
+      "wheelbase": 2.8
+    },
+    "doors": 2,
+    "doorType": "Butterfly with Active Aero",
+    "trunk": "None",
+    "bodyStyle": "Ultra-Legendary Hypercar"
+  },
+  "graphics": {
+    "lodLevels": 5,
+    "polyCount": {
+      "lod0": 350000,
+      "lod1": 180000,
+      "lod2": 90000,
+      "lod3": 45000,
+      "lod4": 20000
+    },
+    "textureResolution": {
+      "diffuse": 8192,
+      "normal": 8192,
+      "roughness": 8192,
+      "metallic": 8192,
+      "ao": 4096,
+      "emissive": 4096
+    },
+    "materials": [
+      "OmniWorld_Signature_Paint_Chameleon",
+      "Diamond_Infused_Carbon_Fiber",
+      "Titanium_Grade_5_Polished",
+      "Sapphire_Glass_Windshield",
+      "Italian_Leather_Platinum_Grade",
+      "Rubber_Michelin_Pilot_Sport_Cup_2R",
+      "Holographic_LED_Matrix",
+      "Gold_Accent_24K",
+      "Active_Aero_Panels"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials with Ray Tracing",
+      "Real-time Reflections HDR",
+      "Dynamic Shadows Ultra Quality",
+      "Tire Deformation Physics",
+      "Active Suspension Animation",
+      "Holographic Dashboard",
+      "Animated Steering Wheel",
+      "Active Aerodynamics System",
+      "Brake Caliper Detail",
+      "Full Engine Bay Detail",
+      "Undercarriage Detail",
+      "Heat Haze Effects",
+      "Particle Effects",
+      "Shockwave Effects",
+      "Customizable Holographic Accents"
+    ]
+  },
+  "audio": {
+    "engineSound": "V16_Hybrid_Symphony_Custom",
+    "exhaustNote": "Apex_One_Signature",
+    "turboWhistle": true,
+    "hybridWhine": true,
+    "hornSound": "Apex_Custom",
+    "doorSound": "Butterfly_Precision_Hydraulic",
+    "startupSound": "Apex_Awakening_Sequence"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "quadExhaust": true,
+      "flames": true,
+      "colorShift": true,
+      "intensityHigh": true
+    },
+    "tireSmokeOnBurnout": true,
+    "brakelightGlow": true,
+    "headlightBeams": true,
+    "exhaustFlames": true,
+    "brakeDiskGlow": true,
+    "heatShimmer": true,
+    "shockwaveAtTopSpeed": true,
+    "holographicAccents": true,
+    "underglow": true,
+    "activeAeroAnimation": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "AerodynamicsController",
+    "LaunchControl",
+    "TelemetrySystem",
+    "AIAssistant",
+    "HolographicDisplay"
+  ],
+  "nftProperties": {
+    "mintingPrice": 10000000,
+    "currentValue": 10000000,
+    "currency": "OMNI",
+    "mintingFeePercent": 0.05,
+    "salesTaxPercent": 0.08,
+    "royaltyPercent": 0.20,
+    "appreciationRate": 0.01,
+    "prestigePoints": 1000,
+    "canResell": true,
+    "minimumOwnershipDays": 90,
+    "buybackEnabled": true,
+    "buybackPercentage": 0.85
+  },
+  "auction": {
+    "eligibleForAuction": true,
+    "minimumBid": 8000000,
+    "eliteOnly": true,
+    "minimumPrestige": 0.9,
+    "auctionDuration": 72
+  },
+  "exclusiveFeatures": {
+    "ownerPerks": [
+      "Exclusive OmniWorld VIP lounge access",
+      "Priority event invitations",
+      "Custom paint service",
+      "Annual performance tune-up",
+      "Featured in showroom when not in use",
+      "Access to ultra-rare vehicle community"
+    ],
+    "inGameBenefits": [
+      "+50% race rewards",
+      "Exclusive missions unlocked",
+      "Fast travel enabled",
+      "Reduced fuel consumption",
+      "Enhanced durability"
+    ]
+  },
+  "story": {
+    "description": "The Apex One represents the pinnacle of OmniWorld's automotive vision. Handcrafted with diamond-infused carbon fiber and powered by a revolutionary hybrid V16 engine, this singular masterpiece exists nowhere else in the metaverse. Its holographic displays and AI integration make it not just a vehicle, but a sentient companion. Only one individual will ever own this crown jewel of digital luxury.",
+    "designer": "Omega Prime",
+    "inspirations": [
+      "Next-generation hypercars",
+      "Quantum physics",
+      "Digital sovereignty",
+      "Ultimate exclusivity"
+    ]
+  }
+}

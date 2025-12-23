@@ -1,0 +1,195 @@
+{
+  "prefabName": "Vehicle_Car_OmniWorld_Phoenix",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Ultra-Legendary",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Ultra-Legendary",
+    "performanceClass": "Grand Tourer",
+    "edition": "1 of 1",
+    "isOneOfOne": true,
+    "rarityTier": "UltraLegendary",
+    "statusSymbol": "Elite"
+  },
+  "branding": {
+    "manufacturer": "OmniWorld Prestige",
+    "model": "Phoenix Eternal",
+    "year": 2025,
+    "designation": "Rebirth of Luxury",
+    "uniqueFeatures": [
+      "Morphing body panels",
+      "Self-healing paint technology",
+      "Adaptive comfort system",
+      "Quantum navigation AI",
+      "Bio-sync driver interface"
+    ]
+  },
+  "specifications": {
+    "class": "Ultra-Legendary Grand Tourer",
+    "seats": 2,
+    "engine": "7.0L Quad-Turbo W12 Hybrid",
+    "horsepower": 1600,
+    "topSpeed": 255,
+    "acceleration": 2.3,
+    "handling": 9.5,
+    "fuelType": "Hybrid Electric",
+    "limitedEdition": true,
+    "productionNumber": 1,
+    "serialNumber": "001-OMNI-PHOENIX"
+  },
+  "physics": {
+    "mass": 2100,
+    "centerOfMass": { "x": 0, "y": 0.3, "z": -0.4 },
+    "wheelBase": 2.9,
+    "trackWidth": 1.8,
+    "suspensionTravel": 0.12,
+    "springRate": 85000,
+    "damperRate": 7500,
+    "downforce": 1500
+  },
+  "model": {
+    "dimensions": {
+      "length": 5.2,
+      "width": 2.0,
+      "height": 1.35,
+      "wheelbase": 2.9
+    },
+    "doors": 2,
+    "doorType": "Scissor with Smart Access",
+    "trunk": "Luxury Compartment",
+    "bodyStyle": "Ultra-Legendary Grand Tourer"
+  },
+  "graphics": {
+    "lodLevels": 5,
+    "polyCount": {
+      "lod0": 300000,
+      "lod1": 150000,
+      "lod2": 75000,
+      "lod3": 35000,
+      "lod4": 15000
+    },
+    "textureResolution": {
+      "diffuse": 8192,
+      "normal": 8192,
+      "roughness": 8192,
+      "metallic": 8192,
+      "ao": 4096,
+      "emissive": 4096
+    },
+    "materials": [
+      "Phoenix_Fire_Shifting_Paint",
+      "Carbon_Titanium_Weave",
+      "Crystalline_Glass_Panoramic",
+      "Alcantara_Phoenix_Edition",
+      "Rose_Gold_Trim_18K",
+      "LED_Phoenix_Signature_Lights",
+      "Self_Healing_Coating"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "Dynamic Paint Shifting",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Morphing Body Panels",
+      "Adaptive Suspension",
+      "Biometric Dashboard",
+      "Animated Steering",
+      "Phoenix Wing Spoiler",
+      "Self-Healing Material Animation",
+      "Interior Mood Lighting",
+      "Particle Effects",
+      "Ambient Glow Effects"
+    ]
+  },
+  "audio": {
+    "engineSound": "W12_Symphony_Phoenix",
+    "exhaustNote": "Phoenix_Signature_Roar",
+    "turboWhistle": true,
+    "hybridWhine": true,
+    "hornSound": "Phoenix_Call",
+    "doorSound": "Phoenix_Wing_Deployment",
+    "startupSound": "Phoenix_Rising_Sequence"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "dualExhaust": true,
+      "flames": true,
+      "phoenixGlow": true,
+      "colorShift": true
+    },
+    "tireSmokeOnBurnout": true,
+    "brakelightGlow": true,
+    "headlightBeams": true,
+    "exhaustFlames": true,
+    "brakeDiskGlow": true,
+    "phoenixAura": true,
+    "morphingAnimation": true,
+    "selfHealingVFX": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "AerodynamicsController",
+    "LaunchControl",
+    "TelemetrySystem",
+    "BioSyncSystem",
+    "MorphingBodyController"
+  ],
+  "nftProperties": {
+    "mintingPrice": 8500000,
+    "currentValue": 8500000,
+    "currency": "OMNI",
+    "mintingFeePercent": 0.05,
+    "salesTaxPercent": 0.08,
+    "royaltyPercent": 0.20,
+    "appreciationRate": 0.01,
+    "prestigePoints": 950,
+    "canResell": true,
+    "minimumOwnershipDays": 90,
+    "buybackEnabled": true,
+    "buybackPercentage": 0.85
+  },
+  "auction": {
+    "eligibleForAuction": true,
+    "minimumBid": 7000000,
+    "eliteOnly": true,
+    "minimumPrestige": 0.9,
+    "auctionDuration": 72
+  },
+  "exclusiveFeatures": {
+    "ownerPerks": [
+      "Phoenix Club membership",
+      "Eternal maintenance package",
+      "Custom interior design service",
+      "Priority auction access",
+      "Exclusive Phoenix events",
+      "Morphing paint customization"
+    ],
+    "inGameBenefits": [
+      "+40% prestige bonus",
+      "Phoenix quest line unlocked",
+      "Enhanced regeneration",
+      "Damage auto-repair",
+      "Exclusive fast travel points"
+    ]
+  },
+  "story": {
+    "description": "The Phoenix Eternal embodies the concept of rebirth and evolution. With morphing body panels that adapt to driving conditions and self-healing paint that repairs minor damage, this grand tourer represents eternal perfection. Its bio-sync interface connects with the driver on a fundamental level, creating an unprecedented bond between human and machine. Rise from the ashes in unparalleled style.",
+    "designer": "Omega Prime",
+    "inspirations": [
+      "Mythical Phoenix",
+      "Evolutionary design",
+      "Self-healing technology",
+      "Eternal beauty"
+    ]
+  }
+}

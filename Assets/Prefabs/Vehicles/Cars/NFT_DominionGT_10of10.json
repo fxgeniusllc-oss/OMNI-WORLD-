@@ -1,0 +1,211 @@
+{
+  "prefabName": "Vehicle_Car_OmniWorld_Dominion",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Legendary",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Legendary",
+    "performanceClass": "Hypercar",
+    "edition": "X of 10",
+    "isOneOfOne": false,
+    "totalEditions": 10,
+    "rarityTier": "Legendary",
+    "statusSymbol": "Elite"
+  },
+  "branding": {
+    "manufacturer": "OmniWorld Performance",
+    "model": "Dominion GT",
+    "year": 2025,
+    "designation": "The Collector's Dream",
+    "uniqueFeatures": [
+      "Numbered edition badge",
+      "Quantum-sync drivetrain",
+      "Elite club membership",
+      "Signature engraving",
+      "Performance telemetry AI"
+    ]
+  },
+  "specifications": {
+    "class": "Legendary Hypercar",
+    "seats": 2,
+    "engine": "7.2L Twin-Turbo V12",
+    "horsepower": 1400,
+    "topSpeed": 265,
+    "acceleration": 2.2,
+    "handling": 9.8,
+    "fuelType": "Racing Fuel",
+    "limitedEdition": true,
+    "productionNumber": 10,
+    "serialNumber": "XXX-OMNI-DOMINION"
+  },
+  "physics": {
+    "mass": 1750,
+    "centerOfMass": { "x": 0, "y": 0.27, "z": -0.45 },
+    "wheelBase": 2.75,
+    "trackWidth": 1.78,
+    "suspensionTravel": 0.06,
+    "springRate": 98000,
+    "damperRate": 8800,
+    "downforce": 2100
+  },
+  "model": {
+    "dimensions": {
+      "length": 4.65,
+      "width": 2.05,
+      "height": 1.15,
+      "wheelbase": 2.75
+    },
+    "doors": 2,
+    "doorType": "Dihedral Synchro-Helix",
+    "trunk": "Minimal Sport",
+    "bodyStyle": "Legendary Hypercar"
+  },
+  "graphics": {
+    "lodLevels": 5,
+    "polyCount": {
+      "lod0": 250000,
+      "lod1": 125000,
+      "lod2": 62000,
+      "lod3": 30000,
+      "lod4": 15000
+    },
+    "textureResolution": {
+      "diffuse": 8192,
+      "normal": 8192,
+      "roughness": 8192,
+      "metallic": 8192,
+      "ao": 4096,
+      "emissive": 4096
+    },
+    "materials": [
+      "Dominion_Signature_Paint",
+      "Carbon_Fiber_Exposed_Weave",
+      "Titanium_Exhaust_System",
+      "Glass_Aerospace_Curved",
+      "Leather_Nappa_Premium",
+      "Rubber_Pirelli_P_Zero_Trofeo_R",
+      "LED_Signature_Dominion_Lights",
+      "Platinum_Accents"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials High Quality",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Tire Deformation",
+      "Active Suspension",
+      "Digital Dash Display",
+      "Steering Animation",
+      "Active Aero Elements",
+      "Brake Detail",
+      "Engine Bay Detail",
+      "Numbered Badge Detail",
+      "Heat Effects"
+    ]
+  },
+  "audio": {
+    "engineSound": "V12_Dominion_Roar",
+    "exhaustNote": "Dominion_Signature",
+    "turboWhistle": true,
+    "hornSound": "Dominion_Elite",
+    "doorSound": "Dihedral_Precision",
+    "startupSound": "Dominion_Awakening"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "centralExhaust": true,
+      "flames": true,
+      "intensityHigh": true
+    },
+    "tireSmokeOnBurnout": true,
+    "brakelightGlow": true,
+    "headlightBeams": true,
+    "exhaustFlames": true,
+    "brakeDiskGlow": true,
+    "heatShimmer": true,
+    "shockwaveAtTopSpeed": true,
+    "eliteGlow": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "AerodynamicsController",
+    "LaunchControl",
+    "TelemetrySystem",
+    "PerformanceAI"
+  ],
+  "nftProperties": {
+    "mintingPrice": 3500000,
+    "currentValue": 3500000,
+    "currency": "OMNI",
+    "mintingFeePercent": 0.05,
+    "salesTaxPercent": 0.08,
+    "royaltyPercent": 0.20,
+    "appreciationRate": 0.005,
+    "prestigePoints": 500,
+    "canResell": true,
+    "minimumOwnershipDays": 60,
+    "buybackEnabled": true,
+    "buybackPercentage": 0.80
+  },
+  "auction": {
+    "eligibleForAuction": true,
+    "minimumBid": 3000000,
+    "eliteOnly": true,
+    "minimumPrestige": 0.85,
+    "auctionDuration": 48
+  },
+  "editionDetails": {
+    "totalEditions": 10,
+    "editionColors": [
+      "Obsidian Black",
+      "Platinum Silver",
+      "Sapphire Blue",
+      "Ruby Red",
+      "Emerald Green",
+      "Diamond White",
+      "Gold Sovereign",
+      "Titanium Gray",
+      "Copper Bronze",
+      "Pearl Iridescent"
+    ],
+    "editionPriceVariation": 0.05,
+    "firstEditionBonus": 1.2
+  },
+  "exclusiveFeatures": {
+    "ownerPerks": [
+      "Dominion Club membership",
+      "Annual owners gathering",
+      "Personalized edition badge",
+      "Priority service",
+      "Exclusive merchandise",
+      "Track day access"
+    ],
+    "inGameBenefits": [
+      "+30% race rewards",
+      "Dominion missions unlocked",
+      "Enhanced performance",
+      "Reduced maintenance costs",
+      "Elite parking access"
+    ]
+  },
+  "story": {
+    "description": "The Dominion GT represents the perfect balance between exclusivity and accessibility. Limited to just 10 units across the entire OmniWorld metaverse, each edition is uniquely numbered and features a distinctive color scheme. Owners become part of an elite club of Dominion collectors, with each vehicle serving as a testament to their status and taste. With quantum-synchronized performance and AI-assisted telemetry, the Dominion GT delivers hypercar thrills with legendary reliability.",
+    "designer": "Omega Prime",
+    "inspirations": [
+      "Dominion Economy principles",
+      "Collector culture",
+      "Elite exclusivity",
+      "Balanced rarity"
+    ]
+  }
+}
