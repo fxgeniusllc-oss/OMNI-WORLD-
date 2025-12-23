@@ -1,0 +1,136 @@
+{
+  "prefabName": "Vehicle_Car_MuscleCar",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "American Muscle Car",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Premium",
+    "performanceClass": "Muscle",
+    "make": "American Performance",
+    "model": "Challenger Hellcat"
+  },
+  "specifications": {
+    "class": "Muscle Car",
+    "seats": 5,
+    "engine": "6.2L Supercharged V8",
+    "horsepower": 717,
+    "topSpeed": 196,
+    "acceleration": 3.6,
+    "handling": 7.5,
+    "fuelType": "Premium Gasoline"
+  },
+  "physics": {
+    "mass": 2080,
+    "centerOfMass": { "x": 0, "y": 0.41, "z": 0 },
+    "wheelBase": 2.95,
+    "trackWidth": 1.63,
+    "suspensionTravel": 0.13,
+    "springRate": 52000,
+    "damperRate": 4400
+  },
+  "model": {
+    "dimensions": {
+      "length": 5.02,
+      "width": 1.92,
+      "height": 1.45,
+      "wheelbase": 2.95
+    },
+    "doors": 2,
+    "trunk": "Large",
+    "bodyStyle": "Muscle Coupe"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 72000,
+      "lod1": 36000,
+      "lod2": 17000,
+      "lod3": 7500
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Car_Paint_Muscle_Vibrant",
+      "Glass_Window_Dark_Tint",
+      "Rubber_Drag_Radial_Tire",
+      "Leather_Sport_Interior",
+      "Chrome_Muscle_Accents",
+      "Carbon_Fiber_Hood"
+    ],
+    "lighting": {
+      "headlights": true,
+      "taillights": true,
+      "brakelights": true,
+      "turnsignals": true,
+      "interiorLights": true,
+      "ledRacetrack": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Tire Deformation",
+      "Suspension Animation",
+      "Working Lights",
+      "Supercharger Detail",
+      "Functional Hood Scoop",
+      "Wide Body Kit",
+      "Performance Brakes"
+    ]
+  },
+  "audio": {
+    "engineSound": "V8_Supercharged_American",
+    "exhaustNote": "Aggressive_Deep_Rumble",
+    "superchargerWhine": true,
+    "hornSound": "Muscle",
+    "doorSound": "Heavy_American",
+    "brakeSound": "Performance_Brembo"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "dualExhaust": true,
+      "flames": true,
+      "position": [
+        { "x": -0.48, "y": 0.21, "z": -2.51 },
+        { "x": 0.48, "y": 0.21, "z": -2.51 }
+      ]
+    },
+    "tireSmokeOnBurnout": true,
+    "brakelightGlow": true,
+    "headlightBeams": true,
+    "exhaustFlames": true,
+    "brakeDiskGlow": true,
+    "superchargerWhineEffect": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "LaunchControl",
+    "LineLockerBrakes"
+  ],
+  "customization": {
+    "paintColors": ["Go Mango", "Plum Crazy", "F8 Green", "TorRed", "Pitch Black", "White Knuckle"],
+    "wheels": ["20in Forged", "20in Lightweight"],
+    "interior": ["Cloth Sport", "Nappa/Alcantara"],
+    "upgrades": ["Widebody Kit", "Drag Pack", "Track Pack", "Supercharger Pulley"]
+  },
+  "price": {
+    "purchasePrice": 82000,
+    "dailyRent": 480,
+    "currency": "OMNI"
+  }
+}

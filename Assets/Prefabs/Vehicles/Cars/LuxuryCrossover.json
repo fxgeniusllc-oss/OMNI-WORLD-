@@ -1,0 +1,132 @@
+{
+  "prefabName": "Vehicle_Car_LuxuryCrossover",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Luxury Crossover",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Premium",
+    "performanceClass": "Luxury Sport",
+    "make": "Bavarian Motor Works",
+    "model": "X5 M Sport"
+  },
+  "specifications": {
+    "class": "Luxury SUV",
+    "seats": 5,
+    "engine": "3.0L Turbo I6",
+    "horsepower": 335,
+    "topSpeed": 145,
+    "acceleration": 5.5,
+    "handling": 7.8,
+    "fuelType": "Premium Gasoline",
+    "drivetrain": "AWD"
+  },
+  "physics": {
+    "mass": 2200,
+    "centerOfMass": { "x": 0, "y": 0.68, "z": 0 },
+    "wheelBase": 2.98,
+    "trackWidth": 1.7,
+    "suspensionTravel": 0.2,
+    "springRate": 48000,
+    "damperRate": 3800,
+    "groundClearance": 0.22
+  },
+  "model": {
+    "dimensions": {
+      "length": 4.92,
+      "width": 2.0,
+      "height": 1.75,
+      "wheelbase": 2.98
+    },
+    "doors": 4,
+    "trunk": "Large",
+    "bodyStyle": "Luxury Crossover"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 72000,
+      "lod1": 36000,
+      "lod2": 17000,
+      "lod3": 7500
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Car_Paint_Premium_Metallic",
+      "Glass_Panoramic_Sunroof",
+      "Leather_Vernasca_Interior",
+      "Wood_Trim_Oak",
+      "Chrome_Premium_Accents",
+      "Rubber_Performance_SUV_Tire"
+    ],
+    "lighting": {
+      "headlights": true,
+      "taillights": true,
+      "brakelights": true,
+      "turnsignals": true,
+      "interiorLights": true,
+      "ledAdaptive": true,
+      "ambientInterior": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Suspension Animation",
+      "Working Lights",
+      "Panoramic Roof",
+      "Digital Cockpit",
+      "Kidney Grille"
+    ]
+  },
+  "audio": {
+    "engineSound": "I6_Turbo_SUV",
+    "exhaustNote": "Refined_Deep",
+    "hornSound": "Luxury",
+    "doorSound": "Premium_Heavy"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "dualExhaust": true,
+      "position": [
+        { "x": -0.52, "y": 0.24, "z": -2.46 },
+        { "x": 0.52, "y": 0.24, "z": -2.46 }
+      ]
+    },
+    "tireSmokeOnBurnout": false,
+    "brakelightGlow": true,
+    "headlightBeams": true,
+    "adaptiveLighting": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "AWDSystem",
+    "DrivingAssist"
+  ],
+  "customization": {
+    "paintColors": ["Alpine White", "Carbon Black", "Mineral White", "Phytonic Blue", "Aventurine Red"],
+    "wheels": ["19in M Sport", "20in M Performance", "21in M Forged"],
+    "interior": ["Vernasca Leather", "Nappa Leather"],
+    "upgrades": ["M Sport Package", "Executive Package", "7-Seat Option"]
+  },
+  "price": {
+    "purchasePrice": 72000,
+    "dailyRent": 380,
+    "currency": "OMNI"
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "prefabName": "Vehicle_Car_GrandTourer",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Grand Tourer",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Premium",
+    "performanceClass": "Grand Touring",
+    "make": "American Luxury Division",
+    "model": "CT6-V Blackwing"
+  },
+  "specifications": {
+    "class": "Grand Tourer",
+    "seats": 5,
+    "engine": "4.2L Twin-Turbo V8",
+    "horsepower": 550,
+    "topSpeed": 165,
+    "acceleration": 3.8,
+    "handling": 8.6,
+    "fuelType": "Premium Gasoline"
+  },
+  "physics": {
+    "mass": 2100,
+    "centerOfMass": { "x": 0, "y": 0.44, "z": 0 },
+    "wheelBase": 3.11,
+    "trackWidth": 1.67,
+    "suspensionTravel": 0.16,
+    "springRate": 50000,
+    "damperRate": 4200
+  },
+  "model": {
+    "dimensions": {
+      "length": 5.18,
+      "width": 1.88,
+      "height": 1.49,
+      "wheelbase": 3.11
+    },
+    "doors": 4,
+    "trunk": "Extra Large",
+    "bodyStyle": "Grand Tourer"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 76000,
+      "lod1": 38000,
+      "lod2": 18000,
+      "lod3": 8000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Car_Paint_Luxury_Pearl",
+      "Glass_Window_Acoustic_Laminated",
+      "Leather_Semi_Aniline_Premium",
+      "Wood_Veneer_Piano_Black",
+      "Chrome_Luxury_Brightwork",
+      "Rubber_Luxury_Performance_Tire"
+    ],
+    "lighting": {
+      "headlights": true,
+      "taillights": true,
+      "brakelights": true,
+      "turnsignals": true,
+      "interiorLights": true,
+      "ledVertical": true,
+      "ambientInterior": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Suspension Animation",
+      "Working Lights",
+      "Digital OLED Display",
+      "Ambient Lighting",
+      "Chrome Vertical Lighting"
+    ]
+  },
+  "audio": {
+    "engineSound": "V8_Twin_Turbo_Luxury",
+    "exhaustNote": "Deep_Refined",
+    "turboWhistle": true,
+    "hornSound": "Luxury_Premium",
+    "doorSound": "Premium_Solid"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "quadExhaust": true,
+      "position": [
+        { "x": -0.4, "y": 0.22, "z": -2.59 },
+        { "x": 0.4, "y": 0.22, "z": -2.59 },
+        { "x": -0.6, "y": 0.22, "z": -2.59 },
+        { "x": 0.6, "y": 0.22, "z": -2.59 }
+      ]
+    },
+    "tireSmokeOnBurnout": true,
+    "brakelightGlow": true,
+    "headlightBeams": true,
+    "brakeDiskGlow": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "MagneticRideSuspension",
+    "SuperCruise"
+  ],
+  "customization": {
+    "paintColors": ["Crystal White Tricoat", "Black Raven", "Satin Steel Metallic", "Wave Metallic"],
+    "wheels": ["19in Premium", "20in Performance"],
+    "interior": ["Semi-Aniline Leather", "Full Aniline Leather"],
+    "upgrades": ["Blackwing Performance Package", "Executive Rear Seating", "Premium Audio"]
+  },
+  "price": {
+    "purchasePrice": 98000,
+    "dailyRent": 550,
+    "currency": "OMNI"
+  }
+}

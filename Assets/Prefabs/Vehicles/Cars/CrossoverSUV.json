@@ -1,0 +1,116 @@
+{
+  "prefabName": "Vehicle_Car_CrossoverSUV",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Crossover SUV",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Standard",
+    "performanceClass": "Utility",
+    "make": "Zenith Auto",
+    "model": "Rogue Explorer"
+  },
+  "specifications": {
+    "class": "Compact Crossover",
+    "seats": 5,
+    "engine": "2.5L I4",
+    "horsepower": 188,
+    "topSpeed": 118,
+    "acceleration": 8.4,
+    "handling": 6.5,
+    "fuelType": "Gasoline",
+    "drivetrain": "AWD",
+    "mpg": 30
+  },
+  "physics": {
+    "mass": 1650,
+    "centerOfMass": { "x": 0, "y": 0.65, "z": 0 },
+    "wheelBase": 2.71,
+    "trackWidth": 1.62,
+    "suspensionTravel": 0.19,
+    "springRate": 39000,
+    "damperRate": 3000,
+    "groundClearance": 0.21
+  },
+  "model": {
+    "dimensions": {
+      "length": 4.65,
+      "width": 1.82,
+      "height": 1.68,
+      "wheelbase": 2.71
+    },
+    "doors": 4,
+    "trunk": "Large Cargo",
+    "bodyStyle": "Crossover"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 48000,
+      "lod1": 24000,
+      "lod2": 11000,
+      "lod3": 4500
+    },
+    "textureResolution": {
+      "diffuse": 2048,
+      "normal": 2048,
+      "roughness": 1024,
+      "metallic": 1024
+    },
+    "materials": [
+      "Car_Paint_Metallic",
+      "Plastic_Cladding_Black",
+      "Glass_Window_Tinted",
+      "Rubber_All_Season_Tire",
+      "Fabric_Interior_Premium",
+      "Chrome_Trim"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Suspension Animation",
+      "Working Lights",
+      "Roof Rails",
+      "Rear Camera Display"
+    ]
+  },
+  "audio": {
+    "engineSound": "I4_Crossover",
+    "exhaustNote": "Mild",
+    "hornSound": "Standard",
+    "doorSound": "Standard"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "position": { "x": 0, "y": 0.22, "z": -2.33 }
+    },
+    "tireSmokeOnBurnout": false,
+    "brakelightGlow": true,
+    "headlightBeams": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "AWDSystem"
+  ],
+  "customization": {
+    "paintColors": ["White", "Black", "Silver", "Blue", "Red", "Green"],
+    "wheels": ["Stock 17in", "Alloy 18in"],
+    "interior": ["Cloth", "Leather"],
+    "upgrades": ["Roof Rack", "Tow Package", "Tech Package"]
+  },
+  "price": {
+    "purchasePrice": 32000,
+    "dailyRent": 85,
+    "currency": "OMNI"
+  }
+}

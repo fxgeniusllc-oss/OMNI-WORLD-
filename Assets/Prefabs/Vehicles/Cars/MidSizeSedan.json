@@ -1,0 +1,123 @@
+{
+  "prefabName": "Vehicle_Car_MidSizeSedan",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Mid-Size Sedan",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Standard",
+    "performanceClass": "Comfort",
+    "make": "Apex Motors",
+    "model": "Accord Elite"
+  },
+  "specifications": {
+    "class": "Mid-Size",
+    "seats": 5,
+    "engine": "2.0L Turbo I4",
+    "horsepower": 252,
+    "topSpeed": 130,
+    "acceleration": 6.7,
+    "handling": 7.2,
+    "fuelType": "Gasoline",
+    "mpg": 32
+  },
+  "physics": {
+    "mass": 1550,
+    "centerOfMass": { "x": 0, "y": 0.43, "z": 0 },
+    "wheelBase": 2.83,
+    "trackWidth": 1.58,
+    "suspensionTravel": 0.16,
+    "springRate": 38000,
+    "damperRate": 2900
+  },
+  "model": {
+    "dimensions": {
+      "length": 4.9,
+      "width": 1.85,
+      "height": 1.45,
+      "wheelbase": 2.83
+    },
+    "doors": 4,
+    "trunk": "Large",
+    "bodyStyle": "Sedan"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 45000,
+      "lod1": 22000,
+      "lod2": 10000,
+      "lod3": 4000
+    },
+    "textureResolution": {
+      "diffuse": 2048,
+      "normal": 2048,
+      "roughness": 1024,
+      "metallic": 1024
+    },
+    "materials": [
+      "Car_Paint_Metallic",
+      "Glass_Window_Tinted",
+      "Rubber_Tire_All_Season",
+      "Chrome_Trim",
+      "Leather_Interior_Standard"
+    ],
+    "lighting": {
+      "headlights": true,
+      "taillights": true,
+      "brakelights": true,
+      "turnsignals": true,
+      "interiorLights": true,
+      "ledDaytimeRunning": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Tire Deformation",
+      "Suspension Animation",
+      "Working Lights",
+      "Dashboard Instruments",
+      "Touchscreen Display"
+    ]
+  },
+  "audio": {
+    "engineSound": "I4_Turbo_Refined",
+    "exhaustNote": "Moderate",
+    "hornSound": "Standard",
+    "doorSound": "Standard",
+    "brakeSound": "Standard"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "position": { "x": 0, "y": 0.2, "z": -2.45 }
+    },
+    "tireSmokeOnBurnout": true,
+    "brakelightGlow": true,
+    "headlightBeams": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem"
+  ],
+  "customization": {
+    "paintColors": ["White Pearl", "Black", "Silver", "Gray", "Blue", "Red"],
+    "wheels": ["Stock 17in", "Alloy 18in"],
+    "interior": ["Cloth", "Leather"],
+    "upgrades": ["Navigation System", "Premium Audio", "Sunroof"]
+  },
+  "price": {
+    "purchasePrice": 28000,
+    "dailyRent": 75,
+    "currency": "OMNI"
+  }
+}

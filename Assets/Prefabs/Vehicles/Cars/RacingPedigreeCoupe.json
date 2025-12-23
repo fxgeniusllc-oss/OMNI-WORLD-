@@ -1,0 +1,158 @@
+{
+  "prefabName": "Vehicle_Car_RacingPedigreeCoupe",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Racing Pedigree Coupe",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Billionaire",
+    "performanceClass": "Exotic Supercar",
+    "make": "Prancing Horse Motors",
+    "model": "812 Competizione"
+  },
+  "specifications": {
+    "class": "Exotic Supercar",
+    "seats": 2,
+    "engine": "6.5L V12",
+    "horsepower": 830,
+    "topSpeed": 211,
+    "acceleration": 2.85,
+    "handling": 10.0,
+    "fuelType": "Racing Fuel",
+    "limitedEdition": true,
+    "productionNumber": 999
+  },
+  "physics": {
+    "mass": 1630,
+    "centerOfMass": { "x": 0, "y": 0.29, "z": -0.35 },
+    "wheelBase": 2.72,
+    "trackWidth": 1.72,
+    "suspensionTravel": 0.07,
+    "springRate": 82000,
+    "damperRate": 7200,
+    "downforce": 900
+  },
+  "model": {
+    "dimensions": {
+      "length": 4.66,
+      "width": 1.97,
+      "height": 1.28,
+      "wheelbase": 2.72
+    },
+    "doors": 2,
+    "trunk": "None",
+    "bodyStyle": "Berlinetta"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 180000,
+      "lod1": 90000,
+      "lod2": 43000,
+      "lod3": 20000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 4096,
+      "metallic": 4096,
+      "ao": 4096,
+      "emissive": 2048
+    },
+    "materials": [
+      "Car_Paint_Exotic_Italian_Masterpiece",
+      "Carbon_Fiber_Visible_Weave_Racing",
+      "Glass_Aerospace_Grade_Curved",
+      "Rubber_Michelin_Pilot_Sport_Cup_2",
+      "Alcantara_Handcrafted_Interior",
+      "Titanium_Exhaust_Racing",
+      "LED_Racing_Lights",
+      "Aluminum_Forged_Racing"
+    ],
+    "lighting": {
+      "headlights": true,
+      "taillights": true,
+      "brakelights": true,
+      "turnsignals": true,
+      "interiorLights": true,
+      "ledRacing": true,
+      "signatureRaceDesign": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Tire Deformation",
+      "Suspension Animation",
+      "Working Lights",
+      "Full Racing Cockpit",
+      "Animated Steering Wheel",
+      "Active Aerodynamics",
+      "Brake Caliper Detail",
+      "Engine Bay Detail",
+      "Undercarriage Detail",
+      "Heat Haze Effects",
+      "Wind Tunnel Optimized",
+      "Racing Seats Detail",
+      "Prancing Horse Badges"
+    ]
+  },
+  "audio": {
+    "engineSound": "V12_Naturally_Aspirated_Racing",
+    "exhaustNote": "Italian_V12_Symphony",
+    "turboWhistle": false,
+    "hornSound": "Exotic_Racing",
+    "doorSound": "Exotic_Precision",
+    "brakeSound": "Carbon_Ceramic_Racing"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "centralQuadExhaust": true,
+      "flames": true,
+      "intensityExtreme": true,
+      "position": [
+        { "x": -0.25, "y": 0.32, "z": -2.33 },
+        { "x": 0.25, "y": 0.32, "z": -2.33 },
+        { "x": -0.45, "y": 0.28, "z": -2.33 },
+        { "x": 0.45, "y": 0.28, "z": -2.33 }
+      ]
+    },
+    "tireSmokeOnBurnout": true,
+    "brakelightGlow": true,
+    "headlightBeams": true,
+    "exhaustFlames": true,
+    "brakeDiskGlow": true,
+    "heatShimmer": true,
+    "shockwaveAtTopSpeed": true,
+    "downshiftBackfire": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "AerodynamicsController",
+    "LaunchControl",
+    "TelemetrySystem",
+    "RaceMode",
+    "ESportsMode"
+  ],
+  "customization": {
+    "paintColors": ["Rosso Corsa", "Giallo Modena", "Nero Daytona", "Blu Tour de France", "Argento Nurburgring"],
+    "wheels": ["20in Forged Racing", "21in Carbon Fiber Racing"],
+    "interior": ["Full Alcantara Racing", "Carbon Fiber Racing Package"],
+    "upgrades": ["Fiorano Package", "Racing Telemetry", "Lightweight Package"]
+  },
+  "price": {
+    "purchasePrice": 580000,
+    "dailyRent": 4200,
+    "currency": "OMNI"
+  }
+}

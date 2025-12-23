@@ -1,0 +1,134 @@
+{
+  "prefabName": "Vehicle_Car_LuxuryElectricSUV",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Luxury Electric SUV",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Ultra-Luxury",
+    "performanceClass": "Electric Luxury",
+    "make": "Stuttgart Prestige",
+    "model": "EQS SUV 580"
+  },
+  "specifications": {
+    "class": "Electric Luxury SUV",
+    "seats": 7,
+    "motor": "Dual Motor AWD",
+    "horsepower": 536,
+    "topSpeed": 130,
+    "acceleration": 4.6,
+    "handling": 8.0,
+    "fuelType": "Electric",
+    "range": 373,
+    "batteryCapacity": 107.8
+  },
+  "physics": {
+    "mass": 2690,
+    "centerOfMass": { "x": 0, "y": 0.42, "z": 0 },
+    "wheelBase": 3.21,
+    "trackWidth": 1.72,
+    "suspensionTravel": 0.17,
+    "springRate": 54000,
+    "damperRate": 4600,
+    "batteryMass": 700
+  },
+  "model": {
+    "dimensions": {
+      "length": 5.13,
+      "width": 1.96,
+      "height": 1.72,
+      "wheelbase": 3.21
+    },
+    "doors": 4,
+    "trunk": "Large + Frunk",
+    "bodyStyle": "Electric SUV"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 98000,
+      "lod1": 49000,
+      "lod2": 23000,
+      "lod3": 10500
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 4096,
+      "metallic": 4096,
+      "ao": 2048
+    },
+    "materials": [
+      "Car_Paint_Luxury_Electric_Exclusive",
+      "Glass_Panoramic_Hyperscreen",
+      "Leather_Nappa_Exclusive",
+      "Wood_Veneer_Open_Pore",
+      "Aluminum_Brushed_Premium",
+      "Rubber_EV_Low_Rolling_Resistance",
+      "LED_Digital_Grille"
+    ],
+    "lighting": {
+      "headlights": true,
+      "taillights": true,
+      "brakelights": true,
+      "turnsignals": true,
+      "interiorLights": true,
+      "ledDigitalGrille": true,
+      "ambientInterior64Color": true,
+      "hyperscreenDisplay": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Suspension Animation",
+      "Working Lights",
+      "MBUX Hyperscreen",
+      "Digital LED Grille",
+      "Ambient Lighting",
+      "Third Row Seating",
+      "Charging Port Animation"
+    ]
+  },
+  "audio": {
+    "engineSound": "Electric_Motor_Luxury_Multi",
+    "artificialSound": "EQ_Signature_Sound",
+    "hornSound": "Ultra_Luxury",
+    "doorSound": "Electric_Premium_Heavy"
+  },
+  "effects": {
+    "noExhaust": true,
+    "tireSmokeOnBurnout": false,
+    "brakelightGlow": true,
+    "headlightBeams": true,
+    "underglowLED": true,
+    "regenerativeBraking": true,
+    "digitalGrilleAnimation": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "BatterySystem",
+    "AWDSystem",
+    "AirmaticSuspension",
+    "HyperscreenController"
+  ],
+  "customization": {
+    "paintColors": ["Polar White", "Obsidian Black", "High-Tech Silver", "Spectral Blue", "Hyacinth Red"],
+    "wheels": ["21in AMG Forged", "22in AMG Multi-Spoke"],
+    "interior": ["Nappa Leather Exclusive", "Full Designo Leather"],
+    "upgrades": ["AMG Line", "Executive Rear Seating", "Burmester 3D Audio"]
+  },
+  "price": {
+    "purchasePrice": 135000,
+    "dailyRent": 850,
+    "currency": "OMNI"
+  }
+}

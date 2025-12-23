@@ -1,0 +1,138 @@
+{
+  "prefabName": "Vehicle_Car_LuxuryLimoSUV",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Luxury Limousine SUV",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Luxury",
+    "performanceClass": "Ultra-Luxury Utility",
+    "make": "American Luxury Division",
+    "model": "Escalade ESV Platinum"
+  },
+  "specifications": {
+    "class": "Ultra-Luxury SUV",
+    "seats": 7,
+    "engine": "6.2L V8",
+    "horsepower": 420,
+    "topSpeed": 130,
+    "acceleration": 6.1,
+    "handling": 6.8,
+    "fuelType": "Premium Gasoline",
+    "drivetrain": "AWD"
+  },
+  "physics": {
+    "mass": 2950,
+    "centerOfMass": { "x": 0, "y": 0.78, "z": 0.1 },
+    "wheelBase": 3.4,
+    "trackWidth": 1.77,
+    "suspensionTravel": 0.24,
+    "springRate": 54000,
+    "damperRate": 4200,
+    "groundClearance": 0.25
+  },
+  "model": {
+    "dimensions": {
+      "length": 5.76,
+      "width": 2.06,
+      "height": 1.94,
+      "wheelbase": 3.4
+    },
+    "doors": 4,
+    "trunk": "Massive",
+    "bodyStyle": "Extended SUV"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 88000,
+      "lod1": 44000,
+      "lod2": 21000,
+      "lod3": 9500
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Car_Paint_Luxury_Premium",
+      "Chrome_Massive_Grille",
+      "Glass_Window_Privacy",
+      "Leather_Semi_Aniline_Platinum",
+      "Wood_Veneer_American_Walnut",
+      "Rubber_Luxury_SUV_Tire_22in",
+      "LED_Vertical_Signature"
+    ],
+    "lighting": {
+      "headlights": true,
+      "taillights": true,
+      "brakelights": true,
+      "turnsignals": true,
+      "interiorLights": true,
+      "ledVerticalSignature": true,
+      "ambientInterior": true,
+      "illuminatedSills": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Suspension Animation",
+      "Working Lights",
+      "Massive Chrome Grille",
+      "Third Row Seating",
+      "Rear Entertainment Screens",
+      "Panoramic Sunroof",
+      "Power Deployable Steps"
+    ]
+  },
+  "audio": {
+    "engineSound": "V8_Large_Displacement_Luxury",
+    "exhaustNote": "Deep_Authoritative",
+    "hornSound": "Luxury_Premium",
+    "doorSound": "Heavy_Premium_Thud",
+    "brakeSound": "Premium"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "dualExhaust": true,
+      "position": [
+        { "x": -0.6, "y": 0.26, "z": -2.88 },
+        { "x": 0.6, "y": 0.26, "z": -2.88 }
+      ]
+    },
+    "tireSmokeOnBurnout": false,
+    "brakelightGlow": true,
+    "headlightBeams": true,
+    "adaptiveLighting": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "AWDSystem",
+    "MagneticRideSuspension",
+    "EntertainmentSystem"
+  ],
+  "customization": {
+    "paintColors": ["Crystal White Tricoat", "Black Raven", "Shadow Metallic", "Steel Metallic"],
+    "wheels": ["22in Platinum", "24in Premium"],
+    "interior": ["Semi-Aniline Leather", "Full Premium Leather"],
+    "upgrades": ["Platinum Package", "Executive Rear Seating", "Entertainment Package"]
+  },
+  "price": {
+    "purchasePrice": 115000,
+    "dailyRent": 720,
+    "currency": "OMNI"
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "prefabName": "Vehicle_Car_OffRoadSUV",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Off-Road SUV",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Premium",
+    "performanceClass": "Off-Road",
+    "make": "Bavarian Motor Works",
+    "model": "X7 xDrive40i"
+  },
+  "specifications": {
+    "class": "Large Luxury SUV",
+    "seats": 7,
+    "engine": "3.0L Turbo I6",
+    "horsepower": 335,
+    "topSpeed": 130,
+    "acceleration": 5.8,
+    "handling": 7.2,
+    "fuelType": "Premium Gasoline",
+    "drivetrain": "AWD"
+  },
+  "physics": {
+    "mass": 2450,
+    "centerOfMass": { "x": 0, "y": 0.74, "z": 0 },
+    "wheelBase": 3.1,
+    "trackWidth": 1.75,
+    "suspensionTravel": 0.22,
+    "springRate": 50000,
+    "damperRate": 4000,
+    "groundClearance": 0.24
+  },
+  "model": {
+    "dimensions": {
+      "length": 5.15,
+      "width": 2.0,
+      "height": 1.81,
+      "wheelbase": 3.1
+    },
+    "doors": 4,
+    "trunk": "Extra Large",
+    "bodyStyle": "Luxury SUV"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 78000,
+      "lod1": 39000,
+      "lod2": 18000,
+      "lod3": 8000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Car_Paint_Premium_Metallic",
+      "Glass_Panoramic_Roof",
+      "Leather_Vernasca_Interior",
+      "Wood_Trim_Oak",
+      "Chrome_Premium_Trim",
+      "Rubber_All_Terrain_Premium"
+    ],
+    "lighting": {
+      "headlights": true,
+      "taillights": true,
+      "brakelights": true,
+      "turnsignals": true,
+      "interiorLights": true,
+      "ledAdaptive": true,
+      "ambientInterior": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Suspension Animation",
+      "Working Lights",
+      "Panoramic Roof",
+      "Third Row Seating",
+      "Kidney Grille",
+      "Roof Rails"
+    ]
+  },
+  "audio": {
+    "engineSound": "I6_Turbo_SUV_Premium",
+    "exhaustNote": "Deep_Refined",
+    "hornSound": "Luxury",
+    "doorSound": "Premium_Heavy"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "dualExhaust": true,
+      "position": [
+        { "x": -0.54, "y": 0.26, "z": -2.58 },
+        { "x": 0.54, "y": 0.26, "z": -2.58 }
+      ]
+    },
+    "tireSmokeOnBurnout": false,
+    "brakelightGlow": true,
+    "headlightBeams": true,
+    "adaptiveLighting": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "AWDSystem",
+    "OffRoadMode"
+  ],
+  "customization": {
+    "paintColors": ["Alpine White", "Carbon Black", "Mineral White", "Phytonic Blue"],
+    "wheels": ["20in M Sport", "21in M Performance", "22in M Forged"],
+    "interior": ["Vernasca Leather", "Nappa Leather"],
+    "upgrades": ["M Sport Package", "Executive Package", "Off-Road Package"]
+  },
+  "price": {
+    "purchasePrice": 78000,
+    "dailyRent": 420,
+    "currency": "OMNI"
+  }
+}

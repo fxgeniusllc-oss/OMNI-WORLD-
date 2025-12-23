@@ -1,0 +1,130 @@
+{
+  "prefabName": "Vehicle_Car_ExecutiveSedan",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Executive Sedan",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Premium",
+    "performanceClass": "Luxury Sport",
+    "make": "Bavarian Motor Works",
+    "model": "5 Executive"
+  },
+  "specifications": {
+    "class": "Executive",
+    "seats": 5,
+    "engine": "3.0L Turbo I6",
+    "horsepower": 382,
+    "topSpeed": 155,
+    "acceleration": 4.4,
+    "handling": 8.5,
+    "fuelType": "Premium Gasoline"
+  },
+  "physics": {
+    "mass": 1800,
+    "centerOfMass": { "x": 0, "y": 0.42, "z": 0 },
+    "wheelBase": 2.98,
+    "trackWidth": 1.62,
+    "suspensionTravel": 0.15,
+    "springRate": 46000,
+    "damperRate": 3600
+  },
+  "model": {
+    "dimensions": {
+      "length": 4.98,
+      "width": 1.87,
+      "height": 1.48,
+      "wheelbase": 2.98
+    },
+    "doors": 4,
+    "trunk": "Large",
+    "bodyStyle": "Sedan"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 68000,
+      "lod1": 34000,
+      "lod2": 16000,
+      "lod3": 7000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Car_Paint_Premium_Metallic",
+      "Glass_Window_Laminated",
+      "Leather_Dakota_Interior",
+      "Wood_Trim_Fineline",
+      "Chrome_Premium_Trim",
+      "Rubber_Performance_Run_Flat"
+    ],
+    "lighting": {
+      "headlights": true,
+      "taillights": true,
+      "brakelights": true,
+      "turnsignals": true,
+      "interiorLights": true,
+      "ledAdaptive": true,
+      "ambientInterior": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Suspension Animation",
+      "Working Lights",
+      "Digital Instrument Cluster",
+      "Ambient Lighting",
+      "Kidney Grille Detail"
+    ]
+  },
+  "audio": {
+    "engineSound": "I6_Turbo_Premium",
+    "exhaustNote": "Refined_Sport",
+    "hornSound": "Luxury",
+    "doorSound": "Premium_Thud",
+    "brakeSound": "Premium"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "dualExhaust": true,
+      "position": [
+        { "x": -0.5, "y": 0.2, "z": -2.49 },
+        { "x": 0.5, "y": 0.2, "z": -2.49 }
+      ]
+    },
+    "tireSmokeOnBurnout": true,
+    "brakelightGlow": true,
+    "headlightBeams": true,
+    "adaptiveLighting": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "DrivingAssist"
+  ],
+  "customization": {
+    "paintColors": ["Alpine White", "Jet Black", "Mineral Gray", "Phytonic Blue", "Melbourne Red"],
+    "wheels": ["19in M Sport", "20in M Performance"],
+    "interior": ["Dakota Leather", "Nappa Leather", "Merino Leather"],
+    "upgrades": ["M Sport Package", "Executive Package", "Driver Assistance Plus"]
+  },
+  "price": {
+    "purchasePrice": 68000,
+    "dailyRent": 340,
+    "currency": "OMNI"
+  }
+}

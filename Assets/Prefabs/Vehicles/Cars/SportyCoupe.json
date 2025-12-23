@@ -1,0 +1,130 @@
+{
+  "prefabName": "Vehicle_Car_SportyCoupe",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Sporty Coupe",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Standard",
+    "performanceClass": "Sport",
+    "make": "Zenith Auto",
+    "model": "Z-Sport 370"
+  },
+  "specifications": {
+    "class": "Sport Coupe",
+    "seats": 2,
+    "engine": "3.7L V6",
+    "horsepower": 332,
+    "topSpeed": 155,
+    "acceleration": 5.2,
+    "handling": 8.2,
+    "fuelType": "Premium Gasoline"
+  },
+  "physics": {
+    "mass": 1480,
+    "centerOfMass": { "x": 0, "y": 0.38, "z": -0.15 },
+    "wheelBase": 2.55,
+    "trackWidth": 1.57,
+    "suspensionTravel": 0.11,
+    "springRate": 48000,
+    "damperRate": 3800,
+    "downforce": 120
+  },
+  "model": {
+    "dimensions": {
+      "length": 4.33,
+      "width": 1.85,
+      "height": 1.32,
+      "wheelbase": 2.55
+    },
+    "doors": 2,
+    "trunk": "Small",
+    "bodyStyle": "Coupe"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 52000,
+      "lod1": 26000,
+      "lod2": 12000,
+      "lod3": 5000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Car_Paint_Metallic_Bright",
+      "Glass_Window_Sport_Tint",
+      "Rubber_Performance_Tire",
+      "Chrome_Trim",
+      "Leather_Sport_Seats",
+      "Aluminum_Wheels"
+    ],
+    "lighting": {
+      "headlights": true,
+      "taillights": true,
+      "brakelights": true,
+      "turnsignals": true,
+      "interiorLights": true,
+      "ledAccents": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Tire Deformation",
+      "Suspension Animation",
+      "Working Lights",
+      "Dashboard Instruments",
+      "Sport Seats Detail"
+    ]
+  },
+  "audio": {
+    "engineSound": "V6_Sport_Naturally_Aspirated",
+    "exhaustNote": "Aggressive",
+    "hornSound": "Sport",
+    "doorSound": "Sport",
+    "brakeSound": "Performance"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "dualExhaust": true,
+      "position": [
+        { "x": -0.45, "y": 0.18, "z": -2.17 },
+        { "x": 0.45, "y": 0.18, "z": -2.17 }
+      ]
+    },
+    "tireSmokeOnBurnout": true,
+    "brakelightGlow": true,
+    "headlightBeams": true,
+    "brakeDiskGlow": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "TractionControl"
+  ],
+  "customization": {
+    "paintColors": ["Pearl White", "Deep Black", "Racing Red", "Chrome Silver", "Sunset Orange", "Midnight Purple"],
+    "wheels": ["Sport 18in", "Racing 19in"],
+    "interior": ["Cloth Sport", "Leather Sport"],
+    "upgrades": ["Cold Air Intake", "Sport Exhaust", "Coilover Suspension", "Strut Tower Brace"]
+  },
+  "price": {
+    "purchasePrice": 38000,
+    "dailyRent": 150,
+    "currency": "OMNI"
+  }
+}
