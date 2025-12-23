@@ -1,0 +1,57 @@
+{
+  "cityName": "OmniTokyo",
+  "biomeName": "Cyber-Minimal Metropolis",
+  "culturalIdentity": "Minimalist Tonal Swells, Cyber-Tech, Anime Culture",
+  "primaryGenre": "J-Pop",
+  "subGenres": ["City Pop", "Future Bass", "Vaporwave"],
+  "ambientSoundtrack": "tokyo_ambient_loop",
+  "environmentalSounds": [
+    "train_announcements",
+    "pedestrian_crossing",
+    "pachinko_sounds",
+    "vending_machines"
+  ],
+  "baseBPM": 128,
+  "daypartRhythm": "morning_serene|afternoon_tech|evening_neon|night_cyber",
+  "culturalInstruments": [
+    "koto",
+    "shamisen",
+    "synth_pads",
+    "electronic_drums"
+  ],
+  "streetSounds": [
+    "arcade_machines",
+    "convenience_store_jingles",
+    "announcements"
+  ],
+  "languageAccent": "Japanese",
+  "audioMix": {
+    "ambientVolume": 0.35,
+    "musicVolume": 0.55,
+    "sfxVolume": 0.7
+  },
+  "dynamicMusic": {
+    "supportsDynamicTransitions": true,
+    "transitionDuration": 3.5,
+    "introClip": "tokyo_intro",
+    "loopClip": "tokyo_loop",
+    "outroClip": "tokyo_outro"
+  },
+  "districtVariations": {
+    "Shibuya_Crossing": {
+      "ambientTrack": "shibuya_energy",
+      "additionalSFX": ["crowd_surge", "neon_hum"],
+      "intensityMultiplier": 1.6
+    },
+    "Akihabara_Tech": {
+      "ambientTrack": "akiba_electric",
+      "additionalSFX": ["anime_themes", "gaming_sounds"],
+      "intensityMultiplier": 1.4
+    },
+    "Roppongi_Nightlife": {
+      "ambientTrack": "roppongi_nights",
+      "additionalSFX": ["club_bass", "karaoke_echoes"],
+      "intensityMultiplier": 1.7
+    }
+  }
+}

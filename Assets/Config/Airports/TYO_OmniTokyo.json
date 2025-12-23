@@ -1,0 +1,54 @@
+{
+  "airportCode": "TYO",
+  "airportName": "OmniGate Tokyo Narita",
+  "cityName": "OmniTokyo",
+  "terminalType": "International",
+  "worldPosition": {
+    "x": -2000,
+    "y": 0,
+    "z": -1500
+  },
+  "gpsCoordinates": {
+    "lat": 35.7720,
+    "lon": 140.3929
+  },
+  "access": {
+    "isUnlocked": false,
+    "unlockCost": 500,
+    "requiredReputation": 50,
+    "unlockRequirements": [
+      "complete_asia_expansion_quest"
+    ]
+  },
+  "availableDestinations": [
+    "OmniDubai",
+    "OmniLA",
+    "OmniNYC"
+  ],
+  "terminalFeatures": {
+    "hasMissionBoard": true,
+    "hasCustomsNPC": true,
+    "hasLounge": true,
+    "hasCargoArea": true
+  },
+  "visualStyle": {
+    "architectureStyle": "Cyber Minimalist",
+    "ambientLighting": "Cool",
+    "culturalDecor": [
+      "anime_exhibits",
+      "tech_displays",
+      "zen_gardens"
+    ]
+  },
+  "services": {
+    "offersRentals": true,
+    "offersInsurance": true,
+    "offersCurrencyExchange": true,
+    "offersNFTMarketplace": true
+  },
+  "economy": {
+    "baseLandingFee": 25,
+    "economicActivityMultiplier": 2.0
+  },
+  "description": "A cyber-minimalist marvel blending traditional Japanese aesthetics with cutting-edge technology. J-Pop melodies welcome travelers to the land of the rising tech."
+}

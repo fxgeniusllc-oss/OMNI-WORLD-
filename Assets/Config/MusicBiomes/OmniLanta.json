@@ -1,0 +1,57 @@
+{
+  "cityName": "OmniLanta",
+  "biomeName": "Trap Culture Hub",
+  "culturalIdentity": "Creator Culture, Trap Legacy, Tech Hub",
+  "primaryGenre": "Trap",
+  "subGenres": ["Southern Hip-Hop", "R&B", "Neo-Soul"],
+  "ambientSoundtrack": "atlanta_ambient_loop",
+  "environmentalSounds": [
+    "car_bass",
+    "neighborhood_vibes",
+    "studio_sounds",
+    "freeway_hum"
+  ],
+  "baseBPM": 140,
+  "daypartRhythm": "morning_chill|afternoon_grind|evening_turn_up|night_studio",
+  "culturalInstruments": [
+    "808s",
+    "hi_hats",
+    "synth_leads",
+    "vocal_samples"
+  ],
+  "streetSounds": [
+    "dice_games",
+    "cookout_music",
+    "block_parties"
+  ],
+  "languageAccent": "Southern Drawl",
+  "audioMix": {
+    "ambientVolume": 0.45,
+    "musicVolume": 0.75,
+    "sfxVolume": 0.85
+  },
+  "dynamicMusic": {
+    "supportsDynamicTransitions": true,
+    "transitionDuration": 2.0,
+    "introClip": "atlanta_intro",
+    "loopClip": "atlanta_loop",
+    "outroClip": "atlanta_outro"
+  },
+  "districtVariations": {
+    "Midtown_Studios": {
+      "ambientTrack": "studio_district",
+      "additionalSFX": ["recording_sessions", "producer_chatter"],
+      "intensityMultiplier": 1.4
+    },
+    "Buckhead_Tech": {
+      "ambientTrack": "tech_hub_ambience",
+      "additionalSFX": ["startup_sounds", "innovation_buzz"],
+      "intensityMultiplier": 1.1
+    },
+    "Mercedes_Benz_District": {
+      "ambientTrack": "stadium_energy",
+      "additionalSFX": ["crowd_roars", "event_production"],
+      "intensityMultiplier": 1.8
+    }
+  }
+}
