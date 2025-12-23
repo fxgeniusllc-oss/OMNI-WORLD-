@@ -57,8 +57,8 @@ All Trophy NFTs are **collectibles with prestige value** that grant access to ex
 
 | Trophy Tier | Smart Contract Feature | Income Potential | Trading Assets |
 |-------------|----------------------|------------------|----------------|
-| 🥇 **Gold** | AI Auto-Trader (ETH/$OMNI) | High - Trades on Omni DEX or Uniswap | ETH, USDC, wBTC, alternative stablecoins |
-| 🥈 **Silver** | Yield Farming Bot | Medium - Stakes in external DeFi pools | USDC, DAI, external DeFi tokens |
+| 🥇 **Gold** | AI Auto-Trader (Alternative Tokens) | High - Trades on external DEXs | ETH, USDC, wBTC, alternative stablecoins (NOT $OMNI) |
+| 🥈 **Silver** | Yield Farming Bot | Medium - Stakes in external DeFi pools | USDC, DAI, external DeFi tokens (NOT $OMNI) |
 | 🥉 **Bronze** | ❌ No smart contract | N/A | N/A |
 
 ### How Smart Contract Trophy NFTs Work
@@ -182,31 +182,53 @@ For Gold and Silver Trophy NFTs with smart contracts:
 ```
 TrophyNFT {
   - ERC-721 Base (NFT ownership)
-  - Trophy Metadata (tier, tournament, date)
+  - Trophy Metadata (tier, tournament, date, winner address)
   - Embedded Trading Contract (Gold/Silver only)
   - Income Distribution Logic
   - Expiration Timer (6-12 months)
+  - Upgrade Mechanism (for contract bug fixes)
+  - Emergency Pause Function
 }
 ```
 
 **Trading Contract Logic:**
 ```
 TradingContract {
-  - Initial Capital: From tournament fees
-  - Allowed Assets: USDC, wBTC, DAI, etc.
+  - Initial Capital: From tournament fees (5% of pool)
+  - Allowed Assets: USDC, wBTC, DAI (whitelist only, NO $OMNI)
   - Trading Strategy: Conservative DeFi yield farming
+    * Protocols: Aave, Compound, Curve (whitelisted)
+    * Risk Level: Low (stablecoin farming only)
+    * Rebalancing: Weekly automated portfolio rebalancing
   - Withdrawal Permission: NFT holder only
-  - Auto-Convert: After expiration, stops trading
+  - Auto-Convert: After expiration, stops trading, holder claims remaining funds
+  - Slippage Protection: Max 1% slippage on all trades
+  - Gas Optimization: Batch transactions to minimize fees
 }
+```
+
+**Implementation Details:**
+```solidity
+// Key Functions
+- mintTrophyWithContract(winner, tier, capital) // Mints NFT with trading contract
+- withdrawEarnings() // Holder claims accumulated yield
+- emergencyPause() // Admin function to halt trading
+- upgradeContract(newLogic) // Proxy pattern for upgrades
+- burnAndWithdraw() // Destroy NFT and claim all funds
+- getPerformanceMetrics() // Returns APY, total earned, etc.
 ```
 
 ### Security Features
 
 - ✅ **Capital Limits**: Maximum $500-2,500 USD equivalent per NFT
-- ✅ **Whitelisted Assets**: Only approved tokens can be traded
-- ✅ **Time Locks**: Prevents early withdrawal without penalty
-- ✅ **Emergency Stop**: OmniWorld can pause contracts if needed
-- ✅ **Audit Required**: All smart contracts audited before deployment
+- ✅ **Whitelisted Assets**: Only approved tokens (USDC, wBTC, DAI) - NO $OMNI
+- ✅ **Whitelisted Protocols**: Only audited DeFi platforms (Aave, Compound, Curve)
+- ✅ **Time Locks**: Prevents early withdrawal without penalty (minimum 30 days)
+- ✅ **Emergency Stop**: OmniWorld multisig can pause all trading contracts
+- ✅ **Audit Required**: All smart contracts audited by Certik or Trail of Bits before deployment
+- ✅ **Upgradeable Proxy**: Can fix bugs without re-minting NFTs
+- ✅ **Rate Limiting**: Maximum 1 transaction per hour to prevent manipulation
+- ✅ **Oracle Protection**: Chainlink price feeds prevent sandwich attacks
 
 ---
 

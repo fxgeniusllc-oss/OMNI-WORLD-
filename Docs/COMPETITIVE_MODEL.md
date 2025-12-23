@@ -183,22 +183,24 @@ This is NOT traditional esports with pure skill rankings, but it's also NOT pure
 
 **Traditional Esports Approach** (What we DON'T do):
 ```
-❌ ESportsMode with matchmaking
-❌ Ranked racing leagues
-❌ Tournament prize pools
-❌ Separate competitive racing scene
+❌ ESportsMode with pure skill matchmaking (no economic stakes)
+❌ Ranked racing leagues disconnected from economy
+❌ Tournament prize pools from arbitrary rewards
+❌ Separate competitive racing scene from metaverse
 ```
 
-**OmniWorld Economic Approach** (What we DO):
+**OmniWorld Hybrid Approach** (What we DO):
 ```
 ✅ Own exotic vehicle NFTs ($450,000-3,500,000 OMNI)
+✅ ESportsMode enables tournament racing with entry fees and prizes
+✅ Tournaments award Trophy NFTs (Gold/Silver/Bronze) as valuable assets
 ✅ Showcase vehicles in dealerships and events
 ✅ Rent vehicles for high-stakes revenue
-✅ Host street racing events with betting
-✅ Build reputation as collector/driver
-✅ Create vehicle content (reviews, showcases)
-✅ Compete for most valuable vehicle collection
-✅ Use ShowcaseMode for content creation
+✅ Host street racing events with betting in player-owned venues
+✅ Build reputation as collector/driver through achievements
+✅ Create vehicle content (reviews, showcases) with 85% creator share
+✅ Compete for most valuable vehicle collection (economic leaderboard)
+✅ Trophy NFTs with smart contracts generate passive income (alternative tokens)
 ```
 
 ---
