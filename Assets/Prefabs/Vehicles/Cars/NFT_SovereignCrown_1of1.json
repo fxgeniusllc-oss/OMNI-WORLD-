@@ -1,0 +1,156 @@
+{
+  "prefabName": "Vehicle_Car_OmniWorld_Sovereign",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Ultra-Legendary",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Ultra-Legendary",
+    "performanceClass": "Luxury Sedan",
+    "edition": "1 of 1",
+    "isOneOfOne": true,
+    "rarityTier": "UltraLegendary",
+    "statusSymbol": "Elite"
+  },
+  "branding": {
+    "manufacturer": "OmniWorld Royal Collection",
+    "model": "Sovereign Crown",
+    "year": 2025,
+    "designation": "Digital Monarchy",
+    "uniqueFeatures": [
+      "Presidential-level armor",
+      "AI security system",
+      "Biometric access control",
+      "Executive rear lounge",
+      "Quantum encryption"
+    ]
+  },
+  "specifications": {
+    "class": "Ultra-Legendary Luxury Sedan",
+    "seats": 5,
+    "engine": "6.0L Twin-Turbo V12 Hybrid",
+    "horsepower": 800,
+    "topSpeed": 190,
+    "acceleration": 3.8,
+    "handling": 8.5,
+    "fuelType": "Hybrid Electric",
+    "limitedEdition": true,
+    "productionNumber": 1,
+    "serialNumber": "001-OMNI-SOVEREIGN"
+  },
+  "physics": {
+    "mass": 3200,
+    "centerOfMass": { "x": 0, "y": 0.5, "z": 0 },
+    "wheelBase": 3.5,
+    "trackWidth": 1.7,
+    "suspensionTravel": 0.15,
+    "springRate": 65000,
+    "damperRate": 6000,
+    "downforce": 200
+  },
+  "model": {
+    "dimensions": {
+      "length": 5.8,
+      "width": 2.1,
+      "height": 1.6,
+      "wheelbase": 3.5
+    },
+    "doors": 4,
+    "doorType": "Suicide Doors with Power Assist",
+    "trunk": "Executive Luggage Bay",
+    "bodyStyle": "Ultra-Luxury Sedan"
+  },
+  "graphics": {
+    "lodLevels": 5,
+    "polyCount": {
+      "lod0": 280000,
+      "lod1": 140000,
+      "lod2": 70000,
+      "lod3": 35000,
+      "lod4": 17000
+    },
+    "textureResolution": {
+      "diffuse": 8192,
+      "normal": 8192,
+      "roughness": 8192,
+      "metallic": 8192,
+      "ao": 4096,
+      "emissive": 4096
+    },
+    "materials": [
+      "Royal_Blue_Metallic_Paint",
+      "Chrome_Platinum_Grade",
+      "Privacy_Glass_Bulletproof",
+      "Leather_Finest_Nappa",
+      "Wood_Trim_Exotic_Piano_Black",
+      "Gold_Accents_24K",
+      "LED_Ambient_Royal"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "Presidential Armor Detail",
+      "Privacy Glass Animation",
+      "Executive Lounge Interior",
+      "Biometric Scanner Detail",
+      "AI Security Interface",
+      "Ambient Mood Lighting",
+      "Rear Entertainment System"
+    ]
+  },
+  "audio": {
+    "engineSound": "V12_Sovereign_Whisper",
+    "exhaustNote": "Refined_Luxury",
+    "hybridWhine": true,
+    "hornSound": "Sovereign_Chime",
+    "doorSound": "Suicide_Door_Precision",
+    "startupSound": "Royal_Awakening"
+  },
+  "nftProperties": {
+    "mintingPrice": 7500000,
+    "currentValue": 7500000,
+    "currency": "OMNI",
+    "mintingFeePercent": 0.05,
+    "salesTaxPercent": 0.08,
+    "royaltyPercent": 0.20,
+    "appreciationRate": 0.01,
+    "prestigePoints": 900,
+    "canResell": true,
+    "minimumOwnershipDays": 90,
+    "buybackEnabled": true,
+    "buybackPercentage": 0.85
+  },
+  "auction": {
+    "eligibleForAuction": true,
+    "minimumBid": 6000000,
+    "eliteOnly": true,
+    "minimumPrestige": 0.9,
+    "auctionDuration": 72
+  },
+  "exclusiveFeatures": {
+    "ownerPerks": [
+      "Presidential security detail",
+      "Private chauffeur service",
+      "VIP event transportation",
+      "Executive lounge access",
+      "Diplomatic privileges"
+    ],
+    "inGameBenefits": [
+      "Immunity to low-level threats",
+      "VIP NPC interactions",
+      "Exclusive diplomatic missions",
+      "+100% reputation gain",
+      "Safe zone expansion"
+    ]
+  },
+  "story": {
+    "description": "The Sovereign Crown represents the ultimate in digital luxury and security. Built with presidential-level armor and equipped with cutting-edge AI security systems, this vehicle is designed for those who rule their domain. The executive rear lounge rivals the finest private jets, while biometric access ensures absolute privacy. Command respect wherever you travel in the OmniWorld metaverse.",
+    "designer": "Omega Prime",
+    "inspirations": [
+      "Presidential state cars",
+      "Royal motorcades",
+      "Executive protection",
+      "Digital sovereignty"
+    ]
+  }
+}
