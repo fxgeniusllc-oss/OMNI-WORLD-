@@ -4,7 +4,7 @@ pragma solidity ^0.8.20;
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/utils/Counters.sol";
+
 
 /**
  * @title OmniTrophyNFT
@@ -12,8 +12,8 @@ import "@openzeppelin/contracts/utils/Counters.sol";
  * Trophies are awarded to tournament winners and grant VIP access and prestige
  */
 contract OmniTrophyNFT is ERC721, ERC721URIStorage, Ownable {
-    using Counters for Counters.Counter;
-    Counters.Counter private _tokenIdCounter;
+    
+    uint256 private _tokenIdCounter;
 
     // Trophy rarity tiers
     enum TrophyRank {
@@ -93,8 +93,8 @@ contract OmniTrophyNFT is ERC721, ERC721URIStorage, Ownable {
         );
         require(winner != address(0), "Invalid winner address");
 
-        uint256 tokenId = _tokenIdCounter.current();
-        _tokenIdCounter.increment();
+        uint256 tokenId = _tokenIdCounter;
+        _tokenIdCounter++;
 
         // Mint the NFT
         _safeMint(winner, tokenId);
@@ -210,7 +210,7 @@ contract OmniTrophyNFT is ERC721, ERC721URIStorage, Ownable {
         uint256[] memory ownedTrophies = new uint256[](balance);
         
         uint256 currentIndex = 0;
-        uint256 totalSupply = _tokenIdCounter.current();
+        uint256 totalSupply = _tokenIdCounter;
         
         for (uint256 i = 0; i < totalSupply && currentIndex < balance; i++) {
             if (_exists(i) && ownerOf(i) == owner) {
@@ -232,7 +232,7 @@ contract OmniTrophyNFT is ERC721, ERC721URIStorage, Ownable {
         uint256 bronzeCount
     ) {
         return (
-            _tokenIdCounter.current(),
+            _tokenIdCounter,
             trophyCount[TrophyRank.Gold],
             trophyCount[TrophyRank.Silver],
             trophyCount[TrophyRank.Bronze]

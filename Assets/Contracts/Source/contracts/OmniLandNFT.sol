@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/utils/Counters.sol";
+
 import "@openzeppelin/contracts/interfaces/IERC2981.sol";
 
 /**
@@ -14,8 +14,8 @@ import "@openzeppelin/contracts/interfaces/IERC2981.sol";
  * Implements EIP-2981 for perpetual royalties (20%)
  */
 contract OmniLandNFT is ERC721, ERC721URIStorage, ERC721Enumerable, Ownable, IERC2981 {
-    using Counters for Counters.Counter;
-    Counters.Counter private _tokenIdCounter;
+    
+    uint256 private _tokenIdCounter;
 
     // Royalty configuration
     uint96 public constant ROYALTY_FEE = 2000; // 20% in basis points (10000 = 100%)
@@ -58,8 +58,8 @@ contract OmniLandNFT is ERC721, ERC721URIStorage, ERC721Enumerable, Ownable, IER
         string memory zoneType,
         uint256 initialValue
     ) public onlyOwner returns (uint256) {
-        uint256 tokenId = _tokenIdCounter.current();
-        _tokenIdCounter.increment();
+        uint256 tokenId = _tokenIdCounter;
+        _tokenIdCounter++;
 
         _safeMint(to, tokenId);
         _setTokenURI(tokenId, tokenURI);
