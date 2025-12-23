@@ -1,0 +1,204 @@
+{
+  "prefabName": "Housing_Condo_FourBedroom",
+  "category": "Housing",
+  "subCategory": "Condos",
+  "type": "Four Bedroom Family",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Premium",
+    "dominionZone": "Suburban Heights"
+  },
+  "specifications": {
+    "squareFootage": 2650,
+    "bedrooms": 4,
+    "bathrooms": 3.5,
+    "floors": 1,
+    "parkingSpaces": 2
+  },
+  "layout": {
+    "dimensions": {
+      "width": 55,
+      "length": 48.18,
+      "height": 11
+    },
+    "rooms": [
+      {
+        "name": "Living Room",
+        "type": "Great Room",
+        "dimensions": { "width": 24, "length": 20, "height": 11 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "features": ["Vaulted Ceiling", "Gas Fireplace", "Built-in Entertainment", "Large Windows"]
+      },
+      {
+        "name": "Dining Room",
+        "type": "Formal Dining",
+        "dimensions": { "width": 14, "length": 12, "height": 11 },
+        "position": { "x": 24, "y": 0, "z": 0 },
+        "features": ["Tray Ceiling", "Chandelier", "Wainscoting"]
+      },
+      {
+        "name": "Kitchen",
+        "type": "Chef's Kitchen",
+        "dimensions": { "width": 17, "length": 16, "height": 11 },
+        "position": { "x": 38, "y": 0, "z": 0 },
+        "features": ["Large Island", "Walk-in Pantry", "Double Ovens", "Smart Appliances", "Granite Counters"]
+      },
+      {
+        "name": "Breakfast Nook",
+        "type": "Informal Dining",
+        "dimensions": { "width": 10, "length": 8, "height": 11 },
+        "position": { "x": 38, "y": 0, "z": 16 },
+        "features": ["Bay Window", "Built-in Bench", "Natural Light"]
+      },
+      {
+        "name": "Family Room",
+        "type": "Casual Living",
+        "dimensions": { "width": 18, "length": 16, "height": 11 },
+        "position": { "x": 0, "y": 0, "z": 20 },
+        "features": ["Open to Kitchen", "Media Center", "Patio Access"]
+      },
+      {
+        "name": "Master Suite",
+        "type": "Master",
+        "dimensions": { "width": 18, "length": 16, "height": 11 },
+        "position": { "x": 18, "y": 0, "z": 20 },
+        "features": ["Tray Ceiling", "Sitting Area", "Two Walk-in Closets", "Balcony"]
+      },
+      {
+        "name": "Master Bathroom",
+        "type": "Luxury Bath",
+        "dimensions": { "width": 14, "length": 12, "height": 11 },
+        "position": { "x": 36, "y": 0, "z": 24 },
+        "features": ["Soaking Tub", "Walk-in Shower", "Dual Vanities", "Water Closet", "Heated Floors"]
+      },
+      {
+        "name": "Bedroom 2",
+        "type": "Bedroom",
+        "dimensions": { "width": 13, "length": 12, "height": 11 },
+        "position": { "x": 0, "y": 0, "z": 36 },
+        "features": ["Walk-in Closet", "Window Seat", "Ceiling Fan"]
+      },
+      {
+        "name": "Bedroom 3",
+        "type": "Bedroom",
+        "dimensions": { "width": 13, "length": 12, "height": 11 },
+        "position": { "x": 13, "y": 0, "z": 36 },
+        "features": ["Walk-in Closet", "Built-in Desk", "Ceiling Fan"]
+      },
+      {
+        "name": "Bedroom 4",
+        "type": "Bedroom",
+        "dimensions": { "width": 13, "length": 12, "height": 11 },
+        "position": { "x": 26, "y": 0, "z": 36 },
+        "features": ["Double Closet", "Window", "Ceiling Fan"]
+      },
+      {
+        "name": "Hall Bathroom 1",
+        "type": "Full Bath",
+        "dimensions": { "width": 10, "length": 8, "height": 11 },
+        "position": { "x": 39, "y": 0, "z": 36 },
+        "features": ["Tub/Shower Combo", "Dual Sinks", "Storage"]
+      },
+      {
+        "name": "Hall Bathroom 2",
+        "type": "Full Bath",
+        "dimensions": { "width": 9, "length": 7, "height": 11 },
+        "position": { "x": 0, "y": 0, "z": 48 },
+        "features": ["Walk-in Shower", "Vanity", "Linen Closet"]
+      },
+      {
+        "name": "Powder Room",
+        "type": "Half Bath",
+        "dimensions": { "width": 5, "length": 5, "height": 11 },
+        "position": { "x": 50, "y": 0, "z": 12 },
+        "features": ["Pedestal Sink", "Toilet", "Designer Fixtures"]
+      },
+      {
+        "name": "Laundry Room",
+        "type": "Utility",
+        "dimensions": { "width": 8, "length": 8, "height": 11 },
+        "position": { "x": 48, "y": 0, "z": 16 },
+        "features": ["Side-by-side W/D", "Sink", "Folding Counter", "Storage Cabinets"]
+      },
+      {
+        "name": "Office/Den",
+        "type": "Study",
+        "dimensions": { "width": 12, "length": 10, "height": 11 },
+        "position": { "x": 18, "y": 0, "z": 36 },
+        "features": ["French Doors", "Built-in Shelves", "Window"]
+      }
+    ],
+    "entryPoints": [
+      {
+        "name": "Main Entrance",
+        "position": { "x": 27, "y": 0, "z": 12 },
+        "type": "Grand Entry",
+        "interactable": true
+      },
+      {
+        "name": "Patio Door",
+        "position": { "x": 0, "y": 0, "z": 28 },
+        "type": "French Doors",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 0, "y": 5.5, "z": 10 }, "size": "Large", "type": "Picture Window" },
+      { "position": { "x": 55, "y": 5.5, "z": 8 }, "size": "Large", "type": "Bay Window" },
+      { "position": { "x": 27, "y": 5.5, "z": 48 }, "size": "Medium", "type": "Double Hung" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 72000,
+      "lod1": 36000,
+      "lod2": 16000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Hardwood_Oak_Premium",
+      "Granite_Countertop_Designer",
+      "Tile_Porcelain_Large",
+      "Painted_Wall_Premium",
+      "Carpet_Luxury_Soft"
+    ],
+    "lighting": {
+      "realtimeLights": 10,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SmartHome",
+    "ClimateControl"
+  ],
+  "price": {
+    "purchasePrice": 485000,
+    "monthlyRent": 4200,
+    "currency": "OMNI"
+  }
+}

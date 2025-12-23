@@ -1,0 +1,123 @@
+{
+  "prefabName": "Housing_Apartment_ConvertedWarehouse",
+  "category": "Housing",
+  "subCategory": "Apartments",
+  "type": "Converted Warehouse",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Mid-Range",
+    "dominionZone": "Arts District"
+  },
+  "specifications": {
+    "squareFootage": 950,
+    "bedrooms": 1,
+    "bathrooms": 1.5,
+    "floors": 1,
+    "parkingSpaces": 1
+  },
+  "layout": {
+    "dimensions": {
+      "width": 38,
+      "length": 25,
+      "height": 14
+    },
+    "rooms": [
+      {
+        "name": "Great Room",
+        "type": "Open Concept",
+        "dimensions": { "width": 30, "length": 20, "height": 14 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "features": ["Exposed Brick", "Concrete Floors", "Industrial Beams", "High Ceilings", "Open Kitchen"]
+      },
+      {
+        "name": "Bedroom",
+        "type": "Master",
+        "dimensions": { "width": 14, "length": 14, "height": 14 },
+        "position": { "x": 0, "y": 0, "z": 20 },
+        "features": ["Large Windows", "Walk-in Closet", "Industrial Lighting"]
+      },
+      {
+        "name": "Master Bathroom",
+        "type": "Full Bath",
+        "dimensions": { "width": 10, "length": 8, "height": 14 },
+        "position": { "x": 14, "y": 0, "z": 20 },
+        "features": ["Walk-in Shower", "Industrial Fixtures", "Concrete Vanity"]
+      },
+      {
+        "name": "Powder Room",
+        "type": "Half Bath",
+        "dimensions": { "width": 4, "length": 5, "height": 14 },
+        "position": { "x": 30, "y": 0, "z": 8 },
+        "features": ["Toilet", "Pedestal Sink", "Mirror"]
+      },
+      {
+        "name": "Storage",
+        "type": "Utility",
+        "dimensions": { "width": 4, "length": 5, "height": 14 },
+        "position": { "x": 30, "y": 0, "z": 13 },
+        "features": ["Shelving", "Laundry Hook-ups"]
+      }
+    ],
+    "entryPoints": [
+      {
+        "name": "Main Door",
+        "position": { "x": 30, "y": 0, "z": 3 },
+        "type": "Industrial Steel",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 0, "y": 7, "z": 5 }, "size": "Extra Large", "type": "Industrial" },
+      { "position": { "x": 0, "y": 7, "z": 15 }, "size": "Extra Large", "type": "Industrial" },
+      { "position": { "x": 7, "y": 7, "z": 34 }, "size": "Large", "type": "Industrial" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 35000,
+      "lod1": 17000,
+      "lod2": 7500
+    },
+    "textureResolution": {
+      "diffuse": 2048,
+      "normal": 2048,
+      "roughness": 2048,
+      "metallic": 1024
+    },
+    "materials": [
+      "Concrete_Floor_Polished",
+      "Brick_Exposed_Red",
+      "Steel_Industrial_Black",
+      "Glass_Window_Industrial",
+      "Wood_Reclaimed_Beams"
+    ],
+    "lighting": {
+      "realtimeLights": 3,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction"
+  ],
+  "price": {
+    "purchasePrice": 145000,
+    "monthlyRent": 2100,
+    "currency": "OMNI"
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "prefabName": "Housing_Penthouse_SmartHome",
+  "category": "Housing",
+  "subCategory": "Penthouses",
+  "type": "Smart Home Technology",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Luxury",
+    "dominionZone": "Tech District Tower"
+  },
+  "specifications": {
+    "squareFootage": 3600,
+    "bedrooms": 3,
+    "bathrooms": 3.5,
+    "floors": 1,
+    "parkingSpaces": 2,
+    "floor": 45
+  },
+  "layout": {
+    "dimensions": {
+      "width": 58,
+      "length": 62.07,
+      "height": 12
+    },
+    "rooms": [
+      {
+        "name": "Smart Living Room",
+        "type": "Great Room",
+        "dimensions": { "width": 32, "length": 26, "height": 12 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "features": ["Smart Glass Windows", "Automated Blinds", "Voice Control", "Ambient Lighting", "Integrated AV", "Climate Zones"]
+      },
+      {
+        "name": "Tech Kitchen",
+        "type": "Smart Kitchen",
+        "dimensions": { "width": 22, "length": 20, "height": 12 },
+        "position": { "x": 32, "y": 0, "z": 0 },
+        "features": ["Smart Appliances", "Touch Controls", "Automated Pantry", "Recipe Display", "Voice Assistant", "Wireless Charging"]
+      },
+      {
+        "name": "Dining Room",
+        "type": "Dining",
+        "dimensions": { "width": 18, "length": 16, "height": 12 },
+        "position": { "x": 32, "y": 0, "z": 20 },
+        "features": ["Smart Lighting", "Mood Settings", "City Views", "Integrated Sound"]
+      },
+      {
+        "name": "Home Office",
+        "type": "Tech Office",
+        "dimensions": { "width": 18, "length": 16, "height": 12 },
+        "position": { "x": 0, "y": 0, "z": 26 },
+        "features": ["Standing Desk", "Video Conference Setup", "Smart Lighting", "Climate Control", "Wireless Charging"]
+      },
+      {
+        "name": "Media/Gaming Room",
+        "type": "Entertainment",
+        "dimensions": { "width": 24, "length": 20, "height": 12 },
+        "position": { "x": 18, "y": 0, "z": 26 },
+        "features": ["4K Projector", "Surround Sound", "Gaming Setup", "Smart Controls", "Ambient Lighting", "Automated Curtains"]
+      },
+      {
+        "name": "Powder Room",
+        "type": "Smart Half Bath",
+        "dimensions": { "width": 6, "length": 7, "height": 12 },
+        "position": { "x": 42, "y": 0, "z": 36 },
+        "features": ["Smart Mirror", "Automated Faucets", "Voice Control", "Ambient Lighting"]
+      },
+      {
+        "name": "Master Suite",
+        "type": "Smart Master",
+        "dimensions": { "width": 24, "length": 22, "height": 12 },
+        "position": { "x": 0, "y": 0, "z": 46 },
+        "features": ["Smart Bed", "Climate Control", "Automated Blinds", "Smart Glass", "Morning Routine Automation", "Voice Control"]
+      },
+      {
+        "name": "Master Bathroom",
+        "type": "Smart Spa Bath",
+        "dimensions": { "width": 18, "length": 16, "height": 12 },
+        "position": { "x": 24, "y": 0, "z": 46 },
+        "features": ["Smart Shower", "Heated Floors", "Smart Mirror", "Voice Control", "Automated Lighting", "Biometric Access"]
+      },
+      {
+        "name": "Master Closet",
+        "type": "Smart Wardrobe",
+        "dimensions": { "width": 12, "length": 10, "height": 12 },
+        "position": { "x": 42, "y": 0, "z": 46 },
+        "features": ["Automated Lighting", "Smart Organization", "Climate Control", "Touch Panels"]
+      },
+      {
+        "name": "Guest Suite 1",
+        "type": "Bedroom",
+        "dimensions": { "width": 18, "length": 16, "height": 12 },
+        "position": { "x": 0, "y": 0, "z": 68 },
+        "features": ["Smart Controls", "En-suite", "Automated Blinds", "Climate Zones", "Voice Assistant"]
+      },
+      {
+        "name": "Guest Bath 1",
+        "type": "Full Bath",
+        "dimensions": { "width": 10, "length": 9, "height": 12 },
+        "position": { "x": 18, "y": 0, "z": 68 },
+        "features": ["Smart Shower", "Heated Floors", "Voice Control", "Ambient Lighting"]
+      },
+      {
+        "name": "Guest Suite 2",
+        "type": "Bedroom",
+        "dimensions": { "width": 16, "length": 14, "height": 12 },
+        "position": { "x": 28, "y": 0, "z": 68 },
+        "features": ["Smart Controls", "En-suite", "Automated Features", "Climate Control"]
+      },
+      {
+        "name": "Guest Bath 2",
+        "type": "Full Bath",
+        "dimensions": { "width": 10, "length": 9, "height": 12 },
+        "position": { "x": 44, "y": 0, "z": 68 },
+        "features": ["Smart Features", "Heated Floors", "Voice Control"]
+      },
+      {
+        "name": "Smart Gym",
+        "type": "Fitness",
+        "dimensions": { "width": 20, "length": 16, "height": 12 },
+        "position": { "x": 50, "y": 0, "z": 20 },
+        "features": ["Smart Equipment", "Virtual Training", "Mirrors", "Climate Control", "Sound System"]
+      },
+      {
+        "name": "Tech Hub/Laundry",
+        "type": "Utility",
+        "dimensions": { "width": 8, "length": 10, "height": 12 },
+        "position": { "x": 54, "y": 0, "z": 36 },
+        "features": ["Smart Appliances", "Network Hub", "Security System", "Automation Center"]
+      }
+    ],
+    "smartFeatures": [
+      "Voice Control Throughout",
+      "Automated Lighting System",
+      "Smart Climate Control",
+      "Biometric Security",
+      "Automated Blinds/Curtains",
+      "Smart Appliances",
+      "Integrated AV System",
+      "Energy Management",
+      "Water Leak Detection",
+      "Air Quality Monitoring",
+      "Smart Locks",
+      "Facial Recognition",
+      "Automated Scenes",
+      "Remote Access",
+      "AI Learning"
+    ],
+    "entryPoints": [
+      {
+        "name": "Main Entrance",
+        "position": { "x": 54, "y": 0, "z": 13 },
+        "type": "Biometric Smart Lock",
+        "interactable": true
+      },
+      {
+        "name": "Terrace Door",
+        "position": { "x": 0, "y": 0, "z": 13 },
+        "type": "Smart Sliding Glass",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 0, "y": 6, "z": 13 }, "size": "Floor-to-Ceiling", "type": "Smart Glass" },
+      { "position": { "x": 58, "y": 6, "z": 28 }, "size": "Large", "type": "Smart Glass" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 62000,
+      "lod1": 31000,
+      "lod2": 14500
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Glass_Smart_Tinted",
+      "Concrete_Polished_Modern",
+      "Steel_Brushed_Tech",
+      "Wood_Contemporary_Light",
+      "Quartz_White_Pure"
+    ],
+    "lighting": {
+      "realtimeLights": 15,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field",
+      "Bloom",
+      "Dynamic Lighting"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SecuritySystem",
+    "SmartHome",
+    "ClimateControl",
+    "VoiceControl",
+    "AutomationHub",
+    "BiometricSystem",
+    "EnergyManagement"
+  ],
+  "price": {
+    "purchasePrice": 5200000,
+    "monthlyRent": 32000,
+    "currency": "OMNI"
+  }
+}

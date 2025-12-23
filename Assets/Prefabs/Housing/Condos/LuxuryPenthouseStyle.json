@@ -1,0 +1,170 @@
+{
+  "prefabName": "Housing_Condo_LuxuryPenthouseStyle",
+  "category": "Housing",
+  "subCategory": "Condos",
+  "type": "Luxury Penthouse Style",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Luxury",
+    "dominionZone": "Waterfront"
+  },
+  "specifications": {
+    "squareFootage": 2200,
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "floors": 1,
+    "parkingSpaces": 2
+  },
+  "layout": {
+    "dimensions": {
+      "width": 50,
+      "length": 44,
+      "height": 12
+    },
+    "rooms": [
+      {
+        "name": "Great Room",
+        "type": "Living/Entertainment",
+        "dimensions": { "width": 28, "length": 20, "height": 12 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "features": ["Floor-to-Ceiling Windows", "Gas Fireplace", "Media Wall", "Wrap Terrace Access", "Smart Lighting"]
+      },
+      {
+        "name": "Gourmet Kitchen",
+        "type": "Chef's Kitchen",
+        "dimensions": { "width": 20, "length": 16, "height": 12 },
+        "position": { "x": 28, "y": 0, "z": 0 },
+        "features": ["Waterfall Island", "Wine Cooler", "Double Ovens", "Custom Cabinetry", "Luxury Appliances"]
+      },
+      {
+        "name": "Dining Room",
+        "type": "Formal Dining",
+        "dimensions": { "width": 16, "length": 14, "height": 12 },
+        "position": { "x": 28, "y": 0, "z": 16 },
+        "floor": 1,
+        "features": ["Statement Chandelier", "Terrace Access", "Butler's Pantry"]
+      },
+      {
+        "name": "Master Suite",
+        "type": "Master",
+        "dimensions": { "width": 20, "length": 18, "height": 12 },
+        "position": { "x": 0, "y": 0, "z": 20 },
+        "features": ["Sitting Area", "Private Terrace", "Two Walk-in Closets", "Smart Glass", "Fireplace"]
+      },
+      {
+        "name": "Master Bathroom",
+        "type": "Spa Bath",
+        "dimensions": { "width": 16, "length": 14, "height": 12 },
+        "position": { "x": 20, "y": 0, "z": 20 },
+        "features": ["Freestanding Tub", "Rain Shower", "Steam Shower", "Heated Floors", "Double Vanities", "Bidet"]
+      },
+      {
+        "name": "Bedroom 2",
+        "type": "Guest Suite",
+        "dimensions": { "width": 14, "length": 13, "height": 12 },
+        "position": { "x": 0, "y": 0, "z": 38 },
+        "features": ["En-suite Bath", "Walk-in Closet", "Terrace Access"]
+      },
+      {
+        "name": "Bedroom 2 Bath",
+        "type": "Full Bath",
+        "dimensions": { "width": 10, "length": 9, "height": 12 },
+        "position": { "x": 14, "y": 0, "z": 38 },
+        "features": ["Shower", "Luxury Vanity", "Designer Fixtures"]
+      },
+      {
+        "name": "Bedroom 3/Office",
+        "type": "Flex Room",
+        "dimensions": { "width": 12, "length": 12, "height": 12 },
+        "position": { "x": 36, "y": 0, "z": 30 },
+        "features": ["Built-ins", "Closet", "Smart Technology"]
+      },
+      {
+        "name": "Third Bathroom",
+        "type": "Full Bath",
+        "dimensions": { "width": 8, "length": 8, "height": 12 },
+        "position": { "x": 24, "y": 0, "z": 34 },
+        "features": ["Shower", "Vanity", "Modern Fixtures"]
+      },
+      {
+        "name": "Den/Study",
+        "type": "Office",
+        "dimensions": { "width": 10, "length": 10, "height": 12 },
+        "position": { "x": 36, "y": 0, "z": 42 },
+        "features": ["Built-in Desk", "Shelving", "French Doors"]
+      }
+    ],
+    "entryPoints": [
+      {
+        "name": "Private Elevator",
+        "position": { "x": 48, "y": 0, "z": 8 },
+        "type": "Elevator",
+        "interactable": true
+      },
+      {
+        "name": "Terrace Door",
+        "position": { "x": 0, "y": 0, "z": 10 },
+        "type": "Sliding Glass",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 0, "y": 6, "z": 10 }, "size": "Floor-to-Ceiling", "type": "Panoramic" },
+      { "position": { "x": 0, "y": 6, "z": 29 }, "size": "Floor-to-Ceiling", "type": "Sliding" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 58000,
+      "lod1": 29000,
+      "lod2": 13000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 2048,
+      "metallic": 2048
+    },
+    "materials": [
+      "Marble_Italian_Premium",
+      "Hardwood_Exotic_Dark",
+      "Quartz_Countertop_Designer",
+      "Glass_Frameless_Ultra",
+      "Stone_Natural_Limestone"
+    ],
+    "lighting": {
+      "realtimeLights": 8,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field",
+      "Bloom"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SmartHome",
+    "SecuritySystem"
+  ],
+  "price": {
+    "purchasePrice": 895000,
+    "monthlyRent": 8500,
+    "currency": "OMNI"
+  }
+}

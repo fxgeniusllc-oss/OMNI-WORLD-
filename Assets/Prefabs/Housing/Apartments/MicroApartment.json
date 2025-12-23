@@ -1,0 +1,107 @@
+{
+  "prefabName": "Housing_Apartment_Micro",
+  "category": "Housing",
+  "subCategory": "Apartments",
+  "type": "Micro Apartment",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Entry",
+    "dominionZone": "Downtown Core"
+  },
+  "specifications": {
+    "squareFootage": 300,
+    "bedrooms": 0,
+    "bathrooms": 1,
+    "floors": 1,
+    "parkingSpaces": 0
+  },
+  "layout": {
+    "dimensions": {
+      "width": 15,
+      "length": 20,
+      "height": 9
+    },
+    "rooms": [
+      {
+        "name": "Main Room",
+        "type": "Multi-Purpose",
+        "dimensions": { "width": 12, "length": 14, "height": 9 },
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "features": ["Murphy Bed", "Fold-down Table", "Compact Kitchenette", "Built-in Storage", "Smart Design"]
+      },
+      {
+        "name": "Bathroom",
+        "type": "Compact Bath",
+        "dimensions": { "width": 6, "length": 5, "height": 9 },
+        "position": { "x": 0, "y": 0, "z": 14 },
+        "features": ["Space-saving Toilet", "Corner Sink", "Standing Shower", "Wall Mirror"]
+      },
+      {
+        "name": "Entry/Storage",
+        "type": "Entrance",
+        "dimensions": { "width": 3, "length": 6, "height": 9 },
+        "position": { "x": 12, "y": 0, "z": 0 },
+        "features": ["Coat Hooks", "Shoe Storage", "Entry Light"]
+      }
+    ],
+    "entryPoints": [
+      {
+        "name": "Main Door",
+        "position": { "x": 12, "y": 0, "z": 3 },
+        "type": "Compact",
+        "interactable": true
+      }
+    ],
+    "windows": [
+      { "position": { "x": 0, "y": 4.5, "z": 7 }, "size": "Large", "type": "Fixed" }
+    ]
+  },
+  "graphics": {
+    "lodLevels": 3,
+    "polyCount": {
+      "lod0": 18000,
+      "lod1": 9000,
+      "lod2": 4000
+    },
+    "textureResolution": {
+      "diffuse": 2048,
+      "normal": 2048,
+      "roughness": 1024,
+      "metallic": 1024
+    },
+    "materials": [
+      "Laminate_Floor_Light",
+      "Painted_Wall_White",
+      "Compact_Countertop",
+      "Glass_Window_Clear",
+      "Wood_Door_Compact"
+    ],
+    "lighting": {
+      "realtimeLights": 2,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction"
+  ],
+  "price": {
+    "purchasePrice": 38000,
+    "monthlyRent": 950,
+    "currency": "OMNI"
+  }
+}
