@@ -233,6 +233,17 @@ Each metropolis features five primary zone types:
 - **Task Economy:** Dynamic payouts based on reputation and skill multipliers
 - **Revenue Sharing:** Treasury splits between creators, stakers, and governance
 - **Smart Contracts:** ERC-721, ERC-1155, EIP-2981 royalties
+- **🏆 Trophy NFT System:** Tournament rewards with VIP access and smart contract trading bots
+
+### 🏆 Trophy NFT Ranking System
+
+- **Gold Trophy NFTs:** Elite championship rewards with 2x XP boost and smart contract trading bots
+- **Silver Trophy NFTs:** Mid-tier competitive rewards with 1.5x XP boost and trading bot access
+- **Bronze Trophy NFTs:** Entry-level achievements with 1.25x XP boost
+- **VIP Tournament Access:** Trophy holders gain exclusive access to tier-specific competitions
+- **Passive Income:** Gold/Silver trophies include embedded trading bots using USDC/WBTC (not $OMNI)
+- **Time-Limited Bots:** Trading bots active for 6-12 months, protecting ecosystem from inflation
+- **Marketplace Integration:** Trophies tradeable as collectibles with historical prestige value
 
 ### 🤖 AI Infrastructure
 
