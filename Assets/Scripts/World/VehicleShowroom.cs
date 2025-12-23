@@ -88,11 +88,17 @@ namespace OmniWorld.World
         
         private void Start()
         {
-            InitializeShowroom();
+            if (!isInitialized)
+            {
+                InitializeShowroom();
+            }
         }
+        
+        private bool isInitialized = false;
         
         private void InitializeShowroom()
         {
+            isInitialized = true;
             Debug.Log("=== Vehicle Showroom Initialized ===");
             Debug.Log($"Design: {(glassShowroomDesign ? "Ultra-Modern Glass" : "Standard")}");
             Debug.Log($"Location: {(primeLocation ? "Prime Area" : "Standard")}");
@@ -254,7 +260,9 @@ namespace OmniWorld.World
             // Clear platform
             foreach (Transform child in platform)
             {
-                if (child.gameObject.name != "Spotlight")
+                // Skip spotlight objects (by tag or component)
+                Light lightComponent = child.GetComponent<Light>();
+                if (lightComponent == null)
                 {
                     Destroy(child.gameObject);
                 }

@@ -78,7 +78,7 @@ namespace OmniWorld.World
         
         private string GenerateNFTId()
         {
-            return $"OMNI-AUTO-{rarityTier}-{Guid.NewGuid().ToString().Substring(0, 8).ToUpper()}";
+            return $"OMNI-AUTO-{rarityTier}-{Guid.NewGuid().ToString("N").Substring(0, 8).ToUpper()}";
         }
         
         /// <summary>
@@ -104,7 +104,7 @@ namespace OmniWorld.World
         /// </summary>
         public void UpdateMarketValue(float demandMultiplier = 1.0f)
         {
-            ownershipDays = (int)(DateTime.UtcNow - mintedDate).TotalDays;
+            ownershipDays = (int)(DateTime.UtcNow - lastTransferDate).TotalDays;
             
             // Apply appreciation over time for rare vehicles
             if (rarityTier == RarityTier.UltraLegendary || rarityTier == RarityTier.Legendary)

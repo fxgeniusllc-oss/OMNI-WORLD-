@@ -206,12 +206,14 @@ namespace OmniWorld.Examples
                 string bidder1 = "0x111111111111111111111111111111111111111";
                 float bid1 = startingBid * 1.1f;
                 bool bid1Success = auctionSystem.PlaceBid(auction.auctionId, bidder1, bid1, 0.95f);
-                Debug.Log($"    Bid 1: {bid1:N0} OMNI from {bidder1.Substring(0, 10)}... - {(bid1Success ? "✓" : "✗")}");
+                string bidder1Short = bidder1.Length >= 10 ? bidder1.Substring(0, 10) : bidder1;
+                Debug.Log($"    Bid 1: {bid1:N0} OMNI from {bidder1Short}... - {(bid1Success ? "✓" : "✗")}");
                 
                 string bidder2 = "0x222222222222222222222222222222222222222";
                 float bid2 = bid1 * 1.1f;
                 bool bid2Success = auctionSystem.PlaceBid(auction.auctionId, bidder2, bid2, 0.92f);
-                Debug.Log($"    Bid 2: {bid2:N0} OMNI from {bidder2.Substring(0, 10)}... - {(bid2Success ? "✓" : "✗")}");
+                string bidder2Short = bidder2.Length >= 10 ? bidder2.Substring(0, 10) : bidder2;
+                Debug.Log($"    Bid 2: {bid2:N0} OMNI from {bidder2Short}... - {(bid2Success ? "✓" : "✗")}");
                 
                 Debug.Log($"\n✓ Auction active with {auction.bidCount} bids");
                 Debug.Log($"✓ Leading bid: {auction.currentBid:N0} OMNI");
