@@ -268,11 +268,11 @@ namespace OmniWorld.Examples
         {
             return zone switch
             {
-                ZoneType.Business => NPCRole.Architect,
+                ZoneType.Business => NPCRole.Banker,
                 ZoneType.Commercial => NPCRole.Merchant,
                 ZoneType.Recreation => NPCRole.Entertainer,
                 ZoneType.Industrial => NPCRole.Citizen,
-                ZoneType.Residential => NPCRole.InteriorDesigner,
+                ZoneType.Residential => NPCRole.Citizen,
                 _ => NPCRole.Citizen
             };
         }

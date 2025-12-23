@@ -221,6 +221,10 @@ namespace OmniWorld.AI
                 case NPCRole.Merchant:
                     npc.walletBalance = (float)random.NextDouble() * 10000f + 2000f;
                     break;
+                case NPCRole.Banker:
+                    npc.walletBalance = (float)random.NextDouble() * 50000f + 10000f;
+                    npc.reputation = (float)random.NextDouble() * 0.5f + 0.5f; // Higher reputation
+                    break;
                 case NPCRole.Educator:
                     npc.reputation = (float)random.NextDouble() * 0.3f + 0.7f; // High reputation
                     break;
@@ -689,6 +693,7 @@ namespace OmniWorld.AI
             for (int i = 0; i < 3; i++)
             {
                 generatedNPCs.Add(GenerateNPCWithRole(NPCRole.Merchant, cityName));
+                generatedNPCs.Add(GenerateNPCWithRole(NPCRole.Banker, cityName));
                 generatedNPCs.Add(GenerateNPCWithRole(NPCRole.Educator, cityName));
                 generatedNPCs.Add(GenerateNPCWithRole(NPCRole.FashionDesigner, cityName));
                 generatedNPCs.Add(GenerateNPCWithRole(NPCRole.InteriorDesigner, cityName));

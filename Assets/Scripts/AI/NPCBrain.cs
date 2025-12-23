@@ -53,6 +53,12 @@ namespace OmniWorld.AI
                     hasQuests = true;
                     break;
                 
+                case NPCRole.Banker:
+                    canTrade = true;
+                    hasQuests = true;
+                    walletBalance = 100000f;
+                    break;
+                
                 case NPCRole.Educator:
                     canTrade = false;
                     hasQuests = true;
@@ -280,6 +286,7 @@ namespace OmniWorld.AI
             {
                 NPCRole.Merchant => new[] { "Delivery Run", "Find Rare Items", "Market Survey" },
                 NPCRole.QuestGiver => new[] { "Community Service", "Exploration Mission", "Help a Neighbor" },
+                NPCRole.Banker => new[] { "Execute Flash Loan", "Arbitrage Opportunity", "DeFi Yield Farming" },
                 NPCRole.Educator => new[] { "Learn the Basics", "Economic Tutorial", "Property Investment Guide" },
                 NPCRole.FashionDesigner => new[] { "Design Fashion Collection", "Source Fabric Materials", "Organize Fashion Show" },
                 NPCRole.InteriorDesigner => new[] { "Design Room Layout", "Source Furniture", "Complete Interior Makeover" },
@@ -339,6 +346,7 @@ namespace OmniWorld.AI
         Citizen,
         Merchant,
         QuestGiver,
+        Banker,
         Educator,
         Security,
         Entertainer,
