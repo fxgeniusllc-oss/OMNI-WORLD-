@@ -1,0 +1,166 @@
+{
+  "prefabName": "Vehicle_Car_AetherPhantomGT",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Hypercar",
+  "exclusiveEdition": true,
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Ultra-Legendary",
+    "performanceClass": "Hypercar",
+    "rarity": "1-of-1",
+    "dealershipExclusive": "OmniLux Auto"
+  },
+  "specifications": {
+    "class": "Hypercar",
+    "seats": 2,
+    "engine": "Hybrid Electric Twin-Turbo V8",
+    "horsepower": 1800,
+    "topSpeed": 280,
+    "acceleration": 1.8,
+    "handling": 10.0,
+    "fuelType": "Hybrid Electric",
+    "limitedEdition": true,
+    "productionNumber": 1,
+    "electricMotor": "Quad-Motor AWD",
+    "batteryCapacity": 120
+  },
+  "physics": {
+    "mass": 1750,
+    "centerOfMass": { "x": 0, "y": 0.25, "z": -0.35 },
+    "wheelBase": 2.8,
+    "trackWidth": 1.85,
+    "suspensionTravel": 0.05,
+    "springRate": 110000,
+    "damperRate": 10000,
+    "downforce": 2200
+  },
+  "model": {
+    "dimensions": {
+      "length": 4.65,
+      "width": 2.15,
+      "height": 1.12,
+      "wheelbase": 2.8
+    },
+    "doors": 2,
+    "doorType": "Butterfly",
+    "trunk": "Minimal",
+    "bodyStyle": "Hypercar"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 250000,
+      "lod1": 120000,
+      "lod2": 55000,
+      "lod3": 25000
+    },
+    "textureResolution": {
+      "diffuse": 8192,
+      "normal": 8192,
+      "roughness": 4096,
+      "metallic": 4096,
+      "ao": 4096,
+      "emissive": 4096
+    },
+    "materials": [
+      "Car_Paint_Aether_Ghost_White",
+      "Carbon_Fiber_Aerospace_Grade",
+      "Titanium_Exhaust_Custom",
+      "Glass_Aerospace_Sapphire",
+      "Leather_Phantom_Luxury",
+      "Rubber_Michelin_Pilot_Sport_Cup_2_R",
+      "LED_Matrix_Quantum_Signature",
+      "Hybrid_Electric_Glow_Effects"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Tire Deformation",
+      "Suspension Animation",
+      "Working Lights",
+      "Full Holographic Dashboard",
+      "Animated Steering Wheel",
+      "Active Aerodynamics",
+      "Brake Caliper Detail",
+      "Engine Bay Detail",
+      "Undercarriage Detail",
+      "Heat Haze Effects",
+      "Wind Tunnel Optimized",
+      "Electric Motor Glow",
+      "Hybrid System Visualization"
+    ]
+  },
+  "audio": {
+    "engineSound": "Hybrid_V8_Electric_Symphony",
+    "exhaustNote": "Dual_Mode_Performance",
+    "electricWhine": true,
+    "turboWhistle": true,
+    "hornSound": "Phantom_Custom",
+    "doorSound": "Butterfly_Precision",
+    "modeSwitch": "Electric_Stealth_Mode"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "quadExhaust": true,
+      "flames": true,
+      "intensityHigh": true,
+      "electricGlow": true
+    },
+    "tireSmokeOnBurnout": true,
+    "brakelightGlow": true,
+    "headlightBeams": true,
+    "exhaustFlames": true,
+    "brakeDiskGlow": true,
+    "heatShimmer": true,
+    "shockwaveAtTopSpeed": true,
+    "electricAura": true,
+    "hybridModeIndicator": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "AerodynamicsController",
+    "LaunchControl",
+    "TelemetrySystem",
+    "HybridPowerManager",
+    "BatteryManagementSystem"
+  ],
+  "nftMetadata": {
+    "tokenStandard": "ERC-721",
+    "royaltyPercent": 20,
+    "attributes": [
+      {"trait_type": "Rarity", "value": "1-of-1"},
+      {"trait_type": "Performance Class", "value": "Hypercar"},
+      {"trait_type": "Top Speed", "value": "280 mph"},
+      {"trait_type": "Horsepower", "value": 1800},
+      {"trait_type": "Edition", "value": "Ultra-Legendary"},
+      {"trait_type": "Powertrain", "value": "Hybrid Electric"},
+      {"trait_type": "Special Features", "value": "Quad-Motor AWD"}
+    ]
+  },
+  "customization": {
+    "paintColors": ["Aether Ghost White", "Phantom Black", "Quantum Silver", "Void Blue"],
+    "wheels": ["Carbon Fiber 22in", "Forged Titanium 22in"],
+    "interior": ["Phantom Luxury Leather", "Carbon Fiber Race Package", "Holographic Display"],
+    "upgrades": ["Performance Hybrid Tune", "Track Aero Kit", "Racing Suspension", "Battery Upgrade"],
+    "nftParts": true
+  },
+  "price": {
+    "purchasePrice": 3750000,
+    "purchasePriceEth": 12.5,
+    "dailyRent": 50000,
+    "currency": "OMNI",
+    "auctionStartingBid": 3750000
+  }
+}
