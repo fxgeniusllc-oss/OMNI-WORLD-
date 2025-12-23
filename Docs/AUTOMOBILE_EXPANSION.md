@@ -148,7 +148,7 @@ All vehicles follow the existing JSON schema and include:
 
 ## Price Distribution
 
-- **Budget**: $13,500 - $18,000 (2 vehicles)
+- **Budget**: $13,500 - $18,000 (3 vehicles)
 - **Affordable**: $28,000 - $45,000 (7 vehicles)
 - **Premium**: $52,000 - $98,000 (9 vehicles)
 - **Luxury**: $115,000 - $185,000 (4 vehicles)
