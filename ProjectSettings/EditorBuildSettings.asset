@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 00000000000000000000000000000001
+  - enabled: 1
+    path: Assets/Scenes/OmniLanta.unity
+    guid: 00000000000000000000000000000002
+  - enabled: 1
+    path: Assets/Scenes/OmniVegas.unity
+    guid: 00000000000000000000000000000003
+  - enabled: 1
+    path: Assets/Scenes/OmniTokyo.unity
+    guid: 00000000000000000000000000000004
+  - enabled: 1
+    path: Assets/Scenes/OmniNYC.unity
+    guid: 00000000000000000000000000000005
+  - enabled: 1
+    path: Assets/Scenes/OmniDubai.unity
+    guid: 00000000000000000000000000000006
+  - enabled: 1
+    path: Assets/Scenes/OmniLA.unity
+    guid: 00000000000000000000000000000007
+  - enabled: 1
+    path: Assets/Scenes/OmniParis.unity
+    guid: 00000000000000000000000000000008
+  m_configObjects: {}
