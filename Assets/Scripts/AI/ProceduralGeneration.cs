@@ -364,6 +364,18 @@ namespace OmniWorld.AI
                 case NPCRole.Educator:
                     npc.reputation = (float)random.NextDouble() * 0.3f + 0.7f; // High reputation
                     break;
+                case NPCRole.FashionDesigner:
+                    npc.walletBalance = (float)random.NextDouble() * 15000f + 5000f;
+                    npc.reputation = (float)random.NextDouble() * 0.4f + 0.4f;
+                    break;
+                case NPCRole.InteriorDesigner:
+                    npc.walletBalance = (float)random.NextDouble() * 20000f + 8000f;
+                    npc.reputation = (float)random.NextDouble() * 0.4f + 0.5f;
+                    break;
+                case NPCRole.Architect:
+                    npc.walletBalance = (float)random.NextDouble() * 60000f + 20000f;
+                    npc.reputation = (float)random.NextDouble() * 0.3f + 0.6f; // High reputation
+                    break;
             }
 
             return npc;
@@ -819,6 +831,9 @@ namespace OmniWorld.AI
                 generatedNPCs.Add(GenerateNPCWithRole(NPCRole.Merchant, cityName));
                 generatedNPCs.Add(GenerateNPCWithRole(NPCRole.Banker, cityName));
                 generatedNPCs.Add(GenerateNPCWithRole(NPCRole.Educator, cityName));
+                generatedNPCs.Add(GenerateNPCWithRole(NPCRole.FashionDesigner, cityName));
+                generatedNPCs.Add(GenerateNPCWithRole(NPCRole.InteriorDesigner, cityName));
+                generatedNPCs.Add(GenerateNPCWithRole(NPCRole.Architect, cityName));
             }
             
             // Generate city-themed quests
