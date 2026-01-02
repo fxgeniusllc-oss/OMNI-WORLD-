@@ -32,6 +32,7 @@ namespace OmniWorld.Web3
         public string omniTokenAddress = "0x0000000000000000000000000000000000000000";
         public string landNFTAddress = "0x0000000000000000000000000000000000000000";
         public string itemsNFTAddress = "0x0000000000000000000000000000000000000000";
+        public string trophyNFTAddress = "0x0000000000000000000000000000000000000000";
         public string marketplaceAddress = "0x0000000000000000000000000000000000000000";
 
         [Header("Gas Settings")]
@@ -41,6 +42,7 @@ namespace OmniWorld.Web3
         public event Action<string> OnTransactionSubmitted;
         public event Action<string, bool> OnTransactionConfirmed;
         public event Action<string, string> OnNFTMinted;
+        public event Action<string, string> OnTrophyMinted;
 
         private void Awake()
         {
@@ -331,6 +333,159 @@ namespace OmniWorld.Web3
             }
             
             return hash;
+        }
+
+        /// <summary>
+        /// Mint a Trophy NFT for tournament winner
+        /// </summary>
+        public async Task<string> MintTrophyNFT(
+            string winner,
+            int rank,
+            string trophyName,
+            string tournamentName,
+            string tournamentType,
+            float prizePool,
+            string metadata,
+            bool hasSmartContract,
+            string tradingBotAddress
+        )
+        {
+            if (!WalletConnect.Instance.isConnected)
+            {
+                Debug.LogWarning("Wallet not connected");
+                return null;
+            }
+
+            Debug.Log($"Minting Trophy NFT - Rank: {rank}, Tournament: {tournamentName}");
+            
+            try
+            {
+                // TODO: Implement actual contract call
+                await Task.Delay(2000); // Simulate transaction time
+                
+                string txHash = "0x" + GenerateRandomHash();
+                
+                OnTransactionSubmitted?.Invoke(txHash);
+                Debug.Log($"Transaction submitted: {txHash}");
+                
+                // Wait for confirmation
+                await Task.Delay(3000);
+                
+                OnTransactionConfirmed?.Invoke(txHash, true);
+                OnTrophyMinted?.Invoke(trophyName, txHash);
+                
+                Debug.Log($"Trophy NFT minted successfully - {trophyName} for {winner}");
+                
+                return txHash;
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError($"Trophy minting failed: {ex.Message}");
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Deploy a Trading Bot smart contract for trophy NFT
+        /// </summary>
+        public async Task<string> DeployTradingBot(
+            string trophyOwner,
+            int trophyRank,
+            int durationMonths,
+            string usdcAddress,
+            string wbtcAddress
+        )
+        {
+            if (!WalletConnect.Instance.isConnected)
+            {
+                Debug.LogWarning("Wallet not connected");
+                return null;
+            }
+
+            Debug.Log($"Deploying Trading Bot for trophy rank {trophyRank}");
+            
+            try
+            {
+                await Task.Delay(3000); // Simulate deployment time
+                
+                string botAddress = "0x" + GenerateRandomHash().Substring(0, 40);
+                
+                Debug.Log($"Trading Bot deployed at: {botAddress}");
+                
+                return botAddress;
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError($"Trading Bot deployment failed: {ex.Message}");
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Withdraw earnings from Trading Bot
+        /// </summary>
+        public async Task<float> WithdrawBotEarnings(string botAddress)
+        {
+            if (!WalletConnect.Instance.isConnected)
+            {
+                Debug.LogWarning("Wallet not connected");
+                return 0f;
+            }
+
+            Debug.Log($"Withdrawing earnings from Trading Bot: {botAddress}");
+            
+            try
+            {
+                await Task.Delay(2000);
+                
+                // Simulate earnings withdrawal
+                float earnings = UnityEngine.Random.Range(50f, 500f);
+                
+                string txHash = "0x" + GenerateRandomHash();
+                OnTransactionSubmitted?.Invoke(txHash);
+                
+                await Task.Delay(3000);
+                
+                OnTransactionConfirmed?.Invoke(txHash, true);
+                
+                Debug.Log($"Withdrew {earnings} USDC from Trading Bot");
+                
+                return earnings;
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError($"Withdrawal failed: {ex.Message}");
+                return 0f;
+            }
+        }
+
+        /// <summary>
+        /// Check VIP access for tournament entry
+        /// </summary>
+        public async Task<bool> CheckTournamentAccess(string playerAddress, int requiredRank)
+        {
+            Debug.Log($"Checking tournament access for {playerAddress}, rank {requiredRank}");
+            
+            await Task.Delay(1000);
+            
+            // TODO: Implement actual contract call to check VIP access
+            // For now, simulate access check
+            return true;
+        }
+
+        /// <summary>
+        /// Get trophy metadata from contract
+        /// </summary>
+        public async Task<string> GetTrophyMetadata(int tokenId)
+        {
+            Debug.Log($"Fetching trophy metadata for token {tokenId}");
+            
+            await Task.Delay(1000);
+            
+            // TODO: Implement actual metadata fetching from IPFS
+            string metadata = $"{{\"name\":\"Trophy #{tokenId}\",\"description\":\"OmniWorld Tournament Trophy\",\"image\":\"ipfs://...\",\"attributes\":[]}}";
+            
+            return metadata;
         }
     }
 }

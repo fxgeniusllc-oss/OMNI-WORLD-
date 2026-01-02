@@ -1,0 +1,181 @@
+{
+  "dealershipName": "OmniLux Auto",
+  "location": "Vegas Strip Zone",
+  "city": "OmniVegas",
+  "zoneType": "Commercial",
+  "operatingHours": "24/7",
+  "features": [
+    "Glass facade for 24/7 window shopping",
+    "NFT mintable vehicles (1-of-1s, 10-of-10s)",
+    "Auction floor for ultra-rares (monthly)",
+    "VIP showroom access",
+    "Vehicle inspection and walkaround mode"
+  ],
+  "inventory": {
+    "exclusiveVehicles": [
+      {
+        "id": "001",
+        "name": "Aether Phantom GT",
+        "rarity": "1-of-1",
+        "priceEth": 12.5,
+        "priceOmni": 3750000,
+        "available": true,
+        "nft": true,
+        "tier": "Ultra-Legendary",
+        "specifications": {
+          "class": "Hypercar",
+          "seats": 2,
+          "engine": "Hybrid Electric Twin-Turbo V8",
+          "horsepower": 1800,
+          "topSpeed": 280,
+          "acceleration": 1.8,
+          "handling": 10.0,
+          "fuelType": "Hybrid Electric",
+          "limitedEdition": true,
+          "productionNumber": 1
+        },
+        "nftMetadata": {
+          "tokenStandard": "ERC-721",
+          "contractAddress": "",
+          "mintable": true,
+          "royaltyPercent": 20,
+          "attributes": [
+            {"trait_type": "Rarity", "value": "1-of-1"},
+            {"trait_type": "Performance Class", "value": "Hypercar"},
+            {"trait_type": "Top Speed", "value": "280 mph"},
+            {"trait_type": "Horsepower", "value": 1800},
+            {"trait_type": "Edition", "value": "Ultra-Legendary"}
+          ]
+        }
+      },
+      {
+        "id": "002",
+        "name": "Stratos Lynx V",
+        "rarity": "10-of-10",
+        "priceEth": 4.0,
+        "priceOmni": 1200000,
+        "available": true,
+        "nft": true,
+        "tier": "Legendary",
+        "specifications": {
+          "class": "Supercar",
+          "seats": 2,
+          "engine": "6.2L Supercharged V10",
+          "horsepower": 950,
+          "topSpeed": 235,
+          "acceleration": 2.5,
+          "handling": 9.5,
+          "fuelType": "Premium Gasoline",
+          "limitedEdition": true,
+          "productionNumber": 10
+        },
+        "nftMetadata": {
+          "tokenStandard": "ERC-721",
+          "contractAddress": "",
+          "mintable": true,
+          "royaltyPercent": 20,
+          "attributes": [
+            {"trait_type": "Rarity", "value": "10-of-10"},
+            {"trait_type": "Performance Class", "value": "Supercar"},
+            {"trait_type": "Top Speed", "value": "235 mph"},
+            {"trait_type": "Horsepower", "value": 950},
+            {"trait_type": "Edition", "value": "Legendary"}
+          ]
+        }
+      }
+    ],
+    "standardVehicles": [
+      "Hypercar",
+      "Supercar",
+      "ElectricRoadster",
+      "RacingPedigreeCoupe",
+      "UltraLuxCoupe",
+      "PrestigeSedan",
+      "LuxuryElectricSUV",
+      "LuxuryLimoSUV",
+      "GrandTourer"
+    ]
+  },
+  "auction": {
+    "schedule": "Monthly",
+    "dayOfMonth": 1,
+    "duration": "72 hours",
+    "eligibility": "VIP tier wallets only",
+    "visibility": "Global livestream",
+    "minimumPrestige": 0.8,
+    "vipTiers": ["Platinum", "Diamond", "Elite"],
+    "features": [
+      "Live bidding system",
+      "Bid history tracking",
+      "Automated outbid notifications",
+      "Escrow smart contracts",
+      "Post-auction NFT minting"
+    ]
+  },
+  "urbanZones": [
+    "OmniDowntown",
+    "OmniHollywood",
+    "OmniCoastline",
+    "OmniSuburbs",
+    "OmniSouthside",
+    "OmniDesert"
+  ],
+  "economy": {
+    "currency": "$OMNI",
+    "acceptsEth": true,
+    "nftVehicleParts": true,
+    "upgradeLogsOnChain": true,
+    "marketplaceBuyback": "only if profitable to OmniWorld",
+    "transactionFee": 0.015,
+    "dealerCommission": 0.05
+  },
+  "modularSystems": [
+    "AvatarCombatManager.cs",
+    "GymTrainingSystem.cs",
+    "VehicleModShopManager.cs",
+    "RaceEventSpawner.cs",
+    "CityTransitManager.cs",
+    "PropertyOwnershipSystem.cs",
+    "ZoneLoreManager.cs",
+    "DynamicZoneDetector.cs"
+  ],
+  "database": {
+    "playerStats": "MongoDB",
+    "vehicleUpgradeHistory": true,
+    "fightClubStats": true,
+    "purchaseHistory": true,
+    "auctionBidHistory": true
+  },
+  "prefabsNeeded": [
+    "Dealership prefab",
+    "Apartment blocks",
+    "Single-family homes",
+    "OmniDowntown smart tower",
+    "OmniSouthside underground gym",
+    "OmniSpeedWorks garage"
+  ],
+  "services": {
+    "vehicleInspection": {
+      "enabled": true,
+      "cost": 50,
+      "features": ["Full 360° walkaround", "Interior view", "Engine inspection", "Performance metrics"]
+    },
+    "testDrive": {
+      "enabled": true,
+      "cost": 100,
+      "duration": "5 minutes",
+      "trackAvailable": true
+    },
+    "customization": {
+      "enabled": true,
+      "categories": ["Paint", "Wheels", "Interior", "Performance", "Aero"],
+      "nftPartCompatible": true
+    },
+    "financing": {
+      "enabled": true,
+      "downPaymentPercent": 20,
+      "maxTermMonths": 36,
+      "interestRate": 5.5
+    }
+  }
+}

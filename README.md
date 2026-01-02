@@ -4,6 +4,8 @@
 
 ### *The AI-Powered, Creator-First Metaverse & Dominion Economy*
 
+### *Part of the OMNIVERSE Enterprise Trust*
+
 [![License](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
 [![Unity](https://img.shields.io/badge/Unity-2022.3_LTS-black.svg?logo=unity)](https://unity.com/)
 [![Blockchain](https://img.shields.io/badge/Blockchain-Polygon-8247e5.svg)](https://polygon.technology/)
@@ -12,9 +14,9 @@
 
 **A Digital Twin Economy fusing entertainment-grade gamification with high-fidelity economic simulation**
 
-**🎮 100% Unity Game** - All game systems implemented in Unity C# | Ready to open in Unity Editor
+**Powered by $OMNI token** | [OMNIVERSE Blueprint](Docs/OMNIVERSE_BLUEPRINT.md)
 
-[Website](https://omniworld.io) • [Documentation](docs/) • [Unity Guide](UNITY_PROJECT_GUIDE.md) • [Discord](https://discord.gg/omniworld)
+[Website](https://omniworld.io) • [Documentation](docs/) • [Whitepaper](docs/WHITEPAPER.md) • [Discord](https://discord.gg/omniworld)
 
 </div>
 
@@ -57,6 +59,7 @@ cd OMNI-WORLD-
 ## 📑 Table of Contents
 
 - [🎯 Core Vision](#-core-vision)
+- [🌌 The OMNIVERSE Enterprise](#-the-omniverse-enterprise)
 - [💡 What is OmniWorld?](#-what-is-omniworld)
 - [🌍 The Dominion Economy](#-the-dominion-economy)
 - [🏙️ Global Metropolises](#-global-metropolises)
@@ -82,6 +85,44 @@ OmniWorld is revolutionizing the digital economy by creating a **true parallel f
 - 🌏 **Globally Scaled** - 7 major metropolises with distinct economic models
 
 > *"This isn't just another virtual world - it's a paradigm shift in how we perceive digital ownership, creativity, and economic opportunity."*
+
+---
+
+## 🌌 The OMNIVERSE Enterprise
+
+**OmniWorld** is the flagship platform within the broader **OMNIVERSE Trust** - a comprehensive digital ecosystem unifying multiple creator-focused platforms under one unified token economy.
+
+### The OMNIVERSE Trust Structure
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                     OMNIVERSE TRUST                          │
+│              Unified by $OMNI Token Economy                  │
+└─────────────────────────────────────────────────────────────┘
+              │              │              │              │
+              ▼              ▼              ▼              ▼
+        ┌──────────┐   ┌──────────┐   ┌──────────┐   ┌──────────┐
+        │OMNIWORLD │   │OMNISOUND │   │OMNISOUND │   │OMNISOUND │
+        │Metaverse │   │   DAW    │   │ STAFFING │   │DIGITAL   │
+        │  Game    │   │  Music   │   │  Talent  │   │   ART    │
+        └──────────┘   └──────────┘   └──────────┘   └──────────┘
+```
+
+### The Four Pillars
+
+🎮 **[OMNIWORLD](Docs/OMNIVERSE_BLUEPRINT.md#1-omniworld)** - AI-powered metaverse with 7 global cities and Dominion Economy (this repository)
+
+🎵 **[OMNISOUND DAW](Docs/OMNIVERSE_BLUEPRINT.md#2-omnisound-daw)** - Professional digital audio workstation for Web3 creators with blockchain integration
+
+👔 **[OMNISOUND STAFFING](Docs/OMNIVERSE_BLUEPRINT.md#3-omnisound-staffing)** - Decentralized talent marketplace connecting creative professionals with opportunities
+
+🎨 **[OMNISOUND DIGITAL ART](Docs/OMNIVERSE_BLUEPRINT.md#4-omnisound-digital-art)** - Comprehensive library of ALL AI-generated content on the $OMNI blockchain
+
+### One Token. Infinite Possibilities.
+
+All platforms operate on the **$OMNI token** (NOT "OMNIS") - enabling seamless value transfer, unified governance, and cross-platform benefits.
+
+📖 **[Read the Full OMNIVERSE Blueprint →](Docs/OMNIVERSE_BLUEPRINT.md)**
 
 ---
 
@@ -161,7 +202,7 @@ P_OMNI = (U_p × H_r × C_x) / (D_r × Z_i × T_s)
 
 #### 5️⃣ Sovereign Citizenship
 - Every player is an economic sovereign with voting rights
-- Multiple career paths: Landlord, Banker, Educator, Mogul, Tax Entity
+- Multiple career paths: Landlord, DeFi Banker, Educator, Mogul, Tax Entity, Fashion Designer, Interior Designer, Architect
 - Reputation systems create meritocratic advancement
 
 ### 💼 User Experience
@@ -250,9 +291,16 @@ Each metropolis features five primary zone types:
 
 - **7 AI-Generated Cities** with unique economies and cultures
 - **Virtual Real Estate** ownership via NFTs (buy, sell, lease)
-- **Dynamic Player Roles:** Creator, Collector, DJ, Architect, Entrepreneur, Educator
+- **Dynamic Player Roles:** Creator, Collector, DJ, Architect, Fashion Designer, Interior Designer, Entrepreneur, Educator, DeFi Banker
 - **AI NPCs:** Reactive agents powered by OmniMentor + GPT with memory
 - **Career Progression:** Petty Missions → Career Paths → World Impact → Legacy Building
+- **Architecture Career Path:** Design 3D blueprints, mint as NFTs, certify for real-world construction
+  - Create detailed architectural blueprints with dimensions and specifications
+  - Mint blueprints as NFTs for digital ownership and trading
+  - High-reputation architects can certify blueprints for real-world builds
+  - Real-world building codes and construction permits
+  - Earn from both digital NFT sales and physical construction licenses
+  - Bridge digital creativity with real-world construction opportunities
 
 ### 🎨 Creator Economy
 
@@ -266,10 +314,28 @@ Each metropolis features five primary zone types:
 ### 💰 Financial Engine
 
 - **$OMNI Token:** Native currency (2B total supply) with deflationary mechanics
+- **DeFi Banking System:** SaaS arbitrage model with flash loans
+  - Link exchange accounts for automated arbitrage trading
+  - Flash loan execution across DEX platforms (Uniswap, Sushiswap, Quickswap)
+  - 70% profit share to users, 30% to Omni Treasury
+  - Auto-scanning for arbitrage opportunities every 30 seconds
+  - Real-time flash loan execution with 0.09% fee
+  - Treasury contribution system generating ecosystem income
 - **DeFi Integration:** Staking, vault farming, liquidity pools, yield generation
 - **Task Economy:** Dynamic payouts based on reputation and skill multipliers
 - **Revenue Sharing:** Treasury splits between creators, stakers, and governance
 - **Smart Contracts:** ERC-721, ERC-1155, EIP-2981 royalties
+- **🏆 Trophy NFT System:** Tournament rewards with VIP access and smart contract trading bots
+
+### 🏆 Trophy NFT Ranking System
+
+- **Gold Trophy NFTs:** Elite championship rewards with 2x XP boost and smart contract trading bots
+- **Silver Trophy NFTs:** Mid-tier competitive rewards with 1.5x XP boost and trading bot access
+- **Bronze Trophy NFTs:** Entry-level achievements with 1.25x XP boost
+- **VIP Tournament Access:** Trophy holders gain exclusive access to tier-specific competitions
+- **Passive Income:** Gold/Silver trophies include embedded trading bots using USDC/WBTC (not $OMNI)
+- **Time-Limited Bots:** Trading bots active for 6-12 months, protecting ecosystem from inflation
+- **Marketplace Integration:** Trophies tradeable as collectibles with historical prestige value
 
 ### 🤖 AI Infrastructure
 

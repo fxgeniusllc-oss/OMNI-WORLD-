@@ -1,8 +1,28 @@
 # OmniWorld Documentation
 
-Welcome to the OmniWorld documentation directory. This folder contains comprehensive technical documentation for developers working on the OmniWorld metaverse platform.
+Welcome to the OmniWorld documentation directory. This folder contains comprehensive technical documentation for developers working on the OmniWorld metaverse platform, part of the broader OMNIVERSE Trust.
 
 ## 📚 Documentation Index
+
+### Enterprise Documentation
+
+#### [OMNIVERSE_BLUEPRINT.md](./OMNIVERSE_BLUEPRINT.md) **⭐ NEW**
+Official organizational blueprint for the OMNIVERSE Trust structure.
+
+**What you'll learn:**
+- Trust structure and legal framework
+- Four core entities: OMNIWORLD, OMNISOUND DAW, OMNISOUND STAFFING, OMNISOUND DIGITAL ART
+- $OMNI token economy (NOT "OMNIS")
+- Shared infrastructure and governance model
+- Cross-platform integration strategy
+- Revenue models and technology stack
+
+**Use this when:**
+- Understanding the broader OMNIVERSE ecosystem
+- Planning cross-platform features
+- Integrating with other OMNIVERSE entities
+- Understanding the token economy
+- Business and partnership discussions
 
 ### Core Documentation
 
