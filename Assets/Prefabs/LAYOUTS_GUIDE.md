@@ -2,7 +2,25 @@
 
 ## Overview
 
-This directory contains 65 comprehensive JSON layout definition files for the OmniWorld metaverse game. These layouts define the specifications, graphics, and metadata for all housing, vehicles, and avatar prefabs.
+This directory contains 100+ comprehensive JSON layout definition files for the OmniWorld metaverse game. These layouts define the specifications, graphics, and metadata for all housing, vehicles, and avatar prefabs.
+
+## 📚 Asset Definition System
+
+**New in v1.0.0:** OmniWorld now uses a centralized asset definition system for managing all prefabs and assets.
+
+### Key Resources
+- **[Asset Definition Schema](../../Docs/ASSET_DEFINITION_SCHEMA.md)** - Complete JSON schema documentation
+- **[Adding New Assets Guide](../../Docs/ADDING_NEW_ASSETS.md)** - Step-by-step guide with examples
+- **[Master Asset Registry](../AssetRegistry.json)** - Central index of all 100+ assets
+- **[AssetDefinitionManager.cs](../Scripts/Core/AssetDefinitionManager.cs)** - C# manager for loading and managing assets
+
+### Benefits
+- ✅ **Centralized Management**: Single source of truth for all assets
+- ✅ **NFT Integration**: Built-in NFT compatibility and metadata
+- ✅ **Economic Balance**: Automatic integration with Dominion Economy
+- ✅ **Dynamic Loading**: Runtime asset loading and filtering
+- ✅ **Caching System**: Performance-optimized asset caching
+- ✅ **Validation**: Schema validation ensures consistency
 
 ## Directory Structure
 
@@ -156,15 +174,50 @@ All prefabs are designed with NFT compatibility:
 
 ## Usage in Unity
 
-### Loading Layouts
+### Loading Layouts with AssetDefinitionManager
+
+The new `AssetDefinitionManager` provides powerful methods for loading and filtering assets:
+
 ```csharp
-// Example: Load a housing layout
+using OmniWorld.Core;
+
+// Get the singleton instance
+var assetManager = AssetDefinitionManager.Instance;
+
+// Example 1: Load all housing assets
+var housingAssets = assetManager.GetAssetsByCategory("housing");
+foreach (var asset in housingAssets)
+{
+    Debug.Log($"{asset.prefabName}: {asset.price.purchasePrice} OMNI");
+}
+
+// Example 2: Filter by economic tier
+var luxuryAssets = assetManager.GetAssetsByEconomicTier("Luxury");
+
+// Example 3: Filter by price range
+var affordableAssets = assetManager.GetAssetsByPriceRange(50000, 200000);
+
+// Example 4: Get NFT-compatible assets only
+var nftAssets = assetManager.GetNFTAssets();
+
+// Example 5: Get registry statistics
+var stats = assetManager.GetStatistics();
+Debug.Log($"Total assets in game: {stats.totalAssets}");
+```
+
+### Legacy: Manual Loading (Deprecated)
+
+The manual loading approach is still supported but deprecated. Use `AssetDefinitionManager` instead:
+
+```csharp
+// OLD WAY (Still works but not recommended)
 string jsonPath = "Assets/Prefabs/Housing/Apartments/StudioApartment.json";
 string jsonData = File.ReadAllText(jsonPath);
 HousingLayout layout = JsonUtility.FromJson<HousingLayout>(jsonData);
 
-// Create prefab from layout
-GameObject prefab = CreatePrefabFromLayout(layout);
+// NEW WAY (Recommended)
+var assetManager = AssetDefinitionManager.Instance;
+var definition = assetManager.LoadAssetDefinition(jsonPath);
 ```
 
 ### Instantiating Prefabs
