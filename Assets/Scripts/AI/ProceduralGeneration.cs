@@ -302,7 +302,7 @@ namespace OmniWorld.AI
                 "OmniVegas" => BuildingStyle.Neon,
                 "OmniParis" => BuildingStyle.Classical,
                 "OmniDubai" => BuildingStyle.Modern,
-                "OmniLagos" => BuildingStyle.Contemporary,  // Vibrant, colorful, mixed modern/traditional
+                "OmniLagos" => BuildingStyle.Contemporary,  // Contemporary with Afro-Modern elements: vibrant, colorful, mixed modern/traditional
                 _ => BuildingStyle.Contemporary
             };
         }
