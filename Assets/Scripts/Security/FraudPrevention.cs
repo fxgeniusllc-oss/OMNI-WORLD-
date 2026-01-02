@@ -163,11 +163,17 @@ namespace OmniWorld.Security
                 buyerSellerPairs[pairKey] = new List<string>();
             }
 
-            // Check reverse pair
+            // Count current direction trades
+            int currentPairCount = buyerSellerPairs[pairKey].Count;
+            
+            // Check reverse pair - if they trade back and forth repeatedly, it's wash trading
             if (buyerSellerPairs.ContainsKey(reversePairKey))
             {
-                // They've traded in opposite direction before
-                if (buyerSellerPairs[reversePairKey].Count >= maxSameBuyerTransactions)
+                int reversePairCount = buyerSellerPairs[reversePairKey].Count;
+                
+                // Both directions have excessive trades = wash trading pattern
+                if (currentPairCount >= maxSameBuyerTransactions && 
+                    reversePairCount >= maxSameBuyerTransactions)
                 {
                     return true; // Wash trading detected
                 }
@@ -203,17 +209,28 @@ namespace OmniWorld.Security
 
         /// <summary>
         /// Detect price manipulation patterns
+        /// TODO: Integrate with market data for comprehensive price analysis
+        /// Current implementation: Basic threshold check for extremely suspicious prices
         /// </summary>
         private bool IsPriceManipulation(string assetId, float price)
         {
-            // Get average price for similar assets
-            // This would integrate with market data
-            // For now, basic implementation
+            // Basic sanity check: Flag extremely high prices (> $100,000)
+            // or suspiciously low prices (< $0.01) as potentially manipulative
+            const float maxReasonablePrice = 100000f;
+            const float minReasonablePrice = 0.01f;
             
-            // Check if price is suspiciously high or low
-            // Would need market data to implement fully
+            if (price > maxReasonablePrice || price < minReasonablePrice)
+            {
+                return true; // Suspicious price range
+            }
             
-            return false; // Placeholder
+            // TODO: Implement advanced checks:
+            // - Compare with average market price for category
+            // - Detect sudden price spikes (>50% change)
+            // - Analyze historical pricing patterns
+            // - Cross-reference with similar asset prices
+            
+            return false;
         }
 
         /// <summary>

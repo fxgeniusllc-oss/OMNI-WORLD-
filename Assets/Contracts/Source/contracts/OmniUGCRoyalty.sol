@@ -321,28 +321,35 @@ contract OmniUGCRoyalty is ERC721Royalty, Ownable, ReentrancyGuard {
     
     /**
      * @dev Get creator tier from registry
+     * Integrates with CreatorRegistry contract for actual tier data
+     * TODO: Complete integration when CreatorRegistry is deployed
      */
     function _getCreatorTier(address creator) internal view returns (uint256) {
-        // Call Creator Registry contract
+        // TODO: Replace with actual CreatorRegistry contract call
+        // Example implementation:
+        // ICreatorRegistry registry = ICreatorRegistry(creatorRegistry);
+        // return registry.getCreatorTier(creator);
+        
         // For now, return default tier 1
-        // TODO: Implement actual registry call
+        // This will be updated once CreatorRegistry is properly integrated
         return 1;
     }
     
     /**
      * @dev Check if creator qualifies for tier upgrade
+     * Integrates with CreatorRegistry for automatic tier progression
+     * TODO: Complete integration when CreatorRegistry is deployed
      */
     function _checkTierUpgrade(address creator) internal {
-        uint256 totalSales = creatorTotalSales[creator];
+        // TODO: Trigger CreatorRegistry update based on sales thresholds
+        // Example implementation:
+        // uint256 totalSales = creatorTotalSales[creator];
+        // ICreatorRegistry registry = ICreatorRegistry(creatorRegistry);
+        // registry.updateSales(creator, amount, false);
+        // This will automatically handle tier upgrades in the registry
         
-        // Tier upgrade thresholds (in wei, adjust for actual token)
-        // Tier 2: $1,000 in sales
-        // Tier 3: $10,000 in sales
-        // Tier 4: $100,000 in sales
-        // Tier 5: $1,000,000 in sales
-        
-        // This would trigger Creator Registry update
-        // TODO: Implement actual registry integration
+        // Placeholder: Log that upgrade check would occur here
+        // Actual tier management will be handled by CreatorRegistry contract
     }
     
     // ========== VERIFICATION FUNCTIONS ==========

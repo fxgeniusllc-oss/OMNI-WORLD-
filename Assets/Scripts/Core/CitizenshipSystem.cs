@@ -91,7 +91,7 @@ namespace OmniWorld.Core
 
         [Header("Governance Configuration")]
         [Tooltip("Voting weight multiplier for prestige levels")]
-        public Dictionary<int, float> votingWeightByPrestige = new Dictionary<int, float>
+        private Dictionary<int, float> votingWeightByPrestige = new Dictionary<int, float>
         {
             { 90, 10f },  // Top 1%: 10x voting power
             { 80, 5f },   // Top 5%: 5x voting power

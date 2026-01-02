@@ -113,35 +113,36 @@ contract CreatorRegistry is AccessControl, ReentrancyGuard {
     function _initializeTierRequirements() internal {
         // Tier 1: New Creator (default)
         tierRequirements[1] = TierRequirements({
-            minSales: 0,
+            minSales: 0,  // No minimum
             minReputation: 0,
             minFollowers: 0
         });
         
         // Tier 2: Emerging Creator
+        // NOTE: Sales amounts are in wei equivalent (assume $OMNI token)
         tierRequirements[2] = TierRequirements({
-            minSales: 1000 ether,  // $1,000 in sales
+            minSales: 1000 ether,  // $1,000 worth of $OMNI tokens
             minReputation: 60,
             minFollowers: 25
         });
         
         // Tier 3: Established Creator
         tierRequirements[3] = TierRequirements({
-            minSales: 10000 ether,  // $10,000 in sales
+            minSales: 10000 ether,  // $10,000 worth of $OMNI tokens
             minReputation: 75,
             minFollowers: 100
         });
         
         // Tier 4: Elite Creator
         tierRequirements[4] = TierRequirements({
-            minSales: 100000 ether,  // $100,000 in sales
+            minSales: 100000 ether,  // $100,000 worth of $OMNI tokens
             minReputation: 85,
             minFollowers: 500
         });
         
         // Tier 5: Legendary Creator
         tierRequirements[5] = TierRequirements({
-            minSales: 1000000 ether,  // $1,000,000 in sales
+            minSales: 1000000 ether,  // $1,000,000 worth of $OMNI tokens
             minReputation: 95,
             minFollowers: 1000
         });
