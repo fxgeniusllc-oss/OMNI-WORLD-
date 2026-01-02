@@ -2,22 +2,6 @@
 
 This directory contains reusable prefabs for the OmniWorld game.
 
-## 📋 Asset Definition System
-
-OmniWorld uses a comprehensive JSON-based asset definition system. For complete documentation:
-
-- **[Asset Definition Schema](../../Docs/ASSET_DEFINITION_SCHEMA.md)** - Complete schema documentation
-- **[Adding New Assets Guide](../../Docs/ADDING_NEW_ASSETS.md)** - Step-by-step guide for creating new assets
-- **[Master Asset Registry](../AssetRegistry.json)** - Central registry of all assets
-
-### Key Features
-- ✅ Centralized asset management via JSON definitions
-- ✅ NFT compatibility built-in
-- ✅ Dominion Economy integration
-- ✅ Automatic loading and caching via `AssetDefinitionManager.cs`
-- ✅ Economic tier classification
-- ✅ Graphics optimization with LOD specifications
-
 ## Structure
 
 ```
@@ -89,36 +73,12 @@ Each vehicle prefab should include:
 
 ## Creating New Prefabs
 
-**Important:** All new prefabs must have a corresponding JSON definition file. Follow the complete guide: [Adding New Assets](../../Docs/ADDING_NEW_ASSETS.md)
-
-### Quick Steps:
-1. Create JSON definition file following the [schema](../../Docs/ASSET_DEFINITION_SCHEMA.md)
-2. Create the 3D model or import from Asset Store
-3. Add required components (listed in JSON definition)
-4. Configure settings according to JSON specs
-5. Save as prefab in appropriate folder
-6. Update [AssetRegistry.json](../AssetRegistry.json)
-7. Tag appropriately
-8. Test in scene using `AssetDefinitionManager`
-
-### Using AssetDefinitionManager
-
-```csharp
-// Load asset definitions programmatically
-var assetManager = AssetDefinitionManager.Instance;
-
-// Get all housing assets
-var housingAssets = assetManager.GetAssetsByCategory("housing");
-
-// Filter by economic tier
-var luxuryAssets = assetManager.GetAssetsByEconomicTier("Luxury");
-
-// Filter by price range
-var affordableAssets = assetManager.GetAssetsByPriceRange(10000, 100000);
-
-// Get NFT-compatible assets only
-var nftAssets = assetManager.GetNFTAssets();
-```
+1. Create the 3D model or import from Asset Store
+2. Add required components
+3. Configure settings
+4. Save as prefab in appropriate folder
+5. Tag appropriately
+6. Test in scene
 
 ## Naming Convention
 

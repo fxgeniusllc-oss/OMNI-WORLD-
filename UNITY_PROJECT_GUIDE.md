@@ -31,13 +31,7 @@ OMNI-WORLD-/
 │   │   ├── OmniLA.unity            # Los Angeles city scene
 │   │   └── OmniParis.unity         # Paris city scene
 │   │
-│   ├── Prefabs/                    # Reusable game objects (116 assets)
-│   │   ├── AssetRegistry.json      # Master registry of all assets (NEW)
-│   │   ├── Housing/                # Apartments, condos, mansions, penthouses
-│   │   ├── Vehicles/               # Cars, bikes, aircraft
-│   │   ├── Avatars/                # Character models and customization
-│   │   ├── Gyms/                   # Fighting gym facilities
-│   │   └── Buildings/              # Commercial buildings
+│   ├── Prefabs/                    # Reusable game objects
 │   ├── Config/                     # Configuration files
 │   └── Contracts/                  # Smart contract source code
 │
@@ -119,14 +113,6 @@ OMNI-WORLD-/
   - City unlocking system
   - Intra-city teleportation
 
-✅ **AssetDefinitionManager.cs** - Asset and prefab management (NEW)
-  - Centralized asset registry with 116 definitions
-  - Dynamic asset loading and caching
-  - Filter by category, price, tier, NFT status
-  - Integration with Dominion Economy
-  - JSON-based definition system
-  - [Documentation](Docs/ASSET_DEFINITION_SCHEMA.md)
-
 ✅ **VehicleNFT.cs** - Vehicle ownership and management
 ✅ **AutoDealership.cs** - Vehicle marketplace
 ✅ **AuctionSystem.cs** - NFT auction system
@@ -207,60 +193,6 @@ Each city scene includes:
 5. **OmniDubai** - Dubai (Luxury, Innovation)
 6. **OmniLA** - Los Angeles (Entertainment)
 7. **OmniParis** - Paris (Art, Fashion, Culture)
-
-## Asset Definition System
-
-OmniWorld uses a comprehensive JSON-based asset definition system for managing all prefabs and assets.
-
-### Overview
-- **116 Asset Definitions** - Housing, vehicles, avatars, gyms, buildings
-- **Master Registry** - `Assets/AssetRegistry.json` - Central index
-- **C# Manager** - `AssetDefinitionManager.cs` - Runtime loading and filtering
-- **Complete Schema** - Standardized JSON format for all assets
-
-### Key Features
-✅ **Centralized Management** - Single source of truth for all game assets
-✅ **NFT Integration** - Built-in NFT metadata and compatibility
-✅ **Economic Balance** - Automatic Dominion Economy integration
-✅ **Dynamic Loading** - Runtime asset loading with caching
-✅ **Filtering System** - Query by category, price, tier, NFT status
-✅ **Validation** - Schema ensures consistency across all assets
-
-### Documentation
-- **[Asset Definition Schema](Docs/ASSET_DEFINITION_SCHEMA.md)** - Complete schema specification
-- **[Adding New Assets Guide](Docs/ADDING_NEW_ASSETS.md)** - Step-by-step guide with examples
-- **[Prefab Layouts Guide](Assets/Prefabs/LAYOUTS_GUIDE.md)** - Visual reference for all assets
-
-### Usage Example
-```csharp
-using OmniWorld.Core;
-
-// Get the asset manager
-var assetManager = AssetDefinitionManager.Instance;
-
-// Load all housing assets
-var housingAssets = assetManager.GetAssetsByCategory("housing");
-
-// Filter luxury tier assets
-var luxuryAssets = assetManager.GetAssetsByEconomicTier("Luxury");
-
-// Filter by price range
-var affordableAssets = assetManager.GetAssetsByPriceRange(10000, 100000);
-
-// Get NFT-compatible assets
-var nftAssets = assetManager.GetNFTAssets();
-
-// Get statistics
-var stats = assetManager.GetStatistics();
-Debug.Log($"Total assets: {stats.totalAssets}");
-```
-
-### Asset Categories
-- **Housing** (36 assets) - Apartments, condos, mansions, penthouses
-- **Vehicles** (41 assets) - Cars, bikes, aircraft
-- **Avatars** (25 assets) - Base models, customization, animations
-- **Gyms** (12 assets) - Fighting facilities and equipment
-- **Buildings** (2 assets) - Commercial structures
 
 ## Build Configuration
 
