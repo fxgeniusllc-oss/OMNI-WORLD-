@@ -1,7 +1,9 @@
 {
     "name": "OmniWorld.Scripts",
     "rootNamespace": "OmniWorld",
-    "references": [],
+    "references": [
+        "OmniWorld.Core"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
