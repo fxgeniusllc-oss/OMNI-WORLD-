@@ -47,7 +47,7 @@
         {
           "name": "Mansions",
           "path": "Assets/Prefabs/Housing/Mansions",
-          "count": 8,
+          "count": 9,
           "economicTier": "Luxury",
           "priceRange": { "min": 2500000, "max": 8500000, "currency": "OMNI" },
           "assets": [
@@ -284,9 +284,9 @@
   "statistics": {
     "totalCategories": 5,
     "totalSubcategories": 14,
-    "totalAssets": 100,
+    "totalAssets": 116,
     "breakdown": {
-      "housing": 35,
+      "housing": 36,
       "vehicles": 41,
       "avatars": 25,
       "gyms": 12,

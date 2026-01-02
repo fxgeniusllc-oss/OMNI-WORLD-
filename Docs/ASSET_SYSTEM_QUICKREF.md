@@ -60,13 +60,13 @@ See `Assets/Scripts/Examples/AssetSystemExample.cs` for working examples:
 
 | Category | Count | Path | Description |
 |----------|-------|------|-------------|
-| Housing | 35 | `Assets/Prefabs/Housing/` | Apartments, condos, mansions, penthouses |
+| Housing | 36 | `Assets/Prefabs/Housing/` | Apartments, condos, mansions, penthouses |
 | Vehicles | 41 | `Assets/Prefabs/Vehicles/` | Cars, bikes, aircraft |
 | Avatars | 25 | `Assets/Prefabs/Avatars/` | Base models, customization, animations |
 | Gyms | 12 | `Assets/Prefabs/Gyms/` | Fighting facilities and equipment |
 | Buildings | 2 | `Assets/Prefabs/Buildings/` | Commercial structures |
 
-**Total: 100+ assets**
+**Total: 116 assets**
 
 ## Economic Tiers
 
@@ -233,7 +233,7 @@ For questions or issues:
 
 **Schema Version:** 1.0.0  
 **Last Updated:** January 2, 2025  
-**Total Assets:** 100+  
+**Total Assets:** 116  
 **Compatible With:** Unity 2022.3 LTS+
 
 ---

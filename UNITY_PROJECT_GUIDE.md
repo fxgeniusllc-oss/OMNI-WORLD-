@@ -31,7 +31,7 @@ OMNI-WORLD-/
 │   │   ├── OmniLA.unity            # Los Angeles city scene
 │   │   └── OmniParis.unity         # Paris city scene
 │   │
-│   ├── Prefabs/                    # Reusable game objects (100+ assets)
+│   ├── Prefabs/                    # Reusable game objects (116 assets)
 │   │   ├── AssetRegistry.json      # Master registry of all assets (NEW)
 │   │   ├── Housing/                # Apartments, condos, mansions, penthouses
 │   │   ├── Vehicles/               # Cars, bikes, aircraft
@@ -120,7 +120,7 @@ OMNI-WORLD-/
   - Intra-city teleportation
 
 ✅ **AssetDefinitionManager.cs** - Asset and prefab management (NEW)
-  - Centralized asset registry with 100+ definitions
+  - Centralized asset registry with 116 definitions
   - Dynamic asset loading and caching
   - Filter by category, price, tier, NFT status
   - Integration with Dominion Economy
@@ -213,7 +213,7 @@ Each city scene includes:
 OmniWorld uses a comprehensive JSON-based asset definition system for managing all prefabs and assets.
 
 ### Overview
-- **100+ Asset Definitions** - Housing, vehicles, avatars, gyms, buildings
+- **116 Asset Definitions** - Housing, vehicles, avatars, gyms, buildings
 - **Master Registry** - `Assets/AssetRegistry.json` - Central index
 - **C# Manager** - `AssetDefinitionManager.cs` - Runtime loading and filtering
 - **Complete Schema** - Standardized JSON format for all assets
@@ -256,7 +256,7 @@ Debug.Log($"Total assets: {stats.totalAssets}");
 ```
 
 ### Asset Categories
-- **Housing** (35 assets) - Apartments, condos, mansions, penthouses
+- **Housing** (36 assets) - Apartments, condos, mansions, penthouses
 - **Vehicles** (41 assets) - Cars, bikes, aircraft
 - **Avatars** (25 assets) - Base models, customization, animations
 - **Gyms** (12 assets) - Fighting facilities and equipment
