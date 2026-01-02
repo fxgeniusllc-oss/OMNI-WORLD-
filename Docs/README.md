@@ -31,7 +31,7 @@ Complete technical documentation for the ProceduralGeneration system.
 
 **What you'll learn:**
 - How to use ProceduralGeneration API
-- City-specific content generation for all 7 cities
+- City-specific content generation for all 8 cities
 - Integration with ZoneController, DominionEconomy, NPCBrain, GameManager
 - Extensibility patterns for adding new cities and features
 - Best practices and performance considerations

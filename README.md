@@ -217,7 +217,7 @@ P_OMNI = (U_p × H_r × C_x) / (D_r × Z_i × T_s)
 
 ## 🏙️ Global Metropolises
 
-OmniWorld is sharded into **7 Global Metropolises**, each with distinct economic models feeding into the unified Dominion Economy.
+OmniWorld is sharded into **8 Global Metropolises**, each with distinct economic models feeding into the unified Dominion Economy.
 
 ### 1. 🍑 OmniLanta (Atlanta, GA)
 **Theme:** Creator Culture, Trap Legacy, Tech Hub
@@ -273,6 +273,17 @@ OmniWorld is sharded into **7 Global Metropolises**, each with distinct economic
 - **Specialty:** Fashion Houses, Art Galleries, Landmark Properties
 - **Zones:** Fashion District, Museum Quarter, Luxury Retail
 
+### 8. 🥁 OmniLagos (Lagos, NG)
+**Theme:** Afrobeats Capital, Street Energy, Cultural Innovation
+
+- **Economics:** Creator-driven marketplace, music NFT royalties, micro-transaction velocity
+- **Specialty:** Afrobeats Music Production, Street Market Tokenization, Cultural Export Hub
+- **Zones:** Music Production Districts, Street Markets, Tech Innovation Centers, Waterfront Estates
+- **Signature Properties:**
+  - **Fela Shrine NFT Complex** - Legendary venue, cultural landmark
+  - **Victoria Island Tech Hub** - Innovation district with startup incubators
+- **Cultural Assets:** Talking Drum NFTs, Okada Bike Collections, Market Vendor Licenses
+
 ### 🗺️ Zoning Structure (Per City)
 
 Each metropolis features five primary zone types:
@@ -289,7 +300,7 @@ Each metropolis features five primary zone types:
 
 ### 🎮 Immersive Gameplay
 
-- **7 AI-Generated Cities** with unique economies and cultures
+- **8 AI-Generated Cities** with unique economies and cultures
 - **Virtual Real Estate** ownership via NFTs (buy, sell, lease)
 - **Dynamic Player Roles:** Creator, Collector, DJ, Architect, Fashion Designer, Interior Designer, Entrepreneur, Educator, DeFi Banker
 - **AI NPCs:** Reactive agents powered by OmniMentor + GPT with memory
@@ -581,7 +592,7 @@ Licensing:     80% to Creator | 20% to Platform
 - [ ] $OMNI token public sale
 
 #### **Phase 3: Acceleration (2026)**
-- [ ] All 7 metropolises operational
+- [ ] All 8 metropolises operational
 - [ ] DAO governance activation
 - [ ] Cross-chain bridges (Ethereum, Solana)
 - [ ] 1,000,000 active users milestone
@@ -626,7 +637,7 @@ Licensing:     80% to Creator | 20% to Platform
    - Mint your citizen pass
 
 2. **Choose Your City**
-   - Explore the 7 metropolises
+   - Explore the 8 metropolises
    - Each city offers unique opportunities
    - Start with OmniLanta for creator-friendly entry
 

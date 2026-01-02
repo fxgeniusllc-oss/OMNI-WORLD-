@@ -77,7 +77,7 @@ namespace OmniWorld.World
         {
             Debug.Log("Initializing OmniGate Travel Network...");
             
-            string[] cities = { "OmniLanta", "OmniVegas", "OmniTokyo", "OmniNYC", "OmniDubai", "OmniLA", "OmniParis" };
+            string[] cities = { "OmniLanta", "OmniVegas", "OmniTokyo", "OmniNYC", "OmniDubai", "OmniLA", "OmniParis", "OmniLagos" };
             
             foreach (string city in cities)
             {

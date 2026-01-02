@@ -302,6 +302,7 @@ namespace OmniWorld.AI
                 "OmniVegas" => BuildingStyle.Neon,
                 "OmniParis" => BuildingStyle.Classical,
                 "OmniDubai" => BuildingStyle.Modern,
+                "OmniLagos" => BuildingStyle.Contemporary,  // Contemporary with Afro-Modern elements: vibrant, colorful, mixed modern/traditional
                 _ => BuildingStyle.Contemporary
             };
         }
@@ -412,6 +413,13 @@ namespace OmniWorld.AI
                     lastName = dubaiLast[random.Next(dubaiLast.Length)];
                     break;
                     
+                case "OmniLagos":
+                    string[] lagosFirst = { "Adeola", "Chioma", "Oluwaseun", "Ngozi", "Emeka", "Yetunde", "Chidi", "Amara" };
+                    string[] lagosLast = { "Okonkwo", "Adebayo", "Okeke", "Nwosu", "Ibrahim", "Adeyemi", "Okafor" };
+                    firstName = lagosFirst[random.Next(lagosFirst.Length)];
+                    lastName = lagosLast[random.Next(lagosLast.Length)];
+                    break;
+                    
                 default:
                     // Use default names for OmniLanta, OmniVegas, OmniNYC, OmniLA
                     return GenerateRandomName();
@@ -519,6 +527,13 @@ namespace OmniWorld.AI
                     quest.title = GetOmniParisQuestTitle(npcRole);
                     quest.description = "Embrace the art and fashion of Paris.";
                     break;
+                    
+                case "OmniLagos":
+                    // Afrobeats capital, street energy, cultural innovation
+                    quest.title = GetOmniLagosQuestTitle(npcRole);
+                    quest.description = "Experience the vibrant energy and culture of Lagos.";
+                    quest.reward *= 1.15f; // Micro-transaction velocity bonus
+                    break;
             }
 
             return quest;
@@ -578,6 +593,12 @@ namespace OmniWorld.AI
         private string GetOmniParisQuestTitle(NPCRole role)
         {
             string[] quests = { "Fashion Show Coordination", "Louvre Art Exhibition", "Eiffel Tower Event", "Café Culture Experience", "Champs-Élysées Shopping" };
+            return quests[random.Next(quests.Length)];
+        }
+
+        private string GetOmniLagosQuestTitle(NPCRole role)
+        {
+            string[] quests = { "Afrobeats Studio Session", "Street Market Trading", "Fela Shrine Performance", "Okada Delivery Run", "Tech Hub Innovation Pitch", "Victoria Island Deal", "Talking Drum Workshop", "Lagos Fashion Week Event" };
             return quests[random.Next(quests.Length)];
         }
 
@@ -672,6 +693,13 @@ namespace OmniWorld.AI
                     cityEvent.eventType = EventType.Cultural;
                     cityEvent.description = "Parisian elegance and artistic excellence!";
                     break;
+                    
+                case "OmniLagos":
+                    cityEvent.name = GetOmniLagosEventName();
+                    cityEvent.eventType = EventType.Cultural;
+                    cityEvent.economicImpact = (float)random.NextDouble() * 0.35f; // High energy, positive impact
+                    cityEvent.description = "Lagos street energy and Afrobeats culture explosion!";
+                    break;
             }
 
             return cityEvent;
@@ -737,6 +765,12 @@ namespace OmniWorld.AI
         private string GetOmniParisEventName()
         {
             string[] events = { "Paris Fashion Week", "Louvre Night", "Seine River Festival", "Montmartre Art Fair", "Champs-Élysées Parade" };
+            return events[random.Next(events.Length)];
+        }
+
+        private string GetOmniLagosEventName()
+        {
+            string[] events = { "Afrobeats Music Festival", "Fela Shrine Night", "Lagos Fashion Week", "Street Market Carnival", "Tech Innovation Expo", "Victoria Island Block Party", "New Afrika Shrine Concert", "Eko Atlantic Festival" };
             return events[random.Next(events.Length)];
         }
 
@@ -1009,6 +1043,7 @@ namespace OmniWorld.AI
                 break;
                 
             case "Lagos":
+            case "OmniLagos":
                 quest.title = GetLagosMusicQuest();
                 quest.description = "Dive into the vibrant Afrobeats culture of Lagos.";
                 quest.reward *= 1.2f;

@@ -41,7 +41,8 @@ namespace OmniWorld.World
             "OmniNYC",
             "OmniDubai",
             "OmniLA",
-            "OmniParis"
+            "OmniParis",
+            "OmniLagos"
         };
 
         private Dictionary<string, CityData> cityRegistry = new Dictionary<string, CityData>();
@@ -65,7 +66,7 @@ namespace OmniWorld.World
         {
             Debug.Log("Transit System Initialized");
 
-            // Initialize all 7 metropolises
+            // Initialize all 8 metropolises
             cityRegistry["OmniLanta"] = new CityData
             {
                 name = "OmniLanta",
@@ -126,6 +127,15 @@ namespace OmniWorld.World
                 displayName = "OmniParis (Paris, FR)",
                 theme = "Art, Fashion, Culture, Romance",
                 coordinates = new Vector2(48.8566f, 2.3522f),
+                isUnlocked = false
+            };
+
+            cityRegistry["OmniLagos"] = new CityData
+            {
+                name = "OmniLagos",
+                displayName = "OmniLagos (Lagos, NG)",
+                theme = "Afrobeats Capital, Street Energy, Cultural Innovation",
+                coordinates = new Vector2(6.5244f, 3.3792f),
                 isUnlocked = false
             };
 

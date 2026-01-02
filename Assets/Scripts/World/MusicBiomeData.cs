@@ -112,9 +112,10 @@ namespace OmniWorld.World
                     };
                     
                 case "Lagos":
+                case "OmniLagos":
                     return new MusicBiomeData
                     {
-                        cityName = "Lagos",
+                        cityName = "OmniLagos",
                         biomeName = "Afrobeats Market Energy",
                         culturalIdentity = "Street Market Energy, Afrobeats Polyrhythm, Cultural Hub",
                         primaryGenre = "Afrobeats",

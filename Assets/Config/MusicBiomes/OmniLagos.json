@@ -1,0 +1,70 @@
+{
+  "cityName": "OmniLagos",
+  "biomeName": "Afrobeats Capital",
+  "culturalIdentity": "Street Energy, Polyrhythm, Cultural Innovation",
+  "primaryGenre": "Afrobeats",
+  "subGenres": ["Afropop", "Highlife", "Juju", "Fuji"],
+  "ambientSoundtrack": "lagos_ambient_loop",
+  "environmentalSounds": [
+    "street_market_chatter",
+    "okada_bikes",
+    "generators",
+    "molue_bus_horns",
+    "talking_drums"
+  ],
+  "baseBPM": 110,
+  "daypartRhythm": "morning_hustle|afternoon_market|evening_groove|night_shrine",
+  "culturalInstruments": [
+    "talking_drums",
+    "shekere",
+    "log_drums",
+    "afro_percussion",
+    "horns_section"
+  ],
+  "streetSounds": [
+    "danfo_conductors",
+    "street_vendors",
+    "outdoor_parties",
+    "neighborhood_bars"
+  ],
+  "languageAccent": "Nigerian Pidgin",
+  "audioMix": {
+    "ambientVolume": 0.55,
+    "musicVolume": 0.80,
+    "sfxVolume": 0.90
+  },
+  "dynamicMusic": {
+    "supportsDynamicTransitions": true,
+    "transitionDuration": 2.5,
+    "introClip": "lagos_intro",
+    "loopClip": "lagos_loop",
+    "outroClip": "lagos_outro"
+  },
+  "districtVariations": {
+    "Victoria_Island_Tech": {
+      "ambientTrack": "tech_innovation_district",
+      "additionalSFX": ["startup_energy", "innovation_buzz", "modern_vibes"],
+      "intensityMultiplier": 1.3
+    },
+    "Ikeja_Music_Production": {
+      "ambientTrack": "studio_district_afrobeats",
+      "additionalSFX": ["recording_sessions", "producer_beats", "artist_vocals"],
+      "intensityMultiplier": 1.5
+    },
+    "Fela_Shrine_District": {
+      "ambientTrack": "shrine_energy",
+      "additionalSFX": ["live_performance", "crowd_energy", "cultural_celebration"],
+      "intensityMultiplier": 1.9
+    },
+    "Balogun_Market": {
+      "ambientTrack": "market_hustle",
+      "additionalSFX": ["vendor_calls", "bargaining", "crowd_movement"],
+      "intensityMultiplier": 1.6
+    },
+    "Eko_Atlantic": {
+      "ambientTrack": "waterfront_modern",
+      "additionalSFX": ["ocean_waves", "luxury_vibes", "development_sounds"],
+      "intensityMultiplier": 1.2
+    }
+  }
+}
