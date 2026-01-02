@@ -1,0 +1,346 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-01-02",
+  "description": "Master registry of all assets and prefabs in OmniWorld",
+  "categories": {
+    "housing": {
+      "name": "Housing",
+      "description": "Residential properties including apartments, condos, mansions, and penthouses",
+      "path": "Assets/Prefabs/Housing",
+      "subcategories": [
+        {
+          "name": "Apartments",
+          "path": "Assets/Prefabs/Housing/Apartments",
+          "count": 9,
+          "economicTier": "Entry",
+          "priceRange": { "min": 18000, "max": 500000, "currency": "OMNI" },
+          "assets": [
+            "MicroApartment.json",
+            "StudioApartment.json",
+            "OneBedroom.json",
+            "TwoBedroom.json",
+            "ThreeBedroom.json",
+            "Loft.json",
+            "PenthouseApartment.json",
+            "ConvertedWarehouse.json",
+            "UrbanLoft.json"
+          ]
+        },
+        {
+          "name": "Condos",
+          "path": "Assets/Prefabs/Housing/Condos",
+          "count": 9,
+          "economicTier": "Standard-Premium",
+          "priceRange": { "min": 145000, "max": 850000, "currency": "OMNI" },
+          "assets": [
+            "TownhouseStyle.json",
+            "ModernFlat.json",
+            "ThreeBedroom.json",
+            "FourBedroom.json",
+            "GardenLevel.json",
+            "CornerUnit.json",
+            "UrbanStudio.json",
+            "SkylineView.json",
+            "LuxuryPenthouseStyle.json"
+          ]
+        },
+        {
+          "name": "Mansions",
+          "path": "Assets/Prefabs/Housing/Mansions",
+          "count": 8,
+          "economicTier": "Luxury",
+          "priceRange": { "min": 2500000, "max": 8500000, "currency": "OMNI" },
+          "assets": [
+            "ColonialEstate.json",
+            "ModernEstate.json",
+            "MediterraneanVilla.json",
+            "VictorianManor.json",
+            "RanchEstate.json",
+            "TuscanEstate.json",
+            "FrenchChateau.json",
+            "BeachfrontVilla.json",
+            "ContemporaryArchitectural.json"
+          ]
+        },
+        {
+          "name": "Penthouses",
+          "path": "Assets/Prefabs/Housing/Penthouses",
+          "count": 9,
+          "economicTier": "Ultra-Luxury",
+          "priceRange": { "min": 3800000, "max": 45000000, "currency": "OMNI" },
+          "assets": [
+            "SkyVilla.json",
+            "CornerTower.json",
+            "Duplex.json",
+            "Triplex.json",
+            "Quadplex.json",
+            "Contemporary.json",
+            "SmartHomeTech.json",
+            "IndustrialLoft.json",
+            "MinimalistZen.json"
+          ]
+        }
+      ]
+    },
+    "vehicles": {
+      "name": "Vehicles",
+      "description": "Ground and air vehicles including cars, bikes, and aircraft",
+      "path": "Assets/Prefabs/Vehicles",
+      "subcategories": [
+        {
+          "name": "Cars",
+          "path": "Assets/Prefabs/Vehicles/Cars",
+          "count": 31,
+          "economicTier": "Entry-Ultra-Luxury",
+          "priceRange": { "min": 12000, "max": 15000000, "currency": "OMNI" },
+          "nftVehicles": [
+            "NFT_ApexOne_1of1.json",
+            "NFT_PhoenixEternal_1of1.json",
+            "NFT_SovereignCrown_1of1.json",
+            "NFT_VelocityX_10of10.json",
+            "NFT_DominionGT_10of10.json"
+          ],
+          "assets": [
+            "BudgetHatch.json",
+            "CompactSedan.json",
+            "EconoSedan.json",
+            "MidSizeSedan.json",
+            "SportyCoupe.json",
+            "SportsCar.json",
+            "MuscleCar.json",
+            "LuxurySedan.json",
+            "ExecutiveSedan.json",
+            "PrestigeSedan.json",
+            "SUV.json",
+            "CrossoverSUV.json",
+            "OffRoadSUV.json",
+            "LuxuryCrossover.json",
+            "LuxuryLimoSUV.json",
+            "FamilyMinivan.json",
+            "Pickup.json",
+            "Hatchback.json",
+            "ElectricSedan.json",
+            "ElectricCrossover.json",
+            "ElectricRoadster.json",
+            "LuxuryElectricSUV.json",
+            "Convertible.json",
+            "Supercar.json",
+            "Hypercar.json",
+            "GrandTourer.json",
+            "RacingPedigreeCoupe.json",
+            "UltraLuxCoupe.json",
+            "PerformanceSportSedan.json",
+            "AetherPhantomGT.json",
+            "StratosLynxV.json"
+          ]
+        },
+        {
+          "name": "Bikes",
+          "path": "Assets/Prefabs/Vehicles/Bikes",
+          "count": 5,
+          "economicTier": "Entry-Premium",
+          "priceRange": { "min": 9500, "max": 35000, "currency": "OMNI" },
+          "assets": [
+            "Cruiser.json",
+            "Sportbike.json",
+            "DirtBike.json",
+            "Touring.json",
+            "ElectricSport.json"
+          ]
+        },
+        {
+          "name": "Aircraft",
+          "path": "Assets/Prefabs/Vehicles/Aircraft",
+          "count": 5,
+          "economicTier": "Ultra-Luxury",
+          "priceRange": { "min": 15000, "max": 12000000, "currency": "OMNI" },
+          "assets": [
+            "PrivateJet.json",
+            "Helicopter.json",
+            "Ultralight.json",
+            "Seaplane.json",
+            "FighterJet.json"
+          ]
+        }
+      ]
+    },
+    "avatars": {
+      "name": "Avatars",
+      "description": "Player character models, customization options, and animations",
+      "path": "Assets/Prefabs/Avatars",
+      "subcategories": [
+        {
+          "name": "Base",
+          "path": "Assets/Prefabs/Avatars/Base",
+          "count": 5,
+          "description": "Base character models with rigging and blend shapes",
+          "assets": [
+            "MaleRealistic.json",
+            "FemaleRealistic.json",
+            "ChildRealistic.json",
+            "ElderlyMale.json",
+            "ElderlyFemale.json"
+          ]
+        },
+        {
+          "name": "Customization",
+          "path": "Assets/Prefabs/Avatars/Customization",
+          "count": 10,
+          "description": "Appearance customization options",
+          "assets": [
+            "HairStyles.json",
+            "FacialHair.json",
+            "Eyes.json",
+            "SkinTones.json",
+            "BodyTypes.json",
+            "Clothing.json",
+            "Accessories.json",
+            "Tattoos.json",
+            "FacialFeatures.json",
+            "Makeup.json"
+          ]
+        },
+        {
+          "name": "Animations",
+          "path": "Assets/Prefabs/Avatars/Animations",
+          "count": 10,
+          "description": "Character animation sets",
+          "assets": [
+            "Locomotion.json",
+            "Emotes.json",
+            "Dance.json",
+            "Actions.json",
+            "Sports.json",
+            "Performances.json",
+            "Idles.json",
+            "Cinematic.json",
+            "Combat.json",
+            "Environmental.json"
+          ]
+        }
+      ]
+    },
+    "gyms": {
+      "name": "Gyms",
+      "description": "Underground fighting gym facilities and equipment",
+      "path": "Assets/Prefabs/Gyms",
+      "subcategories": [
+        {
+          "name": "Facilities",
+          "path": "Assets/Prefabs/Gyms",
+          "count": 3,
+          "description": "Complete gym facility prefabs",
+          "assets": [
+            "UndergroundGym_Boxing.json",
+            "UndergroundGym_MMA.json",
+            "UndergroundGym_StreetFight.json"
+          ]
+        },
+        {
+          "name": "Equipment",
+          "path": "Assets/Prefabs/Gyms/Equipment",
+          "count": 9,
+          "description": "Individual training equipment",
+          "assets": [
+            "Boxing_Ring_Professional.json",
+            "Boxing_HeavyBag_Classic.json",
+            "Boxing_SpeedBag_Pro.json",
+            "MMA_OctagonCage_Professional.json",
+            "MMA_ThaiPads_Elite.json",
+            "MMA_GrapplingDummy_Advanced.json",
+            "StreetFight_FightingPit_Underground.json",
+            "StreetFight_ImprovisedWeapons_Training.json",
+            "StreetFight_ConcreteBag_Brutal.json"
+          ]
+        }
+      ]
+    },
+    "buildings": {
+      "name": "Buildings",
+      "description": "Commercial buildings and business facilities",
+      "path": "Assets/Prefabs/Buildings",
+      "subcategories": [
+        {
+          "name": "Dealerships",
+          "path": "Assets/Prefabs/Vehicles/Dealerships",
+          "count": 1,
+          "description": "Auto dealership and showroom buildings",
+          "assets": [
+            "OmniLuxAuto.json"
+          ]
+        },
+        {
+          "name": "Showrooms",
+          "path": "Assets/Prefabs/Buildings",
+          "count": 1,
+          "description": "Vehicle display and retail spaces",
+          "assets": [
+            "AutoDealership_Showroom.json"
+          ]
+        }
+      ]
+    }
+  },
+  "statistics": {
+    "totalCategories": 5,
+    "totalSubcategories": 14,
+    "totalAssets": 100,
+    "breakdown": {
+      "housing": 35,
+      "vehicles": 41,
+      "avatars": 25,
+      "gyms": 12,
+      "buildings": 2
+    }
+  },
+  "economicTiers": [
+    {
+      "name": "Entry",
+      "priceRange": { "min": 9500, "max": 85000 },
+      "description": "Affordable assets for new players"
+    },
+    {
+      "name": "Standard",
+      "priceRange": { "min": 85000, "max": 250000 },
+      "description": "Mid-tier assets for established players"
+    },
+    {
+      "name": "Premium",
+      "priceRange": { "min": 250000, "max": 1000000 },
+      "description": "High-quality assets for advanced players"
+    },
+    {
+      "name": "Luxury",
+      "priceRange": { "min": 1000000, "max": 5000000 },
+      "description": "Luxury assets for wealthy players"
+    },
+    {
+      "name": "Ultra-Luxury",
+      "priceRange": { "min": 5000000, "max": 50000000 },
+      "description": "Ultra-rare, exclusive assets"
+    }
+  ],
+  "nftCategories": {
+    "standard": {
+      "description": "Regular NFT assets available for minting",
+      "royalty": 0.20,
+      "creatorShare": 0.85
+    },
+    "limited": {
+      "description": "Limited edition NFTs (e.g., 10 of 10)",
+      "royalty": 0.25,
+      "creatorShare": 0.85
+    },
+    "oneOfOne": {
+      "description": "Unique 1/1 NFT assets",
+      "royalty": 0.30,
+      "creatorShare": 0.90
+    }
+  },
+  "integrations": {
+    "dominionEconomy": true,
+    "web3": true,
+    "blockchain": "Polygon",
+    "standards": ["ERC-721", "ERC-1155", "EIP-2981"]
+  }
+}
