@@ -500,7 +500,7 @@ Licensing:     80% to Creator | 20% to Platform
 - [ ] $OMNI token public sale
 
 #### **Phase 3: Acceleration (2026)**
-- [ ] All 7 metropolises operational
+- [ ] All 8 metropolises operational
 - [ ] DAO governance activation
 - [ ] Cross-chain bridges (Ethereum, Solana)
 - [ ] 1,000,000 active users milestone
@@ -545,7 +545,7 @@ Licensing:     80% to Creator | 20% to Platform
    - Mint your citizen pass
 
 2. **Choose Your City**
-   - Explore the 7 metropolises
+   - Explore the 8 metropolises
    - Each city offers unique opportunities
    - Start with OmniLanta for creator-friendly entry
 
