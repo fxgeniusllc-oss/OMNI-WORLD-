@@ -124,7 +124,7 @@ P_OMNI = (U_p × H_r × C_x) / (D_r × Z_i × T_s)
 
 #### 5️⃣ Sovereign Citizenship
 - Every player is an economic sovereign with voting rights
-- Multiple career paths: Landlord, Banker, Educator, Mogul, Tax Entity
+- Multiple career paths: Landlord, DeFi Banker, Educator, Mogul, Tax Entity, Fashion Designer, Interior Designer, Architect
 - Reputation systems create meritocratic advancement
 
 ### 💼 User Experience
@@ -213,9 +213,16 @@ Each metropolis features five primary zone types:
 
 - **7 AI-Generated Cities** with unique economies and cultures
 - **Virtual Real Estate** ownership via NFTs (buy, sell, lease)
-- **Dynamic Player Roles:** Creator, Collector, DJ, Architect, Entrepreneur, Educator
+- **Dynamic Player Roles:** Creator, Collector, DJ, Architect, Fashion Designer, Interior Designer, Entrepreneur, Educator, DeFi Banker
 - **AI NPCs:** Reactive agents powered by OmniMentor + GPT with memory
 - **Career Progression:** Petty Missions → Career Paths → World Impact → Legacy Building
+- **Architecture Career Path:** Design 3D blueprints, mint as NFTs, certify for real-world construction
+  - Create detailed architectural blueprints with dimensions and specifications
+  - Mint blueprints as NFTs for digital ownership and trading
+  - High-reputation architects can certify blueprints for real-world builds
+  - Real-world building codes and construction permits
+  - Earn from both digital NFT sales and physical construction licenses
+  - Bridge digital creativity with real-world construction opportunities
 
 ### 🎨 Creator Economy
 
@@ -229,10 +236,28 @@ Each metropolis features five primary zone types:
 ### 💰 Financial Engine
 
 - **$OMNI Token:** Native currency (2B total supply) with deflationary mechanics
+- **DeFi Banking System:** SaaS arbitrage model with flash loans
+  - Link exchange accounts for automated arbitrage trading
+  - Flash loan execution across DEX platforms (Uniswap, Sushiswap, Quickswap)
+  - 70% profit share to users, 30% to Omni Treasury
+  - Auto-scanning for arbitrage opportunities every 30 seconds
+  - Real-time flash loan execution with 0.09% fee
+  - Treasury contribution system generating ecosystem income
 - **DeFi Integration:** Staking, vault farming, liquidity pools, yield generation
 - **Task Economy:** Dynamic payouts based on reputation and skill multipliers
 - **Revenue Sharing:** Treasury splits between creators, stakers, and governance
 - **Smart Contracts:** ERC-721, ERC-1155, EIP-2981 royalties
+- **🏆 Trophy NFT System:** Tournament rewards with VIP access and smart contract trading bots
+
+### 🏆 Trophy NFT Ranking System
+
+- **Gold Trophy NFTs:** Elite championship rewards with 2x XP boost and smart contract trading bots
+- **Silver Trophy NFTs:** Mid-tier competitive rewards with 1.5x XP boost and trading bot access
+- **Bronze Trophy NFTs:** Entry-level achievements with 1.25x XP boost
+- **VIP Tournament Access:** Trophy holders gain exclusive access to tier-specific competitions
+- **Passive Income:** Gold/Silver trophies include embedded trading bots using USDC/WBTC (not $OMNI)
+- **Time-Limited Bots:** Trading bots active for 6-12 months, protecting ecosystem from inflation
+- **Marketplace Integration:** Trophies tradeable as collectibles with historical prestige value
 
 ### 🤖 AI Infrastructure
 

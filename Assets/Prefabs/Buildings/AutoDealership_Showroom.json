@@ -1,0 +1,78 @@
+{
+  "prefabName": "Building_AutoDealership_Showroom",
+  "category": "Buildings",
+  "subCategory": "Commercial",
+  "type": "Auto Dealership",
+  "metadata": {
+    "buildingType": "Luxury Auto Dealership",
+    "zoneType": "Commercial",
+    "businessCategory": "NFT Vehicle Sales",
+    "primeLocation": true,
+    "iconic": true
+  },
+  "branding": {
+    "name": "OmniWorld Auto Gallery",
+    "tagline": "Where Dreams Drive",
+    "established": 2025,
+    "reputation": "Ultra-Premium"
+  },
+  "architecture": {
+    "style": "Ultra-Modern Glass Design",
+    "architect": "Omega Prime Studios",
+    "floors": 3,
+    "totalArea": 25000,
+    "showroomArea": 12000,
+    "officeArea": 5000,
+    "loungeArea": 4000,
+    "storageArea": 4000
+  },
+  "exteriorDesign": {
+    "primaryMaterial": "Structural Glass Panels",
+    "frameMaterial": "Brushed Titanium",
+    "roofType": "Glass Dome with Solar Integration",
+    "entryType": "Automatic Glass Doors - Grand",
+    "landscaping": "Modern Minimalist with Water Features",
+    "lighting": "LED Strip Accent + Spotlights",
+    "signage": "Holographic OmniWorld Logo",
+    "parkingSpaces": 50,
+    "valetService": true
+  },
+  "showroom": {
+    "capacity": 20,
+    "displayPlatforms": 20,
+    "platformType": "Rotating Illuminated Pedestals",
+    "windowShopping": {
+      "enabled": true,
+      "hours": "24/7"
+    }
+  },
+  "loungeZones": [
+    {
+      "name": "VIP Platinum Lounge",
+      "floor": 2,
+      "capacity": 15,
+      "features": ["Luxury Seating", "Private Bar", "Entertainment System"],
+      "access": "Elite Members Only"
+    }
+  ],
+  "dynamicLighting": {
+    "enabled": true,
+    "zones": [
+      {
+        "area": "Main Showroom",
+        "type": "Dynamic Color-Shifting",
+        "intensity": 5.0
+      }
+    ]
+  },
+  "economics": {
+    "purchasePrice": 15000000,
+    "monthlyRevenue": 2500000,
+    "operatingCosts": 500000
+  },
+  "location": {
+    "city": "OmniVegas",
+    "district": "Luxury Strip",
+    "address": "777 Prestige Boulevard"
+  }
+}

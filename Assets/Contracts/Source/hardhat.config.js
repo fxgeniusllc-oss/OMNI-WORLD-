@@ -1,4 +1,3 @@
-require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 
 /** @type import('hardhat/config').HardhatUserConfig */
@@ -27,15 +26,10 @@ module.exports = {
       chainId: 137
     }
   },
-  etherscan: {
-    apiKey: {
-      polygonMumbai: process.env.POLYGONSCAN_API_KEY || "",
-      polygon: process.env.POLYGONSCAN_API_KEY || ""
-    }
-  },
-  gasReporter: {
-    enabled: process.env.REPORT_GAS === "true",
-    currency: "USD",
-    coinmarketcap: process.env.COINMARKETCAP_API_KEY
+  paths: {
+    sources: "./contracts",
+    tests: "./test",
+    cache: "./cache",
+    artifacts: "./artifacts"
   }
 };

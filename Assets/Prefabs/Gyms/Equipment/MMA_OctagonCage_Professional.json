@@ -1,0 +1,86 @@
+{
+  "prefabName": "MMA_OctagonCage_Professional",
+  "category": "Equipment",
+  "subCategory": "MMA",
+  "type": "Training Equipment",
+  "variation": 1,
+  "metadata": {
+    "nftCompatible": true,
+    "gymCompatibility": ["MMATrainingCenter"],
+    "durability": 100,
+    "maintenance": "High"
+  },
+  "equipment": {
+    "name": "Professional Octagon Cage",
+    "type": "Fighting Cage",
+    "dimensions": {
+      "diameter": "30 feet",
+      "height": "6 feet",
+      "canvasArea": "750 square feet",
+      "cageHeight": "6 feet above canvas"
+    },
+    "materials": {
+      "frame": "Industrial steel tube construction",
+      "fencing": "Coated chain-link steel",
+      "canvas": "Premium UFC-grade canvas over 2-inch foam",
+      "padding": "Foam-wrapped posts and rails",
+      "door": "Steel gate with locking mechanism"
+    },
+    "aesthetic": {
+      "canvasColor": "Black with red Omega logo",
+      "fenceCoating": "Black vinyl-coated chain link",
+      "postPadding": "Black and red striped",
+      "lighting": "Integrated LED ring lights",
+      "condition": "Broadcast quality"
+    }
+  },
+  "stats": {
+    "durability": 100,
+    "safetyRating": 100,
+    "professionalGrade": 100,
+    "trainingEffectiveness": 100,
+    "spectacle": 95
+  },
+  "trainingBonuses": {
+    "allStats": 5,
+    "cageFighting": 10,
+    "takedownDefense": 5,
+    "cageControl": 5
+  },
+  "installation": {
+    "mounting": "Floor-anchored steel platform",
+    "requiredSpace": "40x40 feet minimum",
+    "assembly": "Professional installation required",
+    "weight": "5000 lbs total"
+  },
+  "features": {
+    "cameras": "4 HD camera mounts",
+    "lighting": "LED overhead system",
+    "clockDisplay": "Digital timer displays x4",
+    "soundSystem": "Integrated speakers",
+    "cornerStools": "8 included",
+    "gateAccess": "2 cage doors"
+  },
+  "technology": {
+    "cameraSystem": "4K recording ready",
+    "scoringTablet": "Digital judging system",
+    "instantReplay": "Connected to video system",
+    "fightMetrics": "Optional sensor integration"
+  },
+  "economics": {
+    "purchasePrice": 15000,
+    "maintenanceCost": 200,
+    "lifespan": "20 years",
+    "currency": "OMNI"
+  },
+  "sounds": {
+    "canvas": "Deep thud on impact",
+    "cage": "Chain-link rattle",
+    "door": "Steel gate clang"
+  },
+  "price": {
+    "basePrice": 15000,
+    "tier": "Ultra-Legendary",
+    "currency": "OMNI"
+  }
+}

@@ -3,7 +3,6 @@ pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155Supply.sol";
 
 /**
@@ -11,8 +10,7 @@ import "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155Supply.sol";
  * @dev ERC-1155 contract for OmniWorld consumables, materials, and items
  */
 contract OmniItemsNFT is ERC1155, Ownable, ERC1155Supply {
-    using Counters for Counters.Counter;
-    Counters.Counter private _tokenIdCounter;
+    uint256 private _tokenIdCounter;
 
     // Item metadata
     struct ItemData {
@@ -47,8 +45,8 @@ contract OmniItemsNFT is ERC1155, Ownable, ERC1155Supply {
         bool isConsumable,
         string memory tokenURI
     ) public returns (uint256) {
-        uint256 tokenId = _tokenIdCounter.current();
-        _tokenIdCounter.increment();
+        uint256 tokenId = _tokenIdCounter;
+        _tokenIdCounter++;
 
         items[tokenId] = ItemData({
             name: name,
@@ -74,7 +72,7 @@ contract OmniItemsNFT is ERC1155, Ownable, ERC1155Supply {
         uint256 amount,
         bytes memory data
     ) public {
-        require(tokenId < _tokenIdCounter.current(), "Item does not exist");
+        require(tokenId < _tokenIdCounter, "Item does not exist");
         
         ItemData memory item = items[tokenId];
         
@@ -100,7 +98,7 @@ contract OmniItemsNFT is ERC1155, Ownable, ERC1155Supply {
     ) public {
         // Verify all items exist
         for (uint256 i = 0; i < tokenIds.length; i++) {
-            require(tokenIds[i] < _tokenIdCounter.current(), "Item does not exist");
+            require(tokenIds[i] < _tokenIdCounter, "Item does not exist");
         }
 
         _mintBatch(to, tokenIds, amounts, data);
@@ -127,7 +125,7 @@ contract OmniItemsNFT is ERC1155, Ownable, ERC1155Supply {
      * @dev Get item data
      */
     function getItemData(uint256 tokenId) public view returns (ItemData memory) {
-        require(tokenId < _tokenIdCounter.current(), "Item does not exist");
+        require(tokenId < _tokenIdCounter, "Item does not exist");
         return items[tokenId];
     }
 
@@ -135,7 +133,7 @@ contract OmniItemsNFT is ERC1155, Ownable, ERC1155Supply {
      * @dev Get token URI
      */
     function uri(uint256 tokenId) public view override returns (string memory) {
-        require(tokenId < _tokenIdCounter.current(), "Item does not exist");
+        require(tokenId < _tokenIdCounter, "Item does not exist");
         
         string memory tokenURI = _tokenURIs[tokenId];
         
@@ -150,7 +148,7 @@ contract OmniItemsNFT is ERC1155, Ownable, ERC1155Supply {
      * @dev Set token URI
      */
     function setTokenURI(uint256 tokenId, string memory tokenURI) public onlyOwner {
-        require(tokenId < _tokenIdCounter.current(), "Item does not exist");
+        require(tokenId < _tokenIdCounter, "Item does not exist");
         _tokenURIs[tokenId] = tokenURI;
     }
 

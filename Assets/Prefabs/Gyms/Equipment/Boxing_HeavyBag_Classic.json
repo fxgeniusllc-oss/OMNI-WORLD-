@@ -1,0 +1,62 @@
+{
+  "prefabName": "Boxing_HeavyBag_Classic",
+  "category": "Equipment",
+  "subCategory": "Boxing",
+  "type": "Training Equipment",
+  "variation": 1,
+  "metadata": {
+    "nftCompatible": true,
+    "gymCompatibility": ["BoxingGym"],
+    "durability": 100,
+    "maintenance": "Medium"
+  },
+  "equipment": {
+    "name": "Classic Leather Heavy Bag",
+    "type": "Heavy Bag",
+    "weight": "100 lbs",
+    "material": "Genuine leather",
+    "filling": "Shredded fabric and sand",
+    "dimensions": {
+      "height": "4 feet",
+      "diameter": "14 inches"
+    },
+    "aesthetic": {
+      "color": "Black leather with red stitching",
+      "condition": "Well-worn but maintained",
+      "brandLogo": "Iron Fist Gym",
+      "weathering": "Natural leather wear, some scuffs"
+    }
+  },
+  "stats": {
+    "damageResistance": 85,
+    "swingRealism": 90,
+    "trainingEffectiveness": 85,
+    "durability": 90
+  },
+  "trainingBonuses": {
+    "strength": 2,
+    "technique": 3,
+    "stamina": 2
+  },
+  "installation": {
+    "mounting": "Heavy-duty ceiling chain",
+    "requiredSpace": "6x6 feet",
+    "height": "Adjustable 6-8 feet"
+  },
+  "economics": {
+    "purchasePrice": 150,
+    "maintenanceCost": 5,
+    "lifespan": "5 years with proper care",
+    "currency": "OMNI"
+  },
+  "sounds": {
+    "impact": "Deep thud with leather resonance",
+    "chain": "Metal chain clinking",
+    "swinging": "Soft whoosh"
+  },
+  "price": {
+    "basePrice": 150,
+    "tier": "Common",
+    "currency": "OMNI"
+  }
+}

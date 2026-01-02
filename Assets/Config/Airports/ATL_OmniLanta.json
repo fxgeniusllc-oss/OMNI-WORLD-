@@ -1,0 +1,51 @@
+{
+  "airportCode": "ATL",
+  "airportName": "OmniGate Atlanta International",
+  "cityName": "OmniLanta",
+  "terminalType": "International",
+  "worldPosition": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "gpsCoordinates": {
+    "lat": 33.6407,
+    "lon": -84.4277
+  },
+  "access": {
+    "isUnlocked": true,
+    "unlockCost": 0,
+    "requiredReputation": 0,
+    "unlockRequirements": []
+  },
+  "availableDestinations": [
+    "OmniVegas",
+    "OmniNYC"
+  ],
+  "terminalFeatures": {
+    "hasMissionBoard": true,
+    "hasCustomsNPC": true,
+    "hasLounge": true,
+    "hasCargoArea": true
+  },
+  "visualStyle": {
+    "architectureStyle": "Modern Southern",
+    "ambientLighting": "Warm",
+    "culturalDecor": [
+      "trap_murals",
+      "recording_studio_exhibits",
+      "creator_hall_of_fame"
+    ]
+  },
+  "services": {
+    "offersRentals": true,
+    "offersInsurance": true,
+    "offersCurrencyExchange": true,
+    "offersNFTMarketplace": true
+  },
+  "economy": {
+    "baseLandingFee": 5,
+    "economicActivityMultiplier": 1.2
+  },
+  "description": "The gateway to Atlanta's creative empire. This terminal showcases the city's trap legacy and tech innovation. Starting point for all OmniWorld travelers."
+}

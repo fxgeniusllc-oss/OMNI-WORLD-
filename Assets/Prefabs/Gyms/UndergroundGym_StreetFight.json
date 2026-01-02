@@ -1,0 +1,287 @@
+{
+  "prefabName": "Underground_Gym_StreetFight",
+  "category": "Gyms",
+  "subCategory": "Underground",
+  "type": "Street Fighting Arena - Variation 3",
+  "metadata": {
+    "nftCompatible": true,
+    "ownable": true,
+    "businessType": "Gym",
+    "zoneType": "Recreation",
+    "cityCompatibility": ["OmniLanta", "OmniVegas", "OmniNYC", "OmniLA", "OmniTokyo"],
+    "warningLevel": "High-Risk, Adult Content"
+  },
+  "gymConfiguration": {
+    "name": "The Pit - Street Warriors Den",
+    "gymType": "StreetFightArena",
+    "theme": "Street Fighting - No Rules Survival",
+    "description": "Underground street fighting arena where anything goes and legends are born. Raw, dangerous, and unapologetically brutal.",
+    "specialization": "Street fighting, dirty tactics, survival skills, improvised weapons, real-world combat",
+    "atmosphere": "Dark, dangerous, chaotic. Minimal lighting, concrete floors, graffiti walls, makeshift equipment, fighting pit with chain-link fence"
+  },
+  "facilities": {
+    "mainArea": {
+      "fightingPit": {
+        "type": "Sunken concrete pit with chain-link cage",
+        "size": "25x25 feet",
+        "depth": "3 feet below ground level",
+        "surface": "Bare concrete with blood stains (aesthetic)",
+        "barriers": "Chain-link fence 8 feet high",
+        "lighting": "Single overhead cage light, red ambient",
+        "atmosphere": "Raw and intimidating"
+      },
+      "trainingArea": {
+        "concreteHeavyBags": {
+          "count": 4,
+          "filling": "Sand and concrete mix",
+          "hanging": "Rusty chains from ceiling beams"
+        },
+        "improvised": [
+          "Tire stacks for striking x3",
+          "Metal pipe racks",
+          "Chain-wrapped bags x2",
+          "Wooden posts for conditioning"
+        ]
+      },
+      "spectatorZone": {
+        "standing": "Elevated concrete platforms around pit",
+        "capacity": 100,
+        "betting": "Underground betting ring with cash/crypto",
+        "bar": "Makeshift bar selling drinks"
+      }
+    },
+    "backRooms": {
+      "preparation": {
+        "fighters": "Dingy locker area with metal lockers",
+        "handWrapping": "DIY station with tape and cloth",
+        "meditation": "Dark quiet corner"
+      },
+      "medicalBay": {
+        "emergency": "Basic first aid, no frills",
+        "cutMan": "Experienced cut man on staff",
+        "recovery": "Old couches for rest"
+      },
+      "office": {
+        "promoter": "Small office for fight organizing",
+        "vault": "Safe for money/crypto storage",
+        "surveillance": "Security cameras (for insurance)"
+      }
+    }
+  },
+  "dimensions": {
+    "totalSquareFeet": 4500,
+    "ceilingHeight": "12 feet (exposed beams)",
+    "layout": "Open warehouse with central pit, industrial feel"
+  },
+  "aesthetics": {
+    "lighting": "Dim Edison bulbs, red LED strips, spotlight on pit during fights",
+    "walls": "Exposed brick and concrete, covered in graffiti art and fight posters",
+    "floor": "Bare concrete, stained and weathered",
+    "colors": ["Concrete gray", "Rust red", "Black", "Graffiti colors"],
+    "decorations": [
+      "Graffiti murals of legendary fighters",
+      "Broken equipment as trophies",
+      "Blood-stained wraps displayed",
+      "Underground fight night posters",
+      "Neon 'The Pit' sign",
+      "Chain decorations",
+      "Skull and combat imagery",
+      "Warning signs and rules (ironically)"
+    ]
+  },
+  "equipment": {
+    "striking": [
+      "Concrete-filled Heavy Bags x4",
+      "Tire Stacks (various sizes) x6",
+      "Metal Pipes (training) x8",
+      "Chain-Wrapped Bags x2",
+      "Wooden Posts x4",
+      "Brick Walls (for conditioning) x2"
+    ],
+    "conditioning": [
+      "Tire Flipping Tires x4",
+      "Sledgehammers x6",
+      "Concrete Blocks (lifting) x12",
+      "Pull-Up Bar (rusty pipe)",
+      "Rope Climb x2",
+      "Improvised Weight Plates"
+    ],
+    "protective": [
+      "Hand Wraps (fighters bring own)",
+      "Mouthguards (personal)",
+      "Minimal padding (authentic feel)",
+      "First Aid Kits x3",
+      "Ice Packs",
+      "Gauze and tape (bulk)"
+    ],
+    "improvised": [
+      "Training Chains x6",
+      "Car Hoods (for striking) x2",
+      "Metal Barrels x4",
+      "Wooden Pallets x8"
+    ],
+    "atmosphere": [
+      "Sound System (heavy bass)",
+      "Red LED Strip Lights",
+      "Smoke Machine",
+      "Spotlight for fights",
+      "Video Screen (for replays/betting odds)"
+    ]
+  },
+  "staff": {
+    "owner": {
+      "name": "Dmitri \"The Bear\" Volkov",
+      "background": "Ex-Russian special forces, underground fight champion",
+      "personality": "Brutal, fair within his code, respects strength",
+      "reputation": "Legendary in underground circuit"
+    },
+    "coaches": [
+      {
+        "name": "Carlos \"El Diablo\" Reyes",
+        "specialty": "Street fighting, knife defense, dirty tactics",
+        "background": "Former gang enforcer turned coach",
+        "experience": "25 years street combat"
+      },
+      {
+        "name": "Tyrell \"Breaker\" Washington",
+        "specialty": "Bone-breaking techniques, submissions, intimidation",
+        "background": "Ex-bouncer and enforcer",
+        "experience": "18 years"
+      }
+    ],
+    "support": [
+      {
+        "name": "Doc Rivers",
+        "role": "Cut man and emergency medic",
+        "background": "Former army medic, seen it all"
+      },
+      {
+        "name": "Snake",
+        "role": "Betting coordinator and security",
+        "background": "Underground businessman"
+      },
+      {
+        "name": "Maya \"Blade\" Chen",
+        "role": "Equipment manager, weapon training",
+        "background": "Martial arts expert turned street fighter"
+      }
+    ]
+  },
+  "economics": {
+    "purchasePrice": 150000,
+    "monthlyOperatingCost": 5000,
+    "revenueStreams": {
+      "memberships": {
+        "daily": 3,
+        "weekly": 15,
+        "monthly": 50,
+        "lifetime": 300
+      },
+      "training": {
+        "basic": 8,
+        "advanced": 20,
+        "elite": 40,
+        "privateLesson": 75,
+        "weaponTraining": 100
+      },
+      "fightEvents": {
+        "entryFee": 50,
+        "spectatorFee": 20,
+        "gymRevenue": 30,
+        "bettingCommission": 10
+      },
+      "betting": {
+        "houseEdge": 15,
+        "notes": "Major revenue source"
+      },
+      "bar": {
+        "perNight": "Variable 500-2000"
+      }
+    },
+    "projectedMonthlyRevenue": {
+      "low": 15000,
+      "medium": 30000,
+      "high": 60000,
+      "notes": "Highly variable based on fight nights and betting"
+    },
+    "currency": "OMNI (also accepts cash, crypto)"
+  },
+  "capacity": {
+    "maxOccupancy": 150,
+    "fighters": 20,
+    "spectators": 100,
+    "standingRoom": 30
+  },
+  "hours": {
+    "training": "8:00 PM - 3:00 AM",
+    "fightNights": "10:00 PM - 4:00 AM (Friday, Saturday)",
+    "notes": "Late night operations to maintain underground status"
+  },
+  "reputation": {
+    "startingReputation": 30,
+    "specialty": "Real street combat, no-holds-barred fighting",
+    "knownFor": "Producing tough, dangerous fighters who can handle real-world situations",
+    "notoriety": "Police awareness but tolerated in OmniWorld"
+  },
+  "fightRules": {
+    "streetFight": {
+      "rules": "Minimal - no weapons that can kill, no eye gouging",
+      "duration": "Until knockout or submission",
+      "referee": "Yes, but minimal intervention"
+    },
+    "noHoldsBarred": {
+      "rules": "Absolutely anything goes",
+      "duration": "Until one can't continue",
+      "referee": "For safety only"
+    },
+    "survivalCombat": {
+      "rules": "Improvised weapons allowed",
+      "duration": "Timed rounds or knockout",
+      "referee": "Yes"
+    }
+  },
+  "betting": {
+    "minimum": 10,
+    "maximum": 5000,
+    "odds": "Dynamic based on fighters",
+    "payoutSpeed": "Immediate after fight",
+    "currency": "OMNI, BTC, ETH, Cash"
+  },
+  "warnings": {
+    "liability": "Fighters sign extensive waivers",
+    "injuries": "Common and expected",
+    "legalStatus": "Gray area in OmniWorld law",
+    "ageRequirement": "21+ only, verified ID",
+    "content": "Extreme violence, blood, adult themes"
+  },
+  "atmosphere": {
+    "music": "Heavy bass, trap, drill, industrial",
+    "crowd": "Loud, rowdy, betting, drinking",
+    "vibe": "Dangerous, electric, adrenaline-fueled",
+    "social": "Underground legends meet here"
+  },
+  "integrations": {
+    "dominionEconomy": true,
+    "nftMarketplace": true,
+    "fightSystem": true,
+    "zoneController": true,
+    "proceduralGeneration": false,
+    "bettingSystem": true,
+    "cryptoPayments": true
+  },
+  "price": {
+    "basePrice": 150000,
+    "tier": "Rare",
+    "rarity": "Limited (5 per city)",
+    "currency": "OMNI"
+  },
+  "lore": {
+    "backstory": "The Pit was established by Dmitri Volkov after he retired from underground fighting. It's become a legendary venue where true fighters test themselves without rules or constraints. Many champions have emerged from The Pit, and many more have been broken. It's a place of respect, fear, and raw combat.",
+    "legends": [
+      "Undefeated champion: Ghost - 47-0 record",
+      "Longest fight: 2 hours 15 minutes",
+      "Biggest upset: 50-1 odds knockout in round 1",
+      "Most brutal: The Carnage Night - all 8 fights ended in knockout"
+    ]
+  }
+}
