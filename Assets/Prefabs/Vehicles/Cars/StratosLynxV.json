@@ -1,0 +1,157 @@
+{
+  "prefabName": "Vehicle_Car_StratosLynxV",
+  "category": "Vehicles",
+  "subCategory": "Cars",
+  "type": "Supercar",
+  "exclusiveEdition": true,
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Legendary",
+    "performanceClass": "Supercar",
+    "rarity": "10-of-10",
+    "dealershipExclusive": "OmniLux Auto"
+  },
+  "specifications": {
+    "class": "Supercar",
+    "seats": 2,
+    "engine": "6.2L Supercharged V10",
+    "horsepower": 950,
+    "topSpeed": 235,
+    "acceleration": 2.5,
+    "handling": 9.5,
+    "fuelType": "Premium Gasoline",
+    "limitedEdition": true,
+    "productionNumber": 10
+  },
+  "physics": {
+    "mass": 1650,
+    "centerOfMass": { "x": 0, "y": 0.28, "z": -0.32 },
+    "wheelBase": 2.75,
+    "trackWidth": 1.78,
+    "suspensionTravel": 0.07,
+    "springRate": 85000,
+    "damperRate": 7500,
+    "downforce": 1200
+  },
+  "model": {
+    "dimensions": {
+      "length": 4.72,
+      "width": 2.02,
+      "height": 1.18,
+      "wheelbase": 2.75
+    },
+    "doors": 2,
+    "doorType": "Scissor",
+    "trunk": "Limited",
+    "bodyStyle": "Supercar"
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 180000,
+      "lod1": 90000,
+      "lod2": 42000,
+      "lod3": 18000
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 4096,
+      "metallic": 4096,
+      "ao": 4096,
+      "emissive": 2048
+    },
+    "materials": [
+      "Car_Paint_Stratos_Signature",
+      "Carbon_Fiber_Visible_Weave",
+      "Titanium_Exhaust_Racing",
+      "Glass_Aerospace_Grade",
+      "Alcantara_Racing_Interior",
+      "Rubber_Pirelli_P_Zero_Trofeo_R",
+      "LED_Lynx_Signature_Lights"
+    ],
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Reflections",
+      "Dynamic Shadows",
+      "Tire Deformation",
+      "Suspension Animation",
+      "Working Lights",
+      "Digital Racing Dashboard",
+      "Animated Steering Wheel",
+      "Active Aerodynamics",
+      "Brake Caliper Detail",
+      "V10 Engine Detail",
+      "Undercarriage Detail",
+      "Heat Haze Effects",
+      "Supercharger Detail"
+    ]
+  },
+  "audio": {
+    "engineSound": "V10_Supercharged_Roar",
+    "exhaustNote": "Racing_Tuned_V10",
+    "superchargerWhine": true,
+    "turboWhistle": false,
+    "hornSound": "Stratos_Custom",
+    "doorSound": "Scissor_Precision",
+    "brakeSound": "Carbon_Ceramic_Racing"
+  },
+  "effects": {
+    "exhaust": {
+      "particleSystem": true,
+      "centerExhaust": true,
+      "flames": true,
+      "intensityHigh": true
+    },
+    "tireSmokeOnBurnout": true,
+    "brakelightGlow": true,
+    "headlightBeams": true,
+    "exhaustFlames": true,
+    "brakeDiskGlow": true,
+    "heatShimmer": true,
+    "superchargerGlow": true
+  },
+  "components": [
+    "Rigidbody",
+    "VehicleController",
+    "WheelCollider",
+    "AudioSource",
+    "ParticleSystem",
+    "VehicleOwnership",
+    "NFTMetadata",
+    "DamageSystem",
+    "AerodynamicsController",
+    "LaunchControl",
+    "TelemetrySystem",
+    "SuperchargerController"
+  ],
+  "nftMetadata": {
+    "tokenStandard": "ERC-721",
+    "royaltyPercent": 20,
+    "attributes": [
+      {"trait_type": "Rarity", "value": "10-of-10"},
+      {"trait_type": "Performance Class", "value": "Supercar"},
+      {"trait_type": "Top Speed", "value": "235 mph"},
+      {"trait_type": "Horsepower", "value": 950},
+      {"trait_type": "Edition", "value": "Legendary"},
+      {"trait_type": "Engine", "value": "Supercharged V10"},
+      {"trait_type": "Edition Number", "value": "X of 10"}
+    ]
+  },
+  "customization": {
+    "paintColors": ["Stratos Red", "Lynx Blue", "Carbon Black", "Arctic White", "Solar Orange"],
+    "wheels": ["Carbon Fiber 21in", "Forged Racing 21in"],
+    "interior": ["Alcantara Racing Package", "Carbon Fiber Interior", "Digital Dash Upgrade"],
+    "upgrades": ["Supercharger Tune", "Track Aero Kit", "Racing Suspension", "Titanium Exhaust Upgrade"],
+    "nftParts": true
+  },
+  "price": {
+    "purchasePrice": 1200000,
+    "purchasePriceEth": 4.0,
+    "dailyRent": 15000,
+    "currency": "OMNI",
+    "auctionStartingBid": 1200000
+  }
+}
