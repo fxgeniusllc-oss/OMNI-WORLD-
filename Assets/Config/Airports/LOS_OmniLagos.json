@@ -1,0 +1,56 @@
+{
+  "airportCode": "LOS",
+  "airportName": "OmniGate Murtala Muhammed International",
+  "cityName": "OmniLagos",
+  "terminalType": "International",
+  "worldPosition": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "gpsCoordinates": {
+    "lat": 6.5774,
+    "lon": 3.3214
+  },
+  "access": {
+    "isUnlocked": true,
+    "unlockCost": 0,
+    "requiredReputation": 0,
+    "unlockRequirements": []
+  },
+  "availableDestinations": [
+    "OmniLanta",
+    "OmniNYC",
+    "OmniLA",
+    "OmniParis",
+    "OmniDubai"
+  ],
+  "terminalFeatures": {
+    "hasMissionBoard": true,
+    "hasCustomsNPC": true,
+    "hasLounge": true,
+    "hasCargoArea": true
+  },
+  "visualStyle": {
+    "architectureStyle": "Afro-Modern Fusion",
+    "ambientLighting": "Vibrant",
+    "culturalDecor": [
+      "afrobeats_murals",
+      "talking_drum_installations",
+      "street_art_gallery",
+      "fela_kuti_tribute",
+      "market_inspired_kiosks"
+    ]
+  },
+  "services": {
+    "offersRentals": true,
+    "offersInsurance": true,
+    "offersCurrencyExchange": true,
+    "offersNFTMarketplace": true
+  },
+  "economy": {
+    "baseLandingFee": 4,
+    "economicActivityMultiplier": 1.15
+  },
+  "description": "The gateway to Africa's creative powerhouse. This terminal pulses with the energy of Lagos' streets, showcasing Afrobeats culture, tech innovation, and street market vibrancy. Experience the heart of cultural export and music production."
+}

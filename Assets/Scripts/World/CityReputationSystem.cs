@@ -66,7 +66,7 @@ namespace OmniWorld.World
         {
             Debug.Log("Initializing City Reputation System...");
             
-            string[] cities = { "OmniLanta", "OmniVegas", "OmniTokyo", "OmniNYC", "OmniDubai", "OmniLA", "OmniParis" };
+            string[] cities = { "OmniLanta", "OmniVegas", "OmniTokyo", "OmniNYC", "OmniDubai", "OmniLA", "OmniParis", "OmniLagos" };
             
             foreach (string city in cities)
             {
@@ -304,6 +304,7 @@ namespace OmniWorld.World
                 case "Berlin":
                     return "Richie Hawtin (Techno Pioneer)";
                 case "Lagos":
+                case "OmniLagos":
                     return "Fela Kuti Legacy (Afrobeats Legend)";
                 case "OmniTokyo":
                     return "Yoko Kanno (J-Pop Innovator)";
