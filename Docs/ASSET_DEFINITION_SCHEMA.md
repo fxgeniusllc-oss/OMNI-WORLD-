@@ -470,7 +470,7 @@ All assets **must** include:
 - Examples: `Housing_Apartment_Studio`, `Vehicle_Car_SportsCar`
 
 **File Names:** Match prefab name with `.json` extension
-- Example: `Housing_Apartment_Studio.json` → `StudioApartment.json`
+- Example: `Housing_Apartment_Studio` → `Housing_Apartment_Studio.json`
 
 ### Economic Validation
 
