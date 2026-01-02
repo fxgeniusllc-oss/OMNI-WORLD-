@@ -4,12 +4,16 @@
 
 ### *The AI-Powered, Creator-First Metaverse & Dominion Economy*
 
+### *Part of the OMNIVERSE Enterprise Trust*
+
 [![License](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
 [![Unity](https://img.shields.io/badge/Unity-2022.3_LTS-black.svg?logo=unity)](https://unity.com/)
 [![Blockchain](https://img.shields.io/badge/Blockchain-Polygon-8247e5.svg)](https://polygon.technology/)
 [![Status](https://img.shields.io/badge/Status-Phase_1_Development-yellow.svg)](https://github.com/fxgeniusllc-oss/OMNI-WORLD-)
 
 **A Digital Twin Economy fusing entertainment-grade gamification with high-fidelity economic simulation**
+
+**Powered by $OMNI token** | [OMNIVERSE Blueprint](Docs/OMNIVERSE_BLUEPRINT.md)
 
 [Website](https://omniworld.io) • [Documentation](docs/) • [Whitepaper](docs/WHITEPAPER.md) • [Discord](https://discord.gg/omniworld)
 
@@ -20,6 +24,7 @@
 ## 📑 Table of Contents
 
 - [🎯 Core Vision](#-core-vision)
+- [🌌 The OMNIVERSE Enterprise](#-the-omniverse-enterprise)
 - [💡 What is OmniWorld?](#-what-is-omniworld)
 - [🌍 The Dominion Economy](#-the-dominion-economy)
 - [🏙️ Global Metropolises](#-global-metropolises)
@@ -45,6 +50,44 @@ OmniWorld is revolutionizing the digital economy by creating a **true parallel f
 - 🌏 **Globally Scaled** - 7 major metropolises with distinct economic models
 
 > *"This isn't just another virtual world - it's a paradigm shift in how we perceive digital ownership, creativity, and economic opportunity."*
+
+---
+
+## 🌌 The OMNIVERSE Enterprise
+
+**OmniWorld** is the flagship platform within the broader **OMNIVERSE Trust** - a comprehensive digital ecosystem unifying multiple creator-focused platforms under one unified token economy.
+
+### The OMNIVERSE Trust Structure
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                     OMNIVERSE TRUST                          │
+│              Unified by $OMNI Token Economy                  │
+└─────────────────────────────────────────────────────────────┘
+              │              │              │              │
+              ▼              ▼              ▼              ▼
+        ┌──────────┐   ┌──────────┐   ┌──────────┐   ┌──────────┐
+        │OMNIWORLD │   │OMNISOUND │   │OMNISOUND │   │OMNISOUND │
+        │Metaverse │   │   DAW    │   │ STAFFING │   │DIGITAL   │
+        │  Game    │   │  Music   │   │  Talent  │   │   ART    │
+        └──────────┘   └──────────┘   └──────────┘   └──────────┘
+```
+
+### The Four Pillars
+
+🎮 **[OMNIWORLD](Docs/OMNIVERSE_BLUEPRINT.md#1-omniworld)** - AI-powered metaverse with 7 global cities and Dominion Economy (this repository)
+
+🎵 **[OMNISOUND DAW](Docs/OMNIVERSE_BLUEPRINT.md#2-omnisound-daw)** - Professional digital audio workstation for Web3 creators with blockchain integration
+
+👔 **[OMNISOUND STAFFING](Docs/OMNIVERSE_BLUEPRINT.md#3-omnisound-staffing)** - Decentralized talent marketplace connecting creative professionals with opportunities
+
+🎨 **[OMNISOUND DIGITAL ART](Docs/OMNIVERSE_BLUEPRINT.md#4-omnisound-digital-art)** - Comprehensive library of ALL AI-generated content on the $OMNI blockchain
+
+### One Token. Infinite Possibilities.
+
+All platforms operate on the **$OMNI token** (NOT "OMNIS") - enabling seamless value transfer, unified governance, and cross-platform benefits.
+
+📖 **[Read the Full OMNIVERSE Blueprint →](Docs/OMNIVERSE_BLUEPRINT.md)**
 
 ---
 
