@@ -76,6 +76,13 @@ namespace OmniWorld.AI
         public bool generateSignatureProperties = true;
         public bool generateCityEvents = true;
         
+        [Header("Zoning & Parcel Generation")]
+        public bool generateZoningMaps = true;
+        public bool generateResidentialLots = true;
+        public int residentialLotsPerDistrict = 500; // Scalable per district
+        public float parcelMinSize = 20f; // meters
+        public float parcelMaxSize = 100f; // meters
+        
         [Header("Performance Optimization")]
         [Tooltip("Enable spatial hashing for fast neighbor lookups")]
         public bool useSpatialHashing = true;
@@ -91,6 +98,8 @@ namespace OmniWorld.AI
         private List<NPCData> generatedNPCs = new List<NPCData>();
         private List<Quest> generatedQuests = new List<Quest>();
         private List<CityEvent> generatedEvents = new List<CityEvent>();
+        private List<ZoneParcel> generatedParcels = new List<ZoneParcel>();
+        private Dictionary<string, CityZoningMap> cityZoningMaps = new Dictionary<string, CityZoningMap>();
         
         // Spatial hashing for O(1) lookups
         private Dictionary<Vector2Int, List<GeneratedBuilding>> spatialGrid = new Dictionary<Vector2Int, List<GeneratedBuilding>>();
@@ -1661,4 +1670,763 @@ namespace OmniWorld.AI
         };
         return quests[random.Next(quests.Length)];
     }
+    
+    /// <summary>
+    /// Generate comprehensive zoning map for a city
+    /// </summary>
+    public CityZoningMap GenerateCityZoningMap(string cityName)
+    {
+        if (cityZoningMaps.ContainsKey(cityName))
+            return cityZoningMaps[cityName];
+            
+        CityZoningMap zoningMap = new CityZoningMap
+        {
+            cityName = cityName,
+            totalArea = 10000f, // 10km²
+            districts = new List<ZoneDistrict>()
+        };
+        
+        // Generate districts based on city type
+        GenerateDistrictsForCity(zoningMap, cityName);
+        
+        cityZoningMaps[cityName] = zoningMap;
+        Debug.Log($"Generated zoning map for {cityName}: {zoningMap.districts.Count} districts, {zoningMap.GetTotalParcels()} parcels");
+        
+        return zoningMap;
+    }
+    
+    /// <summary>
+    /// Generate districts with appropriate zoning for each city
+    /// </summary>
+    private void GenerateDistrictsForCity(CityZoningMap zoningMap, string cityName)
+    {
+        switch (cityName)
+        {
+            case "OmniVegas":
+                GenerateVegasDistricts(zoningMap);
+                break;
+            case "OmniLanta":
+                GenerateAtlantaDistricts(zoningMap);
+                break;
+            case "OmniTokyo":
+                GenerateTokyoDistricts(zoningMap);
+                break;
+            case "OmniNYC":
+                GenerateNYCDistricts(zoningMap);
+                break;
+            case "OmniDubai":
+                GenerateDubaiDistricts(zoningMap);
+                break;
+            case "OmniLA":
+                GenerateLADistricts(zoningMap);
+                break;
+            case "OmniParis":
+                GenerateParisDistricts(zoningMap);
+                break;
+        }
+    }
+    
+    private void GenerateVegasDistricts(CityZoningMap map)
+    {
+        // The Strip - Mixed Commercial/Entertainment
+        map.districts.Add(CreateDistrict("The Strip", World.ZoneType.Commercial, 500f, 200));
+        
+        // Downtown - Mixed Residential/Commercial
+        map.districts.Add(CreateDistrict("Downtown", World.ZoneType.Commercial, 400f, 300));
+        
+        // Residential Districts
+        map.districts.Add(CreateDistrict("Henderson Residential", World.ZoneType.Residential, 800f, 1200));
+        map.districts.Add(CreateDistrict("Summerlin", World.ZoneType.Residential, 700f, 1000));
+        map.districts.Add(CreateDistrict("North Las Vegas", World.ZoneType.Residential, 600f, 800));
+        map.districts.Add(CreateDistrict("Paradise", World.ZoneType.Residential, 500f, 700));
+        map.districts.Add(CreateDistrict("Spring Valley", World.ZoneType.Residential, 650f, 900));
+        
+        // Business/Industrial
+        map.districts.Add(CreateDistrict("Arts District", World.ZoneType.Business, 300f, 150));
+        map.districts.Add(CreateDistrict("Industrial Zone", World.ZoneType.Industrial, 400f, 100));
+        
+        // Infrastructure & Public Facilities
+        map.districts.Add(CreateInfrastructureDistrict("McCarran International Airport", InfrastructureType.Airport, 250f));
+        map.districts.Add(CreateInfrastructureDistrict("Allegiant Stadium Complex", InfrastructureType.Stadium, 120f));
+        map.districts.Add(CreateInfrastructureDistrict("T-Mobile Arena District", InfrastructureType.Stadium, 80f));
+        map.districts.Add(CreateInfrastructureDistrict("Las Vegas Motor Speedway", InfrastructureType.Stadium, 200f));
+        map.districts.Add(CreateInfrastructureDistrict("Red Rock Canyon Park", InfrastructureType.Park, 300f));
+        map.districts.Add(CreateInfrastructureDistrict("Springs Preserve", InfrastructureType.Park, 180f));
+        map.districts.Add(CreateInfrastructureDistrict("Sunset Park", InfrastructureType.Park, 150f));
+        map.districts.Add(CreateInfrastructureDistrict("UNLV Campus", InfrastructureType.University, 280f));
+        map.districts.Add(CreateInfrastructureDistrict("CSN College District", InfrastructureType.College, 200f));
+        map.districts.Add(CreateInfrastructureDistrict("Clark County School District", InfrastructureType.SchoolDistrict, 350f));
+        map.districts.Add(CreateInfrastructureDistrict("UMC Hospital Complex", InfrastructureType.Hospital, 120f));
+        map.districts.Add(CreateInfrastructureDistrict("Las Vegas Fire & Rescue", InfrastructureType.EmergencyServices, 80f));
+        map.districts.Add(CreateInfrastructureDistrict("Police Headquarters", InfrastructureType.PoliceStation, 60f));
+    }
+    
+    private void GenerateAtlantaDistricts(CityZoningMap map)
+    {
+        map.districts.Add(CreateDistrict("Downtown", World.ZoneType.Business, 450f, 250));
+        map.districts.Add(CreateDistrict("Midtown", World.ZoneType.Residential, 600f, 800));
+        map.districts.Add(CreateDistrict("Buckhead", World.ZoneType.Residential, 700f, 1000));
+        map.districts.Add(CreateDistrict("Decatur", World.ZoneType.Residential, 500f, 700));
+        map.districts.Add(CreateDistrict("East Atlanta", World.ZoneType.Residential, 550f, 750));
+        map.districts.Add(CreateDistrict("West End", World.ZoneType.Residential, 480f, 650));
+        map.districts.Add(CreateDistrict("Tech Village", World.ZoneType.Business, 350f, 200));
+        
+        // Infrastructure
+        map.districts.Add(CreateInfrastructureDistrict("Hartsfield-Jackson Airport", InfrastructureType.Airport, 300f));
+        map.districts.Add(CreateInfrastructureDistrict("Mercedes-Benz Stadium", InfrastructureType.Stadium, 100f));
+        map.districts.Add(CreateInfrastructureDistrict("State Farm Arena", InfrastructureType.Stadium, 80f));
+        map.districts.Add(CreateInfrastructureDistrict("Truist Park", InfrastructureType.Stadium, 90f));
+        map.districts.Add(CreateInfrastructureDistrict("Piedmont Park", InfrastructureType.Park, 200f));
+        map.districts.Add(CreateInfrastructureDistrict("Centennial Olympic Park", InfrastructureType.Park, 120f));
+        map.districts.Add(CreateInfrastructureDistrict("Grant Park", InfrastructureType.Park, 130f));
+        map.districts.Add(CreateInfrastructureDistrict("Georgia Tech Campus", InfrastructureType.University, 250f));
+        map.districts.Add(CreateInfrastructureDistrict("Emory University", InfrastructureType.University, 280f));
+        map.districts.Add(CreateInfrastructureDistrict("Georgia State University", InfrastructureType.University, 220f));
+        map.districts.Add(CreateInfrastructureDistrict("Atlanta Public Schools", InfrastructureType.SchoolDistrict, 300f));
+        map.districts.Add(CreateInfrastructureDistrict("Grady Memorial Hospital", InfrastructureType.Hospital, 100f));
+    }
+    
+    private void GenerateTokyoDistricts(CityZoningMap map)
+    {
+        map.districts.Add(CreateDistrict("Shibuya", World.ZoneType.Commercial, 550f, 400));
+        map.districts.Add(CreateDistrict("Shinjuku", World.ZoneType.Business, 600f, 350));
+        map.districts.Add(CreateDistrict("Akihabara", World.ZoneType.Commercial, 400f, 300));
+        map.districts.Add(CreateDistrict("Roppongi", World.ZoneType.Residential, 700f, 900));
+        map.districts.Add(CreateDistrict("Ginza", World.ZoneType.Commercial, 500f, 250));
+        map.districts.Add(CreateDistrict("Asakusa", World.ZoneType.Residential, 600f, 800));
+        map.districts.Add(CreateDistrict("Harajuku", World.ZoneType.Commercial, 450f, 350));
+        map.districts.Add(CreateDistrict("Odaiba", World.ZoneType.Recreation, 550f, 200));
+        
+        // Infrastructure
+        map.districts.Add(CreateInfrastructureDistrict("Narita International Airport", InfrastructureType.Airport, 350f));
+        map.districts.Add(CreateInfrastructureDistrict("Haneda Airport", InfrastructureType.Airport, 320f));
+        map.districts.Add(CreateInfrastructureDistrict("Tokyo Dome", InfrastructureType.Stadium, 85f));
+        map.districts.Add(CreateInfrastructureDistrict("National Stadium", InfrastructureType.Stadium, 110f));
+        map.districts.Add(CreateInfrastructureDistrict("Yoyogi Park", InfrastructureType.Park, 180f));
+        map.districts.Add(CreateInfrastructureDistrict("Ueno Park", InfrastructureType.Park, 200f));
+        map.districts.Add(CreateInfrastructureDistrict("Shinjuku Gyoen", InfrastructureType.Park, 150f));
+        map.districts.Add(CreateInfrastructureDistrict("University of Tokyo", InfrastructureType.University, 280f));
+        map.districts.Add(CreateInfrastructureDistrict("Waseda University", InfrastructureType.University, 250f));
+        map.districts.Add(CreateInfrastructureDistrict("Tokyo Metro Schools", InfrastructureType.SchoolDistrict, 320f));
+        map.districts.Add(CreateInfrastructureDistrict("Tokyo University Hospital", InfrastructureType.Hospital, 120f));
+    }
+    
+    private void GenerateNYCDistricts(CityZoningMap map)
+    {
+        map.districts.Add(CreateDistrict("Manhattan", World.ZoneType.Business, 800f, 600));
+        map.districts.Add(CreateDistrict("Brooklyn", World.ZoneType.Residential, 900f, 1500));
+        map.districts.Add(CreateDistrict("Queens", World.ZoneType.Residential, 850f, 1400));
+        map.districts.Add(CreateDistrict("Bronx", World.ZoneType.Residential, 700f, 1100));
+        map.districts.Add(CreateDistrict("Staten Island", World.ZoneType.Residential, 600f, 800));
+        map.districts.Add(CreateDistrict("Williamsburg", World.ZoneType.Residential, 500f, 700));
+        map.districts.Add(CreateDistrict("Financial District", World.ZoneType.Business, 400f, 200));
+        
+        // Infrastructure
+        map.districts.Add(CreateInfrastructureDistrict("JFK International Airport", InfrastructureType.Airport, 400f));
+        map.districts.Add(CreateInfrastructureDistrict("LaGuardia Airport", InfrastructureType.Airport, 280f));
+        map.districts.Add(CreateInfrastructureDistrict("Newark Airport", InfrastructureType.Airport, 300f));
+        map.districts.Add(CreateInfrastructureDistrict("Yankee Stadium", InfrastructureType.Stadium, 95f));
+        map.districts.Add(CreateInfrastructureDistrict("Madison Square Garden", InfrastructureType.Stadium, 80f));
+        map.districts.Add(CreateInfrastructureDistrict("Citi Field", InfrastructureType.Stadium, 90f));
+        map.districts.Add(CreateInfrastructureDistrict("Central Park", InfrastructureType.Park, 350f));
+        map.districts.Add(CreateInfrastructureDistrict("Prospect Park", InfrastructureType.Park, 220f));
+        map.districts.Add(CreateInfrastructureDistrict("Bryant Park", InfrastructureType.Park, 100f));
+        map.districts.Add(CreateInfrastructureDistrict("Columbia University", InfrastructureType.University, 300f));
+        map.districts.Add(CreateInfrastructureDistrict("NYU Campus", InfrastructureType.University, 280f));
+        map.districts.Add(CreateInfrastructureDistrict("CUNY System", InfrastructureType.College, 250f));
+        map.districts.Add(CreateInfrastructureDistrict("NYC Public Schools", InfrastructureType.SchoolDistrict, 450f));
+        map.districts.Add(CreateInfrastructureDistrict("Mount Sinai Hospital", InfrastructureType.Hospital, 130f));
+        map.districts.Add(CreateInfrastructureDistrict("NYPD Headquarters", InfrastructureType.PoliceStation, 70f));
+    }
+    
+    private void GenerateDubaiDistricts(CityZoningMap map)
+    {
+        map.districts.Add(CreateDistrict("Downtown Dubai", World.ZoneType.Business, 700f, 400));
+        map.districts.Add(CreateDistrict("Dubai Marina", World.ZoneType.Residential, 800f, 1000));
+        map.districts.Add(CreateDistrict("Palm Jumeirah", World.ZoneType.Residential, 650f, 600));
+        map.districts.Add(CreateDistrict("Jumeirah Beach Residence", World.ZoneType.Residential, 700f, 900));
+        map.districts.Add(CreateDistrict("Dubai Silicon Oasis", World.ZoneType.Business, 500f, 300));
+        map.districts.Add(CreateDistrict("Arabian Ranches", World.ZoneType.Residential, 750f, 850));
+        
+        // Infrastructure
+        map.districts.Add(CreateInfrastructureDistrict("Dubai International Airport", InfrastructureType.Airport, 450f));
+        map.districts.Add(CreateInfrastructureDistrict("Al Maktoum Airport", InfrastructureType.Airport, 500f));
+        map.districts.Add(CreateInfrastructureDistrict("Dubai Sports City Stadium", InfrastructureType.Stadium, 100f));
+        map.districts.Add(CreateInfrastructureDistrict("Zabeel Park", InfrastructureType.Park, 180f));
+        map.districts.Add(CreateInfrastructureDistrict("Safa Park", InfrastructureType.Park, 150f));
+        map.districts.Add(CreateInfrastructureDistrict("Dubai Creek Park", InfrastructureType.Park, 200f));
+        map.districts.Add(CreateInfrastructureDistrict("American University Dubai", InfrastructureType.University, 220f));
+        map.districts.Add(CreateInfrastructureDistrict("Dubai Knowledge Park", InfrastructureType.College, 280f));
+        map.districts.Add(CreateInfrastructureDistrict("KHDA School District", InfrastructureType.SchoolDistrict, 300f));
+        map.districts.Add(CreateInfrastructureDistrict("Dubai Healthcare City", InfrastructureType.Hospital, 200f));
+    }
+    
+    private void GenerateLADistricts(CityZoningMap map)
+    {
+        map.districts.Add(CreateDistrict("Hollywood", World.ZoneType.Commercial, 600f, 400));
+        map.districts.Add(CreateDistrict("Beverly Hills", World.ZoneType.Residential, 750f, 600));
+        map.districts.Add(CreateDistrict("Santa Monica", World.ZoneType.Residential, 700f, 800));
+        map.districts.Add(CreateDistrict("Venice Beach", World.ZoneType.Residential, 650f, 750));
+        map.districts.Add(CreateDistrict("Downtown LA", World.ZoneType.Business, 550f, 350));
+        map.districts.Add(CreateDistrict("Pasadena", World.ZoneType.Residential, 600f, 700));
+        map.districts.Add(CreateDistrict("Long Beach", World.ZoneType.Residential, 700f, 900));
+        
+        // Infrastructure
+        map.districts.Add(CreateInfrastructureDistrict("LAX International Airport", InfrastructureType.Airport, 380f));
+        map.districts.Add(CreateInfrastructureDistrict("SoFi Stadium", InfrastructureType.Stadium, 150f));
+        map.districts.Add(CreateInfrastructureDistrict("Dodger Stadium", InfrastructureType.Stadium, 85f));
+        map.districts.Add(CreateInfrastructureDistrict("Rose Bowl", InfrastructureType.Stadium, 95f));
+        map.districts.Add(CreateInfrastructureDistrict("Griffith Park", InfrastructureType.Park, 300f));
+        map.districts.Add(CreateInfrastructureDistrict("Runyon Canyon Park", InfrastructureType.Park, 150f));
+        map.districts.Add(CreateInfrastructureDistrict("Venice Beach Park", InfrastructureType.Park, 120f));
+        map.districts.Add(CreateInfrastructureDistrict("UCLA Campus", InfrastructureType.University, 320f));
+        map.districts.Add(CreateInfrastructureDistrict("USC Campus", InfrastructureType.University, 300f));
+        map.districts.Add(CreateInfrastructureDistrict("LAUSD Schools", InfrastructureType.SchoolDistrict, 400f));
+        map.districts.Add(CreateInfrastructureDistrict("Cedars-Sinai Medical Center", InfrastructureType.Hospital, 140f));
+    }
+    
+    private void GenerateParisDistricts(CityZoningMap map)
+    {
+        map.districts.Add(CreateDistrict("1st Arrondissement", World.ZoneType.Commercial, 300f, 200));
+        map.districts.Add(CreateDistrict("Marais", World.ZoneType.Residential, 400f, 500));
+        map.districts.Add(CreateDistrict("Montmartre", World.ZoneType.Residential, 450f, 600));
+        map.districts.Add(CreateDistrict("Saint-Germain", World.ZoneType.Residential, 500f, 650));
+        map.districts.Add(CreateDistrict("Latin Quarter", World.ZoneType.Residential, 450f, 600));
+        map.districts.Add(CreateDistrict("Champs-Élysées", World.ZoneType.Commercial, 550f, 300));
+        map.districts.Add(CreateDistrict("La Défense", World.ZoneType.Business, 600f, 400));
+        
+        // Infrastructure
+        map.districts.Add(CreateInfrastructureDistrict("Charles de Gaulle Airport", InfrastructureType.Airport, 400f));
+        map.districts.Add(CreateInfrastructureDistrict("Orly Airport", InfrastructureType.Airport, 280f));
+        map.districts.Add(CreateInfrastructureDistrict("Stade de France", InfrastructureType.Stadium, 120f));
+        map.districts.Add(CreateInfrastructureDistrict("Parc des Princes", InfrastructureType.Stadium, 85f));
+        map.districts.Add(CreateInfrastructureDistrict("Jardin du Luxembourg", InfrastructureType.Park, 180f));
+        map.districts.Add(CreateInfrastructureDistrict("Tuileries Garden", InfrastructureType.Park, 150f));
+        map.districts.Add(CreateInfrastructureDistrict("Bois de Boulogne", InfrastructureType.Park, 280f));
+        map.districts.Add(CreateInfrastructureDistrict("Sorbonne University", InfrastructureType.University, 250f));
+        map.districts.Add(CreateInfrastructureDistrict("Sciences Po", InfrastructureType.University, 220f));
+        map.districts.Add(CreateInfrastructureDistrict("Paris School System", InfrastructureType.SchoolDistrict, 320f));
+        map.districts.Add(CreateInfrastructureDistrict("Hôpital Pitié-Salpêtrière", InfrastructureType.Hospital, 130f));
+    }
+    
+    /// <summary>
+    /// Create a district with parcels
+    /// </summary>
+    private ZoneDistrict CreateDistrict(string name, World.ZoneType zoneType, float area, int parcelCount)
+    {
+        ZoneDistrict district = new ZoneDistrict
+        {
+            name = name,
+            zoneType = zoneType,
+            area = area,
+            parcels = new List<ZoneParcel>(),
+            infrastructureType = InfrastructureType.None
+        };
+        
+        // Generate parcels for this district
+        for (int i = 0; i < parcelCount; i++)
+        {
+            ZoneParcel parcel = GenerateParcel(district, i);
+            district.parcels.Add(parcel);
+            generatedParcels.Add(parcel);
+        }
+        
+        return district;
+    }
+    
+    /// <summary>
+    /// Create infrastructure district (airports, stadiums, parks, schools, etc.)
+    /// </summary>
+    private ZoneDistrict CreateInfrastructureDistrict(string name, InfrastructureType infraType, float area)
+    {
+        ZoneDistrict district = new ZoneDistrict
+        {
+            name = name,
+            zoneType = World.ZoneType.Recreation, // Infrastructure uses Recreation zone
+            area = area,
+            parcels = new List<ZoneParcel>(),
+            infrastructureType = infraType
+        };
+        
+        // Infrastructure districts have single large parcel
+        ZoneParcel infrastructureParcel = new ZoneParcel
+        {
+            id = $"{name.Replace(" ", "_")}_INFRA",
+            districtName = name,
+            zoneType = World.ZoneType.Recreation,
+            size = area * 10000f, // Convert hectares to square meters
+            position = new Vector3(
+                (float)random.NextDouble() * 2000f,
+                0f,
+                (float)random.NextDouble() * 2000f
+            ),
+            isAvailable = false, // Infrastructure parcels not for sale
+            baseValue = CalculateInfrastructureValue(infraType, area),
+            infrastructureType = infraType
+        };
+        
+        district.parcels.Add(infrastructureParcel);
+        generatedParcels.Add(infrastructureParcel);
+        
+        Debug.Log($"Created infrastructure: {name} ({infraType}) - {area} hectares, Value: {infrastructureParcel.baseValue:C0} OMNI");
+        
+        return district;
+    }
+    
+    /// <summary>
+    /// Generate individual parcel with appropriate residential/commercial type and REAL ESTATE VALUE
+    /// </summary>
+    private ZoneParcel GenerateParcel(ZoneDistrict district, int index)
+    {
+        float parcelSize = parcelMinSize + (float)random.NextDouble() * (parcelMaxSize - parcelMinSize);
+        
+        ZoneParcel parcel = new ZoneParcel
+        {
+            id = $"{district.name}_P{index:D4}",
+            districtName = district.name,
+            zoneType = district.zoneType,
+            size = parcelSize,
+            position = new Vector3(
+                (float)random.NextDouble() * 1000f,
+                0f,
+                (float)random.NextDouble() * 1000f
+            ),
+            isAvailable = true
+        };
+        
+        // Calculate real estate value based on zone type
+        parcel.baseValue = CalculateParcelValue(district.zoneType, parcelSize);
+        
+        // Add location premium (random variation for realism)
+        float locationPremium = 0.8f + (float)random.NextDouble() * 0.4f; // 0.8x to 1.2x
+        parcel.currentMarketValue = parcel.baseValue * locationPremium;
+        
+        // Assign property-specific attributes based on zone type
+        switch (district.zoneType)
+        {
+            case World.ZoneType.Residential:
+                parcel.residentialType = DetermineResidentialType(parcelSize);
+                parcel.capacity = DetermineResidentialCapacity(parcel.residentialType);
+                // Residential: Add appreciation potential
+                parcel.appreciationRate = 0.03f + (float)random.NextDouble() * 0.05f; // 3-8% annual
+                break;
+                
+            case World.ZoneType.Commercial:
+                parcel.commercialType = DetermineCommercialType(parcelSize);
+                parcel.capacity = DetermineCommercialCapacity(parcel.commercialType);
+                parcel.monthlyRevenuePotential = CalculateCommercialRevenue(parcel.commercialType, parcelSize);
+                parcel.appreciationRate = 0.04f + (float)random.NextDouble() * 0.06f; // 4-10% annual
+                break;
+                
+            case World.ZoneType.Business:
+                parcel.businessType = DetermineBusinessType(parcelSize);
+                parcel.capacity = DetermineBusinessCapacity(parcel.businessType);
+                parcel.monthlyRevenuePotential = CalculateBusinessRevenue(parcel.businessType, parcelSize);
+                parcel.appreciationRate = 0.05f + (float)random.NextDouble() * 0.07f; // 5-12% annual
+                break;
+                
+            case World.ZoneType.Industrial:
+                parcel.industrialType = DetermineIndustrialType(parcelSize);
+                parcel.capacity = parcelSize / 10f; // Square footage capacity
+                parcel.monthlyRevenuePotential = parcelSize * 5f; // $5 per sq meter
+                parcel.appreciationRate = 0.02f + (float)random.NextDouble() * 0.03f; // 2-5% annual
+                break;
+        }
+        
+        return parcel;
+    }
+    
+    /// <summary>
+    /// Determine residential property type based on parcel size and random distribution
+    /// </summary>
+    private ResidentialPropertyType DetermineResidentialType(float parcelSize)
+    {
+        // Larger parcels = higher-end properties
+        if (parcelSize > 80f)
+        {
+            int roll = random.Next(100);
+            if (roll < 40) return ResidentialPropertyType.Mansion;
+            if (roll < 70) return ResidentialPropertyType.SingleFamilyHome;
+            return ResidentialPropertyType.Penthouse;
+        }
+        else if (parcelSize > 60f)
+        {
+            int roll = random.Next(100);
+            if (roll < 30) return ResidentialPropertyType.SingleFamilyHome;
+            if (roll < 60) return ResidentialPropertyType.Duplex;
+            if (roll < 85) return ResidentialPropertyType.Condo;
+            return ResidentialPropertyType.Penthouse;
+        }
+        else if (parcelSize > 40f)
+        {
+            int roll = random.Next(100);
+            if (roll < 40) return ResidentialPropertyType.ApartmentUnit;
+            if (roll < 70) return ResidentialPropertyType.Condo;
+            if (roll < 90) return ResidentialPropertyType.Duplex;
+            return ResidentialPropertyType.Townhouse;
+        }
+        else
+        {
+            int roll = random.Next(100);
+            if (roll < 50) return ResidentialPropertyType.ApartmentUnit;
+            if (roll < 75) return ResidentialPropertyType.StudioApartment;
+            if (roll < 90) return ResidentialPropertyType.HostelRoom;
+            return ResidentialPropertyType.HotelRoom;
+        }
+    }
+    
+    /// <summary>
+    /// Determine residential capacity (number of occupants)
+    /// </summary>
+    private int DetermineResidentialCapacity(ResidentialPropertyType type)
+    {
+        switch (type)
+        {
+            case ResidentialPropertyType.StudioApartment:
+            case ResidentialPropertyType.HotelRoom:
+            case ResidentialPropertyType.HostelRoom:
+                return 1-2;
+            case ResidentialPropertyType.ApartmentUnit:
+            case ResidentialPropertyType.Condo:
+                return 2-4;
+            case ResidentialPropertyType.Duplex:
+            case ResidentialPropertyType.Townhouse:
+                return 4-6;
+            case ResidentialPropertyType.SingleFamilyHome:
+                return 4-8;
+            case ResidentialPropertyType.Penthouse:
+                return 2-6;
+            case ResidentialPropertyType.Mansion:
+                return 6-12;
+            case ResidentialPropertyType.CollegeDorm:
+                return 2-4;
+            default:
+                return 2;
+        }
+    }
+    
+    /// <summary>
+    /// Calculate parcel base value
+    /// </summary>
+    private float CalculateParcelValue(World.ZoneType zoneType, float parcelSize)
+    {
+        float basePrice = 1000f; // per square meter
+        
+        float zoneMultiplier = 1.0f;
+        switch (zoneType)
+        {
+            case World.ZoneType.Residential:
+                zoneMultiplier = 1.2f;
+                break;
+            case World.ZoneType.Business:
+                zoneMultiplier = 2.0f;
+                break;
+            case World.ZoneType.Commercial:
+                zoneMultiplier = 1.8f;
+                break;
+            case World.ZoneType.Recreation:
+                zoneMultiplier = 1.5f;
+                break;
+            case World.ZoneType.Industrial:
+                zoneMultiplier = 0.8f;
+                break;
+        }
+        
+        return basePrice * parcelSize * zoneMultiplier;
+    }
+    
+    /// <summary>
+    /// Calculate infrastructure value
+    /// </summary>
+    private float CalculateInfrastructureValue(InfrastructureType type, float area)
+    {
+        float baseValue = area * 50000f; // Base infrastructure cost per hectare
+        
+        float typeMultiplier = 1.0f;
+        switch (type)
+        {
+            case InfrastructureType.Airport:
+                typeMultiplier = 10.0f;
+                break;
+            case InfrastructureType.Stadium:
+                typeMultiplier = 5.0f;
+                break;
+            case InfrastructureType.University:
+            case InfrastructureType.Hospital:
+                typeMultiplier = 4.0f;
+                break;
+            case InfrastructureType.Park:
+                typeMultiplier = 2.0f;
+                break;
+            case InfrastructureType.College:
+            case InfrastructureType.SchoolDistrict:
+                typeMultiplier = 3.0f;
+                break;
+            case InfrastructureType.PoliceStation:
+            case InfrastructureType.EmergencyServices:
+                typeMultiplier = 2.5f;
+                break;
+            default:
+                typeMultiplier = 1.5f;
+                break;
+        }
+        
+        return baseValue * typeMultiplier;
+    }
+    
+    // ===== COMMERCIAL PROPERTY METHODS =====
+    
+    private CommercialPropertyType DetermineCommercialType(float size)
+    {
+        if (size > 80f) return (CommercialPropertyType)random.Next(0, 3); // Large retail
+        if (size > 60f) return (CommercialPropertyType)random.Next(1, 5);
+        if (size > 40f) return (CommercialPropertyType)random.Next(3, 7);
+        return (CommercialPropertyType)random.Next(5, 9);
+    }
+    
+    private int DetermineCommercialCapacity(CommercialPropertyType type)
+    {
+        switch (type)
+        {
+            case CommercialPropertyType.ShoppingMall: return 500;
+            case CommercialPropertyType.DepartmentStore: return 200;
+            case CommercialPropertyType.Supermarket: return 150;
+            case CommercialPropertyType.RetailStore: return 50;
+            case CommercialPropertyType.Restaurant: return 100;
+            case CommercialPropertyType.Cafe: return 40;
+            case CommercialPropertyType.Bar: return 80;
+            case CommercialPropertyType.Boutique: return 30;
+            default: return 50;
+        }
+    }
+    
+    private float CalculateCommercialRevenue(CommercialPropertyType type, float size)
+    {
+        float baseRevenue = size * 100f; // $100 per sq meter monthly
+        
+        switch (type)
+        {
+            case CommercialPropertyType.ShoppingMall: return baseRevenue * 3.0f;
+            case CommercialPropertyType.DepartmentStore: return baseRevenue * 2.5f;
+            case CommercialPropertyType.Restaurant: return baseRevenue * 2.0f;
+            case CommercialPropertyType.Supermarket: return baseRevenue * 1.8f;
+            case CommercialPropertyType.RetailStore: return baseRevenue * 1.5f;
+            default: return baseRevenue;
+        }
+    }
+    
+    // ===== BUSINESS PROPERTY METHODS =====
+    
+    private BusinessPropertyType DetermineBusinessType(float size)
+    {
+        if (size > 80f) return (BusinessPropertyType)random.Next(0, 3);
+        if (size > 60f) return (BusinessPropertyType)random.Next(2, 5);
+        if (size > 40f) return (BusinessPropertyType)random.Next(3, 6);
+        return (BusinessPropertyType)random.Next(4, 7);
+    }
+    
+    private int DetermineBusinessCapacity(BusinessPropertyType type)
+    {
+        switch (type)
+        {
+            case BusinessPropertyType.CorporateHeadquarters: return 500;
+            case BusinessPropertyType.OfficeTower: return 300;
+            case BusinessPropertyType.TechCampus: return 400;
+            case BusinessPropertyType.OfficeSpace: return 100;
+            case BusinessPropertyType.CoworkingSpace: return 150;
+            case BusinessPropertyType.StartupIncubator: return 80;
+            default: return 100;
+        }
+    }
+    
+    private float CalculateBusinessRevenue(BusinessPropertyType type, float size)
+    {
+        float baseRevenue = size * 150f; // $150 per sq meter monthly
+        
+        switch (type)
+        {
+            case BusinessPropertyType.CorporateHeadquarters: return baseRevenue * 3.5f;
+            case BusinessPropertyType.TechCampus: return baseRevenue * 3.0f;
+            case BusinessPropertyType.OfficeTower: return baseRevenue * 2.5f;
+            case BusinessPropertyType.CoworkingSpace: return baseRevenue * 2.0f;
+            default: return baseRevenue * 1.5f;
+        }
+    }
+    
+    // ===== INDUSTRIAL PROPERTY METHODS =====
+    
+    private IndustrialPropertyType DetermineIndustrialType(float size)
+    {
+        if (size > 80f) return IndustrialPropertyType.ManufacturingPlant;
+        if (size > 60f) return IndustrialPropertyType.Warehouse;
+        if (size > 40f) return (IndustrialPropertyType)random.Next(2, 5);
+        return (IndustrialPropertyType)random.Next(3, 6);
+    }
+}
+
+/// <summary>
+/// City-wide zoning map
+/// </summary>
+[System.Serializable]
+public class CityZoningMap
+{
+    public string cityName;
+    public float totalArea; // square kilometers
+    public List<ZoneDistrict> districts;
+    
+    public int GetTotalParcels()
+    {
+        int total = 0;
+        foreach (var district in districts)
+        {
+            total += district.parcels.Count;
+        }
+        return total;
+    }
+    
+    public int GetResidentialParcels()
+    {
+        int total = 0;
+        foreach (var district in districts)
+        {
+            if (district.zoneType == OmniWorld.World.ZoneType.Residential)
+            {
+                total += district.parcels.Count;
+            }
+        }
+        return total;
+    }
+}
+
+/// <summary>
+/// Zone district within a city
+/// </summary>
+[System.Serializable]
+public class ZoneDistrict
+{
+    public string name;
+    public OmniWorld.World.ZoneType zoneType;
+    public float area; // hectares
+    public List<ZoneParcel> parcels;
+    public int currentOccupancy;
+    public int maxOccupancy;
+    public InfrastructureType infrastructureType = InfrastructureType.None; // For infrastructure districts
+}
+
+/// <summary>
+/// Individual lot parcel with REAL ESTATE VALUE
+/// </summary>
+[System.Serializable]
+public class ZoneParcel
+{
+    public string id;
+    public string districtName;
+    public OmniWorld.World.ZoneType zoneType;
+    public float size; // square meters
+    public Vector3 position;
+    public bool isAvailable;
+    public string owner;
+    
+    // REAL ESTATE VALUES
+    public float baseValue; // Base OMNI token value
+    public float currentMarketValue; // Current market value with location premium
+    public float appreciationRate; // Annual appreciation rate (0.03 = 3%)
+    public float monthlyRevenuePotential; // Potential monthly revenue for commercial/business
+    
+    // Property Type Classifications
+    public ResidentialPropertyType residentialType;
+    public CommercialPropertyType commercialType;
+    public BusinessPropertyType businessType;
+    public IndustrialPropertyType industrialType;
+    public InfrastructureType infrastructureType = InfrastructureType.None;
+    
+    public int capacity; // number of occupants or capacity
+    public bool isNFT;
+}
+
+/// <summary>
+/// Comprehensive residential property types
+/// </summary>
+public enum ResidentialPropertyType
+{
+    StudioApartment,      // 1-2 people
+    ApartmentUnit,        // 2-4 people  
+    Condo,                // 2-4 people
+    Duplex,               // 4-6 people
+    Townhouse,            // 4-6 people
+    SingleFamilyHome,     // 4-8 people
+    Penthouse,            // 2-6 people
+    Mansion,              // 6-12 people
+    HotelRoom,            // 1-2 people (short-term rental)
+    HostelRoom,           // 1-2 people (budget)
+    CollegeDorm,          // 2-4 people (students)
+    SharedHousing,        // 4-8 people (co-living)
+    LuxuryVilla           // 8-16 people (high-end)
+}
+
+/// <summary>
+/// Commercial property types for retail/dining
+/// </summary>
+public enum CommercialPropertyType
+{
+    ShoppingMall,         // Large retail complex
+    DepartmentStore,      // Multi-floor retail
+    Supermarket,          // Grocery/food retail
+    RetailStore,          // Standard retail shop
+    Restaurant,           // Full-service dining
+    Cafe,                 // Coffee/light dining
+    Bar,                  // Drinking establishment
+    Boutique,             // Luxury/specialty retail
+    FoodCourt            // Multiple food vendors
+}
+
+/// <summary>
+/// Business property types for offices/corporate
+/// </summary>
+public enum BusinessPropertyType
+{
+    CorporateHeadquarters, // Large corporate HQ
+    OfficeTower,          // Multi-tenant office building
+    TechCampus,           // Tech company campus
+    OfficeSpace,          // Standard office rental
+    CoworkingSpace,       // Shared workspace
+    StartupIncubator,     // Startup workspace/support
+    BusinessPark          // Business park complex
+}
+
+/// <summary>
+/// Industrial property types
+/// </summary>
+public enum IndustrialPropertyType
+{
+    ManufacturingPlant,   // Production facility
+    Warehouse,            // Storage facility
+    DistributionCenter,   // Logistics hub
+    DataCenter,           // Tech infrastructure
+    TechLab,              // R&D facility
+    ProcessingFacility    // Material processing
+}
+
+/// <summary>
+/// Infrastructure types for public facilities
+/// </summary>
+public enum InfrastructureType
+{
+    None,                 // Not infrastructure
+    Airport,              // Air transportation hub
+    Stadium,              // Sports/entertainment venue
+    Park,                 // Public park/recreation
+    University,           // Higher education (4-year)
+    College,              // Community college/technical
+    SchoolDistrict,       // K-12 schools
+    Hospital,             // Medical facility
+    PoliceStation,        // Law enforcement
+    FireStation,          // Fire department
+    EmergencyServices,    // EMS/911 services
+    TrainStation,         // Rail transportation
+    BusTerminal,          // Bus transportation
+    Port,                 // Shipping/maritime
+    Library,              // Public library
+    CommunityCenter,      // Recreation center
+    Government            // Government building
 }
