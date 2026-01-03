@@ -79,7 +79,7 @@ namespace OmniWorld.AI
         [Header("Zoning & Parcel Generation")]
         public bool generateZoningMaps = true;
         public bool generateResidentialLots = true;
-        public int residentialLotsPerDistrict = 500; // Scalable per district
+        public int residentialLotsPerDistrict = 15000; // Massively scaled for 1M+ users
         public float parcelMinSize = 20f; // meters
         public float parcelMaxSize = 100f; // meters
         
@@ -1734,12 +1734,17 @@ namespace OmniWorld.AI
         // Downtown - Mixed Residential/Commercial
         map.districts.Add(CreateDistrict("Downtown", World.ZoneType.Commercial, 400f, 300));
         
-        // Residential Districts
-        map.districts.Add(CreateDistrict("Henderson Residential", World.ZoneType.Residential, 800f, 1200));
-        map.districts.Add(CreateDistrict("Summerlin", World.ZoneType.Residential, 700f, 1000));
-        map.districts.Add(CreateDistrict("North Las Vegas", World.ZoneType.Residential, 600f, 800));
-        map.districts.Add(CreateDistrict("Paradise", World.ZoneType.Residential, 500f, 700));
-        map.districts.Add(CreateDistrict("Spring Valley", World.ZoneType.Residential, 650f, 900));
+        // Residential Districts - MASSIVELY SCALED FOR 1M+ USERS
+        map.districts.Add(CreateDistrict("Henderson Residential", World.ZoneType.Residential, 800f, 25000));
+        map.districts.Add(CreateDistrict("Summerlin", World.ZoneType.Residential, 700f, 22000));
+        map.districts.Add(CreateDistrict("North Las Vegas", World.ZoneType.Residential, 600f, 18000));
+        map.districts.Add(CreateDistrict("Paradise", World.ZoneType.Residential, 500f, 15000));
+        map.districts.Add(CreateDistrict("Spring Valley", World.ZoneType.Residential, 650f, 20000));
+        map.districts.Add(CreateDistrict("Enterprise", World.ZoneType.Residential, 550f, 16000));
+        map.districts.Add(CreateDistrict("Winchester", World.ZoneType.Residential, 500f, 14000));
+        map.districts.Add(CreateDistrict("Sunrise Manor", World.ZoneType.Residential, 650f, 19000));
+        map.districts.Add(CreateDistrict("Southwest Las Vegas", World.ZoneType.Residential, 700f, 21000));
+        map.districts.Add(CreateDistrict("Centennial Hills", World.ZoneType.Residential, 600f, 17000));
         
         // Business/Industrial
         map.districts.Add(CreateDistrict("Arts District", World.ZoneType.Business, 300f, 150));
@@ -1764,11 +1769,17 @@ namespace OmniWorld.AI
     private void GenerateAtlantaDistricts(CityZoningMap map)
     {
         map.districts.Add(CreateDistrict("Downtown", World.ZoneType.Business, 450f, 250));
-        map.districts.Add(CreateDistrict("Midtown", World.ZoneType.Residential, 600f, 800));
-        map.districts.Add(CreateDistrict("Buckhead", World.ZoneType.Residential, 700f, 1000));
-        map.districts.Add(CreateDistrict("Decatur", World.ZoneType.Residential, 500f, 700));
-        map.districts.Add(CreateDistrict("East Atlanta", World.ZoneType.Residential, 550f, 750));
-        map.districts.Add(CreateDistrict("West End", World.ZoneType.Residential, 480f, 650));
+        
+        // Residential Districts - MASSIVELY SCALED FOR 1M+ USERS
+        map.districts.Add(CreateDistrict("Midtown", World.ZoneType.Residential, 600f, 18000));
+        map.districts.Add(CreateDistrict("Buckhead", World.ZoneType.Residential, 700f, 22000));
+        map.districts.Add(CreateDistrict("Decatur", World.ZoneType.Residential, 500f, 15000));
+        map.districts.Add(CreateDistrict("East Atlanta", World.ZoneType.Residential, 550f, 16000));
+        map.districts.Add(CreateDistrict("West End", World.ZoneType.Residential, 480f, 14000));
+        map.districts.Add(CreateDistrict("Inman Park", World.ZoneType.Residential, 520f, 15500));
+        map.districts.Add(CreateDistrict("Virginia Highland", World.ZoneType.Residential, 550f, 16500));
+        map.districts.Add(CreateDistrict("Sandy Springs", World.ZoneType.Residential, 600f, 18500));
+        
         map.districts.Add(CreateDistrict("Tech Village", World.ZoneType.Business, 350f, 200));
         
         // Infrastructure
@@ -1791,9 +1802,17 @@ namespace OmniWorld.AI
         map.districts.Add(CreateDistrict("Shibuya", World.ZoneType.Commercial, 550f, 400));
         map.districts.Add(CreateDistrict("Shinjuku", World.ZoneType.Business, 600f, 350));
         map.districts.Add(CreateDistrict("Akihabara", World.ZoneType.Commercial, 400f, 300));
-        map.districts.Add(CreateDistrict("Roppongi", World.ZoneType.Residential, 700f, 900));
+        
+        // Residential Districts - MASSIVELY SCALED FOR 1M+ USERS  
+        map.districts.Add(CreateDistrict("Roppongi", World.ZoneType.Residential, 700f, 20000));
+        map.districts.Add(CreateDistrict("Asakusa", World.ZoneType.Residential, 600f, 17000));
+        map.districts.Add(CreateDistrict("Setagaya", World.ZoneType.Residential, 750f, 23000));
+        map.districts.Add(CreateDistrict("Nerima", World.ZoneType.Residential, 680f, 19000));
+        map.districts.Add(CreateDistrict("Suginami", World.ZoneType.Residential, 700f, 20500));
+        map.districts.Add(CreateDistrict("Edogawa", World.ZoneType.Residential, 650f, 18500));
+        map.districts.Add(CreateDistrict("Itabashi", World.ZoneType.Residential, 620f, 17500));
+        
         map.districts.Add(CreateDistrict("Ginza", World.ZoneType.Commercial, 500f, 250));
-        map.districts.Add(CreateDistrict("Asakusa", World.ZoneType.Residential, 600f, 800));
         map.districts.Add(CreateDistrict("Harajuku", World.ZoneType.Commercial, 450f, 350));
         map.districts.Add(CreateDistrict("Odaiba", World.ZoneType.Recreation, 550f, 200));
         
@@ -1814,11 +1833,18 @@ namespace OmniWorld.AI
     private void GenerateNYCDistricts(CityZoningMap map)
     {
         map.districts.Add(CreateDistrict("Manhattan", World.ZoneType.Business, 800f, 600));
-        map.districts.Add(CreateDistrict("Brooklyn", World.ZoneType.Residential, 900f, 1500));
-        map.districts.Add(CreateDistrict("Queens", World.ZoneType.Residential, 850f, 1400));
-        map.districts.Add(CreateDistrict("Bronx", World.ZoneType.Residential, 700f, 1100));
-        map.districts.Add(CreateDistrict("Staten Island", World.ZoneType.Residential, 600f, 800));
-        map.districts.Add(CreateDistrict("Williamsburg", World.ZoneType.Residential, 500f, 700));
+        
+        // Residential Districts - MASSIVELY SCALED FOR 1M+ USERS (Heavy Apartments/Condos)
+        map.districts.Add(CreateDistrict("Brooklyn", World.ZoneType.Residential, 900f, 30000));
+        map.districts.Add(CreateDistrict("Queens", World.ZoneType.Residential, 850f, 28000));
+        map.districts.Add(CreateDistrict("Bronx", World.ZoneType.Residential, 700f, 23000));
+        map.districts.Add(CreateDistrict("Staten Island", World.ZoneType.Residential, 600f, 18000));
+        map.districts.Add(CreateDistrict("Williamsburg", World.ZoneType.Residential, 500f, 16000));
+        map.districts.Add(CreateDistrict("Astoria", World.ZoneType.Residential, 550f, 17000));
+        map.districts.Add(CreateDistrict("Upper West Side", World.ZoneType.Residential, 600f, 19000));
+        map.districts.Add(CreateDistrict("Upper East Side", World.ZoneType.Residential, 620f, 19500));
+        map.districts.Add(CreateDistrict("Harlem", World.ZoneType.Residential, 580f, 18000));
+        
         map.districts.Add(CreateDistrict("Financial District", World.ZoneType.Business, 400f, 200));
         
         // Infrastructure
@@ -1842,11 +1868,17 @@ namespace OmniWorld.AI
     private void GenerateDubaiDistricts(CityZoningMap map)
     {
         map.districts.Add(CreateDistrict("Downtown Dubai", World.ZoneType.Business, 700f, 400));
-        map.districts.Add(CreateDistrict("Dubai Marina", World.ZoneType.Residential, 800f, 1000));
-        map.districts.Add(CreateDistrict("Palm Jumeirah", World.ZoneType.Residential, 650f, 600));
-        map.districts.Add(CreateDistrict("Jumeirah Beach Residence", World.ZoneType.Residential, 700f, 900));
+        
+        // Residential Districts - MASSIVELY SCALED FOR 1M+ USERS (Luxury Apartments/Condos)
+        map.districts.Add(CreateDistrict("Dubai Marina", World.ZoneType.Residential, 800f, 24000));
+        map.districts.Add(CreateDistrict("Palm Jumeirah", World.ZoneType.Residential, 650f, 16000));
+        map.districts.Add(CreateDistrict("Jumeirah Beach Residence", World.ZoneType.Residential, 700f, 21000));
+        map.districts.Add(CreateDistrict("Business Bay", World.ZoneType.Residential, 750f, 22000));
+        map.districts.Add(CreateDistrict("Dubai South", World.ZoneType.Residential, 680f, 19000));
+        map.districts.Add(CreateDistrict("Discovery Gardens", World.ZoneType.Residential, 620f, 18000));
+        
         map.districts.Add(CreateDistrict("Dubai Silicon Oasis", World.ZoneType.Business, 500f, 300));
-        map.districts.Add(CreateDistrict("Arabian Ranches", World.ZoneType.Residential, 750f, 850));
+        map.districts.Add(CreateDistrict("Arabian Ranches", World.ZoneType.Residential, 750f, 20000));
         
         // Infrastructure
         map.districts.Add(CreateInfrastructureDistrict("Dubai International Airport", InfrastructureType.Airport, 450f));
@@ -1864,12 +1896,18 @@ namespace OmniWorld.AI
     private void GenerateLADistricts(CityZoningMap map)
     {
         map.districts.Add(CreateDistrict("Hollywood", World.ZoneType.Commercial, 600f, 400));
-        map.districts.Add(CreateDistrict("Beverly Hills", World.ZoneType.Residential, 750f, 600));
-        map.districts.Add(CreateDistrict("Santa Monica", World.ZoneType.Residential, 700f, 800));
-        map.districts.Add(CreateDistrict("Venice Beach", World.ZoneType.Residential, 650f, 750));
+        
+        // Residential Districts - MASSIVELY SCALED FOR 1M+ USERS (Mixed Housing with Apartments/Condos)
+        map.districts.Add(CreateDistrict("Beverly Hills", World.ZoneType.Residential, 750f, 20000));
+        map.districts.Add(CreateDistrict("Santa Monica", World.ZoneType.Residential, 700f, 22000));
+        map.districts.Add(CreateDistrict("Venice Beach", World.ZoneType.Residential, 650f, 19000));
+        map.districts.Add(CreateDistrict("Pasadena", World.ZoneType.Residential, 600f, 18000));
+        map.districts.Add(CreateDistrict("Long Beach", World.ZoneType.Residential, 700f, 21000));
+        map.districts.Add(CreateDistrict("Glendale", World.ZoneType.Residential, 620f, 18500));
+        map.districts.Add(CreateDistrict("Burbank", World.ZoneType.Residential, 580f, 17000));
+        map.districts.Add(CreateDistrict("West Hollywood", World.ZoneType.Residential, 550f, 16500));
+        
         map.districts.Add(CreateDistrict("Downtown LA", World.ZoneType.Business, 550f, 350));
-        map.districts.Add(CreateDistrict("Pasadena", World.ZoneType.Residential, 600f, 700));
-        map.districts.Add(CreateDistrict("Long Beach", World.ZoneType.Residential, 700f, 900));
         
         // Infrastructure
         map.districts.Add(CreateInfrastructureDistrict("LAX International Airport", InfrastructureType.Airport, 380f));
@@ -1888,10 +1926,17 @@ namespace OmniWorld.AI
     private void GenerateParisDistricts(CityZoningMap map)
     {
         map.districts.Add(CreateDistrict("1st Arrondissement", World.ZoneType.Commercial, 300f, 200));
-        map.districts.Add(CreateDistrict("Marais", World.ZoneType.Residential, 400f, 500));
-        map.districts.Add(CreateDistrict("Montmartre", World.ZoneType.Residential, 450f, 600));
-        map.districts.Add(CreateDistrict("Saint-Germain", World.ZoneType.Residential, 500f, 650));
-        map.districts.Add(CreateDistrict("Latin Quarter", World.ZoneType.Residential, 450f, 600));
+        
+        // Residential Districts - MASSIVELY SCALED FOR 1M+ USERS (European Apartments/Condos)
+        map.districts.Add(CreateDistrict("Marais", World.ZoneType.Residential, 400f, 14000));
+        map.districts.Add(CreateDistrict("Montmartre", World.ZoneType.Residential, 450f, 16000));
+        map.districts.Add(CreateDistrict("Saint-Germain", World.ZoneType.Residential, 500f, 17000));
+        map.districts.Add(CreateDistrict("Latin Quarter", World.ZoneType.Residential, 450f, 15500));
+        map.districts.Add(CreateDistrict("Belleville", World.ZoneType.Residential, 480f, 15000));
+        map.districts.Add(CreateDistrict("16th Arrondissement", World.ZoneType.Residential, 550f, 18000));
+        map.districts.Add(CreateDistrict("Batignolles", World.ZoneType.Residential, 420f, 14500));
+        map.districts.Add(CreateDistrict("Nation", World.ZoneType.Residential, 460f, 15500));
+        
         map.districts.Add(CreateDistrict("Champs-Élysées", World.ZoneType.Commercial, 550f, 300));
         map.districts.Add(CreateDistrict("La Défense", World.ZoneType.Business, 600f, 400));
         
@@ -2038,6 +2083,7 @@ namespace OmniWorld.AI
     
     /// <summary>
     /// Determine residential property type based on parcel size and random distribution
+    /// BALANCED DISTRIBUTION - not just apartments/condos, includes all 13 types
     /// </summary>
     private ResidentialPropertyType DetermineResidentialType(float parcelSize)
     {
@@ -2045,33 +2091,51 @@ namespace OmniWorld.AI
         if (parcelSize > 80f)
         {
             int roll = random.Next(100);
-            if (roll < 40) return ResidentialPropertyType.Mansion;
-            if (roll < 70) return ResidentialPropertyType.SingleFamilyHome;
-            return ResidentialPropertyType.Penthouse;
+            if (roll < 25) return ResidentialPropertyType.Mansion;
+            if (roll < 45) return ResidentialPropertyType.SingleFamilyHome;
+            if (roll < 65) return ResidentialPropertyType.LuxuryVilla;
+            if (roll < 85) return ResidentialPropertyType.Penthouse;
+            return ResidentialPropertyType.Townhouse;
         }
         else if (parcelSize > 60f)
         {
             int roll = random.Next(100);
-            if (roll < 30) return ResidentialPropertyType.SingleFamilyHome;
-            if (roll < 60) return ResidentialPropertyType.Duplex;
-            if (roll < 85) return ResidentialPropertyType.Condo;
-            return ResidentialPropertyType.Penthouse;
+            if (roll < 20) return ResidentialPropertyType.SingleFamilyHome;
+            if (roll < 35) return ResidentialPropertyType.Duplex;
+            if (roll < 50) return ResidentialPropertyType.Townhouse;
+            if (roll < 70) return ResidentialPropertyType.Condo;
+            if (roll < 85) return ResidentialPropertyType.Penthouse;
+            return ResidentialPropertyType.SharedHousing;
         }
         else if (parcelSize > 40f)
         {
             int roll = random.Next(100);
-            if (roll < 40) return ResidentialPropertyType.ApartmentUnit;
-            if (roll < 70) return ResidentialPropertyType.Condo;
-            if (roll < 90) return ResidentialPropertyType.Duplex;
-            return ResidentialPropertyType.Townhouse;
+            if (roll < 20) return ResidentialPropertyType.ApartmentUnit;
+            if (roll < 35) return ResidentialPropertyType.Condo;
+            if (roll < 50) return ResidentialPropertyType.Duplex;
+            if (roll < 65) return ResidentialPropertyType.Townhouse;
+            if (roll < 80) return ResidentialPropertyType.SharedHousing;
+            return ResidentialPropertyType.SingleFamilyHome;
+        }
+        else if (parcelSize > 25f)
+        {
+            int roll = random.Next(100);
+            if (roll < 25) return ResidentialPropertyType.ApartmentUnit;
+            if (roll < 45) return ResidentialPropertyType.Condo;
+            if (roll < 60) return ResidentialPropertyType.StudioApartment;
+            if (roll < 75) return ResidentialPropertyType.CollegeDorm;
+            if (roll < 85) return ResidentialPropertyType.HotelRoom;
+            return ResidentialPropertyType.SharedHousing;
         }
         else
         {
             int roll = random.Next(100);
-            if (roll < 50) return ResidentialPropertyType.ApartmentUnit;
-            if (roll < 75) return ResidentialPropertyType.StudioApartment;
-            if (roll < 90) return ResidentialPropertyType.HostelRoom;
-            return ResidentialPropertyType.HotelRoom;
+            if (roll < 20) return ResidentialPropertyType.StudioApartment;
+            if (roll < 35) return ResidentialPropertyType.ApartmentUnit;
+            if (roll < 50) return ResidentialPropertyType.HostelRoom;
+            if (roll < 65) return ResidentialPropertyType.HotelRoom;
+            if (roll < 80) return ResidentialPropertyType.CollegeDorm;
+            return ResidentialPropertyType.Condo;
         }
     }
     
