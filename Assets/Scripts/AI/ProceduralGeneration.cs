@@ -906,9 +906,15 @@ namespace OmniWorld.AI
                     break;
                     
                 case "OmniVegas":
-                    // Maevenn Private Penthouse, Maeven Mansion
-                    GenerateLandmark("Maevenn Private Penthouse", landmarkPosition + new Vector3(100, 0, 0), BuildingStyle.Neon, 500000f);
-                    GenerateLandmark("Maeven Mansion", landmarkPosition + new Vector3(200, 0, 0), BuildingStyle.Modern, 1000000f);
+                    // Paris Hotel + Casino - Main landmark building
+                    GenerateLandmark("Paris Hotel + Casino", landmarkPosition, BuildingStyle.Neon, 300000f, 180f, 120f, 100f);
+                    
+                    // Maevenn Private Penthouse - At penthouse level of Paris Hotel + Casino (floor 65)
+                    // Positioned at the top of the Paris Hotel + Casino structure
+                    GenerateLandmark("Maevenn Private Penthouse", landmarkPosition + new Vector3(0, 180f, 0), BuildingStyle.Neon, 500000f, 42f, 100f, 150f);
+                    
+                    // Maeven Mansion - Off-Strip Estate
+                    GenerateLandmark("Maeven Mansion", landmarkPosition + new Vector3(500, 0, 0), BuildingStyle.Modern, 1000000f);
                     break;
                     
                 case "OmniTokyo":
@@ -958,6 +964,28 @@ namespace OmniWorld.AI
             
             generatedBuildings.Add(landmark);
             Debug.Log($"Generated landmark: {landmarkName} valued at {value:C0} $OMNI");
+        }
+        
+        /// <summary>
+        /// Generate a specific landmark building with custom dimensions
+        /// </summary>
+        private void GenerateLandmark(string landmarkName, Vector3 position, BuildingStyle style, float value, float height, float width, float depth)
+        {
+            GeneratedBuilding landmark = new GeneratedBuilding
+            {
+                position = position,
+                zoneType = World.ZoneType.Recreation, // Landmarks are typically in recreation zones
+                height = height,
+                width = width,
+                depth = depth,
+                style = style,
+                value = value,
+                name = landmarkName,
+                isLandmark = true
+            };
+            
+            generatedBuildings.Add(landmark);
+            Debug.Log($"Generated landmark: {landmarkName} at position {position} (H:{height}m, W:{width}m, D:{depth}m) valued at {value:C0} $OMNI");
         }
     }
 

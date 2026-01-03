@@ -1,0 +1,154 @@
+{
+  "prefabName": "Housing_Penthouse_Maevenn",
+  "category": "Housing",
+  "subCategory": "Penthouses",
+  "type": "Maevenn Private Penthouse",
+  "metadata": {
+    "nftCompatible": true,
+    "ownershipType": "Individual",
+    "economicTier": "Ultra-Legendary",
+    "dominionZone": "Paris Hotel + Casino",
+    "rarity": "1/1",
+    "location": "OmniVegas - Paris Hotel + Casino Penthouse Level"
+  },
+  "specifications": {
+    "squareFootage": 15000,
+    "bedrooms": 8,
+    "bathrooms": 10,
+    "floors": 3,
+    "parkingSpaces": 8,
+    "floor": 65,
+    "buildingName": "Paris Hotel + Casino",
+    "floorType": "Penthouse Level"
+  },
+  "layout": {
+    "dimensions": {
+      "width": 100,
+      "length": 150,
+      "height": 42
+    },
+    "features": [
+      "Three-Story Penthouse",
+      "Private Elevator Access",
+      "360-Degree Strip Views",
+      "Eiffel Tower Replica View",
+      "Indoor Olympic Pool",
+      "Private Casino Suite",
+      "Full Service Bar",
+      "Chef's Kitchen",
+      "Wine Cellar",
+      "Theater Room",
+      "Spa & Sauna",
+      "Rooftop Garden",
+      "Helipad Access",
+      "Security Room",
+      "Smart Home Integration"
+    ]
+  },
+  "graphics": {
+    "lodLevels": 4,
+    "polyCount": {
+      "lod0": 250000,
+      "lod1": 125000,
+      "lod2": 62500,
+      "lod3": 31250
+    },
+    "textureResolution": {
+      "diffuse": 4096,
+      "normal": 4096,
+      "roughness": 4096,
+      "metallic": 4096,
+      "ao": 4096
+    },
+    "materials": [
+      "Marble_Floor_Calacatta_Gold",
+      "Gold_24K_Accents",
+      "Glass_Structural_Diamond_Infused",
+      "Wood_Exotic_Brazilian_Rosewood",
+      "Crystal_Baccarat_Chandeliers",
+      "Stone_Italian_Statuary",
+      "Leather_Premium_Hermes",
+      "Fabric_Luxury_Silk"
+    ],
+    "lighting": {
+      "realtimeLights": 35,
+      "lightProbes": true,
+      "reflectionProbes": true,
+      "ambientOcclusion": true,
+      "volumetricLighting": true
+    },
+    "renderPipeline": "URP",
+    "realisticFeatures": [
+      "PBR Materials",
+      "Real-time Shadows",
+      "Global Illumination",
+      "Screen Space Reflections",
+      "Volumetric Lighting",
+      "Contact Shadows",
+      "Depth of Field",
+      "Bloom",
+      "Motion Blur",
+      "Chromatic Aberration",
+      "Film Grain",
+      "Ray Traced Reflections",
+      "Ray Traced Global Illumination"
+    ]
+  },
+  "components": [
+    "BoxCollider",
+    "PropertyOwnership",
+    "NFTMetadata",
+    "InteriorController",
+    "DoorInteraction",
+    "LightController",
+    "SecuritySystem",
+    "SmartHome",
+    "ClimateControl",
+    "ElevatorController",
+    "PoolController",
+    "HelipadController",
+    "CasinoSuiteController",
+    "WineCellarController",
+    "TheaterController",
+    "SpaController"
+  ],
+  "price": {
+    "purchasePrice": 500000,
+    "monthlyRent": 0,
+    "currency": "OMNI",
+    "nftTier": "Ultra-Legendary",
+    "editionSize": 1
+  },
+  "amenities": {
+    "views": [
+      "Las Vegas Strip",
+      "Paris Hotel Eiffel Tower Replica",
+      "Bellagio Fountains",
+      "Mountain Range"
+    ],
+    "services": [
+      "24/7 Concierge",
+      "Private Chef Available",
+      "Butler Service",
+      "Personal Security",
+      "Valet Parking",
+      "Housekeeping"
+    ],
+    "technology": [
+      "Smart Climate Control",
+      "Automated Lighting",
+      "Security Cameras",
+      "Biometric Access",
+      "Voice Control",
+      "Entertainment System",
+      "Home Theater",
+      "High-Speed Internet"
+    ]
+  },
+  "special": {
+    "casinoRevenue": "0.5% of Paris Hotel + Casino revenue share",
+    "reputation": "Grants +100 OmniVegas reputation",
+    "access": "VIP access to all Paris Hotel + Casino events",
+    "parking": "Reserved parking in Paris Hotel + Casino garage"
+  }
+}
