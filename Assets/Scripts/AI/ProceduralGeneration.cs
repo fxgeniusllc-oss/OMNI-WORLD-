@@ -917,13 +917,22 @@ namespace OmniWorld.AI
                 case "OmniVegas":
                     // The Strip - North End
                     GenerateLandmark("Stratosphere Tower", landmarkPosition + new Vector3(-1000, 0, 0), BuildingStyle.Neon, 250000f, 350f, 80f, 80f);
-                    
-                    // The Strip - Main Section
+                    GenerateLandmark("Circus Circus", landmarkPosition + new Vector3(-950, 0, 50), BuildingStyle.Neon, 140000f, 90f, 140f, 120f);
+                    GenerateLandmark("SLS Las Vegas", landmarkPosition + new Vector3(-900, 0, -50), BuildingStyle.Modern, 160000f, 120f, 110f, 100f);
+                    GenerateLandmark("Resorts World Las Vegas", landmarkPosition + new Vector3(-850, 0, 0), BuildingStyle.Modern, 420000f, 210f, 180f, 150f);
+                    GenerateLandmark("Encore", landmarkPosition + new Vector3(-750, 0, 50), BuildingStyle.Neon, 390000f, 192f, 140f, 115f);
                     GenerateLandmark("Wynn Las Vegas", landmarkPosition + new Vector3(-500, 0, 0), BuildingStyle.Neon, 400000f, 200f, 150f, 120f);
+                    GenerateLandmark("The Palazzo", landmarkPosition + new Vector3(-400, 0, 150), BuildingStyle.Classical, 370000f, 180f, 190f, 145f);
                     GenerateLandmark("The Venetian", landmarkPosition + new Vector3(-400, 0, 100), BuildingStyle.Classical, 380000f, 180f, 200f, 150f);
+                    GenerateLandmark("Treasure Island", landmarkPosition + new Vector3(-350, 0, -100), BuildingStyle.Neon, 260000f, 130f, 135f, 115f);
                     GenerateLandmark("Mirage Hotel & Casino", landmarkPosition + new Vector3(-300, 0, 0), BuildingStyle.Neon, 320000f, 160f, 140f, 110f);
+                    GenerateLandmark("Harrah's Las Vegas", landmarkPosition + new Vector3(-250, 0, 100), BuildingStyle.Neon, 240000f, 115f, 125f, 100f);
+                    GenerateLandmark("The LINQ Hotel", landmarkPosition + new Vector3(-220, 0, 150), BuildingStyle.Modern, 210000f, 100f, 120f, 95f);
+                    GenerateLandmark("Flamingo Las Vegas", landmarkPosition + new Vector3(-210, 0, -80), BuildingStyle.Neon, 230000f, 105f, 130f, 110f);
                     GenerateLandmark("Caesars Palace", landmarkPosition + new Vector3(-200, 0, -50), BuildingStyle.Classical, 420000f, 170f, 180f, 160f);
+                    GenerateLandmark("Cromwell Hotel", landmarkPosition + new Vector3(-150, 0, 80), BuildingStyle.Modern, 180000f, 95f, 90f, 85f);
                     GenerateLandmark("Bellagio", landmarkPosition + new Vector3(-100, 0, 0), BuildingStyle.Classical, 500000f, 190f, 200f, 150f);
+                    GenerateLandmark("Bellagio Fountains", landmarkPosition + new Vector3(-90, 0, -120), BuildingStyle.Modern, 150000f, 5f, 280f, 35f);
                     
                     // Paris Hotel + Casino - Main landmark building
                     GenerateLandmark("Paris Hotel + Casino", landmarkPosition, BuildingStyle.Neon, 300000f, 180f, 120f, 100f);
@@ -931,28 +940,82 @@ namespace OmniWorld.AI
                     // Maevn "Saint Drip" Private Penthouse - At penthouse level of Paris Hotel + Casino (floor 65)
                     GenerateLandmark("Maevn Saint Drip Private Penthouse", landmarkPosition + new Vector3(0, 180f, 0), BuildingStyle.Neon, 500000f, 42f, 100f, 150f);
                     
+                    GenerateLandmark("Planet Hollywood", landmarkPosition + new Vector3(50, 0, -100), BuildingStyle.Modern, 290000f, 135f, 145f, 120f);
                     GenerateLandmark("Cosmopolitan", landmarkPosition + new Vector3(100, 0, 50), BuildingStyle.Modern, 380000f, 195f, 140f, 130f);
+                    GenerateLandmark("Vdara Hotel", landmarkPosition + new Vector3(180, 0, 100), BuildingStyle.Modern, 240000f, 145f, 90f, 85f);
                     GenerateLandmark("Aria Resort & Casino", landmarkPosition + new Vector3(200, 0, 0), BuildingStyle.Modern, 450000f, 200f, 180f, 140f);
+                    GenerateLandmark("Waldorf Astoria", landmarkPosition + new Vector3(250, 0, 80), BuildingStyle.Modern, 310000f, 150f, 100f, 95f);
+                    GenerateLandmark("Park MGM", landmarkPosition + new Vector3(280, 0, -70), BuildingStyle.Modern, 270000f, 125f, 135f, 115f);
                     GenerateLandmark("MGM Grand", landmarkPosition + new Vector3(300, 0, -50), BuildingStyle.Neon, 400000f, 185f, 200f, 170f);
+                    GenerateLandmark("Tropicana Las Vegas", landmarkPosition + new Vector3(350, 0, 50), BuildingStyle.Neon, 220000f, 110f, 125f, 105f);
                     GenerateLandmark("New York-New York", landmarkPosition + new Vector3(400, 0, 0), BuildingStyle.Modern, 350000f, 160f, 150f, 140f);
+                    GenerateLandmark("The Park Las Vegas", landmarkPosition + new Vector3(420, 0, -150), BuildingStyle.Contemporary, 90000f, 15f, 200f, 150f);
                     GenerateLandmark("Excalibur", landmarkPosition + new Vector3(500, 0, 100), BuildingStyle.Classical, 280000f, 140f, 130f, 120f);
                     GenerateLandmark("Luxor", landmarkPosition + new Vector3(600, 0, 0), BuildingStyle.Modern, 320000f, 110f, 180f, 180f);
                     GenerateLandmark("Mandalay Bay", landmarkPosition + new Vector3(700, 0, -50), BuildingStyle.Modern, 380000f, 200f, 170f, 150f);
+                    GenerateLandmark("Delano Las Vegas", landmarkPosition + new Vector3(750, 0, 20), BuildingStyle.Modern, 260000f, 140f, 80f, 75f);
+                    GenerateLandmark("Four Seasons Las Vegas", landmarkPosition + new Vector3(720, 0, 80), BuildingStyle.Modern, 340000f, 160f, 95f, 90f);
                     
                     // Downtown & Fremont Experience
                     GenerateLandmark("Fremont Street Experience", landmarkPosition + new Vector3(-1100, 0, -500), BuildingStyle.Neon, 180000f, 30f, 400f, 50f);
                     GenerateLandmark("Golden Nugget", landmarkPosition + new Vector3(-1050, 0, -500), BuildingStyle.Neon, 150000f, 120f, 100f, 90f);
                     GenerateLandmark("The D Casino", landmarkPosition + new Vector3(-1100, 0, -450), BuildingStyle.Neon, 120000f, 100f, 90f, 80f);
                     GenerateLandmark("Four Queens", landmarkPosition + new Vector3(-1150, 0, -500), BuildingStyle.Neon, 110000f, 90f, 85f, 75f);
+                    GenerateLandmark("Binion's Gambling Hall", landmarkPosition + new Vector3(-1120, 0, -550), BuildingStyle.Neon, 105000f, 85f, 80f, 70f);
+                    GenerateLandmark("Fremont Hotel & Casino", landmarkPosition + new Vector3(-1080, 0, -520), BuildingStyle.Neon, 108000f, 88f, 82f, 72f);
+                    GenerateLandmark("El Cortez", landmarkPosition + new Vector3(-1200, 0, -480), BuildingStyle.Neon, 95000f, 75f, 75f, 65f);
+                    GenerateLandmark("Downtown Grand", landmarkPosition + new Vector3(-1050, 0, -420), BuildingStyle.Modern, 115000f, 95f, 85f, 78f);
+                    GenerateLandmark("Plaza Hotel & Casino", landmarkPosition + new Vector3(-1180, 0, -520), BuildingStyle.Neon, 112000f, 92f, 87f, 74f);
                     
                     // Convention & Entertainment
                     GenerateLandmark("Las Vegas Convention Center", landmarkPosition + new Vector3(-200, 0, 400), BuildingStyle.Modern, 200000f, 40f, 300f, 250f);
                     GenerateLandmark("T-Mobile Arena", landmarkPosition + new Vector3(100, 0, -300), BuildingStyle.Modern, 220000f, 60f, 200f, 180f);
                     GenerateLandmark("Allegiant Stadium", landmarkPosition + new Vector3(1200, 0, 200), BuildingStyle.Modern, 350000f, 80f, 280f, 260f);
                     GenerateLandmark("High Roller Observation Wheel", landmarkPosition + new Vector3(150, 0, 200), BuildingStyle.Modern, 100000f, 168f, 50f, 50f);
+                    GenerateLandmark("The Sphere", landmarkPosition + new Vector3(-250, 0, 350), BuildingStyle.Modern, 280000f, 112f, 157f, 157f);
+                    GenerateLandmark("MSG Sphere Entertainment", landmarkPosition + new Vector3(-280, 0, 380), BuildingStyle.Modern, 180000f, 70f, 120f, 100f);
                     
-                    // Off-Strip Properties
+                    // Shows & Entertainment Venues
+                    GenerateLandmark("Colosseum at Caesars Palace", landmarkPosition + new Vector3(-190, 0, -20), BuildingStyle.Classical, 140000f, 45f, 100f, 95f);
+                    GenerateLandmark("Dolby Live at Park MGM", landmarkPosition + new Vector3(270, 0, -50), BuildingStyle.Modern, 125000f, 40f, 95f, 90f);
+                    GenerateLandmark("Michelob ULTRA Arena", landmarkPosition + new Vector3(650, 0, -30), BuildingStyle.Modern, 135000f, 45f, 105f, 98f);
+                    GenerateLandmark("Allegiant Stadium Raiders Facility", landmarkPosition + new Vector3(1180, 0, 250), BuildingStyle.Modern, 90000f, 30f, 120f, 110f);
+                    
+                    // Shopping & Dining
+                    GenerateLandmark("Forum Shops at Caesars", landmarkPosition + new Vector3(-210, 0, -10), BuildingStyle.Classical, 175000f, 35f, 180f, 140f);
+                    GenerateLandmark("Grand Canal Shoppes", landmarkPosition + new Vector3(-390, 0, 120), BuildingStyle.Classical, 165000f, 32f, 170f, 135f);
+                    GenerateLandmark("Miracle Mile Shops", landmarkPosition + new Vector3(60, 0, -110), BuildingStyle.Modern, 130000f, 28f, 200f, 120f);
+                    GenerateLandmark("Fashion Show Mall", landmarkPosition + new Vector3(-600, 0, 150), BuildingStyle.Modern, 190000f, 35f, 240f, 210f);
+                    GenerateLandmark("Crystals at CityCenter", landmarkPosition + new Vector3(180, 0, 30), BuildingStyle.Modern, 210000f, 38f, 160f, 145f);
+                    GenerateLandmark("Town Square Las Vegas", landmarkPosition + new Vector3(1400, 0, -400), BuildingStyle.Contemporary, 155000f, 25f, 280f, 220f);
+                    GenerateLandmark("The Boulevard Mall", landmarkPosition + new Vector3(-1500, 0, 800), BuildingStyle.Modern, 95000f, 22f, 200f, 180f);
+                    
+                    // Museums & Attractions
+                    GenerateLandmark("Neon Museum", landmarkPosition + new Vector3(-1300, 0, -600), BuildingStyle.Contemporary, 85000f, 18f, 150f, 120f);
+                    GenerateLandmark("Mob Museum", landmarkPosition + new Vector3(-1160, 0, -580), BuildingStyle.Classical, 92000f, 25f, 95f, 85f);
+                    GenerateLandmark("Discovery Children's Museum", landmarkPosition + new Vector3(-1250, 0, -350), BuildingStyle.Modern, 78000f, 28f, 105f, 98f);
+                    GenerateLandmark("Las Vegas Natural History Museum", landmarkPosition + new Vector3(-1350, 0, -250), BuildingStyle.Contemporary, 72000f, 20f, 90f, 85f);
+                    GenerateLandmark("Madame Tussauds Las Vegas", landmarkPosition + new Vector3(-400, 0, 80), BuildingStyle.Modern, 68000f, 30f, 75f, 70f);
+                    GenerateLandmark("Shark Reef Aquarium", landmarkPosition + new Vector3(710, 0, -60), BuildingStyle.Modern, 88000f, 25f, 110f, 100f);
+                    
+                    // Off-Strip Resorts & Casinos
                     GenerateLandmark("Red Rock Casino", landmarkPosition + new Vector3(-2000, 0, 500), BuildingStyle.Modern, 180000f, 100f, 150f, 120f);
+                    GenerateLandmark("Green Valley Ranch", landmarkPosition + new Vector3(2200, 0, -800), BuildingStyle.Modern, 165000f, 95f, 140f, 115f);
+                    GenerateLandmark("M Resort", landmarkPosition + new Vector3(2500, 0, -1000), BuildingStyle.Modern, 155000f, 105f, 125f, 108f);
+                    GenerateLandmark("The Orleans", landmarkPosition + new Vector3(-1800, 0, -200), BuildingStyle.Classical, 142000f, 88f, 130f, 112f);
+                    GenerateLandmark("South Point Hotel Casino", landmarkPosition + new Vector3(2800, 0, -1200), BuildingStyle.Modern, 148000f, 92f, 135f, 115f);
+                    GenerateLandmark("Sunset Station", landmarkPosition + new Vector3(2400, 0, -700), BuildingStyle.Modern, 138000f, 85f, 125f, 105f);
+                    GenerateLandmark("Santa Fe Station", landmarkPosition + new Vector3(-2200, 0, 800), BuildingStyle.Contemporary, 128000f, 80f, 120f, 100f);
+                    GenerateLandmark("Palace Station", landmarkPosition + new Vector3(-1600, 0, 300), BuildingStyle.Neon, 132000f, 82f, 122f, 102f);
+                    GenerateLandmark("Boulder Station", landmarkPosition + new Vector3(2600, 0, -500), BuildingStyle.Modern, 125000f, 78f, 118f, 98f);
+                    GenerateLandmark("Texas Station", landmarkPosition + new Vector3(-2400, 0, 1000), BuildingStyle.Modern, 122000f, 76f, 115f, 95f);
+                    
+                    // Golf & Recreation
+                    GenerateLandmark("Wynn Golf Club", landmarkPosition + new Vector3(-520, 0, 200), BuildingStyle.Contemporary, 110000f, 15f, 300f, 250f);
+                    GenerateLandmark("Bali Hai Golf Club", landmarkPosition + new Vector3(750, 0, -150), BuildingStyle.Contemporary, 95000f, 12f, 280f, 240f);
+                    GenerateLandmark("Las Vegas National Golf Club", landmarkPosition + new Vector3(-2600, 0, -600), BuildingStyle.Contemporary, 88000f, 10f, 270f, 230f);
+                    
+                    // Signature Properties
                     GenerateLandmark("Maevn Mansion", landmarkPosition + new Vector3(1500, 0, 800), BuildingStyle.Modern, 1000000f);
                     break;
                     
@@ -1045,27 +1108,50 @@ namespace OmniWorld.AI
         /// </summary>
         private void GenerateLandmark(string landmarkName, Vector3 position, BuildingStyle style, float value)
         {
+            // Generate with random dimensions but full interactivity
+            float height = 100f + (float)random.NextDouble() * 100f;
+            float width = 50f + (float)random.NextDouble() * 50f;
+            float depth = 50f + (float)random.NextDouble() * 50f;
+            
             GeneratedBuilding landmark = new GeneratedBuilding
             {
                 position = position,
                 zoneType = World.ZoneType.Recreation, // Landmarks are typically in recreation zones
-                height = 100f + (float)random.NextDouble() * 100f, // Tall landmarks
-                width = 50f + (float)random.NextDouble() * 50f,
-                depth = 50f + (float)random.NextDouble() * 50f,
+                height = height,
+                width = width,
+                depth = depth,
                 style = style,
                 value = value,
                 name = landmarkName,
-                isLandmark = true
+                isLandmark = true,
+                isInteractive = true, // All landmarks are interactive
+                hasInterior = true,
+                hasExteriorInteraction = true,
+                entranceCount = DetermineEntranceCount(landmarkName, height),
+                requiresAccess = false
             };
             
+            // Add interaction components and interior features
+            AddInteractionComponents(landmark, landmarkName);
+            AddInteriorFeatures(landmark, landmarkName);
+            
             generatedBuildings.Add(landmark);
-            Debug.Log($"Generated landmark: {landmarkName} valued at {value:C0} $OMNI");
+            Debug.Log($"Generated interactive landmark: {landmarkName} valued at {value:C0} $OMNI - Interior: {landmark.hasInterior}, Entrances: {landmark.entranceCount}");
         }
         
         /// <summary>
         /// Generate a specific landmark building with custom dimensions
         /// </summary>
         private void GenerateLandmark(string landmarkName, Vector3 position, BuildingStyle style, float value, float height, float width, float depth)
+        {
+            // Default: All landmarks are interactive with interior and exterior access
+            GenerateLandmark(landmarkName, position, style, value, height, width, depth, true, true);
+        }
+        
+        /// <summary>
+        /// Generate a specific landmark building with custom dimensions and interactivity
+        /// </summary>
+        private void GenerateLandmark(string landmarkName, Vector3 position, BuildingStyle style, float value, float height, float width, float depth, bool hasInterior, bool requiresAccess)
         {
             GeneratedBuilding landmark = new GeneratedBuilding
             {
@@ -1077,11 +1163,175 @@ namespace OmniWorld.AI
                 style = style,
                 value = value,
                 name = landmarkName,
-                isLandmark = true
+                isLandmark = true,
+                isInteractive = true, // All landmarks are interactive
+                hasInterior = hasInterior,
+                hasExteriorInteraction = true, // All landmarks have exterior interaction
+                entranceCount = DetermineEntranceCount(landmarkName, height),
+                requiresAccess = requiresAccess
             };
             
+            // Add appropriate interaction components based on building type
+            AddInteractionComponents(landmark, landmarkName);
+            
+            // Add interior features based on building type
+            AddInteriorFeatures(landmark, landmarkName);
+            
             generatedBuildings.Add(landmark);
-            Debug.Log($"Generated landmark: {landmarkName} at position {position} (H:{height}m, W:{width}m, D:{depth}m) valued at {value:C0} $OMNI");
+            Debug.Log($"Generated interactive landmark: {landmarkName} at position {position} (H:{height}m, W:{width}m, D:{depth}m) valued at {value:C0} $OMNI - Interior: {hasInterior}, Entrances: {landmark.entranceCount}");
+        }
+        
+        /// <summary>
+        /// Determine number of entrances based on building size and type
+        /// </summary>
+        private int DetermineEntranceCount(string buildingName, float height)
+        {
+            // Large buildings get multiple entrances
+            if (height > 250f) return 6; // Skyscrapers
+            if (height > 180f) return 4; // Tall buildings
+            if (height > 100f) return 3; // Medium-high buildings
+            if (height > 50f) return 2; // Medium buildings
+            return 1; // Small buildings
+        }
+        
+        /// <summary>
+        /// Add appropriate interaction components based on building type
+        /// </summary>
+        private void AddInteractionComponents(GeneratedBuilding building, string buildingName)
+        {
+            // Universal components for all landmarks
+            building.interactionComponents.Add("DoorInteraction");
+            building.interactionComponents.Add("InteriorController");
+            building.interactionComponents.Add("LightController");
+            building.interactionComponents.Add("NavMeshObstacle");
+            building.interactionComponents.Add("AudioSource");
+            
+            // Building-specific components
+            if (buildingName.Contains("Casino") || buildingName.Contains("Hotel"))
+            {
+                building.interactionComponents.Add("CasinoController");
+                building.interactionComponents.Add("HotelController");
+                building.interactionComponents.Add("ElevatorController");
+                building.interactionComponents.Add("SecuritySystem");
+            }
+            else if (buildingName.Contains("Stadium") || buildingName.Contains("Arena"))
+            {
+                building.interactionComponents.Add("StadiumController");
+                building.interactionComponents.Add("SeatingController");
+                building.interactionComponents.Add("EventManager");
+                building.interactionComponents.Add("CrowdSystem");
+            }
+            else if (buildingName.Contains("Museum") || buildingName.Contains("Gallery") || buildingName.Contains("Art"))
+            {
+                building.interactionComponents.Add("MuseumController");
+                building.interactionComponents.Add("ExhibitInteraction");
+                building.interactionComponents.Add("AudioGuide");
+            }
+            else if (buildingName.Contains("Tower") || buildingName.Contains("Observatory"))
+            {
+                building.interactionComponents.Add("ObservationController");
+                building.interactionComponents.Add("ElevatorController");
+                building.interactionComponents.Add("ViewpointSystem");
+            }
+            else if (buildingName.Contains("Mall") || buildingName.Contains("Market") || buildingName.Contains("Shopping"))
+            {
+                building.interactionComponents.Add("ShoppingController");
+                building.interactionComponents.Add("StoreManager");
+                building.interactionComponents.Add("NPCShopkeeper");
+            }
+            else if (buildingName.Contains("Convention") || buildingName.Contains("Center"))
+            {
+                building.interactionComponents.Add("ConventionController");
+                building.interactionComponents.Add("ExhibitHalls");
+                building.interactionComponents.Add("EventScheduler");
+            }
+        }
+        
+        /// <summary>
+        /// Add interior features/rooms based on building type
+        /// </summary>
+        private void AddInteriorFeatures(GeneratedBuilding building, string buildingName)
+        {
+            if (buildingName.Contains("Casino") || buildingName.Contains("Hotel"))
+            {
+                building.interiorFeatures.Add("Lobby");
+                building.interiorFeatures.Add("Casino Floor");
+                building.interiorFeatures.Add("Poker Room");
+                building.interiorFeatures.Add("Slot Machines");
+                building.interiorFeatures.Add("Restaurants");
+                building.interiorFeatures.Add("Bars");
+                building.interiorFeatures.Add("Hotel Rooms");
+                building.interiorFeatures.Add("Suites");
+                building.interiorFeatures.Add("Pool Area");
+                building.interiorFeatures.Add("Spa");
+                building.interiorFeatures.Add("Shops");
+            }
+            else if (buildingName.Contains("Stadium") || buildingName.Contains("Arena"))
+            {
+                building.interiorFeatures.Add("Main Entrance");
+                building.interiorFeatures.Add("Concourse");
+                building.interiorFeatures.Add("Seating Areas");
+                building.interiorFeatures.Add("VIP Boxes");
+                building.interiorFeatures.Add("Concession Stands");
+                building.interiorFeatures.Add("Restrooms");
+                building.interiorFeatures.Add("Team Locker Rooms");
+                building.interiorFeatures.Add("Press Box");
+            }
+            else if (buildingName.Contains("Museum") || buildingName.Contains("Gallery") || buildingName.Contains("Art"))
+            {
+                building.interiorFeatures.Add("Main Hall");
+                building.interiorFeatures.Add("Exhibition Galleries");
+                building.interiorFeatures.Add("Special Exhibits");
+                building.interiorFeatures.Add("Sculpture Garden");
+                building.interiorFeatures.Add("Gift Shop");
+                building.interiorFeatures.Add("Cafe");
+                building.interiorFeatures.Add("Auditorium");
+            }
+            else if (buildingName.Contains("Tower") || buildingName.Contains("Observatory"))
+            {
+                building.interiorFeatures.Add("Ground Floor Lobby");
+                building.interiorFeatures.Add("Elevators");
+                building.interiorFeatures.Add("Observation Decks");
+                building.interiorFeatures.Add("Gift Shop");
+                building.interiorFeatures.Add("Restaurant");
+                building.interiorFeatures.Add("360° Viewing Platform");
+            }
+            else if (buildingName.Contains("Mall") || buildingName.Contains("Market") || buildingName.Contains("Shopping"))
+            {
+                building.interiorFeatures.Add("Main Atrium");
+                building.interiorFeatures.Add("Retail Stores");
+                building.interiorFeatures.Add("Food Court");
+                building.interiorFeatures.Add("Luxury Boutiques");
+                building.interiorFeatures.Add("Entertainment Zone");
+                building.interiorFeatures.Add("Parking Garage");
+            }
+            else if (buildingName.Contains("Convention") || buildingName.Contains("Center"))
+            {
+                building.interiorFeatures.Add("Main Entrance Hall");
+                building.interiorFeatures.Add("Exhibition Halls");
+                building.interiorFeatures.Add("Meeting Rooms");
+                building.interiorFeatures.Add("Ballroom");
+                building.interiorFeatures.Add("Registration Area");
+                building.interiorFeatures.Add("Cafeteria");
+            }
+            else if (buildingName.Contains("Theatre") || buildingName.Contains("Theater"))
+            {
+                building.interiorFeatures.Add("Box Office");
+                building.interiorFeatures.Add("Main Auditorium");
+                building.interiorFeatures.Add("Balcony Seating");
+                building.interiorFeatures.Add("Stage");
+                building.interiorFeatures.Add("Backstage");
+                building.interiorFeatures.Add("Lobby");
+            }
+            else
+            {
+                // Generic landmark features
+                building.interiorFeatures.Add("Main Entrance");
+                building.interiorFeatures.Add("Reception Area");
+                building.interiorFeatures.Add("Main Hall");
+                building.interiorFeatures.Add("Restrooms");
+                building.interiorFeatures.Add("Gift Shop");
+            }
         }
     }
 
@@ -1097,6 +1347,15 @@ namespace OmniWorld.AI
         public float value;
         public string name = "Building"; // Optional name for landmarks
         public bool isLandmark = false; // Mark special buildings
+        
+        // Interactivity Properties
+        public bool isInteractive = false; // Can player interact with this building
+        public bool hasInterior = false; // Building has explorable interior
+        public bool hasExteriorInteraction = false; // Exterior features (doors, windows, etc.)
+        public List<string> interactionComponents = new List<string>(); // Unity components for interaction
+        public List<string> interiorFeatures = new List<string>(); // Interior rooms/areas
+        public int entranceCount = 1; // Number of entrances
+        public bool requiresAccess = false; // Requires tickets/payment/membership
     }
 
     [System.Serializable]
