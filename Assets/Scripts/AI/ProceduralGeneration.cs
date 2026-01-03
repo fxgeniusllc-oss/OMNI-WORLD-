@@ -929,7 +929,7 @@ namespace OmniWorld.AI
                     GenerateLandmark("Paris Hotel + Casino", landmarkPosition, BuildingStyle.Neon, 300000f, 180f, 120f, 100f);
                     
                     // Maevn "Saint Drip" Private Penthouse - At penthouse level of Paris Hotel + Casino (floor 65)
-                    GenerateLandmark("Maevn 'Saint Drip' Private Penthouse", landmarkPosition + new Vector3(0, 180f, 0), BuildingStyle.Neon, 500000f, 42f, 100f, 150f);
+                    GenerateLandmark("Maevn Saint Drip Private Penthouse", landmarkPosition + new Vector3(0, 180f, 0), BuildingStyle.Neon, 500000f, 42f, 100f, 150f);
                     
                     GenerateLandmark("Cosmopolitan", landmarkPosition + new Vector3(100, 0, 50), BuildingStyle.Modern, 380000f, 195f, 140f, 130f);
                     GenerateLandmark("Aria Resort & Casino", landmarkPosition + new Vector3(200, 0, 0), BuildingStyle.Modern, 450000f, 200f, 180f, 140f);
@@ -1003,7 +1003,7 @@ namespace OmniWorld.AI
                     GenerateLandmark("Atlantis The Palm", landmarkPosition + new Vector3(900, 0, -650), BuildingStyle.Modern, 480000f, 100f, 180f, 150f);
                     GenerateLandmark("Jumeirah Beach Hotel", landmarkPosition + new Vector3(550, 0, -500), BuildingStyle.Modern, 380000f, 104f, 150f, 120f);
                     GenerateLandmark("Emirates Towers", landmarkPosition + new Vector3(200, 0, 0), BuildingStyle.Modern, 520000f, 355f, 70f, 70f);
-                    GenerateLandmark("Dubai Creek Tower", landmarkPosition + new Vector3(-500, 0, -200), BuildingStyle.Modern, 850000f, 928f, 60f, 60f);
+                    GenerateLandmark("Dubai Creek Tower", landmarkPosition + new Vector3(-500, 0, -200), BuildingStyle.Modern, 850000f, 828f, 60f, 60f); // Height estimate (under construction)
                     break;
                     
                 case "OmniLA":
