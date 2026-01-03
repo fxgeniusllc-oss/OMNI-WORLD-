@@ -131,7 +131,7 @@ Summary of enhancements made to ProceduralGeneration.cs.
 | City | Theme | Quests | Events | Landmarks |
 |------|-------|--------|--------|-----------|
 | **🍑 OmniLanta** | Creator Culture, Tech | Studio recording, Tech pitches | Music festivals, Tech summits | Mercedes-Benz Stadium |
-| **🎰 OmniVegas** | High Stakes, Neon | Casino challenges, High roller | Grand openings, Magic shows | Maevenn Penthouse, Maeven Mansion |
+| **🎰 OmniVegas** | High Stakes, Neon | Casino challenges, High roller | Grand openings, Magic shows | Maevn "Saint Drip" Penthouse, Maevn Mansion |
 | **⛩️ OmniTokyo** | Cyber-Tech, Anime | Tech demos, Cafe events | Anime conventions, Game shows | Shibuya Crossing Tower |
 | **🌆 OmniNYC** | Financial, Art | Wall Street, Broadway | Financial summits, Art galas | Wall Street Tower |
 | **🌴 OmniDubai** | Luxury, Innovation | Shopping, Tower events | Luxury expos, Yacht shows | Burj OmniWorld |

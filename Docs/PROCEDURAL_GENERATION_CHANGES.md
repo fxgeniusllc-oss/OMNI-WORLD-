@@ -126,7 +126,7 @@ Each city generates unique landmarks:
 | City | Landmark |
 |------|----------|
 | OmniLanta | Mercedes-Benz Stadium |
-| OmniVegas | Maevenn Private Penthouse, Maeven Mansion |
+| OmniVegas | Maevn "Saint Drip" Private Penthouse, Maevn Mansion |
 | OmniTokyo | Shibuya Crossing Tower |
 | OmniNYC | Wall Street Financial Tower |
 | OmniDubai | Burj OmniWorld |
