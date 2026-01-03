@@ -2227,18 +2227,20 @@ namespace OmniWorld.AI
                 return random.Next(1, 3); // 1-2 people
             case ResidentialPropertyType.ApartmentUnit:
             case ResidentialPropertyType.Condo:
+            case ResidentialPropertyType.CollegeDorm:
                 return random.Next(2, 5); // 2-4 people
             case ResidentialPropertyType.Duplex:
             case ResidentialPropertyType.Townhouse:
-                return random.Next(4, 7); // 4-6 people
+            case ResidentialPropertyType.SharedHousing:
+                return random.Next(4, 9); // 4-8 people
             case ResidentialPropertyType.SingleFamilyHome:
                 return random.Next(4, 9); // 4-8 people
             case ResidentialPropertyType.Penthouse:
                 return random.Next(2, 7); // 2-6 people
             case ResidentialPropertyType.Mansion:
                 return random.Next(6, 13); // 6-12 people
-            case ResidentialPropertyType.CollegeDorm:
-                return random.Next(2, 5); // 2-4 people
+            case ResidentialPropertyType.LuxuryVilla:
+                return random.Next(8, 17); // 8-16 people
             default:
                 return 2;
         }
