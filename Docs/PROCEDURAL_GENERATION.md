@@ -143,7 +143,7 @@ Each city has unique landmarks that reflect its culture:
 // Landmarks are automatically generated per city
 // Examples:
 // OmniLanta: Mercedes-Benz Stadium
-// OmniVegas: Maevenn Private Penthouse, Maeven Mansion
+// OmniVegas: Maevn "Saint Drip" Private Penthouse, Maevn Mansion
 // OmniTokyo: Shibuya Crossing Tower
 // OmniNYC: Wall Street Financial Tower
 // OmniDubai: Burj OmniWorld

@@ -1,15 +1,16 @@
 {
-  "prefabName": "Housing_Penthouse_Maevenn",
+  "prefabName": "Housing_Penthouse_MaevnSaintDrip",
   "category": "Housing",
   "subCategory": "Penthouses",
-  "type": "Maevenn Private Penthouse",
+  "type": "Maevn 'Saint Drip' Private Penthouse",
   "metadata": {
     "nftCompatible": true,
     "ownershipType": "Individual",
     "economicTier": "Ultra-Legendary",
     "dominionZone": "Paris Hotel + Casino",
     "rarity": "1/1",
-    "location": "OmniVegas - Paris Hotel + Casino Penthouse Level"
+    "location": "OmniVegas - Paris Hotel + Casino Penthouse Level",
+    "owner": "Maevn 'Saint Drip'"
   },
   "specifications": {
     "squareFootage": 15000,

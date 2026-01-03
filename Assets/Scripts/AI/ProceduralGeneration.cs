@@ -901,45 +901,141 @@ namespace OmniWorld.AI
             switch (cityName)
             {
                 case "OmniLanta":
-                    // Mercedes-Benz Stadium, Tech Incubators
+                    // Major Attractions & Landmarks
                     GenerateLandmark("Mercedes-Benz Stadium", landmarkPosition, BuildingStyle.Modern, 100000f);
+                    GenerateLandmark("World of Coca-Cola", landmarkPosition + new Vector3(200, 0, 0), BuildingStyle.Modern, 50000f);
+                    GenerateLandmark("Georgia Aquarium", landmarkPosition + new Vector3(300, 0, 50), BuildingStyle.Modern, 75000f);
+                    GenerateLandmark("Centennial Olympic Park", landmarkPosition + new Vector3(150, 0, 100), BuildingStyle.Contemporary, 60000f);
+                    GenerateLandmark("Fox Theatre", landmarkPosition + new Vector3(-100, 0, 0), BuildingStyle.Classical, 80000f);
+                    GenerateLandmark("Ponce City Market", landmarkPosition + new Vector3(400, 0, -50), BuildingStyle.Industrial, 90000f);
+                    GenerateLandmark("SunTrust Park", landmarkPosition + new Vector3(-300, 0, 200), BuildingStyle.Modern, 85000f);
+                    GenerateLandmark("Atlanta BeltLine", landmarkPosition + new Vector3(250, 0, -100), BuildingStyle.Contemporary, 40000f);
+                    GenerateLandmark("High Museum of Art", landmarkPosition + new Vector3(-200, 0, 150), BuildingStyle.Modern, 70000f);
+                    GenerateLandmark("Stone Mountain Park", landmarkPosition + new Vector3(800, 0, 300), BuildingStyle.Contemporary, 65000f);
                     break;
                     
                 case "OmniVegas":
+                    // The Strip - North End
+                    GenerateLandmark("Stratosphere Tower", landmarkPosition + new Vector3(-1000, 0, 0), BuildingStyle.Neon, 250000f, 350f, 80f, 80f);
+                    
+                    // The Strip - Main Section
+                    GenerateLandmark("Wynn Las Vegas", landmarkPosition + new Vector3(-500, 0, 0), BuildingStyle.Neon, 400000f, 200f, 150f, 120f);
+                    GenerateLandmark("The Venetian", landmarkPosition + new Vector3(-400, 0, 100), BuildingStyle.Classical, 380000f, 180f, 200f, 150f);
+                    GenerateLandmark("Mirage Hotel & Casino", landmarkPosition + new Vector3(-300, 0, 0), BuildingStyle.Neon, 320000f, 160f, 140f, 110f);
+                    GenerateLandmark("Caesars Palace", landmarkPosition + new Vector3(-200, 0, -50), BuildingStyle.Classical, 420000f, 170f, 180f, 160f);
+                    GenerateLandmark("Bellagio", landmarkPosition + new Vector3(-100, 0, 0), BuildingStyle.Classical, 500000f, 190f, 200f, 150f);
+                    
                     // Paris Hotel + Casino - Main landmark building
                     GenerateLandmark("Paris Hotel + Casino", landmarkPosition, BuildingStyle.Neon, 300000f, 180f, 120f, 100f);
                     
-                    // Maevenn Private Penthouse - At penthouse level of Paris Hotel + Casino (floor 65)
-                    // Positioned at the top of the Paris Hotel + Casino structure
-                    GenerateLandmark("Maevenn Private Penthouse", landmarkPosition + new Vector3(0, 180f, 0), BuildingStyle.Neon, 500000f, 42f, 100f, 150f);
+                    // Maevn "Saint Drip" Private Penthouse - At penthouse level of Paris Hotel + Casino (floor 65)
+                    GenerateLandmark("Maevn 'Saint Drip' Private Penthouse", landmarkPosition + new Vector3(0, 180f, 0), BuildingStyle.Neon, 500000f, 42f, 100f, 150f);
                     
-                    // Maeven Mansion - Off-Strip Estate
-                    GenerateLandmark("Maeven Mansion", landmarkPosition + new Vector3(500, 0, 0), BuildingStyle.Modern, 1000000f);
+                    GenerateLandmark("Cosmopolitan", landmarkPosition + new Vector3(100, 0, 50), BuildingStyle.Modern, 380000f, 195f, 140f, 130f);
+                    GenerateLandmark("Aria Resort & Casino", landmarkPosition + new Vector3(200, 0, 0), BuildingStyle.Modern, 450000f, 200f, 180f, 140f);
+                    GenerateLandmark("MGM Grand", landmarkPosition + new Vector3(300, 0, -50), BuildingStyle.Neon, 400000f, 185f, 200f, 170f);
+                    GenerateLandmark("New York-New York", landmarkPosition + new Vector3(400, 0, 0), BuildingStyle.Modern, 350000f, 160f, 150f, 140f);
+                    GenerateLandmark("Excalibur", landmarkPosition + new Vector3(500, 0, 100), BuildingStyle.Classical, 280000f, 140f, 130f, 120f);
+                    GenerateLandmark("Luxor", landmarkPosition + new Vector3(600, 0, 0), BuildingStyle.Modern, 320000f, 110f, 180f, 180f);
+                    GenerateLandmark("Mandalay Bay", landmarkPosition + new Vector3(700, 0, -50), BuildingStyle.Modern, 380000f, 200f, 170f, 150f);
+                    
+                    // Downtown & Fremont Experience
+                    GenerateLandmark("Fremont Street Experience", landmarkPosition + new Vector3(-1100, 0, -500), BuildingStyle.Neon, 180000f, 30f, 400f, 50f);
+                    GenerateLandmark("Golden Nugget", landmarkPosition + new Vector3(-1050, 0, -500), BuildingStyle.Neon, 150000f, 120f, 100f, 90f);
+                    GenerateLandmark("The D Casino", landmarkPosition + new Vector3(-1100, 0, -450), BuildingStyle.Neon, 120000f, 100f, 90f, 80f);
+                    GenerateLandmark("Four Queens", landmarkPosition + new Vector3(-1150, 0, -500), BuildingStyle.Neon, 110000f, 90f, 85f, 75f);
+                    
+                    // Convention & Entertainment
+                    GenerateLandmark("Las Vegas Convention Center", landmarkPosition + new Vector3(-200, 0, 400), BuildingStyle.Modern, 200000f, 40f, 300f, 250f);
+                    GenerateLandmark("T-Mobile Arena", landmarkPosition + new Vector3(100, 0, -300), BuildingStyle.Modern, 220000f, 60f, 200f, 180f);
+                    GenerateLandmark("Allegiant Stadium", landmarkPosition + new Vector3(1200, 0, 200), BuildingStyle.Modern, 350000f, 80f, 280f, 260f);
+                    GenerateLandmark("High Roller Observation Wheel", landmarkPosition + new Vector3(150, 0, 200), BuildingStyle.Modern, 100000f, 168f, 50f, 50f);
+                    
+                    // Off-Strip Properties
+                    GenerateLandmark("Red Rock Casino", landmarkPosition + new Vector3(-2000, 0, 500), BuildingStyle.Modern, 180000f, 100f, 150f, 120f);
+                    GenerateLandmark("Maevn Mansion", landmarkPosition + new Vector3(1500, 0, 800), BuildingStyle.Modern, 1000000f);
                     break;
                     
                 case "OmniTokyo":
-                    // Shibuya Crossing, Akihabara Tech District
-                    GenerateLandmark("Shibuya Crossing Tower", landmarkPosition, BuildingStyle.Cyberpunk, 200000f);
+                    // Major Districts & Landmarks
+                    GenerateLandmark("Tokyo Tower", landmarkPosition, BuildingStyle.Modern, 300000f, 333f, 40f, 40f);
+                    GenerateLandmark("Tokyo Skytree", landmarkPosition + new Vector3(500, 0, 0), BuildingStyle.Modern, 450000f, 634f, 50f, 50f);
+                    GenerateLandmark("Shibuya Crossing Tower", landmarkPosition + new Vector3(200, 0, 200), BuildingStyle.Cyberpunk, 200000f);
+                    GenerateLandmark("Shibuya 109", landmarkPosition + new Vector3(220, 0, 220), BuildingStyle.Neon, 150000f, 60f, 50f, 50f);
+                    GenerateLandmark("Tokyo Metropolitan Government Building", landmarkPosition + new Vector3(-300, 0, 100), BuildingStyle.Modern, 280000f, 243f, 100f, 90f);
+                    GenerateLandmark("Akihabara Electric Town", landmarkPosition + new Vector3(400, 0, -200), BuildingStyle.Neon, 220000f, 80f, 200f, 150f);
+                    GenerateLandmark("Senso-ji Temple", landmarkPosition + new Vector3(600, 0, 300), BuildingStyle.Classical, 180000f, 30f, 80f, 100f);
+                    GenerateLandmark("Meiji Shrine", landmarkPosition + new Vector3(-500, 0, -300), BuildingStyle.Classical, 160000f, 25f, 120f, 150f);
+                    GenerateLandmark("Rainbow Bridge", landmarkPosition + new Vector3(300, 0, 700), BuildingStyle.Modern, 140000f, 50f, 800f, 30f);
+                    GenerateLandmark("Tokyo Dome", landmarkPosition + new Vector3(-200, 0, -500), BuildingStyle.Modern, 190000f, 56f, 180f, 180f);
+                    GenerateLandmark("Roppongi Hills", landmarkPosition + new Vector3(100, 0, -300), BuildingStyle.Modern, 350000f, 238f, 120f, 100f);
+                    GenerateLandmark("Tokyo Station", landmarkPosition + new Vector3(250, 0, 100), BuildingStyle.Classical, 170000f, 40f, 200f, 150f);
+                    GenerateLandmark("Ginza Shopping District", landmarkPosition + new Vector3(350, 0, 150), BuildingStyle.Modern, 280000f, 80f, 300f, 200f);
                     break;
                     
                 case "OmniNYC":
-                    // Wall Street Tower, Times Square Billboard
-                    GenerateLandmark("Wall Street Financial Tower", landmarkPosition, BuildingStyle.Modern, 300000f);
+                    // Iconic Landmarks
+                    GenerateLandmark("Empire State Building", landmarkPosition, BuildingStyle.Classical, 600000f, 381f, 80f, 80f);
+                    GenerateLandmark("One World Trade Center", landmarkPosition + new Vector3(400, 0, -300), BuildingStyle.Modern, 700000f, 541f, 60f, 60f);
+                    GenerateLandmark("Chrysler Building", landmarkPosition + new Vector3(200, 0, 100), BuildingStyle.Classical, 450000f, 319f, 70f, 70f);
+                    GenerateLandmark("Statue of Liberty", landmarkPosition + new Vector3(-800, 0, -800), BuildingStyle.Classical, 350000f, 93f, 30f, 30f);
+                    GenerateLandmark("Brooklyn Bridge", landmarkPosition + new Vector3(300, 0, -500), BuildingStyle.Classical, 280000f, 85f, 1100f, 40f);
+                    GenerateLandmark("Times Square", landmarkPosition + new Vector3(100, 0, 200), BuildingStyle.Neon, 400000f, 100f, 200f, 200f);
+                    GenerateLandmark("Wall Street Financial Tower", landmarkPosition + new Vector3(350, 0, -250), BuildingStyle.Modern, 300000f);
+                    GenerateLandmark("Central Park Tower", landmarkPosition + new Vector3(-200, 0, 300), BuildingStyle.Modern, 550000f, 472f, 60f, 50f);
+                    GenerateLandmark("Rockefeller Center", landmarkPosition + new Vector3(150, 0, 250), BuildingStyle.Classical, 380000f, 259f, 100f, 90f);
+                    GenerateLandmark("Grand Central Terminal", landmarkPosition + new Vector3(180, 0, 120), BuildingStyle.Classical, 220000f, 50f, 150f, 120f);
+                    GenerateLandmark("The Met Museum", landmarkPosition + new Vector3(-300, 0, 400), BuildingStyle.Classical, 280000f, 30f, 200f, 150f);
+                    GenerateLandmark("Madison Square Garden", landmarkPosition + new Vector3(50, 0, 0), BuildingStyle.Modern, 250000f, 60f, 150f, 150f);
+                    GenerateLandmark("Flatiron Building", landmarkPosition + new Vector3(250, 0, 50), BuildingStyle.Classical, 180000f, 87f, 30f, 60f);
                     break;
                     
                 case "OmniDubai":
-                    // Burj-style tower, Marina complex
-                    GenerateLandmark("Burj OmniWorld", landmarkPosition, BuildingStyle.Modern, 800000f);
+                    // Iconic Landmarks
+                    GenerateLandmark("Burj Khalifa", landmarkPosition, BuildingStyle.Modern, 1200000f, 828f, 80f, 80f);
+                    GenerateLandmark("Burj Al Arab", landmarkPosition + new Vector3(500, 0, -400), BuildingStyle.Modern, 750000f, 321f, 120f, 100f);
+                    GenerateLandmark("Palm Jumeirah", landmarkPosition + new Vector3(800, 0, -600), BuildingStyle.Modern, 600000f, 20f, 500f, 400f);
+                    GenerateLandmark("Dubai Marina", landmarkPosition + new Vector3(600, 0, -300), BuildingStyle.Modern, 450000f, 200f, 300f, 250f);
+                    GenerateLandmark("Dubai Mall", landmarkPosition + new Vector3(100, 0, 100), BuildingStyle.Modern, 400000f, 40f, 350f, 300f);
+                    GenerateLandmark("Dubai Fountain", landmarkPosition + new Vector3(120, 0, 150), BuildingStyle.Modern, 180000f, 5f, 275f, 30f);
+                    GenerateLandmark("Museum of the Future", landmarkPosition + new Vector3(300, 0, 200), BuildingStyle.Modern, 320000f, 77f, 80f, 80f);
+                    GenerateLandmark("Dubai Frame", landmarkPosition + new Vector3(-300, 0, 300), BuildingStyle.Modern, 220000f, 150f, 93f, 20f);
+                    GenerateLandmark("Atlantis The Palm", landmarkPosition + new Vector3(900, 0, -650), BuildingStyle.Modern, 480000f, 100f, 180f, 150f);
+                    GenerateLandmark("Jumeirah Beach Hotel", landmarkPosition + new Vector3(550, 0, -500), BuildingStyle.Modern, 380000f, 104f, 150f, 120f);
+                    GenerateLandmark("Emirates Towers", landmarkPosition + new Vector3(200, 0, 0), BuildingStyle.Modern, 520000f, 355f, 70f, 70f);
+                    GenerateLandmark("Dubai Creek Tower", landmarkPosition + new Vector3(-500, 0, -200), BuildingStyle.Modern, 850000f, 928f, 60f, 60f);
                     break;
                     
                 case "OmniLA":
-                    // Hollywood Studio, Beach complex
-                    GenerateLandmark("Hollywood Studios Complex", landmarkPosition, BuildingStyle.Contemporary, 250000f);
+                    // Major Attractions & Landmarks
+                    GenerateLandmark("Hollywood Sign", landmarkPosition, BuildingStyle.Contemporary, 200000f, 15f, 110f, 5f);
+                    GenerateLandmark("Hollywood Studios Complex", landmarkPosition + new Vector3(100, 0, 100), BuildingStyle.Contemporary, 250000f);
+                    GenerateLandmark("Griffith Observatory", landmarkPosition + new Vector3(-200, 0, 200), BuildingStyle.Classical, 180000f, 30f, 80f, 70f);
+                    GenerateLandmark("Santa Monica Pier", landmarkPosition + new Vector3(800, 0, -500), BuildingStyle.Contemporary, 150000f, 20f, 200f, 100f);
+                    GenerateLandmark("Venice Beach", landmarkPosition + new Vector3(850, 0, -600), BuildingStyle.Contemporary, 140000f, 10f, 300f, 80f);
+                    GenerateLandmark("Getty Center", landmarkPosition + new Vector3(-300, 0, 300), BuildingStyle.Modern, 280000f, 40f, 150f, 120f);
+                    GenerateLandmark("Dodger Stadium", landmarkPosition + new Vector3(200, 0, -300), BuildingStyle.Contemporary, 190000f, 50f, 180f, 160f);
+                    GenerateLandmark("SoFi Stadium", landmarkPosition + new Vector3(400, 0, -400), BuildingStyle.Modern, 350000f, 90f, 260f, 240f);
+                    GenerateLandmark("Walt Disney Concert Hall", landmarkPosition + new Vector3(100, 0, 0), BuildingStyle.Modern, 220000f, 60f, 90f, 80f);
+                    GenerateLandmark("The Broad Museum", landmarkPosition + new Vector3(120, 0, -50), BuildingStyle.Modern, 170000f, 40f, 80f, 70f);
+                    GenerateLandmark("LA Live", landmarkPosition + new Vector3(150, 0, -100), BuildingStyle.Modern, 240000f, 80f, 200f, 180f);
+                    GenerateLandmark("Sunset Strip", landmarkPosition + new Vector3(-100, 0, 50), BuildingStyle.Neon, 200000f, 30f, 400f, 60f);
                     break;
                     
                 case "OmniParis":
-                    // Eiffel-inspired tower, Fashion house
-                    GenerateLandmark("Tour OmniWorld", landmarkPosition, BuildingStyle.Classical, 400000f);
+                    // Iconic Landmarks
+                    GenerateLandmark("Eiffel Tower", landmarkPosition, BuildingStyle.Classical, 500000f, 300f, 50f, 50f);
+                    GenerateLandmark("Arc de Triomphe", landmarkPosition + new Vector3(400, 0, 0), BuildingStyle.Classical, 280000f, 50f, 45f, 45f);
+                    GenerateLandmark("Louvre Museum", landmarkPosition + new Vector3(300, 0, -200), BuildingStyle.Classical, 450000f, 40f, 200f, 180f);
+                    GenerateLandmark("Notre-Dame Cathedral", landmarkPosition + new Vector3(200, 0, -100), BuildingStyle.Classical, 350000f, 69f, 80f, 120f);
+                    GenerateLandmark("Sacré-Cœur Basilica", landmarkPosition + new Vector3(-300, 0, 300), BuildingStyle.Classical, 320000f, 83f, 70f, 80f);
+                    GenerateLandmark("Tour OmniWorld", landmarkPosition + new Vector3(500, 0, 100), BuildingStyle.Classical, 400000f);
+                    GenerateLandmark("Musée d'Orsay", landmarkPosition + new Vector3(250, 0, -180), BuildingStyle.Classical, 280000f, 35f, 150f, 100f);
+                    GenerateLandmark("Champs-Élysées", landmarkPosition + new Vector3(350, 0, 50), BuildingStyle.Classical, 300000f, 30f, 600f, 80f);
+                    GenerateLandmark("Palace of Versailles", landmarkPosition + new Vector3(-800, 0, -500), BuildingStyle.Classical, 550000f, 40f, 300f, 250f);
+                    GenerateLandmark("Panthéon", landmarkPosition + new Vector3(150, 0, -250), BuildingStyle.Classical, 240000f, 83f, 70f, 70f);
+                    GenerateLandmark("Moulin Rouge", landmarkPosition + new Vector3(-250, 0, 250), BuildingStyle.Neon, 180000f, 40f, 60f, 50f);
+                    GenerateLandmark("Centre Pompidou", landmarkPosition + new Vector3(100, 0, -150), BuildingStyle.Modern, 220000f, 45f, 100f, 90f);
                     break;
             }
         }

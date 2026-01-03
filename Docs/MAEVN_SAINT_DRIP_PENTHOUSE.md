@@ -1,7 +1,7 @@
-# Maevenn's Private Penthouse - Documentation
+# Maevn "Saint Drip" Private Penthouse - Documentation
 
 ## Overview
-Maevenn's Private Penthouse is a 1/1 Ultra-Legendary NFT property located at the penthouse level of the Paris Hotel + Casino in OmniVegas.
+Maevn "Saint Drip" Private Penthouse is a 1/1 Ultra-Legendary NFT property located at the penthouse level of the Paris Hotel + Casino in OmniVegas.
 
 ## Location Details
 - **City**: OmniVegas (Las Vegas, NV)
@@ -83,9 +83,9 @@ Building: Paris Hotel + Casino
 - Value: 300,000 $OMNI
 ```
 
-### Penthouse Structure: Maevenn's Private Penthouse
+### Penthouse Structure: Maevn "Saint Drip" Private Penthouse
 ```
-Building: Maevenn Private Penthouse
+Building: Maevn "Saint Drip" Private Penthouse
 - Position: landmarkPosition + Vector3(0, 180f, 0) [penthouse level]
 - Height: 42m
 - Width: 100m
@@ -103,16 +103,16 @@ case "OmniVegas":
     GenerateLandmark("Paris Hotel + Casino", landmarkPosition, 
         BuildingStyle.Neon, 300000f, 180f, 120f, 100f);
     
-    // Maevenn Private Penthouse - At penthouse level (floor 65)
+    // Maevn "Saint Drip" Private Penthouse - At penthouse level (floor 65)
     // Positioned at the top of the Paris Hotel + Casino structure
-    GenerateLandmark("Maevenn Private Penthouse", 
+    GenerateLandmark("Maevn 'Saint Drip' Private Penthouse", 
         landmarkPosition + new Vector3(0, 180f, 0), 
         BuildingStyle.Neon, 500000f, 42f, 100f, 150f);
     break;
 ```
 
 ### Prefab Reference
-File: `/Assets/Prefabs/Housing/Penthouses/MaevennsPrivatePenthouse.json`
+File: `/Assets/Prefabs/Housing/Penthouses/MaevnSaintDripPrivatePenthouse.json`
 
 ## Architecture Notes
 - The penthouse sits atop the Paris Hotel + Casino, with its floor starting at 180m elevation
@@ -127,7 +127,7 @@ File: `/Assets/Prefabs/Housing/Penthouses/MaevennsPrivatePenthouse.json`
 4. **Utility**: Premium spawn point with helipad access for rapid travel
 
 ## Related Properties
-- **Maeven Mansion**: Off-Strip Estate (separate property, 1/1 Ultra-Legendary NFT, 1,000,000 $OMNI)
+- **Maevn Mansion**: Off-Strip Estate (separate property, 1/1 Ultra-Legendary NFT, 1,000,000 $OMNI)
 
 ## See Also
 - [OmniVegas City Infrastructure](CITY_INFRASTRUCTURE.md)

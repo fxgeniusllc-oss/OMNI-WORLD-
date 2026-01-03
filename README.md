@@ -236,8 +236,8 @@ OmniWorld is sharded into **8 Global Metropolises**, each with distinct economic
 - **Signature Landmarks:**
   - **Paris Hotel + Casino** - Iconic Vegas landmark with replica Eiffel Tower
 - **Signature Properties:**
-  - **Maevenn Private Penthouse** - Penthouse level of Paris Hotel + Casino, 1/1 Ultra-Legendary NFT
-  - **Maeven Mansion** - Off-Strip Estate, 1/1 Ultra-Legendary NFT
+  - **Maevn "Saint Drip" Private Penthouse** - Penthouse level of Paris Hotel + Casino, 1/1 Ultra-Legendary NFT
+  - **Maevn Mansion** - Off-Strip Estate, 1/1 Ultra-Legendary NFT
 
 ### 3. ⛩️ OmniTokyo (Tokyo, JP)
 **Theme:** Cyber-Tech, Anime Culture, Nightlife
