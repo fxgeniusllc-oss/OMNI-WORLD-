@@ -48,6 +48,21 @@ namespace OmniWorld.AI
 
         [Header("Building Generation")]
         public int minBuildingsPerZone = 10;
+        
+        // Landmark dimension constants
+        private const float MIN_LANDMARK_HEIGHT = 100f;
+        private const float MAX_LANDMARK_HEIGHT = 200f;
+        private const float MIN_LANDMARK_WIDTH = 50f;
+        private const float MAX_LANDMARK_WIDTH = 100f;
+        private const float MIN_LANDMARK_DEPTH = 50f;
+        private const float MAX_LANDMARK_DEPTH = 100f;
+        
+        // Entrance count thresholds
+        private const float HEIGHT_SKYSCRAPER = 250f; // 6 entrances
+        private const float HEIGHT_TALL_BUILDING = 180f; // 4 entrances
+        private const float HEIGHT_MEDIUM_HIGH = 100f; // 3 entrances
+        private const float HEIGHT_MEDIUM = 50f; // 2 entrances
+        // Below 50f = 1 entrance
         public int maxBuildingsPerZone = 50;
         public float buildingSpacing = 10f;
 
@@ -1109,9 +1124,9 @@ namespace OmniWorld.AI
         private void GenerateLandmark(string landmarkName, Vector3 position, BuildingStyle style, float value)
         {
             // Generate with random dimensions but full interactivity
-            float height = 100f + (float)random.NextDouble() * 100f;
-            float width = 50f + (float)random.NextDouble() * 50f;
-            float depth = 50f + (float)random.NextDouble() * 50f;
+            float height = MIN_LANDMARK_HEIGHT + (float)random.NextDouble() * (MAX_LANDMARK_HEIGHT - MIN_LANDMARK_HEIGHT);
+            float width = MIN_LANDMARK_WIDTH + (float)random.NextDouble() * (MAX_LANDMARK_WIDTH - MIN_LANDMARK_WIDTH);
+            float depth = MIN_LANDMARK_DEPTH + (float)random.NextDouble() * (MAX_LANDMARK_DEPTH - MIN_LANDMARK_DEPTH);
             
             GeneratedBuilding landmark = new GeneratedBuilding
             {
@@ -1187,10 +1202,10 @@ namespace OmniWorld.AI
         private int DetermineEntranceCount(string buildingName, float height)
         {
             // Large buildings get multiple entrances
-            if (height > 250f) return 6; // Skyscrapers
-            if (height > 180f) return 4; // Tall buildings
-            if (height > 100f) return 3; // Medium-high buildings
-            if (height > 50f) return 2; // Medium buildings
+            if (height > HEIGHT_SKYSCRAPER) return 6; // Skyscrapers
+            if (height > HEIGHT_TALL_BUILDING) return 4; // Tall buildings
+            if (height > HEIGHT_MEDIUM_HIGH) return 3; // Medium-high buildings
+            if (height > HEIGHT_MEDIUM) return 2; // Medium buildings
             return 1; // Small buildings
         }
         
@@ -1199,6 +1214,9 @@ namespace OmniWorld.AI
         /// </summary>
         private void AddInteractionComponents(GeneratedBuilding building, string buildingName)
         {
+            // Determine landmark type from name
+            building.landmarkType = DetermineLandmarkType(buildingName);
+            
             // Universal components for all landmarks
             building.interactionComponents.Add("DoorInteraction");
             building.interactionComponents.Add("InteriorController");
@@ -1206,45 +1224,82 @@ namespace OmniWorld.AI
             building.interactionComponents.Add("NavMeshObstacle");
             building.interactionComponents.Add("AudioSource");
             
-            // Building-specific components
-            if (buildingName.Contains("Casino") || buildingName.Contains("Hotel"))
+            // Building-specific components based on landmark type
+            switch (building.landmarkType)
             {
-                building.interactionComponents.Add("CasinoController");
-                building.interactionComponents.Add("HotelController");
-                building.interactionComponents.Add("ElevatorController");
-                building.interactionComponents.Add("SecuritySystem");
+                case LandmarkType.CasinoHotel:
+                    building.interactionComponents.Add("CasinoController");
+                    building.interactionComponents.Add("HotelController");
+                    building.interactionComponents.Add("ElevatorController");
+                    building.interactionComponents.Add("SecuritySystem");
+                    break;
+                    
+                case LandmarkType.Stadium:
+                    building.interactionComponents.Add("StadiumController");
+                    building.interactionComponents.Add("SeatingController");
+                    building.interactionComponents.Add("EventManager");
+                    building.interactionComponents.Add("CrowdSystem");
+                    break;
+                    
+                case LandmarkType.Museum:
+                    building.interactionComponents.Add("MuseumController");
+                    building.interactionComponents.Add("ExhibitInteraction");
+                    building.interactionComponents.Add("AudioGuide");
+                    break;
+                    
+                case LandmarkType.Tower:
+                    building.interactionComponents.Add("ObservationController");
+                    building.interactionComponents.Add("ElevatorController");
+                    building.interactionComponents.Add("ViewpointSystem");
+                    break;
+                    
+                case LandmarkType.Shopping:
+                    building.interactionComponents.Add("ShoppingController");
+                    building.interactionComponents.Add("StoreManager");
+                    building.interactionComponents.Add("NPCShopkeeper");
+                    break;
+                    
+                case LandmarkType.ConventionCenter:
+                    building.interactionComponents.Add("ConventionController");
+                    building.interactionComponents.Add("ExhibitHalls");
+                    building.interactionComponents.Add("EventScheduler");
+                    break;
+                    
+                case LandmarkType.Theater:
+                    building.interactionComponents.Add("TheaterController");
+                    building.interactionComponents.Add("ShowManager");
+                    building.interactionComponents.Add("SeatingSystem");
+                    break;
             }
-            else if (buildingName.Contains("Stadium") || buildingName.Contains("Arena"))
-            {
-                building.interactionComponents.Add("StadiumController");
-                building.interactionComponents.Add("SeatingController");
-                building.interactionComponents.Add("EventManager");
-                building.interactionComponents.Add("CrowdSystem");
-            }
-            else if (buildingName.Contains("Museum") || buildingName.Contains("Gallery") || buildingName.Contains("Art"))
-            {
-                building.interactionComponents.Add("MuseumController");
-                building.interactionComponents.Add("ExhibitInteraction");
-                building.interactionComponents.Add("AudioGuide");
-            }
-            else if (buildingName.Contains("Tower") || buildingName.Contains("Observatory"))
-            {
-                building.interactionComponents.Add("ObservationController");
-                building.interactionComponents.Add("ElevatorController");
-                building.interactionComponents.Add("ViewpointSystem");
-            }
-            else if (buildingName.Contains("Mall") || buildingName.Contains("Market") || buildingName.Contains("Shopping"))
-            {
-                building.interactionComponents.Add("ShoppingController");
-                building.interactionComponents.Add("StoreManager");
-                building.interactionComponents.Add("NPCShopkeeper");
-            }
-            else if (buildingName.Contains("Convention") || buildingName.Contains("Center"))
-            {
-                building.interactionComponents.Add("ConventionController");
-                building.interactionComponents.Add("ExhibitHalls");
-                building.interactionComponents.Add("EventScheduler");
-            }
+        }
+        
+        /// <summary>
+        /// Determine landmark type from building name
+        /// </summary>
+        private LandmarkType DetermineLandmarkType(string buildingName)
+        {
+            string nameLower = buildingName.ToLower();
+            
+            if (nameLower.Contains("casino") || nameLower.Contains("hotel") || nameLower.Contains("resort"))
+                return LandmarkType.CasinoHotel;
+            else if (nameLower.Contains("stadium") || nameLower.Contains("arena"))
+                return LandmarkType.Stadium;
+            else if (nameLower.Contains("museum") || nameLower.Contains("gallery") || nameLower.Contains("art"))
+                return LandmarkType.Museum;
+            else if (nameLower.Contains("tower") || nameLower.Contains("observatory"))
+                return LandmarkType.Tower;
+            else if (nameLower.Contains("mall") || nameLower.Contains("market") || nameLower.Contains("shopping") || nameLower.Contains("shops"))
+                return LandmarkType.Shopping;
+            else if (nameLower.Contains("convention") || nameLower.Contains("center") && !nameLower.Contains("shopping"))
+                return LandmarkType.ConventionCenter;
+            else if (nameLower.Contains("theatre") || nameLower.Contains("theater") || nameLower.Contains("colosseum"))
+                return LandmarkType.Theater;
+            else if (nameLower.Contains("bridge"))
+                return LandmarkType.Bridge;
+            else if (nameLower.Contains("park") || nameLower.Contains("garden"))
+                return LandmarkType.Park;
+                
+            return LandmarkType.Generic;
         }
         
         /// <summary>
@@ -1252,85 +1307,87 @@ namespace OmniWorld.AI
         /// </summary>
         private void AddInteriorFeatures(GeneratedBuilding building, string buildingName)
         {
-            if (buildingName.Contains("Casino") || buildingName.Contains("Hotel"))
+            switch (building.landmarkType)
             {
-                building.interiorFeatures.Add("Lobby");
-                building.interiorFeatures.Add("Casino Floor");
-                building.interiorFeatures.Add("Poker Room");
-                building.interiorFeatures.Add("Slot Machines");
-                building.interiorFeatures.Add("Restaurants");
-                building.interiorFeatures.Add("Bars");
-                building.interiorFeatures.Add("Hotel Rooms");
-                building.interiorFeatures.Add("Suites");
-                building.interiorFeatures.Add("Pool Area");
-                building.interiorFeatures.Add("Spa");
-                building.interiorFeatures.Add("Shops");
-            }
-            else if (buildingName.Contains("Stadium") || buildingName.Contains("Arena"))
-            {
-                building.interiorFeatures.Add("Main Entrance");
-                building.interiorFeatures.Add("Concourse");
-                building.interiorFeatures.Add("Seating Areas");
-                building.interiorFeatures.Add("VIP Boxes");
-                building.interiorFeatures.Add("Concession Stands");
-                building.interiorFeatures.Add("Restrooms");
-                building.interiorFeatures.Add("Team Locker Rooms");
-                building.interiorFeatures.Add("Press Box");
-            }
-            else if (buildingName.Contains("Museum") || buildingName.Contains("Gallery") || buildingName.Contains("Art"))
-            {
-                building.interiorFeatures.Add("Main Hall");
-                building.interiorFeatures.Add("Exhibition Galleries");
-                building.interiorFeatures.Add("Special Exhibits");
-                building.interiorFeatures.Add("Sculpture Garden");
-                building.interiorFeatures.Add("Gift Shop");
-                building.interiorFeatures.Add("Cafe");
-                building.interiorFeatures.Add("Auditorium");
-            }
-            else if (buildingName.Contains("Tower") || buildingName.Contains("Observatory"))
-            {
-                building.interiorFeatures.Add("Ground Floor Lobby");
-                building.interiorFeatures.Add("Elevators");
-                building.interiorFeatures.Add("Observation Decks");
-                building.interiorFeatures.Add("Gift Shop");
-                building.interiorFeatures.Add("Restaurant");
-                building.interiorFeatures.Add("360° Viewing Platform");
-            }
-            else if (buildingName.Contains("Mall") || buildingName.Contains("Market") || buildingName.Contains("Shopping"))
-            {
-                building.interiorFeatures.Add("Main Atrium");
-                building.interiorFeatures.Add("Retail Stores");
-                building.interiorFeatures.Add("Food Court");
-                building.interiorFeatures.Add("Luxury Boutiques");
-                building.interiorFeatures.Add("Entertainment Zone");
-                building.interiorFeatures.Add("Parking Garage");
-            }
-            else if (buildingName.Contains("Convention") || buildingName.Contains("Center"))
-            {
-                building.interiorFeatures.Add("Main Entrance Hall");
-                building.interiorFeatures.Add("Exhibition Halls");
-                building.interiorFeatures.Add("Meeting Rooms");
-                building.interiorFeatures.Add("Ballroom");
-                building.interiorFeatures.Add("Registration Area");
-                building.interiorFeatures.Add("Cafeteria");
-            }
-            else if (buildingName.Contains("Theatre") || buildingName.Contains("Theater"))
-            {
-                building.interiorFeatures.Add("Box Office");
-                building.interiorFeatures.Add("Main Auditorium");
-                building.interiorFeatures.Add("Balcony Seating");
-                building.interiorFeatures.Add("Stage");
-                building.interiorFeatures.Add("Backstage");
-                building.interiorFeatures.Add("Lobby");
-            }
-            else
-            {
-                // Generic landmark features
-                building.interiorFeatures.Add("Main Entrance");
-                building.interiorFeatures.Add("Reception Area");
-                building.interiorFeatures.Add("Main Hall");
-                building.interiorFeatures.Add("Restrooms");
-                building.interiorFeatures.Add("Gift Shop");
+                case LandmarkType.CasinoHotel:
+                    building.interiorFeatures.Add("Lobby");
+                    building.interiorFeatures.Add("Casino Floor");
+                    building.interiorFeatures.Add("Poker Room");
+                    building.interiorFeatures.Add("Slot Machines");
+                    building.interiorFeatures.Add("Restaurants");
+                    building.interiorFeatures.Add("Bars");
+                    building.interiorFeatures.Add("Hotel Rooms");
+                    building.interiorFeatures.Add("Suites");
+                    building.interiorFeatures.Add("Pool Area");
+                    building.interiorFeatures.Add("Spa");
+                    building.interiorFeatures.Add("Shops");
+                    break;
+                    
+                case LandmarkType.Stadium:
+                    building.interiorFeatures.Add("Main Entrance");
+                    building.interiorFeatures.Add("Concourse");
+                    building.interiorFeatures.Add("Seating Areas");
+                    building.interiorFeatures.Add("VIP Boxes");
+                    building.interiorFeatures.Add("Concession Stands");
+                    building.interiorFeatures.Add("Restrooms");
+                    building.interiorFeatures.Add("Team Locker Rooms");
+                    building.interiorFeatures.Add("Press Box");
+                    break;
+                    
+                case LandmarkType.Museum:
+                    building.interiorFeatures.Add("Main Hall");
+                    building.interiorFeatures.Add("Exhibition Galleries");
+                    building.interiorFeatures.Add("Special Exhibits");
+                    building.interiorFeatures.Add("Sculpture Garden");
+                    building.interiorFeatures.Add("Gift Shop");
+                    building.interiorFeatures.Add("Cafe");
+                    building.interiorFeatures.Add("Auditorium");
+                    break;
+                    
+                case LandmarkType.Tower:
+                    building.interiorFeatures.Add("Ground Floor Lobby");
+                    building.interiorFeatures.Add("Elevators");
+                    building.interiorFeatures.Add("Observation Decks");
+                    building.interiorFeatures.Add("Gift Shop");
+                    building.interiorFeatures.Add("Restaurant");
+                    building.interiorFeatures.Add("360° Viewing Platform");
+                    break;
+                    
+                case LandmarkType.Shopping:
+                    building.interiorFeatures.Add("Main Atrium");
+                    building.interiorFeatures.Add("Retail Stores");
+                    building.interiorFeatures.Add("Food Court");
+                    building.interiorFeatures.Add("Luxury Boutiques");
+                    building.interiorFeatures.Add("Entertainment Zone");
+                    building.interiorFeatures.Add("Parking Garage");
+                    break;
+                    
+                case LandmarkType.ConventionCenter:
+                    building.interiorFeatures.Add("Main Entrance Hall");
+                    building.interiorFeatures.Add("Exhibition Halls");
+                    building.interiorFeatures.Add("Meeting Rooms");
+                    building.interiorFeatures.Add("Ballroom");
+                    building.interiorFeatures.Add("Registration Area");
+                    building.interiorFeatures.Add("Cafeteria");
+                    break;
+                    
+                case LandmarkType.Theater:
+                    building.interiorFeatures.Add("Box Office");
+                    building.interiorFeatures.Add("Main Auditorium");
+                    building.interiorFeatures.Add("Balcony Seating");
+                    building.interiorFeatures.Add("Stage");
+                    building.interiorFeatures.Add("Backstage");
+                    building.interiorFeatures.Add("Lobby");
+                    break;
+                    
+                default:
+                    // Generic landmark features
+                    building.interiorFeatures.Add("Main Entrance");
+                    building.interiorFeatures.Add("Reception Area");
+                    building.interiorFeatures.Add("Main Hall");
+                    building.interiorFeatures.Add("Restrooms");
+                    building.interiorFeatures.Add("Gift Shop");
+                    break;
             }
         }
     }
@@ -1352,6 +1409,7 @@ namespace OmniWorld.AI
         public bool isInteractive = false; // Can player interact with this building
         public bool hasInterior = false; // Building has explorable interior
         public bool hasExteriorInteraction = false; // Exterior features (doors, windows, etc.)
+        public LandmarkType landmarkType = LandmarkType.Generic; // Type of landmark for interaction setup
         public List<string> interactionComponents = new List<string>(); // Unity components for interaction
         public List<string> interiorFeatures = new List<string>(); // Interior rooms/areas
         public int entranceCount = 1; // Number of entrances
@@ -1386,6 +1444,21 @@ namespace OmniWorld.AI
         Cyberpunk,
         Neon,
         Industrial
+    }
+    
+    public enum LandmarkType
+    {
+        Generic,
+        CasinoHotel,
+        Stadium,
+        Museum,
+        Tower,
+        Shopping,
+        ConventionCenter,
+        Theater,
+        Restaurant,
+        Park,
+        Bridge
     }
 
     public enum EventType
