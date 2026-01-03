@@ -83,6 +83,15 @@ namespace OmniWorld.AI
         public float parcelMinSize = 20f; // meters
         public float parcelMaxSize = 100f; // meters
         
+        [Header("Growth & Real Estate Industry")]
+        [Tooltip("Reserve percentage of parcels for future growth and real estate market")]
+        [Range(0f, 0.5f)]
+        public float growthReservePercentage = 0.25f; // 25% reserved for growth
+        [Tooltip("Enable inter-OmniWorld real estate trading system")]
+        public bool enableRealEstateIndustry = true;
+        [Tooltip("Maximum parcels that can be generated (scalability limit)")]
+        public int maxTotalParcels = 5000000; // 5M parcels max for future growth
+        
         [Header("Performance Optimization")]
         [Tooltip("Enable spatial hashing for fast neighbor lookups")]
         public bool useSpatialHashing = true;
@@ -1692,7 +1701,73 @@ namespace OmniWorld.AI
         cityZoningMaps[cityName] = zoningMap;
         Debug.Log($"Generated zoning map for {cityName}: {zoningMap.districts.Count} districts, {zoningMap.GetTotalParcels()} parcels");
         
+        // Calculate and reserve growth capacity
+        if (enableRealEstateIndustry)
+        {
+            int totalParcels = zoningMap.GetTotalParcels();
+            int reservedForGrowth = Mathf.RoundToInt(totalParcels * growthReservePercentage);
+            zoningMap.growthCapacity = reservedForGrowth;
+            zoningMap.availableForSale = totalParcels - reservedForGrowth;
+            
+            Debug.Log($"Real Estate Industry: {totalParcels:N0} total parcels, {zoningMap.availableForSale:N0} available, {reservedForGrowth:N0} reserved for growth ({growthReservePercentage:P0})");
+        }
+        
         return zoningMap;
+    }
+    
+    /// <summary>
+    /// Get growth statistics for inter-OmniWorld real estate industry
+    /// </summary>
+    public RealEstateGrowthStats GetRealEstateGrowthStats()
+    {
+        RealEstateGrowthStats stats = new RealEstateGrowthStats();
+        
+        foreach (var kvp in cityZoningMaps)
+        {
+            CityZoningMap map = kvp.Value;
+            stats.totalParcels += map.GetTotalParcels();
+            stats.availableForSale += map.availableForSale;
+            stats.reservedForGrowth += map.growthCapacity;
+        }
+        
+        stats.currentUtilization = stats.totalParcels > 0 ? 
+            (float)(stats.totalParcels - stats.reservedForGrowth) / stats.totalParcels : 0f;
+        stats.maxCapacity = maxTotalParcels;
+        stats.remainingCapacity = maxTotalParcels - stats.totalParcels;
+        
+        return stats;
+    }
+    
+    /// <summary>
+    /// Add new district for growth (inter-OmniWorld real estate expansion)
+    /// </summary>
+    public bool AddGrowthDistrict(string cityName, string districtName, World.ZoneType zoneType, float area, int parcelCount)
+    {
+        if (!cityZoningMaps.ContainsKey(cityName))
+        {
+            Debug.LogWarning($"City {cityName} not found in zoning maps");
+            return false;
+        }
+        
+        // Check if we're within max capacity
+        int currentTotal = 0;
+        foreach (var map in cityZoningMaps.Values)
+        {
+            currentTotal += map.GetTotalParcels();
+        }
+        
+        if (currentTotal + parcelCount > maxTotalParcels)
+        {
+            Debug.LogWarning($"Cannot add district: would exceed max capacity of {maxTotalParcels:N0} parcels");
+            return false;
+        }
+        
+        CityZoningMap map = cityZoningMaps[cityName];
+        ZoneDistrict newDistrict = CreateDistrict(districtName, zoneType, area, parcelCount);
+        map.districts.Add(newDistrict);
+        
+        Debug.Log($"Added growth district '{districtName}' to {cityName}: {parcelCount:N0} parcels");
+        return true;
     }
     
     /// <summary>
@@ -2329,7 +2404,7 @@ namespace OmniWorld.AI
 }
 
 /// <summary>
-/// City-wide zoning map
+/// City-wide zoning map with growth capacity for inter-OmniWorld real estate industry
 /// </summary>
 [System.Serializable]
 public class CityZoningMap
@@ -2337,6 +2412,11 @@ public class CityZoningMap
     public string cityName;
     public float totalArea; // square kilometers
     public List<ZoneDistrict> districts;
+    
+    // Growth & Real Estate Industry
+    public int growthCapacity; // Reserved parcels for future expansion
+    public int availableForSale; // Currently available parcels
+    public float expansionMultiplier = 1.5f; // Can expand by 50% for growth
     
     public int GetTotalParcels()
     {
@@ -2359,6 +2439,22 @@ public class CityZoningMap
             }
         }
         return total;
+    }
+    
+    public int GetAvailableParcels()
+    {
+        int available = 0;
+        foreach (var district in districts)
+        {
+            foreach (var parcel in district.parcels)
+            {
+                if (parcel.isAvailable)
+                {
+                    available++;
+                }
+            }
+        }
+        return available;
     }
 }
 
@@ -2493,4 +2589,29 @@ public enum InfrastructureType
     Library,              // Public library
     CommunityCenter,      // Recreation center
     Government            // Government building
+}
+
+/// <summary>
+/// Real estate growth statistics for inter-OmniWorld industry tracking
+/// </summary>
+[System.Serializable]
+public class RealEstateGrowthStats
+{
+    public int totalParcels;           // Total parcels generated
+    public int availableForSale;       // Currently available for purchase
+    public int reservedForGrowth;      // Reserved for future expansion
+    public float currentUtilization;   // Percentage of capacity used
+    public int maxCapacity;            // Maximum parcels possible
+    public int remainingCapacity;      // Room for growth
+    
+    public override string ToString()
+    {
+        return $"Real Estate Growth Stats:\n" +
+               $"  Total Parcels: {totalParcels:N0}\n" +
+               $"  Available: {availableForSale:N0}\n" +
+               $"  Reserved for Growth: {reservedForGrowth:N0}\n" +
+               $"  Utilization: {currentUtilization:P1}\n" +
+               $"  Max Capacity: {maxCapacity:N0}\n" +
+               $"  Remaining Capacity: {remainingCapacity:N0}";
+    }
 }
