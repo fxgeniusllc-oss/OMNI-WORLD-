@@ -5,6 +5,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/access/AccessControl.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@openzeppelin/contracts/security/Pausable.sol";
 
 /**
@@ -30,6 +31,8 @@ import "@openzeppelin/contracts/security/Pausable.sol";
  * - Recovery: 0x81f5cfdD2851362E5986b26614517638Af89E514
  */
 contract BusinessLicenseNFT is ERC721, AccessControl, ReentrancyGuard, Pausable {
+    using SafeERC20 for IERC20;
+    
     // Roles
     bytes32 public constant ADMIN_ROLE = keccak256("ADMIN_ROLE");
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
@@ -221,9 +224,9 @@ contract BusinessLicenseNFT is ERC721, AccessControl, ReentrancyGuard, Pausable 
         uint256 treasuryAmount = (amount * TREASURY_SHARE) / 10000;
         uint256 revenueAmount = (amount * REVENUE_SHARE) / 10000;
 
-        IERC20(token).transfer(creator, creatorAmount);
-        IERC20(token).transfer(treasuryWallet, treasuryAmount);
-        IERC20(token).transfer(revenueWallet, revenueAmount);
+        IERC20(token).safeTransfer(creator, creatorAmount);
+        IERC20(token).safeTransfer(treasuryWallet, treasuryAmount);
+        IERC20(token).safeTransfer(revenueWallet, revenueAmount);
 
         emit RevenueSplit(
             creator,
@@ -244,9 +247,14 @@ contract BusinessLicenseNFT is ERC721, AccessControl, ReentrancyGuard, Pausable 
         uint256 treasuryAmount = (amount * TREASURY_SHARE) / 10000;
         uint256 revenueAmount = (amount * REVENUE_SHARE) / 10000;
 
-        payable(creator).transfer(creatorAmount);
-        payable(treasuryWallet).transfer(treasuryAmount);
-        payable(revenueWallet).transfer(revenueAmount);
+        (bool successCreator, ) = payable(creator).call{value: creatorAmount}("");
+        require(successCreator, "Creator payment failed");
+        
+        (bool successTreasury, ) = payable(treasuryWallet).call{value: treasuryAmount}("");
+        require(successTreasury, "Treasury payment failed");
+        
+        (bool successRevenue, ) = payable(revenueWallet).call{value: revenueAmount}("");
+        require(successRevenue, "Revenue payment failed");
 
         emit RevenueSplit(
             creator,

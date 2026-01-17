@@ -6,6 +6,7 @@ import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/security/Pausable.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 
 /**
  * @title MathGodEvaluator
@@ -28,6 +29,8 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
  * - Recovery: 0x81f5cfdD2851362E5986b26614517638Af89E514
  */
 contract MathGodEvaluator is AccessControl, ReentrancyGuard, Pausable {
+    using SafeERC20 for IERC20;
+    
     // Roles
     bytes32 public constant ADMIN_ROLE = keccak256("ADMIN_ROLE");
     bytes32 public constant EVALUATOR_ROLE = keccak256("EVALUATOR_ROLE");
@@ -40,6 +43,7 @@ contract MathGodEvaluator is AccessControl, ReentrancyGuard, Pausable {
     // Fee configuration (in basis points)
     uint256 public appraisalFee = 10 * 10**18; // 10 OMNICOIN default
     uint256 public sellbackFeePercent = 300; // 3% (300 basis points)
+    uint256 public defaultBaseValue = 1000 * 10**18; // 1000 OMNICOIN default base value
 
     // Valuation data structures
     struct AssetValuation {
@@ -180,17 +184,14 @@ contract MathGodEvaluator is AccessControl, ReentrancyGuard, Pausable {
         IERC721(nftContract).transferFrom(msg.sender, address(this), tokenId);
 
         // Pay seller
-        require(
-            IERC20(omniCoinToken).transfer(msg.sender, sellerAmount),
-            "Seller payment failed"
-        );
+        IERC20(omniCoinToken).safeTransfer(msg.sender, sellerAmount);
 
         // Split fee between treasury and revenue
         uint256 treasuryFee = (sellbackFee * 50) / 100;
         uint256 revenueFee = sellbackFee - treasuryFee;
 
-        IERC20(omniCoinToken).transfer(treasuryWallet, treasuryFee);
-        IERC20(omniCoinToken).transfer(revenueWallet, revenueFee);
+        IERC20(omniCoinToken).safeTransfer(treasuryWallet, treasuryFee);
+        IERC20(omniCoinToken).safeTransfer(revenueWallet, revenueFee);
 
         emit SellbackExecuted(
             nftContract,
@@ -249,8 +250,16 @@ contract MathGodEvaluator is AccessControl, ReentrancyGuard, Pausable {
         // - Market trends
         // - Comparable sales
         
-        // For now, return a default value
-        return 1000 * 10**18; // 1000 OMNICOIN base
+        // For now, return the configured default base value
+        return defaultBaseValue;
+    }
+
+    /**
+     * @dev Update default base value (admin only)
+     */
+    function setDefaultBaseValue(uint256 newDefaultBaseValue) external onlyRole(ADMIN_ROLE) {
+        require(newDefaultBaseValue > 0, "Base value must be positive");
+        defaultBaseValue = newDefaultBaseValue;
     }
 
     /**
@@ -316,7 +325,7 @@ contract MathGodEvaluator is AccessControl, ReentrancyGuard, Pausable {
         uint256 amount,
         address recipient
     ) external onlyRole(ADMIN_ROLE) {
-        IERC20(token).transfer(recipient, amount);
+        IERC20(token).safeTransfer(recipient, amount);
     }
 
     /**
