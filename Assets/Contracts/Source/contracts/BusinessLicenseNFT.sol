@@ -263,7 +263,7 @@ contract BusinessLicenseNFT is ERC721, AccessControl, ReentrancyGuard, Pausable 
      * @dev Get token URI
      */
     function tokenURI(uint256 tokenId) public view override returns (string memory) {
-        require(_exists(tokenId), "Token does not exist");
+        require(_ownerOf(tokenId) != address(0), "Token does not exist");
         return _tokenURIs[tokenId];
     }
 
@@ -271,7 +271,7 @@ contract BusinessLicenseNFT is ERC721, AccessControl, ReentrancyGuard, Pausable 
      * @dev Get original creator of a token
      */
     function getOriginalCreator(uint256 tokenId) external view returns (address) {
-        require(_exists(tokenId), "Token does not exist");
+        require(_ownerOf(tokenId) != address(0), "Token does not exist");
         return _originalCreators[tokenId];
     }
 
@@ -313,12 +313,5 @@ contract BusinessLicenseNFT is ERC721, AccessControl, ReentrancyGuard, Pausable 
         returns (bool)
     {
         return super.supportsInterface(interfaceId);
-    }
-
-    /**
-     * @dev Check if token exists
-     */
-    function _exists(uint256 tokenId) internal view returns (bool) {
-        return _ownerOf(tokenId) != address(0);
     }
 }
