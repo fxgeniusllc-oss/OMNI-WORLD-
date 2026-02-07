@@ -64,7 +64,8 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-package-lock.json
+# Ignore package-lock.json at root, but keep it for contracts
+/package-lock.json
 yarn.lock
 
 # Python
