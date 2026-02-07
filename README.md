@@ -8,9 +8,10 @@
 
 [![License](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
 [![Unity](https://img.shields.io/badge/Unity-2022.3_LTS-black.svg?logo=unity)](https://unity.com/)
-[![Blockchain](https://img.shields.io/badge/Blockchain-Polygon-8247e5.svg)](https://polygon.technology/)
+[![Blockchain](https://img.shields.io/badge/Blockchain-Polygon%20%2B%20BSC-8247e5.svg)](https://polygon.technology/)
 [![Status](https://img.shields.io/badge/Status-Phase_1_Development-yellow.svg)](https://github.com/fxgeniusllc-oss/OMNI-WORLD-)
 [![Game Engine](https://img.shields.io/badge/Game_Engine-100%25_Unity-success.svg)](https://unity.com/)
+[![BSC](https://img.shields.io/badge/BSC-Integrated-F0B90B.svg)](Docs/BSC_INTEGRATION.md)
 
 **A Digital Twin Economy fusing entertainment-grade gamification with high-fidelity economic simulation**
 
@@ -65,6 +66,7 @@ cd OMNI-WORLD-
 - [🏙️ Global Metropolises](#-global-metropolises)
 - [⚡ Key Features](#-key-features)
 - [🛠️ Technical Architecture](#-technical-architecture)
+- [⛓️ Blockchain Integration](#-blockchain-integration)
 - [🔐 Security & Anti-Fraud](#-security--anti-fraud)
 - [💰 Tokenomics & Revenue Model](#-tokenomics--revenue-model)
 - [🚀 Roadmap & Growth](#-roadmap--growth)
@@ -375,16 +377,27 @@ Each metropolis features five primary zone types:
     └── Real-world economic modeling integration
 ```
 
-### ⛓️ Blockchain Layer (EVM-Compatible)
+### ⛓️ Blockchain Layer (Multi-Chain)
 
 ```
-Primary Chain: Polygon (MATIC)
+Primary Chains: Polygon (MATIC) + Binance Smart Chain (BSC)
+
+Polygon Network:
 ├── High-frequency, low-cost transactions
 ├── ERC-721: Land Parcels, Penthouses, Vehicles
 ├── ERC-1155: Consumables, Materials, Access Passes
 └── Oracles: Chainlink for real-world data feeds
     └── Inflation Index (Z_i), FX Rates, Supply Data
+
+Binance Smart Chain:
+├── $OMNICOIN Token (0x897987...919f27)
+├── Business License NFTs (BusinessLicenseNFT)
+├── Property Valuation System (MathGodEvaluator)
+├── Transaction Verification (OmniTransactionVerifier)
+└── Revenue Split: 90% Creator / 5% Treasury / 5% Platform
 ```
+
+📖 **[BSC Integration Guide →](Docs/BSC_INTEGRATION.md)** | **[Contract Deployment →](Docs/CONTRACT_DEPLOYMENT.md)**
 
 ### 🧠 Backend & AI
 
@@ -462,6 +475,65 @@ OmniWorld/
     ├── QUICKSTART.md
     └── ADRs/               # Architecture Decision Records
 ```
+
+---
+
+## ⛓️ Blockchain Integration
+
+### Multi-Chain Architecture
+
+OmniWorld operates on a **dual-chain architecture** to optimize for different use cases:
+
+#### Polygon Network
+- **Purpose**: High-frequency game transactions
+- **Assets**: Land NFTs, item NFTs, in-game assets
+- **Advantages**: Low gas fees, fast confirmation times
+- **Use Cases**: Daily gameplay, trades, marketplace
+
+#### Binance Smart Chain (BSC)
+- **Purpose**: Business operations and revenue distribution
+- **Token**: $OMNICOIN (0x8979878229e2e55b80e116283DF22d8203919f27)
+- **Key Contracts**:
+  - **BusinessLicenseNFT**: Property and business ownership NFTs
+  - **MathGodEvaluator**: Dynamic asset valuation and sellback
+  - **OmniTransactionVerifier**: Security and fraud prevention
+- **Revenue Model**: Automated 90/5/5 split (Creator/Treasury/Platform)
+
+### Smart Contract Addresses
+
+| Contract | Address | Purpose |
+|----------|---------|---------|
+| OMNICoin Token | `0x8979878229e2e55b80e116283DF22d8203919f27` | Ecosystem currency |
+| Treasury Wallet | `0x94140Fdcf420ce32E24c55B91a425fa71d80427B` | Revenue collection |
+| Revenue Wallet | `0xD6490ADA82710c4a43D71E9f6D7E4bF8CD1282CF` | Platform operations |
+| Developer Address | `0xCbBf46e4BFbcd099601D63482866EEC68Ebd8992` | System administration |
+| Recovery Address | `0x81f5cfdD2851362E5986b26614517638Af89E514` | Backup admin access |
+
+### Payment Options
+
+The platform supports multiple payment methods for maximum accessibility:
+
+- **$OMNICOIN** - Primary ecosystem token
+- **BNB** - Native BSC currency
+- **USDC** - Stablecoin option for large transactions
+
+### Revenue Distribution
+
+Every transaction automatically distributes funds:
+
+```
+User Payment (100%)
+    ↓
+┌───┴───┬────────┬────────┐
+│  90%  │   5%   │   5%   │
+Creator Treasury Revenue
+```
+
+### Documentation
+
+- 📘 **[BSC Integration Guide](Docs/BSC_INTEGRATION.md)** - Complete configuration and architecture
+- 🚀 **[Contract Deployment Guide](Docs/CONTRACT_DEPLOYMENT.md)** - Step-by-step deployment instructions
+- 🔒 **[Security Features](Docs/BSC_INTEGRATION.md#security-features)** - Access control and safety mechanisms
 
 ---
 
